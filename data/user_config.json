@@ -1,0 +1,11 @@
+{
+  "thresholds": {
+    "btc_pct": 0.005,
+    "stable_pct": 0.001,
+    "yield_pct": 0.05,
+    "liquidity_pct": 0.02,
+    "usdt_dom_pct": 0.005,
+    "rwa_pct": 0.03
+  },
+  "subscribers": []
+}
