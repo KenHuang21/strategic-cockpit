@@ -6,6 +6,7 @@ import Header from "./Header";
 import MetricCard from "./MetricCard";
 import SmartMoneyRadar from "./SmartMoneyRadar";
 import CatalystCalendar from "./CatalystCalendar";
+import SettingsModal from "./SettingsModal";
 import toast, { Toaster } from "react-hot-toast";
 
 export default function Dashboard() {
@@ -13,6 +14,7 @@ export default function Dashboard() {
   const [calendarData, setCalendarData] = useState<CalendarData | null>(null);
   const [loading, setLoading] = useState(true);
   const [refreshing, setRefreshing] = useState(false);
+  const [settingsOpen, setSettingsOpen] = useState(false);
 
   useEffect(() => {
     loadData();
@@ -134,6 +136,11 @@ export default function Dashboard() {
         lastUpdated={dashboardData.last_updated}
         onRefresh={handleRefresh}
         refreshing={refreshing}
+        onSettingsClick={() => setSettingsOpen(true)}
+      />
+      <SettingsModal
+        isOpen={settingsOpen}
+        onClose={() => setSettingsOpen(false)}
       />
 
       {/* Bento Grid Layout */}

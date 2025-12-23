@@ -597,7 +597,7 @@
       "Step 11: Verify hamburger menu or mobile navigation if applicable",
       "Step 12: Test on multiple mobile screen sizes (iPhone, Android)"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -770,7 +770,7 @@
       "Step 7: Check that columns are properly aligned",
       "Step 8: Verify responsive breakpoints work correctly"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "style",
@@ -787,7 +787,7 @@
       "Step 9: Confirm neutral elements use gray tones",
       "Step 10: Test color scheme in both light and dark modes if supported"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "style",
@@ -802,7 +802,7 @@
       "Step 7: Verify line heights prevent text cramping",
       "Step 8: Confirm consistent font weights across similar elements"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "style",
@@ -817,7 +817,7 @@
       "Step 7: Check hover states for interactive icons",
       "Step 8: Verify icon meaning is clear and intuitive"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "style",

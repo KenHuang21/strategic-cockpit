@@ -8,9 +8,10 @@ interface HeaderProps {
   lastUpdated: string;
   onRefresh: () => void;
   refreshing: boolean;
+  onSettingsClick: () => void;
 }
 
-export default function Header({ riskStatus, lastUpdated, onRefresh, refreshing }: HeaderProps) {
+export default function Header({ riskStatus, lastUpdated, onRefresh, refreshing, onSettingsClick }: HeaderProps) {
   const timeAgo = getTimeAgo(lastUpdated);
 
   return (
@@ -57,6 +58,7 @@ export default function Header({ riskStatus, lastUpdated, onRefresh, refreshing 
 
             {/* Settings Icon */}
             <button
+              onClick={onSettingsClick}
               className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300 transition-colors"
               title="Settings"
             >
