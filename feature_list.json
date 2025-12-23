@@ -133,7 +133,7 @@
       "Step 9: Test that free tier rate limits are respected",
       "Step 10: Verify fallback mechanism if CoinGecko is unavailable"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -150,7 +150,7 @@
       "Step 9: Test error handling for API failures",
       "Step 10: Confirm data validation prevents corrupt entries"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -167,7 +167,7 @@
       "Step 9: Verify market URLs are properly formatted",
       "Step 10: Test error handling if Polymarket API is unavailable"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
