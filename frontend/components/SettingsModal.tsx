@@ -237,8 +237,8 @@ export default function SettingsModal({ isOpen, onClose }: SettingsModalProps) {
                       onClick={() => setSubscriberType("telegram")}
                       className={`flex items-center space-x-2 px-4 py-2 rounded-lg transition-colors ${
                         subscriberType === "telegram"
-                          ? "bg-blue-600 text-white"
-                          : "bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300"
+                          ? "bg-blue-600 hover:bg-blue-700 text-white"
+                          : "bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300"
                       }`}
                     >
                       <MessageCircle className="w-4 h-4" />
@@ -248,8 +248,8 @@ export default function SettingsModal({ isOpen, onClose }: SettingsModalProps) {
                       onClick={() => setSubscriberType("email")}
                       className={`flex items-center space-x-2 px-4 py-2 rounded-lg transition-colors ${
                         subscriberType === "email"
-                          ? "bg-blue-600 text-white"
-                          : "bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300"
+                          ? "bg-blue-600 hover:bg-blue-700 text-white"
+                          : "bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300"
                       }`}
                     >
                       <Mail className="w-4 h-4" />

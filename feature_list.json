@@ -832,7 +832,7 @@
       "Step 7: Check loading spinner is visible during refresh",
       "Step 8: Verify button is disabled during active refresh"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "style",
