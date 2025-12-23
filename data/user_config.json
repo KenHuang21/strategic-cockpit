@@ -1,11 +1,32 @@
 {
   "thresholds": {
-    "btc_pct": 0.005,
+    "btc_pct": 0.01,
     "stable_pct": 0.001,
     "yield_pct": 0.05,
     "liquidity_pct": 0.02,
     "usdt_dom_pct": 0.005,
     "rwa_pct": 0.03
   },
-  "subscribers": []
+  "subscribers": [
+    {
+      "type": "telegram",
+      "name": "Test User Alpha",
+      "id": "123456789"
+    },
+    {
+      "type": "email",
+      "name": "Test User Beta",
+      "address": "beta@example.com"
+    },
+    {
+      "type": "telegram",
+      "name": "New Test User",
+      "id": "987654321"
+    },
+    {
+      "type": "email",
+      "name": "Email Test User",
+      "address": "emailtest@example.com"
+    }
+  ]
 }

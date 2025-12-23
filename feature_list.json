@@ -317,7 +317,7 @@
       "Step 13: Confirm user_config.json is committed to repo with new subscriber",
       "Step 14: Verify success notification is shown to user"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -336,7 +336,7 @@
       "Step 11: Verify new email subscriber receives test notification",
       "Step 12: Confirm success message is displayed"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -353,7 +353,7 @@
       "Step 9: Verify removed subscriber no longer receives alerts",
       "Step 10: Confirm success notification is shown"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -372,7 +372,7 @@
       "Step 11: Verify changes with <1.0% don't trigger BTC alerts anymore",
       "Step 12: Confirm success notification is displayed"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -848,7 +848,7 @@
       "Step 8: Verify close button (X) is visible in top corner",
       "Step 9: Confirm scrolling works if content exceeds viewport"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "style",
