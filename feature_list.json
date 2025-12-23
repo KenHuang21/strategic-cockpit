@@ -863,7 +863,7 @@
       "Step 7: Confirm loading indicators disappear when operation completes",
       "Step 8: Verify success/error messages appear after loading"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "style",
@@ -878,7 +878,7 @@
       "Step 7: Check multiple toasts stack properly",
       "Step 8: Test manual dismiss button if present"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "style",
@@ -895,7 +895,7 @@
       "Step 9: Confirm delta/change is visually secondary",
       "Step 10: Check that units and labels are clearly differentiated"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "style",
