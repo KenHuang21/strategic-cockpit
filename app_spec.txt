@@ -1,0 +1,232 @@
+<project_specification>
+  <project_name>Strategic Cockpit Dashboard - The Founder's Sentinel (v5.0)</project_name>
+
+  <overview>
+    Build a high-performance, "Signal-over-Noise" strategic dashboard for crypto-executive decision making.
+    The system acts as an automated sentinel, monitoring three layers of market reality (Macro, Crypto Structure, Prediction Markets).
+    It features a zero-latency web interface with **Manual Refresh**, a **Multi-Channel Subscription System (Telegram + Email)**,
+    and a comprehensive Documentation Hub to institutionalize the strategy.
+  </overview>
+
+  <technology_stack>
+    <frontend>
+      <framework>Next.js 14 (App Router)</framework>
+      <styling>Tailwind CSS (Bento Grid Layout)</styling>
+      <hosting>Vercel (Serverless Functions)</hosting>
+      <icons>Lucide React</icons>
+      <charts>Recharts</charts>
+    </frontend>
+    <backend_pipeline>
+      <runtime>Python 3.9+</runtime>
+      <automation>GitHub Actions (Cron Jobs & Workflow Dispatch)</automation>
+      <data_storage>JSON Flat Files (committed to repo for zero-latency reads)</data_storage>
+      <notifications>
+        <channel_1>Telegram Bot API (Multi-user broadcast)</channel_1>
+        <channel_2>SMTP / SendGrid (Email Alerts)</channel_2>
+      </notifications>
+    </backend_pipeline>
+    <data_sources>
+      <macro>FRED (St. Louis Fed) via fredapi</macro>
+      <crypto>CoinGecko API (Prices & Market Caps)</crypto>
+      <onchain>DefiLlama API (RWA TVL, Stablecoins)</onchain>
+      <calendar>Investing.com (Scraped via cloudscraper)</calendar>
+      <prediction_markets>Polymarket Gamma API (CLOB)</prediction_markets>
+    </data_sources>
+  </technology_stack>
+
+  <core_features>
+    <metrics_engine>
+      - **Track 6 Key Strategic Indicators**:
+        1. US 10Y Treasury Yield ("The Gravity")
+        2. Fed Net Liquidity ("The Fuel")
+        3. Bitcoin Price ("The Market Proxy")
+        4. Stablecoin Market Cap ("The Liquidity")
+        5. USDT Dominance ("The Fear Gauge")
+        6. RWA Onchain Value ("The Alpha")
+      - **Logic**: Calculate "Week-over-Week" (WoW) and "7-Day Change" deltas.
+      - **Status**: Auto-determine "Risk On / Risk Off" regime based on Yields/Liq.
+    </metrics_engine>
+
+    <smart_money_radar>
+      - **Top 5 Polymarket Feed**:
+        - Source: Polymarket Gamma API.
+        - Filter: Tags ["Economics", "Finance", "Crypto", "Federal Reserve"].
+        - Sort: Highest Volume (Liquidity) first.
+        - Limit: Top 5 markets.
+      - **Display**: Event Title, Top Outcome % (e.g., "Yes 82%"), Total Volume ($).
+    </smart_money_radar>
+
+    <catalyst_calendar>
+      - **Scope**: US Economic Events (High/Medium Impact).
+      - **Window**: 4-Week Forward Look (Current Week + Next 3).
+      - **Visuals**: Split view "Completed" (Actual vs Forecast with Surprise Coloring) vs "Upcoming" (Agenda).
+    </catalyst_calendar>
+
+    <intelligence_sentinel>
+      - **Notification Logic**:
+        - **Metric Alerts**: "Smart Diff" logic (Push if Delta > User_Threshold).
+        - **Calendar Alert A**: "Pre-Event Warning" (12 hours before High Impact events).
+        - **Calendar Alert B**: "Data Release" (Immediate push of Actual vs Forecast).
+        - **Polymarket Alert**: Significant flip in odds (>10% swing).
+      - **Subscription Manager**:
+        - Support for multiple subscribers.
+        - Users can add `Telegram Chat ID` or `Email Address` via UI.
+        - System iterates through list and broadcasts to all.
+    </intelligence_sentinel>
+
+    <control_plane>
+      - **Manual Refresh Button**:
+        - UI: "Refresh Data" button in Header.
+        - Action: Triggers Vercel Server Function -> GitHub Repository Dispatch (`workflow_dispatch`).
+        - Feedback: Loading spinner -> "Update Started" toast.
+      - **Status Indicator**: Displays "Last Updated: X mins ago".
+    </control_plane>
+
+    <customization_engine>
+      - **Settings Modal**:
+        - **Threshold Sliders**: Adjust sensitivity (e.g., BTC alert 0.5% -> 1.0%).
+        - **Subscriber Management**: Add/Remove Telegram IDs or Emails.
+        - **"Suggest Metric" Form**: Submits GitHub Issue via API.
+      - **Persistence**: Updates `user_config.json` in the repo.
+    </customization_engine>
+
+    <documentation_hub>
+      - **Dedicated Page (`/docs`)**:
+        - **Indicator Encyclopedia**: Definitions, Data Sources, Interpretation Guides.
+        - **Operational Protocols**: Refresh policies, Notification rules.
+        - **Setup Guide**: "How to find your Telegram Chat ID".
+    </documentation_hub>
+  </core_features>
+
+  <data_pipeline_schema>
+    <files>
+      <dashboard_data_json>
+        - Standard metrics with deltas.
+        - `polymarket_top5`: Array {title, outcome, probability, volume, url}.
+        - `last_updated`: UTC timestamp.
+      </dashboard_data_json>
+
+      <calendar_data_json>
+        - `events`: Array {id, name, date, time, forecast, actual, impact, status}.
+        - `notification_states`: {event_id: {sent_12h: bool, sent_release: bool}}.
+      </calendar_data_json>
+
+      <user_config_json>
+        - `thresholds`: {btc_pct: 0.005, stable_pct: 0.001, ...}
+        - `subscribers`: [
+            { "type": "telegram", "id": "12345", "name": "User A" },
+            { "type": "email", "address": "user@cobo.com", "name": "User B" }
+          ]
+      </user_config_json>
+    </files>
+  </data_pipeline_schema>
+
+  <ui_layout>
+    <main_structure>
+      - **Header**: Global Risk Status, **Manual Refresh Button**, Settings Icon, Docs Link.
+      - **Layout**: 3-Column Bento Grid (Responsive: Stack on Mobile).
+    </main_structure>
+
+    <bento_grid_components>
+      <column_1_macro>
+        - US 10Y Yield (Card)
+        - Fed Net Liquidity (Card)
+        - **Smart Money Radar** (Polymarket List - Top 5)
+      </column_1_macro>
+
+      <column_2_market>
+        - Bitcoin Price (Large Hero Card)
+        - Stablecoin Market Cap (Card)
+        - USDT Dominance (Card)
+      </column_2_market>
+
+      <column_3_alpha>
+        - RWA TVL (Card)
+        - **Catalyst Calendar** (Tall vertical list: Completed vs Upcoming)
+      </column_3_alpha>
+    </bento_grid_components>
+  </ui_layout>
+
+  <automation_workflows>
+    <workflow_1_metrics>
+      <name>fetch_metrics.py</name>
+      <schedule>Every 15 minutes (*/15 * * * *)</schedule>
+      <triggers>
+        - `workflow_dispatch` (Connected to **Manual Refresh Button**)
+        - `schedule`
+      </triggers>
+      <actions>
+        - Load `user_config.json` (Thresholds & Subscribers).
+        - Fetch Metrics + Polymarket Top 5.
+        - Compare with old data ("Smart Diff").
+        - **Broadcast**: Loop through subscribers (Telegram/Email) if diff > threshold.
+        - Commit `dashboard_data.json`.
+      </actions>
+    </workflow_1_metrics>
+
+    <workflow_2_calendar>
+      <name>fetch_calendar.py</name>
+      <schedule>Hourly (0 * * * *)</schedule>
+      <actions>
+        - Scrape Investing.com (4-week window).
+        - Check 12h Warning Window -> Broadcast.
+        - Check New Data Releases -> Broadcast.
+        - Commit `calendar_data.json`.
+      </actions>
+    </workflow_2_calendar>
+
+    <workflow_3_settings>
+      <name>update_settings.yml</name>
+      <trigger>Repository Dispatch</trigger>
+      <actions>
+        - Receive JSON payload from UI.
+        - Commit changes to `user_config.json` (Adding subscribers/Changing thresholds).
+      </actions>
+    </workflow_3_settings>
+  </automation_workflows>
+
+  <implementation_steps>
+    <step number="1">
+      <title>Data Pipeline (Python)</title>
+      <tasks>
+        - Implement `fetch_metrics.py` (FRED, CoinGecko, DefiLlama, Polymarket).
+        - Implement `fetch_calendar.py` (Cloudscraper, Investing.com).
+        - Add `broadcast_alert()` function handling Telegram & SMTP loops.
+      </tasks>
+    </step>
+
+    <step number="2">
+      <title>Backend Config & Secrets</title>
+      <tasks>
+        - Create `user_config.json` structure.
+        - Set GitHub Secrets: `TELEGRAM_BOT_TOKEN`, `SMTP_HOST`, `SMTP_USER`, `SMTP_PASS`.
+        - Configure `update_settings.yml` workflow.
+      </tasks>
+    </step>
+
+    <step number="3">
+      <title>Frontend (Next.js)</title>
+      <tasks>
+        - Build Bento Grid Layout.
+        - Implement **Manual Refresh Button** (API Route -> GitHub Dispatch).
+        - Build Settings Modal (Subscriber Form).
+        - Build `/docs` page.
+      </tasks>
+    </step>
+  </implementation_steps>
+
+  <success_criteria>
+    <reliability>
+      - Dashboard data never >15 mins old.
+      - Manual Refresh triggers update within 60s.
+    </reliability>
+    <usability>
+      - Users can easily add themselves as subscribers via UI.
+      - Documentation clearly explains "Why" and "How".
+    </usability>
+    <insight>
+      - Polymarket Radar correctly surfaces high-volume finance events.
+      - Calendar accurately alerts on Data Releases.
+    </insight>
+  </success_criteria>
+</project_specification>

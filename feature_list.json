@@ -1,0 +1,947 @@
+[
+  {
+    "category": "functional",
+    "description": "Dashboard loads and displays all 6 key strategic indicators with current values",
+    "steps": [
+      "Step 1: Navigate to the home page",
+      "Step 2: Verify US 10Y Treasury Yield is displayed with a numeric value",
+      "Step 3: Verify Fed Net Liquidity is displayed with a numeric value",
+      "Step 4: Verify Bitcoin Price is displayed with a numeric value",
+      "Step 5: Verify Stablecoin Market Cap is displayed with a numeric value",
+      "Step 6: Verify USDT Dominance is displayed with a numeric value",
+      "Step 7: Verify RWA TVL is displayed with a numeric value",
+      "Step 8: Confirm all metrics have proper units (%, $, etc.)",
+      "Step 9: Verify no loading errors or missing data placeholders",
+      "Step 10: Check that timestamp shows 'Last Updated' information"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Week-over-Week (WoW) and 7-Day Change deltas are calculated and displayed correctly",
+    "steps": [
+      "Step 1: Navigate to the dashboard",
+      "Step 2: Locate each metric card",
+      "Step 3: Verify each metric shows a delta/change indicator",
+      "Step 4: Confirm deltas are color-coded (green for positive, red for negative)",
+      "Step 5: Verify percentage or absolute change values are displayed",
+      "Step 6: Check that WoW calculation logic is correct based on historical data",
+      "Step 7: Verify 7-day change is properly calculated",
+      "Step 8: Confirm delta indicators use appropriate symbols (↑↓ or +/-)"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Global Risk Status (Risk On/Risk Off) is automatically determined and displayed in header",
+    "steps": [
+      "Step 1: Navigate to the dashboard",
+      "Step 2: Locate the header section",
+      "Step 3: Verify Global Risk Status indicator is visible",
+      "Step 4: Confirm status shows either 'Risk On' or 'Risk Off'",
+      "Step 5: Check that status is color-coded appropriately",
+      "Step 6: Verify logic correctly interprets Yield and Liquidity data",
+      "Step 7: Test with different data scenarios to confirm auto-determination works",
+      "Step 8: Ensure status updates when underlying data changes"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Manual Refresh Button triggers data update workflow via GitHub Actions",
+    "steps": [
+      "Step 1: Navigate to the dashboard header",
+      "Step 2: Locate the Manual Refresh button",
+      "Step 3: Click the Manual Refresh button",
+      "Step 4: Verify loading spinner appears immediately",
+      "Step 5: Confirm API call is made to Vercel Server Function",
+      "Step 6: Verify Server Function triggers GitHub Repository Dispatch",
+      "Step 7: Check that workflow_dispatch event is received by GitHub Actions",
+      "Step 8: Wait for workflow to complete (up to 60 seconds)",
+      "Step 9: Verify 'Update Started' toast notification appears",
+      "Step 10: Confirm dashboard data refreshes after workflow completion",
+      "Step 11: Verify 'Last Updated' timestamp is updated",
+      "Step 12: Check console for any errors during the refresh process"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Smart Money Radar displays Top 5 Polymarket markets filtered by relevant tags",
+    "steps": [
+      "Step 1: Navigate to the dashboard",
+      "Step 2: Locate the Smart Money Radar section (Column 1)",
+      "Step 3: Verify exactly 5 Polymarket events are displayed",
+      "Step 4: Confirm events are filtered by tags: Economics, Finance, Crypto, Federal Reserve",
+      "Step 5: Verify events are sorted by highest volume (liquidity) first",
+      "Step 6: Check each event shows: Title, Top Outcome %, Total Volume",
+      "Step 7: Verify outcome percentages are formatted correctly (e.g., 'Yes 82%')",
+      "Step 8: Confirm volume is displayed in dollar format",
+      "Step 9: Verify each market has a clickable link to Polymarket",
+      "Step 10: Test that link opens correct Polymarket page in new tab"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Catalyst Calendar displays 4-week forward look with High/Medium impact US economic events",
+    "steps": [
+      "Step 1: Navigate to the dashboard",
+      "Step 2: Locate the Catalyst Calendar section (Column 3)",
+      "Step 3: Verify events span exactly 4 weeks (current week + next 3)",
+      "Step 4: Confirm only US Economic events are shown",
+      "Step 5: Verify events are filtered to High/Medium impact only",
+      "Step 6: Check calendar is split into 'Completed' and 'Upcoming' sections",
+      "Step 7: For completed events, verify Actual vs Forecast is displayed",
+      "Step 8: Confirm surprise coloring (green/red based on deviation)",
+      "Step 9: For upcoming events, verify date, time, and forecast are shown",
+      "Step 10: Verify events are sorted chronologically",
+      "Step 11: Check that event impact level is clearly indicated",
+      "Step 12: Confirm calendar updates hourly based on workflow schedule"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Data pipeline successfully fetches and stores metrics from FRED API",
+    "steps": [
+      "Step 1: Trigger fetch_metrics.py workflow manually",
+      "Step 2: Verify FRED API is called for US 10Y Treasury Yield",
+      "Step 3: Verify FRED API is called for Fed Net Liquidity data",
+      "Step 4: Check that API responses are valid JSON",
+      "Step 5: Confirm data is parsed correctly",
+      "Step 6: Verify dashboard_data.json is updated with FRED metrics",
+      "Step 7: Check timestamp is updated in the JSON file",
+      "Step 8: Confirm proper error handling if FRED API fails",
+      "Step 9: Verify rate limiting is respected",
+      "Step 10: Test data validation to ensure no corrupt data is stored"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Data pipeline successfully fetches crypto data from CoinGecko API",
+    "steps": [
+      "Step 1: Trigger fetch_metrics.py workflow",
+      "Step 2: Verify CoinGecko API is called for Bitcoin price",
+      "Step 3: Check that market cap data is retrieved",
+      "Step 4: Confirm API response includes all required fields",
+      "Step 5: Verify data is correctly parsed and formatted",
+      "Step 6: Check that dashboard_data.json is updated with crypto metrics",
+      "Step 7: Verify historical data is stored for WoW calculations",
+      "Step 8: Confirm proper error handling for API failures",
+      "Step 9: Test that free tier rate limits are respected",
+      "Step 10: Verify fallback mechanism if CoinGecko is unavailable"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Data pipeline successfully fetches DeFi data from DefiLlama API",
+    "steps": [
+      "Step 1: Trigger fetch_metrics.py workflow",
+      "Step 2: Verify DefiLlama API is called for RWA TVL",
+      "Step 3: Verify DefiLlama API is called for Stablecoin data",
+      "Step 4: Check USDT dominance calculation is correct",
+      "Step 5: Confirm all required protocols/chains are included",
+      "Step 6: Verify data aggregation logic is working",
+      "Step 7: Check that dashboard_data.json is updated correctly",
+      "Step 8: Verify timestamp reflects latest update",
+      "Step 9: Test error handling for API failures",
+      "Step 10: Confirm data validation prevents corrupt entries"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Data pipeline successfully fetches Top 5 Polymarket markets from Gamma API",
+    "steps": [
+      "Step 1: Trigger fetch_metrics.py workflow",
+      "Step 2: Verify Polymarket Gamma API CLOB endpoint is called",
+      "Step 3: Confirm filtering by tags works correctly",
+      "Step 4: Verify sorting by volume (liquidity) is accurate",
+      "Step 5: Check that exactly top 5 markets are selected",
+      "Step 6: Verify each market includes: title, outcome, probability, volume, url",
+      "Step 7: Confirm probability calculations are correct",
+      "Step 8: Check that dashboard_data.json includes polymarket_top5 array",
+      "Step 9: Verify market URLs are properly formatted",
+      "Step 10: Test error handling if Polymarket API is unavailable"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Calendar scraper successfully fetches events from Investing.com",
+    "steps": [
+      "Step 1: Trigger fetch_calendar.py workflow",
+      "Step 2: Verify cloudscraper successfully bypasses Cloudflare protection",
+      "Step 3: Confirm Investing.com economic calendar page is accessed",
+      "Step 4: Verify 4-week window of events is scraped",
+      "Step 5: Check that event parsing extracts: id, name, date, time, forecast, actual, impact",
+      "Step 6: Verify only High/Medium impact events are included",
+      "Step 7: Confirm US-specific events are filtered correctly",
+      "Step 8: Check that calendar_data.json is created/updated",
+      "Step 9: Verify notification_states are initialized for each event",
+      "Step 10: Test error handling for scraping failures",
+      "Step 11: Verify retry logic if Investing.com blocks request",
+      "Step 12: Confirm data structure matches schema specification"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Smart Diff logic correctly identifies significant metric changes",
+    "steps": [
+      "Step 1: Load current user_config.json with defined thresholds",
+      "Step 2: Trigger fetch_metrics.py with new data",
+      "Step 3: Verify comparison with previous dashboard_data.json",
+      "Step 4: Test Bitcoin price change detection (threshold check)",
+      "Step 5: Test Stablecoin market cap change detection",
+      "Step 6: Test other metrics against their respective thresholds",
+      "Step 7: Verify changes below threshold do NOT trigger alerts",
+      "Step 8: Verify changes above threshold DO trigger alerts",
+      "Step 9: Check that multiple simultaneous changes are all detected",
+      "Step 10: Confirm alert payload includes metric name, old value, new value, delta"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Telegram notification system broadcasts alerts to all subscribed chat IDs",
+    "steps": [
+      "Step 1: Add multiple test Telegram chat IDs to user_config.json",
+      "Step 2: Trigger a metric change that exceeds threshold",
+      "Step 3: Verify broadcast_alert() function is called",
+      "Step 4: Confirm Telegram Bot API is called for each subscriber",
+      "Step 5: Verify message formatting is correct and readable",
+      "Step 6: Check that all chat IDs receive the notification",
+      "Step 7: Verify no subscribers are skipped in the loop",
+      "Step 8: Test error handling if one chat ID is invalid",
+      "Step 9: Confirm successful deliveries even if one fails",
+      "Step 10: Verify rate limiting is respected for Telegram API",
+      "Step 11: Check that notification includes metric details and timestamp",
+      "Step 12: Test with edge cases (empty subscriber list, single subscriber)"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Email notification system sends alerts to all subscribed email addresses via SMTP",
+    "steps": [
+      "Step 1: Add multiple test email addresses to user_config.json",
+      "Step 2: Configure SMTP secrets in GitHub (SMTP_HOST, SMTP_USER, SMTP_PASS)",
+      "Step 3: Trigger a metric change that exceeds threshold",
+      "Step 4: Verify broadcast_alert() function iterates through email subscribers",
+      "Step 5: Confirm SMTP connection is established",
+      "Step 6: Verify email is sent to each subscriber",
+      "Step 7: Check email subject line is descriptive",
+      "Step 8: Verify email body includes metric details",
+      "Step 9: Confirm HTML formatting is used for better readability",
+      "Step 10: Test error handling for invalid email addresses",
+      "Step 11: Verify successful sends even if one address fails",
+      "Step 12: Check that all emails are delivered within reasonable time"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Calendar Pre-Event Warning alerts are sent 12 hours before high-impact events",
+    "steps": [
+      "Step 1: Add upcoming high-impact event to calendar_data.json (13+ hours away)",
+      "Step 2: Wait for fetch_calendar.py hourly workflow to run",
+      "Step 3: Verify 12-hour warning window check is performed",
+      "Step 4: Confirm no alert is sent when >12 hours away",
+      "Step 5: Update system time or event time to be within 12-hour window",
+      "Step 6: Trigger fetch_calendar.py workflow",
+      "Step 7: Verify pre-event warning alert is generated",
+      "Step 8: Check that notification_states.sent_12h is set to true",
+      "Step 9: Confirm alert is broadcast to all subscribers (Telegram + Email)",
+      "Step 10: Verify alert message includes event name, time, and forecast",
+      "Step 11: Test that duplicate alerts are NOT sent (check sent_12h flag)",
+      "Step 12: Confirm only high-impact events trigger 12h warnings"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Calendar Data Release alerts are sent immediately when actual data is published",
+    "steps": [
+      "Step 1: Add upcoming event with no actual value to calendar_data.json",
+      "Step 2: Run fetch_calendar.py workflow (hourly check)",
+      "Step 3: Simulate data release by scraping actual value from Investing.com",
+      "Step 4: Verify actual vs forecast comparison is performed",
+      "Step 5: Confirm surprise calculation (deviation) is correct",
+      "Step 6: Verify Data Release alert is generated",
+      "Step 7: Check that notification_states.sent_release is set to true",
+      "Step 8: Confirm alert is broadcast to all subscribers",
+      "Step 9: Verify alert includes: event name, forecast, actual, surprise indicator",
+      "Step 10: Check that surprise is color-coded or highlighted",
+      "Step 11: Test that duplicate release alerts are NOT sent",
+      "Step 12: Verify alert timing (should be immediate within hourly check)"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Polymarket odds flip alert triggers when probability swings >10%",
+    "steps": [
+      "Step 1: Store initial Polymarket Top 5 data with baseline probabilities",
+      "Step 2: Trigger fetch_metrics.py workflow with updated Polymarket data",
+      "Step 3: Simulate >10% probability swing for one or more markets",
+      "Step 4: Verify odds flip detection logic identifies significant changes",
+      "Step 5: Confirm alert is generated for markets with >10% swing",
+      "Step 6: Check that markets with <10% swing do NOT trigger alerts",
+      "Step 7: Verify alert is broadcast to all subscribers",
+      "Step 8: Confirm alert message includes: market title, old probability, new probability",
+      "Step 9: Test with multiple simultaneous odds flips",
+      "Step 10: Verify proper handling of markets entering/exiting Top 5"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Settings Modal allows users to add Telegram Chat IDs via UI",
+    "steps": [
+      "Step 1: Navigate to the dashboard",
+      "Step 2: Click the Settings icon in the header",
+      "Step 3: Verify Settings Modal opens",
+      "Step 4: Locate the Subscriber Management section",
+      "Step 5: Find the 'Add Telegram Subscriber' form",
+      "Step 6: Enter a test Telegram Chat ID",
+      "Step 7: Enter a subscriber name",
+      "Step 8: Click 'Add Subscriber' button",
+      "Step 9: Verify form validation (reject invalid IDs)",
+      "Step 10: Confirm subscriber appears in the list",
+      "Step 11: Verify API call is made to update user_config.json",
+      "Step 12: Check that update_settings.yml workflow is triggered",
+      "Step 13: Confirm user_config.json is committed to repo with new subscriber",
+      "Step 14: Verify success notification is shown to user"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Settings Modal allows users to add Email addresses via UI",
+    "steps": [
+      "Step 1: Navigate to the dashboard",
+      "Step 2: Open the Settings Modal",
+      "Step 3: Locate the 'Add Email Subscriber' form",
+      "Step 4: Enter a valid email address",
+      "Step 5: Enter a subscriber name",
+      "Step 6: Click 'Add Subscriber' button",
+      "Step 7: Verify email format validation",
+      "Step 8: Confirm subscriber appears in the list",
+      "Step 9: Verify API call triggers update_settings.yml workflow",
+      "Step 10: Check that user_config.json is updated in repository",
+      "Step 11: Verify new email subscriber receives test notification",
+      "Step 12: Confirm success message is displayed"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Settings Modal allows users to remove subscribers",
+    "steps": [
+      "Step 1: Open Settings Modal with existing subscribers",
+      "Step 2: Locate the subscriber list",
+      "Step 3: Find the 'Remove' button next to a subscriber",
+      "Step 4: Click 'Remove' button",
+      "Step 5: Verify confirmation dialog appears",
+      "Step 6: Confirm removal",
+      "Step 7: Verify subscriber is removed from UI list",
+      "Step 8: Check that API call updates user_config.json",
+      "Step 9: Verify removed subscriber no longer receives alerts",
+      "Step 10: Confirm success notification is shown"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Settings Modal threshold sliders adjust alert sensitivity",
+    "steps": [
+      "Step 1: Open Settings Modal",
+      "Step 2: Locate the Threshold Sliders section",
+      "Step 3: Verify sliders exist for each metric (BTC, Stablecoin, etc.)",
+      "Step 4: Check current threshold values are displayed",
+      "Step 5: Adjust BTC threshold slider from 0.5% to 1.0%",
+      "Step 6: Verify live update of displayed value",
+      "Step 7: Click 'Save' button",
+      "Step 8: Confirm API call updates user_config.json",
+      "Step 9: Verify new thresholds are persisted in repository",
+      "Step 10: Test that alerts now use updated thresholds",
+      "Step 11: Verify changes with <1.0% don't trigger BTC alerts anymore",
+      "Step 12: Confirm success notification is displayed"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Suggest Metric form submits GitHub Issue via API",
+    "steps": [
+      "Step 1: Open Settings Modal",
+      "Step 2: Locate the 'Suggest Metric' section",
+      "Step 3: Enter a metric name in the form",
+      "Step 4: Enter a description/rationale",
+      "Step 5: Click 'Submit Suggestion' button",
+      "Step 6: Verify form validation (non-empty fields)",
+      "Step 7: Confirm API call to GitHub Issues API",
+      "Step 8: Verify issue is created in the repository",
+      "Step 9: Check issue title format is correct",
+      "Step 10: Verify issue body includes user-provided details",
+      "Step 11: Confirm issue is labeled appropriately (e.g., 'enhancement')",
+      "Step 12: Verify success message with issue link is shown to user"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "GitHub Actions workflow runs on schedule every 15 minutes for metrics",
+    "steps": [
+      "Step 1: Check .github/workflows/fetch_metrics.yml configuration",
+      "Step 2: Verify cron schedule is set to */15 * * * *",
+      "Step 3: Wait for 15-minute interval to elapse",
+      "Step 4: Check GitHub Actions tab for workflow run",
+      "Step 5: Verify workflow executed automatically",
+      "Step 6: Confirm fetch_metrics.py script ran successfully",
+      "Step 7: Check that dashboard_data.json was updated",
+      "Step 8: Verify commit was pushed to repository",
+      "Step 9: Confirm timestamp reflects the scheduled run time",
+      "Step 10: Test that multiple consecutive runs occur at 15-min intervals"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "GitHub Actions workflow runs hourly for calendar updates",
+    "steps": [
+      "Step 1: Check .github/workflows/fetch_calendar.yml configuration",
+      "Step 2: Verify cron schedule is set to 0 * * * *",
+      "Step 3: Wait for hourly interval",
+      "Step 4: Check GitHub Actions tab for workflow execution",
+      "Step 5: Verify fetch_calendar.py ran successfully",
+      "Step 6: Confirm calendar_data.json was updated",
+      "Step 7: Check that new events were scraped",
+      "Step 8: Verify notification logic was executed",
+      "Step 9: Confirm commit was pushed to repository",
+      "Step 10: Test multiple consecutive hourly runs"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Update Settings workflow triggers via Repository Dispatch from UI",
+    "steps": [
+      "Step 1: Make a settings change in the UI (add subscriber)",
+      "Step 2: Verify API route sends Repository Dispatch event",
+      "Step 3: Check GitHub Actions for update_settings.yml workflow",
+      "Step 4: Verify workflow receives JSON payload from UI",
+      "Step 5: Confirm payload includes correct subscriber/threshold data",
+      "Step 6: Verify workflow updates user_config.json",
+      "Step 7: Check that changes are committed to repository",
+      "Step 8: Verify commit message is descriptive",
+      "Step 9: Test that updated config is immediately available",
+      "Step 10: Confirm no race conditions with other workflows"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Dashboard displays 'Last Updated' timestamp and updates correctly",
+    "steps": [
+      "Step 1: Navigate to the dashboard",
+      "Step 2: Locate the 'Last Updated' indicator",
+      "Step 3: Verify timestamp is displayed in readable format",
+      "Step 4: Check that timestamp shows 'X mins ago' or similar",
+      "Step 5: Note the current timestamp",
+      "Step 6: Trigger a manual refresh",
+      "Step 7: Wait for data update to complete",
+      "Step 8: Verify timestamp updates to reflect new update time",
+      "Step 9: Confirm relative time updates dynamically (e.g., 1 min ago -> 2 mins ago)",
+      "Step 10: Test that timestamp never shows >15 minutes old under normal operation"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Documentation Hub page (/docs) is accessible and comprehensive",
+    "steps": [
+      "Step 1: Navigate to the dashboard",
+      "Step 2: Click the 'Docs' link in the header",
+      "Step 3: Verify /docs page loads successfully",
+      "Step 4: Check that page has clear navigation/sections",
+      "Step 5: Verify Indicator Encyclopedia section exists",
+      "Step 6: Confirm definitions for all 6 key metrics are present",
+      "Step 7: Check data source attribution for each metric",
+      "Step 8: Verify interpretation guides explain what values mean",
+      "Step 9: Confirm Operational Protocols section exists",
+      "Step 10: Check refresh policies are documented",
+      "Step 11: Verify notification rules are explained",
+      "Step 12: Confirm Setup Guide section exists",
+      "Step 13: Verify 'How to find Telegram Chat ID' instructions are clear",
+      "Step 14: Test that all links/references are functional"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Documentation clearly explains the Risk On/Risk Off logic",
+    "steps": [
+      "Step 1: Navigate to /docs page",
+      "Step 2: Find section on Risk Status determination",
+      "Step 3: Verify explanation of how Yields affect risk status",
+      "Step 4: Confirm explanation of how Liquidity affects risk status",
+      "Step 5: Check that threshold values are documented",
+      "Step 6: Verify examples are provided for different scenarios",
+      "Step 7: Confirm visual aids or diagrams are included if applicable"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Error handling: Dashboard gracefully handles missing or stale data",
+    "steps": [
+      "Step 1: Simulate missing dashboard_data.json file",
+      "Step 2: Navigate to the dashboard",
+      "Step 3: Verify appropriate error message or placeholder is shown",
+      "Step 4: Confirm page doesn't crash or show raw errors",
+      "Step 5: Restore dashboard_data.json with stale data (>15 mins old)",
+      "Step 6: Verify warning indicator shows data is stale",
+      "Step 7: Test that manual refresh can recover from stale data",
+      "Step 8: Simulate partial data (some metrics missing)",
+      "Step 9: Verify only affected metrics show errors",
+      "Step 10: Confirm other metrics display normally"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Error handling: Notification system handles API failures gracefully",
+    "steps": [
+      "Step 1: Trigger alert with invalid Telegram bot token",
+      "Step 2: Verify workflow doesn't crash",
+      "Step 3: Confirm error is logged appropriately",
+      "Step 4: Check that other subscribers still receive alerts",
+      "Step 5: Test with unreachable SMTP server",
+      "Step 6: Verify email failures don't block Telegram alerts",
+      "Step 7: Confirm retry logic for transient failures",
+      "Step 8: Test rate limiting scenarios",
+      "Step 9: Verify graceful degradation when one channel fails"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Data validation: Pipeline rejects invalid or corrupted data",
+    "steps": [
+      "Step 1: Simulate API returning malformed JSON",
+      "Step 2: Trigger fetch_metrics.py workflow",
+      "Step 3: Verify data validation catches the error",
+      "Step 4: Confirm corrupted data is NOT written to dashboard_data.json",
+      "Step 5: Check that previous valid data is preserved",
+      "Step 6: Verify error is logged with details",
+      "Step 7: Test with edge cases (null values, extreme numbers)",
+      "Step 8: Confirm validation rules for each metric type",
+      "Step 9: Test that out-of-range values are rejected",
+      "Step 10: Verify timestamp validation prevents future dates"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Secrets management: All sensitive credentials are stored securely in GitHub Secrets",
+    "steps": [
+      "Step 1: Check that TELEGRAM_BOT_TOKEN is in GitHub Secrets",
+      "Step 2: Verify SMTP_HOST is in GitHub Secrets",
+      "Step 3: Verify SMTP_USER is in GitHub Secrets",
+      "Step 4: Verify SMTP_PASS is in GitHub Secrets",
+      "Step 5: Confirm FRED API key (if required) is in Secrets",
+      "Step 6: Check that no secrets are hardcoded in repository",
+      "Step 7: Verify workflows properly reference secrets",
+      "Step 8: Test that secrets are not exposed in logs",
+      "Step 9: Confirm secrets are masked in GitHub Actions output",
+      "Step 10: Verify local .env files are gitignored"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "API rate limiting: All external APIs are called within free tier limits",
+    "steps": [
+      "Step 1: Review FRED API usage and rate limits",
+      "Step 2: Verify fetch frequency doesn't exceed FRED limits",
+      "Step 3: Check CoinGecko free tier limits (50 calls/min)",
+      "Step 4: Confirm 15-minute fetch interval respects CoinGecko limits",
+      "Step 5: Review DefiLlama rate limits",
+      "Step 6: Verify Polymarket Gamma API usage is within limits",
+      "Step 7: Check Investing.com scraping frequency is respectful",
+      "Step 8: Test rate limiting logic in fetch_metrics.py",
+      "Step 9: Verify exponential backoff for retries",
+      "Step 10: Confirm no API key cost overruns occur"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Mobile responsiveness: Bento Grid stacks properly on mobile devices",
+    "steps": [
+      "Step 1: Open dashboard in mobile viewport (375px width)",
+      "Step 2: Verify 3-column layout changes to stacked single column",
+      "Step 3: Check that all metric cards are visible",
+      "Step 4: Confirm cards are properly sized for mobile",
+      "Step 5: Verify text is readable without horizontal scrolling",
+      "Step 6: Test touch interactions (taps, swipes)",
+      "Step 7: Check that Settings Modal works on mobile",
+      "Step 8: Verify Manual Refresh button is accessible",
+      "Step 9: Test Smart Money Radar on mobile",
+      "Step 10: Confirm Catalyst Calendar displays properly",
+      "Step 11: Verify hamburger menu or mobile navigation if applicable",
+      "Step 12: Test on multiple mobile screen sizes (iPhone, Android)"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Vercel deployment: Next.js app deploys successfully to Vercel",
+    "steps": [
+      "Step 1: Connect repository to Vercel",
+      "Step 2: Configure build settings (Next.js, App Router)",
+      "Step 3: Trigger deployment",
+      "Step 4: Verify build completes without errors",
+      "Step 5: Check that all pages are generated correctly",
+      "Step 6: Confirm dashboard_data.json is accessible from deployed app",
+      "Step 7: Test Vercel Serverless Functions work correctly",
+      "Step 8: Verify API routes are deployed",
+      "Step 9: Test Manual Refresh from production environment",
+      "Step 10: Confirm environment variables are set correctly",
+      "Step 11: Verify custom domain configuration (if applicable)",
+      "Step 12: Test that automatic deployments trigger on git push"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Performance: Dashboard loads in under 2 seconds on first visit",
+    "steps": [
+      "Step 1: Clear browser cache",
+      "Step 2: Navigate to dashboard URL",
+      "Step 3: Measure time to first contentful paint (FCP)",
+      "Step 4: Measure time to interactive (TTI)",
+      "Step 5: Verify FCP is under 1 second",
+      "Step 6: Verify TTI is under 2 seconds",
+      "Step 7: Check Lighthouse performance score (target >90)",
+      "Step 8: Test on fast 3G network simulation",
+      "Step 9: Verify no render-blocking resources",
+      "Step 10: Confirm images are optimized and lazy-loaded"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Data freshness: Automatic updates ensure dashboard is never >15 minutes stale",
+    "steps": [
+      "Step 1: Deploy application with scheduled workflows enabled",
+      "Step 2: Monitor dashboard over a 2-hour period",
+      "Step 3: Check 'Last Updated' timestamp every 5 minutes",
+      "Step 4: Verify at least one update occurs every 15 minutes",
+      "Step 5: Confirm GitHub Actions workflows execute on schedule",
+      "Step 6: Check that commits are pushed after each workflow",
+      "Step 7: Verify dashboard reflects updated data within 1 minute of commit",
+      "Step 8: Test during high-traffic and low-traffic periods",
+      "Step 9: Confirm no gaps or missed updates",
+      "Step 10: Verify alerting if data becomes stale (>15 mins)"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Notification delivery: Telegram alerts arrive within 60 seconds of trigger",
+    "steps": [
+      "Step 1: Add test Telegram chat ID to subscribers",
+      "Step 2: Manually trigger metric change exceeding threshold",
+      "Step 3: Start timer when change is detected",
+      "Step 4: Monitor Telegram for incoming alert",
+      "Step 5: Record time of alert arrival",
+      "Step 6: Verify alert arrives within 60 seconds",
+      "Step 7: Check alert content is accurate and formatted well",
+      "Step 8: Test with multiple simultaneous alerts",
+      "Step 9: Verify all alerts arrive within 60 seconds",
+      "Step 10: Confirm no duplicate alerts are sent"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Notification delivery: Email alerts arrive within 2 minutes of trigger",
+    "steps": [
+      "Step 1: Add test email to subscribers",
+      "Step 2: Configure SMTP settings correctly",
+      "Step 3: Trigger metric change exceeding threshold",
+      "Step 4: Start timer when change is detected",
+      "Step 5: Monitor email inbox",
+      "Step 6: Record time of email arrival",
+      "Step 7: Verify email arrives within 2 minutes",
+      "Step 8: Check email subject and body formatting",
+      "Step 9: Verify HTML rendering is correct",
+      "Step 10: Test with multiple simultaneous email alerts",
+      "Step 11: Confirm no emails are lost or delayed excessively"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "User configuration persistence: Settings changes are saved and persist across sessions",
+    "steps": [
+      "Step 1: Open Settings Modal and add a new subscriber",
+      "Step 2: Close Settings Modal",
+      "Step 3: Refresh the page",
+      "Step 4: Reopen Settings Modal",
+      "Step 5: Verify new subscriber is still present",
+      "Step 6: Make threshold adjustment",
+      "Step 7: Close and refresh page",
+      "Step 8: Verify threshold persists",
+      "Step 9: Check user_config.json in repository",
+      "Step 10: Confirm all changes are committed",
+      "Step 11: Test from different browser/device",
+      "Step 12: Verify settings are consistent across all access points"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Bitcoin metric card displays as large hero card in center column",
+    "steps": [
+      "Step 1: Navigate to the dashboard",
+      "Step 2: Locate Column 2 (Market section)",
+      "Step 3: Verify Bitcoin Price card is prominently displayed",
+      "Step 4: Confirm card is larger than other metric cards",
+      "Step 5: Check that Bitcoin is visually emphasized (hero treatment)",
+      "Step 6: Verify current price is displayed in large font",
+      "Step 7: Confirm delta/change is clearly visible",
+      "Step 8: Check that card includes BTC icon or logo"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "All external links open in new tabs to preserve dashboard session",
+    "steps": [
+      "Step 1: Navigate to Smart Money Radar section",
+      "Step 2: Click a Polymarket event link",
+      "Step 3: Verify link opens in new tab",
+      "Step 4: Confirm dashboard remains open in original tab",
+      "Step 5: Test documentation links",
+      "Step 6: Verify all external resources open in new tabs",
+      "Step 7: Check that internal navigation stays in same tab",
+      "Step 8: Test multiple link clicks don't create excessive tabs"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Complete end-to-end workflow: User subscribes, receives alert, views updated dashboard",
+    "steps": [
+      "Step 1: Navigate to the dashboard",
+      "Step 2: Open Settings Modal",
+      "Step 3: Add Telegram Chat ID as subscriber",
+      "Step 4: Save settings and close modal",
+      "Step 5: Verify user_config.json is updated in repository",
+      "Step 6: Wait for next scheduled metric fetch (up to 15 mins)",
+      "Step 7: Simulate or wait for real metric change exceeding threshold",
+      "Step 8: Verify Telegram alert is received with correct details",
+      "Step 9: Navigate back to dashboard",
+      "Step 10: Verify dashboard shows updated metric values",
+      "Step 11: Confirm 'Last Updated' timestamp reflects recent update",
+      "Step 12: Check that WoW and 7-day change deltas are recalculated",
+      "Step 13: Verify Risk Status is updated if applicable",
+      "Step 14: Confirm no errors occurred throughout the entire flow"
+    ],
+    "passes": false
+  },
+  {
+    "category": "style",
+    "description": "Dashboard follows Bento Grid layout design with proper spacing and alignment",
+    "steps": [
+      "Step 1: Navigate to the dashboard",
+      "Step 2: Take screenshot of full layout",
+      "Step 3: Verify 3-column grid structure is clearly visible",
+      "Step 4: Check consistent spacing between cards (16-24px)",
+      "Step 5: Verify cards have rounded corners and shadows",
+      "Step 6: Confirm grid gaps are uniform",
+      "Step 7: Check that columns are properly aligned",
+      "Step 8: Verify responsive breakpoints work correctly"
+    ],
+    "passes": false
+  },
+  {
+    "category": "style",
+    "description": "Color scheme uses professional dark/light mode with high contrast for readability",
+    "steps": [
+      "Step 1: Navigate to the dashboard",
+      "Step 2: Take screenshot of color scheme",
+      "Step 3: Verify background colors are professional (not too bright)",
+      "Step 4: Check text contrast ratios meet WCAG AA standards",
+      "Step 5: Verify positive changes use green (#10b981 or similar)",
+      "Step 6: Verify negative changes use red (#ef4444 or similar)",
+      "Step 7: Check that Risk On status uses green indicator",
+      "Step 8: Verify Risk Off status uses red indicator",
+      "Step 9: Confirm neutral elements use gray tones",
+      "Step 10: Test color scheme in both light and dark modes if supported"
+    ],
+    "passes": false
+  },
+  {
+    "category": "style",
+    "description": "Typography is clear, consistent, and hierarchical across all components",
+    "steps": [
+      "Step 1: Navigate to the dashboard",
+      "Step 2: Verify header text uses large, bold font",
+      "Step 3: Check metric values are prominent and readable",
+      "Step 4: Verify labels and descriptions use smaller, secondary font",
+      "Step 5: Confirm font family is modern and professional (Inter, SF Pro, etc.)",
+      "Step 6: Check font sizes maintain hierarchy (h1 > h2 > body > caption)",
+      "Step 7: Verify line heights prevent text cramping",
+      "Step 8: Confirm consistent font weights across similar elements"
+    ],
+    "passes": false
+  },
+  {
+    "category": "style",
+    "description": "Icons from Lucide React are properly sized and aligned with text",
+    "steps": [
+      "Step 1: Navigate to the dashboard",
+      "Step 2: Locate all icons (refresh, settings, arrows, etc.)",
+      "Step 3: Verify icons are from Lucide React library",
+      "Step 4: Check icon sizes are consistent (16-24px typically)",
+      "Step 5: Verify icons align vertically with adjacent text",
+      "Step 6: Confirm icon colors match design system",
+      "Step 7: Check hover states for interactive icons",
+      "Step 8: Verify icon meaning is clear and intuitive"
+    ],
+    "passes": false
+  },
+  {
+    "category": "style",
+    "description": "Manual Refresh Button is visually prominent and clearly interactive",
+    "steps": [
+      "Step 1: Navigate to the dashboard header",
+      "Step 2: Locate the Manual Refresh button",
+      "Step 3: Verify button uses distinct color or styling",
+      "Step 4: Check button includes refresh icon",
+      "Step 5: Verify hover state changes appearance",
+      "Step 6: Confirm active/clicked state provides feedback",
+      "Step 7: Check loading spinner is visible during refresh",
+      "Step 8: Verify button is disabled during active refresh"
+    ],
+    "passes": false
+  },
+  {
+    "category": "style",
+    "description": "Settings Modal has clean, organized layout with clear sections",
+    "steps": [
+      "Step 1: Open Settings Modal",
+      "Step 2: Take screenshot of modal",
+      "Step 3: Verify modal has proper overlay/backdrop",
+      "Step 4: Check modal is centered on screen",
+      "Step 5: Verify sections are clearly separated (visual dividers)",
+      "Step 6: Confirm input fields are properly labeled",
+      "Step 7: Check buttons are consistently styled",
+      "Step 8: Verify close button (X) is visible in top corner",
+      "Step 9: Confirm scrolling works if content exceeds viewport"
+    ],
+    "passes": false
+  },
+  {
+    "category": "style",
+    "description": "Loading states and spinners provide clear feedback during async operations",
+    "steps": [
+      "Step 1: Click Manual Refresh button",
+      "Step 2: Verify loading spinner appears immediately",
+      "Step 3: Check spinner animation is smooth",
+      "Step 4: Confirm spinner is appropriately sized",
+      "Step 5: Verify UI elements are disabled during loading",
+      "Step 6: Test loading states for Settings Modal operations",
+      "Step 7: Confirm loading indicators disappear when operation completes",
+      "Step 8: Verify success/error messages appear after loading"
+    ],
+    "passes": false
+  },
+  {
+    "category": "style",
+    "description": "Toast notifications are styled consistently and positioned correctly",
+    "steps": [
+      "Step 1: Trigger a toast notification (e.g., refresh started)",
+      "Step 2: Verify toast appears in consistent position (top-right typically)",
+      "Step 3: Check toast has appropriate background color",
+      "Step 4: Verify toast text is readable",
+      "Step 5: Confirm toast includes icon (success, error, info)",
+      "Step 6: Verify toast auto-dismisses after 3-5 seconds",
+      "Step 7: Check multiple toasts stack properly",
+      "Step 8: Test manual dismiss button if present"
+    ],
+    "passes": false
+  },
+  {
+    "category": "style",
+    "description": "Metric cards have consistent styling with proper visual hierarchy",
+    "steps": [
+      "Step 1: Navigate to dashboard",
+      "Step 2: Take screenshots of all metric cards",
+      "Step 3: Verify all cards have same border radius",
+      "Step 4: Check padding is consistent inside cards",
+      "Step 5: Verify card backgrounds are uniform",
+      "Step 6: Confirm shadows/borders are consistent",
+      "Step 7: Check that metric name is at top of card",
+      "Step 8: Verify metric value is most prominent element",
+      "Step 9: Confirm delta/change is visually secondary",
+      "Step 10: Check that units and labels are clearly differentiated"
+    ],
+    "passes": false
+  },
+  {
+    "category": "style",
+    "description": "Smart Money Radar list items are clearly formatted and scannable",
+    "steps": [
+      "Step 1: Navigate to Smart Money Radar section",
+      "Step 2: Verify list items have consistent formatting",
+      "Step 3: Check event titles are prominent",
+      "Step 4: Verify outcome percentages are highlighted",
+      "Step 5: Confirm volume amounts are clearly displayed",
+      "Step 6: Check hover states for list items",
+      "Step 7: Verify visual separation between items",
+      "Step 8: Confirm list is easy to scan quickly"
+    ],
+    "passes": false
+  },
+  {
+    "category": "style",
+    "description": "Catalyst Calendar events are color-coded appropriately for completed vs upcoming",
+    "steps": [
+      "Step 1: Navigate to Catalyst Calendar section",
+      "Step 2: Verify 'Completed' section uses distinct styling",
+      "Step 3: Check 'Upcoming' section uses different color/style",
+      "Step 4: Verify surprise indicators (green/red) for completed events",
+      "Step 5: Confirm high-impact events are visually emphasized",
+      "Step 6: Check date/time formatting is consistent",
+      "Step 7: Verify actual vs forecast comparison is clear",
+      "Step 8: Confirm overall calendar is easy to read at a glance"
+    ],
+    "passes": false
+  },
+  {
+    "category": "style",
+    "description": "Documentation page has clean, readable layout with good information hierarchy",
+    "steps": [
+      "Step 1: Navigate to /docs page",
+      "Step 2: Take screenshot of full page",
+      "Step 3: Verify clear page title/header",
+      "Step 4: Check table of contents or navigation sidebar if present",
+      "Step 5: Verify section headings are clearly styled",
+      "Step 6: Confirm body text is readable (proper line length, spacing)",
+      "Step 7: Check code blocks or examples are properly formatted",
+      "Step 8: Verify links are visually distinct",
+      "Step 9: Confirm images or diagrams are properly sized",
+      "Step 10: Check responsive design on mobile"
+    ],
+    "passes": false
+  }
+]
