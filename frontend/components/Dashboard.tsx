@@ -6,6 +6,7 @@ import Header from "./Header";
 import MetricCard from "./MetricCard";
 import SmartMoneyRadar from "./SmartMoneyRadar";
 import CatalystCalendar from "./CatalystCalendar";
+import toast, { Toaster } from "react-hot-toast";
 
 export default function Dashboard() {
   const [dashboardData, setDashboardData] = useState<DashboardData | null>(null);
@@ -38,15 +39,40 @@ export default function Dashboard() {
   const handleRefresh = async () => {
     setRefreshing(true);
     try {
+      // Show loading toast
+      const loadingToast = toast.loading("Triggering data refresh...");
+
       // Trigger GitHub Actions workflow via API
-      await fetch("/api/refresh", { method: "POST" });
-      // Wait a moment then reload data
-      setTimeout(() => {
-        loadData();
+      const response = await fetch("/api/refresh", { method: "POST" });
+      const result = await response.json();
+
+      // Dismiss loading toast
+      toast.dismiss(loadingToast);
+
+      if (response.ok) {
+        // Show success toast
+        toast.success("Update started! Data will refresh in ~60 seconds.", {
+          duration: 4000,
+          icon: "🚀",
+        });
+
+        // Wait a moment then reload data
+        setTimeout(() => {
+          loadData();
+          setRefreshing(false);
+        }, 2000);
+      } else {
+        // Show error toast
+        toast.error(result.error || "Failed to trigger refresh", {
+          duration: 4000,
+        });
         setRefreshing(false);
-      }, 2000);
+      }
     } catch (error) {
       console.error("Error refreshing data:", error);
+      toast.error("Network error: Could not connect to server", {
+        duration: 4000,
+      });
       setRefreshing(false);
     }
   };
@@ -79,6 +105,30 @@ export default function Dashboard() {
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
+      <Toaster
+        position="top-right"
+        toastOptions={{
+          duration: 4000,
+          style: {
+            background: "#363636",
+            color: "#fff",
+          },
+          success: {
+            duration: 4000,
+            iconTheme: {
+              primary: "#10b981",
+              secondary: "#fff",
+            },
+          },
+          error: {
+            duration: 4000,
+            iconTheme: {
+              primary: "#ef4444",
+              secondary: "#fff",
+            },
+          },
+        }}
+      />
       <Header
         riskStatus={riskStatus}
         lastUpdated={dashboardData.last_updated}

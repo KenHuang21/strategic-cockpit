@@ -63,7 +63,7 @@
       "Step 11: Verify 'Last Updated' timestamp is updated",
       "Step 12: Check console for any errors during the refresh process"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
