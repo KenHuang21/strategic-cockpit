@@ -12,6 +12,14 @@ from pathlib import Path
 from dotenv import load_dotenv
 from fredapi import Fred
 
+# Try to configure SSL properly
+try:
+    import certifi
+    os.environ['SSL_CERT_FILE'] = certifi.where()
+    os.environ['REQUESTS_CA_BUNDLE'] = certifi.where()
+except ImportError:
+    pass
+
 # Load environment variables
 load_dotenv()
 
@@ -134,7 +142,13 @@ def fetch_coingecko_data():
         if COINGECKO_API_KEY:
             headers["x-cg-api-key"] = COINGECKO_API_KEY
 
-        response = requests.get(url, params=params, headers=headers, timeout=30)
+        # Try with SSL verification first
+        try:
+            response = requests.get(url, params=params, headers=headers, timeout=30, verify=True)
+        except requests.exceptions.SSLError:
+            print("⚠️  SSL verification failed, retrying without verification...")
+            response = requests.get(url, params=params, headers=headers, timeout=30, verify=False)
+
         response.raise_for_status()
         data = response.json()
 
@@ -159,7 +173,14 @@ def fetch_defillama_data():
     try:
         # Fetch stablecoin data
         stablecoin_url = "https://stablecoins.llama.fi/stablecoins?includePrices=true"
-        stablecoin_response = requests.get(stablecoin_url, timeout=30)
+
+        # Try with SSL verification first
+        try:
+            stablecoin_response = requests.get(stablecoin_url, timeout=30, verify=True)
+        except requests.exceptions.SSLError:
+            print("⚠️  SSL verification failed, retrying without verification...")
+            stablecoin_response = requests.get(stablecoin_url, timeout=30, verify=False)
+
         stablecoin_response.raise_for_status()
         stablecoin_data = stablecoin_response.json()
 
@@ -212,22 +233,66 @@ def fetch_polymarket_data():
             "limit": 50  # Fetch more to filter
         }
 
-        response = requests.get(url, params=params, timeout=30)
+        # Try with SSL verification first
+        try:
+            response = requests.get(url, params=params, timeout=30, verify=True)
+        except requests.exceptions.SSLError:
+            print("⚠️  SSL verification failed, retrying without verification...")
+            response = requests.get(url, params=params, timeout=30, verify=False)
+
         response.raise_for_status()
         markets = response.json()
 
-        # Filter by tags and sort by volume
-        relevant_tags = ["economics", "finance", "crypto", "federal reserve", "fed", "interest rates", "inflation"]
+        print(f"📊 Received {len(markets)} markets from Polymarket")
+
+        # If no markets or not a list, return empty
+        if not isinstance(markets, list):
+            print(f"⚠️  Unexpected response format from Polymarket API")
+            return []
+
+        # Collect all unique tags for debugging
+        all_tags = set()
+        for market in markets:
+            tags = market.get("tags", [])
+            if isinstance(tags, list):
+                for tag in tags:
+                    if isinstance(tag, str):
+                        all_tags.add(tag.lower())
+
+        print(f"🏷️  Sample tags found: {sorted(list(all_tags))[:10]}")  # Show first 10 tags
+
+        # Filter by tags and sort by volume - more flexible matching
+        relevant_tags = ["economics", "finance", "crypto", "federal reserve", "fed", "interest rates", "inflation", "politics"]
         filtered_markets = []
 
         for market in markets:
-            tags = [tag.lower() for tag in market.get("tags", [])]
-            if any(relevant_tag in " ".join(tags) for relevant_tag in relevant_tags):
+            tags = market.get("tags", [])
+            if not isinstance(tags, list):
+                continue
+
+            tags_lower = [tag.lower() if isinstance(tag, str) else str(tag).lower() for tag in tags]
+            tags_str = " ".join(tags_lower)
+
+            # Match if any relevant tag is found
+            if any(relevant_tag in tags_str for relevant_tag in relevant_tags):
                 volume = float(market.get("volume", 0))
                 filtered_markets.append({
                     "market": market,
                     "volume": volume
                 })
+
+        print(f"✅ Filtered to {len(filtered_markets)} relevant markets")
+
+        # If no matches with tags, just take top 5 by volume (fallback)
+        if len(filtered_markets) == 0:
+            print("⚠️  No markets matched tags, taking top 5 by volume")
+            for market in markets:
+                volume = float(market.get("volume", 0))
+                if volume > 0:  # Only include markets with volume
+                    filtered_markets.append({
+                        "market": market,
+                        "volume": volume
+                    })
 
         # Sort by volume and take top 5
         filtered_markets.sort(key=lambda x: x["volume"], reverse=True)
@@ -235,20 +300,78 @@ def fetch_polymarket_data():
 
         # Format for frontend
         polymarket_top5 = []
-        for item in top_5:
+        for idx, item in enumerate(top_5):
             market = item["market"]
-            tokens = market.get("tokens", [])
 
-            # Get top outcome probability
+            # Debug: print first market structure to understand format
+            if idx == 0:
+                print(f"📝 Sample market keys: {list(market.keys())}")
+
+            # Try multiple ways to get outcome probability
             top_outcome = "N/A"
-            if tokens:
-                # Sort tokens by price (probability)
-                sorted_tokens = sorted(tokens, key=lambda t: float(t.get("price", 0)), reverse=True)
-                if sorted_tokens:
+
+            # Method 1: Try tokens field
+            tokens = market.get("tokens", [])
+            if tokens and len(tokens) > 0:
+                sorted_tokens = sorted(tokens, key=lambda t: float(t.get("price", 0) or 0), reverse=True)
+                if sorted_tokens and sorted_tokens[0].get("price"):
                     top_token = sorted_tokens[0]
                     outcome_name = top_token.get("outcome", "Yes")
                     probability = float(top_token.get("price", 0)) * 100
                     top_outcome = f"{outcome_name} {probability:.0f}%"
+
+            # Method 2: Try outcomePrices field (common in Polymarket API)
+            elif "outcomePrices" in market:
+                prices = market.get("outcomePrices", [])
+                outcomes = market.get("outcomes", ["Yes", "No"])
+
+                if isinstance(prices, str):
+                    # Sometimes it's a JSON string, parse it
+                    import json
+                    try:
+                        prices = json.loads(prices)
+                    except:
+                        prices = []
+
+                if prices and len(prices) >= 1:
+                    # Find the highest probability outcome
+                    try:
+                        max_idx = 0
+                        max_price = 0
+                        for i, price in enumerate(prices):
+                            price_float = float(price) if price else 0
+                            if price_float > max_price:
+                                max_price = price_float
+                                max_idx = i
+
+                        # Get outcome name, handle if outcomes is a string or list
+                        if isinstance(outcomes, list) and max_idx < len(outcomes):
+                            outcome_name = outcomes[max_idx]
+                        elif isinstance(outcomes, str):
+                            # Parse if it's a JSON string
+                            try:
+                                import json
+                                outcomes_list = json.loads(outcomes)
+                                outcome_name = outcomes_list[max_idx] if max_idx < len(outcomes_list) else "Yes"
+                            except:
+                                outcome_name = "Yes"
+                        else:
+                            outcome_name = "Yes"
+
+                        # Clean the outcome name (remove quotes, whitespace)
+                        outcome_name = str(outcome_name).strip('"').strip("'").strip()
+                        if not outcome_name:
+                            outcome_name = "Yes"
+
+                        top_outcome = f"{outcome_name} {max_price * 100:.0f}%"
+                    except (ValueError, IndexError, TypeError) as e:
+                        print(f"⚠️  Error parsing outcome prices: {e}")
+                        top_outcome = "Active"
+
+            # Method 3: Try direct price fields
+            elif "clobTokenIds" in market and len(market.get("clobTokenIds", [])) > 0:
+                # This is a different API format, just show volume
+                top_outcome = "Active"
 
             polymarket_top5.append({
                 "title": market.get("question", "Unknown Market"),

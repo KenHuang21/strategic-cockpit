@@ -1,0 +1,323 @@
+{
+  "snapshots": [
+    {
+      "timestamp": "2025-12-23T16:21:43.699146",
+      "metrics": {
+        "us_10y_yield": {
+          "value": 4.5,
+          "delta": 0
+        },
+        "fed_net_liquidity": {
+          "value": 6200,
+          "delta": 0
+        },
+        "btc_price": {
+          "value": 0,
+          "delta": 0
+        },
+        "stablecoin_mcap": {
+          "value": 0,
+          "delta": 0
+        },
+        "usdt_dominance": {
+          "value": 0,
+          "delta": 0
+        },
+        "rwa_tvl": {
+          "value": 0,
+          "delta": 0
+        }
+      }
+    },
+    {
+      "timestamp": "2025-12-23T16:22:28.131780",
+      "metrics": {
+        "us_10y_yield": {
+          "value": 4.5,
+          "delta": 0
+        },
+        "fed_net_liquidity": {
+          "value": 6200,
+          "delta": 0
+        },
+        "btc_price": {
+          "value": 0,
+          "delta": 0
+        },
+        "stablecoin_mcap": {
+          "value": 0,
+          "delta": 0
+        },
+        "usdt_dominance": {
+          "value": 0,
+          "delta": 0
+        },
+        "rwa_tvl": {
+          "value": 0,
+          "delta": 0
+        }
+      }
+    },
+    {
+      "timestamp": "2025-12-23T16:22:51.716406",
+      "metrics": {
+        "us_10y_yield": {
+          "value": 4.5,
+          "delta": 0
+        },
+        "fed_net_liquidity": {
+          "value": 6200,
+          "delta": 0
+        },
+        "btc_price": {
+          "value": 0,
+          "delta": 0
+        },
+        "stablecoin_mcap": {
+          "value": 0,
+          "delta": 0
+        },
+        "usdt_dominance": {
+          "value": 0,
+          "delta": 0
+        },
+        "rwa_tvl": {
+          "value": 0,
+          "delta": 0
+        }
+      }
+    },
+    {
+      "timestamp": "2025-12-23T16:23:44.000815",
+      "metrics": {
+        "us_10y_yield": {
+          "value": 4.5,
+          "delta": 0
+        },
+        "fed_net_liquidity": {
+          "value": 6200,
+          "delta": 0
+        },
+        "btc_price": {
+          "value": 0,
+          "delta": 0
+        },
+        "stablecoin_mcap": {
+          "value": 0,
+          "delta": 0
+        },
+        "usdt_dominance": {
+          "value": 0,
+          "delta": 0
+        },
+        "rwa_tvl": {
+          "value": 0,
+          "delta": 0
+        }
+      }
+    },
+    {
+      "timestamp": "2025-12-23T16:24:56.189909",
+      "metrics": {
+        "us_10y_yield": {
+          "value": 4.5,
+          "delta": 0
+        },
+        "fed_net_liquidity": {
+          "value": 6200,
+          "delta": 0
+        },
+        "btc_price": {
+          "value": 0,
+          "delta": 0
+        },
+        "stablecoin_mcap": {
+          "value": 0,
+          "delta": 0
+        },
+        "usdt_dominance": {
+          "value": 0,
+          "delta": 0
+        },
+        "rwa_tvl": {
+          "value": 0,
+          "delta": 0
+        }
+      }
+    },
+    {
+      "timestamp": "2025-12-23T16:26:12.796784",
+      "metrics": {
+        "us_10y_yield": {
+          "value": 4.5,
+          "delta": 0
+        },
+        "fed_net_liquidity": {
+          "value": 6200,
+          "delta": 0
+        },
+        "btc_price": {
+          "value": 87808,
+          "delta": 0
+        },
+        "stablecoin_mcap": {
+          "value": 308.4,
+          "delta": 0
+        },
+        "usdt_dominance": {
+          "value": 60.57,
+          "delta": 0
+        },
+        "rwa_tvl": {
+          "value": 8.5,
+          "delta": 0
+        }
+      }
+    },
+    {
+      "timestamp": "2025-12-23T16:26:58.494357",
+      "metrics": {
+        "us_10y_yield": {
+          "value": 4.5,
+          "delta": 0
+        },
+        "fed_net_liquidity": {
+          "value": 6200,
+          "delta": 0
+        },
+        "btc_price": {
+          "value": 87797,
+          "delta": 0
+        },
+        "stablecoin_mcap": {
+          "value": 308.4,
+          "delta": 0
+        },
+        "usdt_dominance": {
+          "value": 60.57,
+          "delta": 0
+        },
+        "rwa_tvl": {
+          "value": 8.5,
+          "delta": 0
+        }
+      }
+    },
+    {
+      "timestamp": "2025-12-23T16:27:53.139330",
+      "metrics": {
+        "us_10y_yield": {
+          "value": 4.5,
+          "delta": 0
+        },
+        "fed_net_liquidity": {
+          "value": 6200,
+          "delta": 0
+        },
+        "btc_price": {
+          "value": 87797,
+          "delta": 0
+        },
+        "stablecoin_mcap": {
+          "value": 308.4,
+          "delta": 0
+        },
+        "usdt_dominance": {
+          "value": 60.57,
+          "delta": 0
+        },
+        "rwa_tvl": {
+          "value": 8.5,
+          "delta": 0
+        }
+      }
+    },
+    {
+      "timestamp": "2025-12-23T16:29:41.328165",
+      "metrics": {
+        "us_10y_yield": {
+          "value": 4.5,
+          "delta": 0
+        },
+        "fed_net_liquidity": {
+          "value": 6200,
+          "delta": 0
+        },
+        "btc_price": {
+          "value": 87824,
+          "delta": 0
+        },
+        "stablecoin_mcap": {
+          "value": 308.4,
+          "delta": 0
+        },
+        "usdt_dominance": {
+          "value": 60.57,
+          "delta": 0
+        },
+        "rwa_tvl": {
+          "value": 8.5,
+          "delta": 0
+        }
+      }
+    },
+    {
+      "timestamp": "2025-12-23T16:30:20.762704",
+      "metrics": {
+        "us_10y_yield": {
+          "value": 4.5,
+          "delta": 0
+        },
+        "fed_net_liquidity": {
+          "value": 6200,
+          "delta": 0
+        },
+        "btc_price": {
+          "value": 87829,
+          "delta": 0
+        },
+        "stablecoin_mcap": {
+          "value": 308.4,
+          "delta": 0
+        },
+        "usdt_dominance": {
+          "value": 60.57,
+          "delta": 0
+        },
+        "rwa_tvl": {
+          "value": 8.5,
+          "delta": 0
+        }
+      }
+    },
+    {
+      "timestamp": "2025-12-23T16:31:23.570405",
+      "metrics": {
+        "us_10y_yield": {
+          "value": 4.5,
+          "delta": 0
+        },
+        "fed_net_liquidity": {
+          "value": 6200,
+          "delta": 0
+        },
+        "btc_price": {
+          "value": 87824,
+          "delta": 0
+        },
+        "stablecoin_mcap": {
+          "value": 308.4,
+          "delta": 0
+        },
+        "usdt_dominance": {
+          "value": 60.57,
+          "delta": 0
+        },
+        "rwa_tvl": {
+          "value": 8.5,
+          "delta": 0
+        }
+      }
+    }
+  ]
+}
