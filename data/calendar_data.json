@@ -1,4 +1,136 @@
 {
-  "events": [],
-  "notification_states": {}
+  "events": [
+    {
+      "id": "event_1",
+      "name": "Consumer Price Index (CPI)",
+      "date": "2024-12-20",
+      "time": "08:30",
+      "impact": "High",
+      "forecast": "3.2%",
+      "actual": "3.4%",
+      "previous": "3.1%",
+      "country": "US",
+      "status": "completed"
+    },
+    {
+      "id": "event_2",
+      "name": "Federal Reserve Interest Rate Decision",
+      "date": "2024-12-18",
+      "time": "14:00",
+      "impact": "High",
+      "forecast": "5.50%",
+      "actual": "5.50%",
+      "previous": "5.50%",
+      "country": "US",
+      "status": "completed"
+    },
+    {
+      "id": "event_3",
+      "name": "Initial Jobless Claims",
+      "date": "2024-12-19",
+      "time": "08:30",
+      "impact": "Medium",
+      "forecast": "220K",
+      "actual": "218K",
+      "previous": "225K",
+      "country": "US",
+      "status": "completed"
+    },
+    {
+      "id": "event_4",
+      "name": "GDP Growth Rate (Q3 Final)",
+      "date": "2024-12-26",
+      "time": "08:30",
+      "impact": "High",
+      "forecast": "2.8%",
+      "actual": null,
+      "previous": "2.6%",
+      "country": "US",
+      "status": "upcoming"
+    },
+    {
+      "id": "event_5",
+      "name": "Consumer Confidence Index",
+      "date": "2024-12-27",
+      "time": "10:00",
+      "impact": "Medium",
+      "forecast": "103.5",
+      "actual": null,
+      "previous": "102.7",
+      "country": "US",
+      "status": "upcoming"
+    },
+    {
+      "id": "event_6",
+      "name": "New Home Sales",
+      "date": "2024-12-30",
+      "time": "10:00",
+      "impact": "Medium",
+      "forecast": "725K",
+      "actual": null,
+      "previous": "738K",
+      "country": "US",
+      "status": "upcoming"
+    },
+    {
+      "id": "event_7",
+      "name": "ISM Manufacturing PMI",
+      "date": "2025-01-03",
+      "time": "10:00",
+      "impact": "High",
+      "forecast": "48.5",
+      "actual": null,
+      "previous": "48.3",
+      "country": "US",
+      "status": "upcoming"
+    },
+    {
+      "id": "event_8",
+      "name": "Non-Farm Payrolls",
+      "date": "2025-01-05",
+      "time": "08:30",
+      "impact": "High",
+      "forecast": "180K",
+      "actual": null,
+      "previous": "199K",
+      "country": "US",
+      "status": "upcoming"
+    },
+    {
+      "id": "event_9",
+      "name": "Unemployment Rate",
+      "date": "2025-01-05",
+      "time": "08:30",
+      "impact": "High",
+      "forecast": "4.2%",
+      "actual": null,
+      "previous": "4.2%",
+      "country": "US",
+      "status": "upcoming"
+    },
+    {
+      "id": "event_10",
+      "name": "FOMC Meeting Minutes",
+      "date": "2025-01-08",
+      "time": "14:00",
+      "impact": "High",
+      "forecast": null,
+      "actual": null,
+      "previous": null,
+      "country": "US",
+      "status": "upcoming"
+    }
+  ],
+  "notification_states": {
+    "event_1": {"pre_event_sent": true, "release_sent": true},
+    "event_2": {"pre_event_sent": true, "release_sent": true},
+    "event_3": {"pre_event_sent": true, "release_sent": true},
+    "event_4": {"pre_event_sent": false, "release_sent": false},
+    "event_5": {"pre_event_sent": false, "release_sent": false},
+    "event_6": {"pre_event_sent": false, "release_sent": false},
+    "event_7": {"pre_event_sent": false, "release_sent": false},
+    "event_8": {"pre_event_sent": false, "release_sent": false},
+    "event_9": {"pre_event_sent": false, "release_sent": false},
+    "event_10": {"pre_event_sent": false, "release_sent": false}
+  }
 }

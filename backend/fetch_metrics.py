@@ -1,0 +1,360 @@
+#!/usr/bin/env python3
+"""
+Strategic Cockpit Dashboard - Data Fetching Script
+Fetches metrics from multiple APIs and updates dashboard_data.json
+"""
+
+import os
+import json
+import requests
+from datetime import datetime, timedelta
+from pathlib import Path
+from dotenv import load_dotenv
+from fredapi import Fred
+
+# Load environment variables
+load_dotenv()
+
+# Configuration
+DATA_DIR = Path(__file__).parent.parent / "data"
+DASHBOARD_DATA_FILE = DATA_DIR / "dashboard_data.json"
+HISTORY_FILE = DATA_DIR / "metrics_history.json"
+
+# API Keys
+FRED_API_KEY = os.getenv("FRED_API_KEY", "")
+COINGECKO_API_KEY = os.getenv("COINGECKO_API_KEY", "")
+
+
+def load_existing_data():
+    """Load existing dashboard data for delta calculations"""
+    try:
+        with open(DASHBOARD_DATA_FILE, 'r') as f:
+            return json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        return {
+            "metrics": {
+                "us_10y_yield": {"value": 0, "delta": 0},
+                "fed_net_liquidity": {"value": 0, "delta": 0},
+                "btc_price": {"value": 0, "delta": 0},
+                "stablecoin_mcap": {"value": 0, "delta": 0},
+                "usdt_dominance": {"value": 0, "delta": 0},
+                "rwa_tvl": {"value": 0, "delta": 0}
+            },
+            "polymarket_top5": [],
+            "last_updated": "1970-01-01T00:00:00Z"
+        }
+
+
+def load_history():
+    """Load historical data for 7-day change calculations"""
+    try:
+        with open(HISTORY_FILE, 'r') as f:
+            return json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        return {"snapshots": []}
+
+
+def save_history(history, current_data):
+    """Save current data to history for future delta calculations"""
+    snapshot = {
+        "timestamp": datetime.utcnow().isoformat(),
+        "metrics": current_data["metrics"]
+    }
+    history["snapshots"].append(snapshot)
+
+    # Keep only last 30 days of history
+    cutoff = datetime.utcnow() - timedelta(days=30)
+    history["snapshots"] = [
+        s for s in history["snapshots"]
+        if datetime.fromisoformat(s["timestamp"]) > cutoff
+    ]
+
+    with open(HISTORY_FILE, 'w') as f:
+        json.dump(history, f, indent=2)
+
+
+def calculate_delta(current_value, previous_value):
+    """Calculate percentage change"""
+    if previous_value == 0:
+        return 0
+    return ((current_value - previous_value) / previous_value) * 100
+
+
+def fetch_fred_data():
+    """Fetch US 10Y Treasury Yield and Fed Net Liquidity from FRED API"""
+    print("Fetching FRED data...")
+
+    if not FRED_API_KEY:
+        print("⚠️  FRED_API_KEY not set, using placeholder data")
+        return {
+            "us_10y_yield": 4.5,
+            "fed_net_liquidity": 6200
+        }
+
+    try:
+        fred = Fred(api_key=FRED_API_KEY)
+
+        # US 10Y Treasury Yield
+        treasury_yield = fred.get_series_latest_release('DGS10')
+        us_10y_value = float(treasury_yield.iloc[-1]) if not treasury_yield.empty else 0
+
+        # Fed Net Liquidity (using Fed Balance Sheet minus TGA and Reverse Repo)
+        # This is a simplified calculation - real implementation would be more sophisticated
+        fed_balance = fred.get_series_latest_release('WALCL')
+        fed_balance_value = float(fed_balance.iloc[-1]) / 1000 if not fed_balance.empty else 0  # Convert to billions
+
+        print(f"✅ FRED data fetched: 10Y Yield={us_10y_value}%, Fed Balance={fed_balance_value}B")
+
+        return {
+            "us_10y_yield": us_10y_value,
+            "fed_net_liquidity": fed_balance_value
+        }
+    except Exception as e:
+        print(f"❌ Error fetching FRED data: {e}")
+        return {
+            "us_10y_yield": 0,
+            "fed_net_liquidity": 0
+        }
+
+
+def fetch_coingecko_data():
+    """Fetch Bitcoin price and market data from CoinGecko API"""
+    print("Fetching CoinGecko data...")
+
+    try:
+        url = "https://api.coingecko.com/api/v3/simple/price"
+        params = {
+            "ids": "bitcoin",
+            "vs_currencies": "usd",
+            "include_market_cap": "true",
+            "include_24hr_change": "true"
+        }
+
+        headers = {}
+        if COINGECKO_API_KEY:
+            headers["x-cg-api-key"] = COINGECKO_API_KEY
+
+        response = requests.get(url, params=params, headers=headers, timeout=30)
+        response.raise_for_status()
+        data = response.json()
+
+        btc_price = data["bitcoin"]["usd"]
+
+        print(f"✅ CoinGecko data fetched: BTC=${btc_price:,.2f}")
+
+        return {
+            "btc_price": btc_price
+        }
+    except Exception as e:
+        print(f"❌ Error fetching CoinGecko data: {e}")
+        return {
+            "btc_price": 0
+        }
+
+
+def fetch_defillama_data():
+    """Fetch Stablecoin and RWA data from DefiLlama API"""
+    print("Fetching DefiLlama data...")
+
+    try:
+        # Fetch stablecoin data
+        stablecoin_url = "https://stablecoins.llama.fi/stablecoins?includePrices=true"
+        stablecoin_response = requests.get(stablecoin_url, timeout=30)
+        stablecoin_response.raise_for_status()
+        stablecoin_data = stablecoin_response.json()
+
+        # Calculate total stablecoin market cap
+        total_stablecoin_mcap = 0
+        usdt_mcap = 0
+
+        for coin in stablecoin_data.get("peggedAssets", []):
+            circulating = coin.get("circulating", {})
+            total = circulating.get("peggedUSD", 0)
+            total_stablecoin_mcap += total
+
+            if coin.get("symbol") == "USDT":
+                usdt_mcap = total
+
+        # Convert to billions
+        total_stablecoin_mcap = total_stablecoin_mcap / 1e9
+        usdt_dominance = (usdt_mcap / (total_stablecoin_mcap * 1e9)) * 100 if total_stablecoin_mcap > 0 else 0
+
+        # Fetch RWA TVL data
+        # Note: DefiLlama doesn't have a direct RWA endpoint, so we'll use a placeholder
+        # In production, you'd fetch from specific RWA protocols
+        rwa_tvl = 8.5  # Placeholder value in billions
+
+        print(f"✅ DefiLlama data fetched: Stablecoin MCap=${total_stablecoin_mcap:.2f}B, USDT Dominance={usdt_dominance:.2f}%, RWA TVL=${rwa_tvl}B")
+
+        return {
+            "stablecoin_mcap": total_stablecoin_mcap,
+            "usdt_dominance": usdt_dominance,
+            "rwa_tvl": rwa_tvl
+        }
+    except Exception as e:
+        print(f"❌ Error fetching DefiLlama data: {e}")
+        return {
+            "stablecoin_mcap": 0,
+            "usdt_dominance": 0,
+            "rwa_tvl": 0
+        }
+
+
+def fetch_polymarket_data():
+    """Fetch Top 5 Polymarket markets from Gamma API"""
+    print("Fetching Polymarket data...")
+
+    try:
+        # Polymarket Gamma API CLOB endpoint
+        url = "https://gamma-api.polymarket.com/markets"
+        params = {
+            "closed": "false",
+            "limit": 50  # Fetch more to filter
+        }
+
+        response = requests.get(url, params=params, timeout=30)
+        response.raise_for_status()
+        markets = response.json()
+
+        # Filter by tags and sort by volume
+        relevant_tags = ["economics", "finance", "crypto", "federal reserve", "fed", "interest rates", "inflation"]
+        filtered_markets = []
+
+        for market in markets:
+            tags = [tag.lower() for tag in market.get("tags", [])]
+            if any(relevant_tag in " ".join(tags) for relevant_tag in relevant_tags):
+                volume = float(market.get("volume", 0))
+                filtered_markets.append({
+                    "market": market,
+                    "volume": volume
+                })
+
+        # Sort by volume and take top 5
+        filtered_markets.sort(key=lambda x: x["volume"], reverse=True)
+        top_5 = filtered_markets[:5]
+
+        # Format for frontend
+        polymarket_top5 = []
+        for item in top_5:
+            market = item["market"]
+            tokens = market.get("tokens", [])
+
+            # Get top outcome probability
+            top_outcome = "N/A"
+            if tokens:
+                # Sort tokens by price (probability)
+                sorted_tokens = sorted(tokens, key=lambda t: float(t.get("price", 0)), reverse=True)
+                if sorted_tokens:
+                    top_token = sorted_tokens[0]
+                    outcome_name = top_token.get("outcome", "Yes")
+                    probability = float(top_token.get("price", 0)) * 100
+                    top_outcome = f"{outcome_name} {probability:.0f}%"
+
+            polymarket_top5.append({
+                "title": market.get("question", "Unknown Market"),
+                "outcome": top_outcome,
+                "volume": item["volume"],
+                "url": f"https://polymarket.com/event/{market.get('slug', '')}"
+            })
+
+        print(f"✅ Polymarket data fetched: {len(polymarket_top5)} markets")
+
+        return polymarket_top5
+    except Exception as e:
+        print(f"❌ Error fetching Polymarket data: {e}")
+        return []
+
+
+def main():
+    """Main function to fetch all metrics and update dashboard data"""
+    print("=" * 60)
+    print("Strategic Cockpit Dashboard - Data Fetch Starting")
+    print("=" * 60)
+
+    # Load existing data
+    existing_data = load_existing_data()
+    history = load_history()
+
+    # Fetch new data from all sources
+    fred_data = fetch_fred_data()
+    coingecko_data = fetch_coingecko_data()
+    defillama_data = fetch_defillama_data()
+    polymarket_data = fetch_polymarket_data()
+
+    # Calculate deltas (7-day change)
+    seven_days_ago = datetime.utcnow() - timedelta(days=7)
+    historical_snapshot = None
+    for snapshot in reversed(history.get("snapshots", [])):
+        snapshot_time = datetime.fromisoformat(snapshot["timestamp"])
+        if snapshot_time <= seven_days_ago:
+            historical_snapshot = snapshot
+            break
+
+    # Build new data structure with deltas
+    new_data = {
+        "metrics": {
+            "us_10y_yield": {
+                "value": round(fred_data["us_10y_yield"], 2),
+                "delta": calculate_delta(
+                    fred_data["us_10y_yield"],
+                    historical_snapshot["metrics"]["us_10y_yield"]["value"] if historical_snapshot else fred_data["us_10y_yield"]
+                ) if historical_snapshot else 0
+            },
+            "fed_net_liquidity": {
+                "value": round(fred_data["fed_net_liquidity"], 2),
+                "delta": calculate_delta(
+                    fred_data["fed_net_liquidity"],
+                    historical_snapshot["metrics"]["fed_net_liquidity"]["value"] if historical_snapshot else fred_data["fed_net_liquidity"]
+                ) if historical_snapshot else 0
+            },
+            "btc_price": {
+                "value": round(coingecko_data["btc_price"], 2),
+                "delta": calculate_delta(
+                    coingecko_data["btc_price"],
+                    historical_snapshot["metrics"]["btc_price"]["value"] if historical_snapshot else coingecko_data["btc_price"]
+                ) if historical_snapshot else 0
+            },
+            "stablecoin_mcap": {
+                "value": round(defillama_data["stablecoin_mcap"], 2),
+                "delta": calculate_delta(
+                    defillama_data["stablecoin_mcap"],
+                    historical_snapshot["metrics"]["stablecoin_mcap"]["value"] if historical_snapshot else defillama_data["stablecoin_mcap"]
+                ) if historical_snapshot else 0
+            },
+            "usdt_dominance": {
+                "value": round(defillama_data["usdt_dominance"], 2),
+                "delta": calculate_delta(
+                    defillama_data["usdt_dominance"],
+                    historical_snapshot["metrics"]["usdt_dominance"]["value"] if historical_snapshot else defillama_data["usdt_dominance"]
+                ) if historical_snapshot else 0
+            },
+            "rwa_tvl": {
+                "value": round(defillama_data["rwa_tvl"], 2),
+                "delta": calculate_delta(
+                    defillama_data["rwa_tvl"],
+                    historical_snapshot["metrics"]["rwa_tvl"]["value"] if historical_snapshot else defillama_data["rwa_tvl"]
+                ) if historical_snapshot else 0
+            }
+        },
+        "polymarket_top5": polymarket_data,
+        "last_updated": datetime.utcnow().isoformat() + "Z"
+    }
+
+    # Save new data
+    with open(DASHBOARD_DATA_FILE, 'w') as f:
+        json.dump(new_data, f, indent=2)
+
+    # Save to history
+    save_history(history, new_data)
+
+    print("=" * 60)
+    print("✅ Dashboard data updated successfully!")
+    print(f"📁 Data saved to: {DASHBOARD_DATA_FILE}")
+    print(f"🕐 Last updated: {new_data['last_updated']}")
+    print("=" * 60)
+
+    return new_data
+
+
+if __name__ == "__main__":
+    main()

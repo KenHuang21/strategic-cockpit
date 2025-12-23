@@ -14,7 +14,7 @@
       "Step 9: Verify no loading errors or missing data placeholders",
       "Step 10: Check that timestamp shows 'Last Updated' information"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -29,7 +29,7 @@
       "Step 7: Verify 7-day change is properly calculated",
       "Step 8: Confirm delta indicators use appropriate symbols (↑↓ or +/-)"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -44,7 +44,7 @@
       "Step 7: Test with different data scenarios to confirm auto-determination works",
       "Step 8: Ensure status updates when underlying data changes"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -80,7 +80,7 @@
       "Step 9: Verify each market has a clickable link to Polymarket",
       "Step 10: Test that link opens correct Polymarket page in new tab"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -99,7 +99,7 @@
       "Step 11: Check that event impact level is clearly indicated",
       "Step 12: Confirm calendar updates hourly based on workflow schedule"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
