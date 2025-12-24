@@ -9,7 +9,7 @@
       "delta": 0
     },
     "btc_price": {
-      "value": 87022,
+      "value": 86890,
       "delta": 0
     },
     "stablecoin_mcap": {
@@ -29,13 +29,13 @@
     {
       "title": "Russia x Ukraine ceasefire in 2025?",
       "outcome": "No 99%",
-      "volume": 63267602.785516,
+      "volume": 63268402.785516,
       "url": "https://polymarket.com/event/russia-x-ukraine-ceasefire-in-2025"
     },
     {
       "title": "Will Bitcoin reach $1,000,000 by December 31, 2025?",
       "outcome": "No 100%",
-      "volume": 27951194.330228,
+      "volume": 27999991.313061,
       "url": "https://polymarket.com/event/will-bitcoin-reach-1000000-by-december-31-2025"
     },
     {
@@ -47,15 +47,15 @@
     {
       "title": "Will Ethereum hit $5,000 by December 31?",
       "outcome": "No 100%",
-      "volume": 17032031.57355,
+      "volume": 17047475.33355,
       "url": "https://polymarket.com/event/will-ethereum-hit-5000-by-december-31-796-376"
     },
     {
       "title": "Will Bitcoin reach $200,000 by December 31, 2025?",
       "outcome": "No 100%",
-      "volume": 16286140.504744,
+      "volume": 16532915.065744,
       "url": "https://polymarket.com/event/will-bitcoin-reach-200000-by-december-31-2025"
     }
   ],
-  "last_updated": "2025-12-24T15:02:42.859558Z"
+  "last_updated": "2025-12-24T15:18:48.760080Z"
 }
