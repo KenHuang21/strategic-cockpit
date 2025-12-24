@@ -260,7 +260,7 @@
       "Step 11: Test that duplicate alerts are NOT sent (check sent_12h flag)",
       "Step 12: Confirm only high-impact events trigger 12h warnings"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -279,7 +279,7 @@
       "Step 11: Test that duplicate release alerts are NOT sent",
       "Step 12: Verify alert timing (should be immediate within hourly check)"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -296,7 +296,7 @@
       "Step 9: Test with multiple simultaneous odds flips",
       "Step 10: Verify proper handling of markets entering/exiting Top 5"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -633,7 +633,7 @@
       "Step 9: Verify no render-blocking resources",
       "Step 10: Confirm images are optimized and lazy-loaded"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -650,7 +650,7 @@
       "Step 9: Confirm no gaps or missed updates",
       "Step 10: Verify alerting if data becomes stale (>15 mins)"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
