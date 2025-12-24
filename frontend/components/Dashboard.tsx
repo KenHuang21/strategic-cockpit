@@ -240,7 +240,6 @@ export default function Dashboard() {
               delta={dashboardData.metrics.fed_net_liquidity.delta}
               unit="B"
               prefix="$"
-              format="currency"
             />
             <SmartMoneyRadar events={dashboardData.polymarket_top5} />
           </div>
@@ -253,7 +252,6 @@ export default function Dashboard() {
               value={dashboardData.metrics.btc_price.value}
               delta={dashboardData.metrics.btc_price.delta}
               prefix="$"
-              format="currency"
               hero
             />
             <MetricCard
@@ -263,7 +261,6 @@ export default function Dashboard() {
               delta={dashboardData.metrics.stablecoin_mcap.delta}
               unit="B"
               prefix="$"
-              format="currency"
             />
             <MetricCard
               title="USDT Dominance"
@@ -284,7 +281,6 @@ export default function Dashboard() {
               delta={dashboardData.metrics.rwa_tvl.delta}
               unit="B"
               prefix="$"
-              format="currency"
             />
             {calendarData && <CatalystCalendar events={calendarData.events} />}
           </div>
