@@ -208,7 +208,7 @@ def broadcast_alert(alert: Dict[str, Any], subscribers: List[Dict[str, str]], al
     """
     if not subscribers:
         print("ℹ️  No subscribers configured")
-        return {"telegram_sent": 0, "email_sent": 0, "errors": []}
+        return {"telegram_sent": 0, "email_sent": 0, "total_sent": 0, "errors": []}
 
     # Format the message
     message = format_alert_message(alert, alert_type)

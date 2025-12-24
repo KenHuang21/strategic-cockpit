@@ -27,6 +27,11 @@
       "type": "email",
       "name": "Email Test User",
       "address": "emailtest@example.com"
+    },
+    {
+      "type": "telegram",
+      "name": "Session 18 Test User",
+      "id": "999888777"
     }
   ]
 }

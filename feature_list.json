@@ -116,7 +116,7 @@
       "Step 9: Verify rate limiting is respected",
       "Step 10: Test data validation to ensure no corrupt data is stored"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -260,7 +260,7 @@
       "Step 11: Test that duplicate alerts are NOT sent (check sent_12h flag)",
       "Step 12: Confirm only high-impact events trigger 12h warnings"
     ],
-    "passes": true
+    "passes": false
   },
   {
     "category": "functional",
@@ -279,7 +279,7 @@
       "Step 11: Test that duplicate release alerts are NOT sent",
       "Step 12: Verify alert timing (should be immediate within hourly check)"
     ],
-    "passes": true
+    "passes": false
   },
   {
     "category": "functional",
@@ -296,7 +296,7 @@
       "Step 9: Test with multiple simultaneous odds flips",
       "Step 10: Verify proper handling of markets entering/exiting Top 5"
     ],
-    "passes": true
+    "passes": false
   },
   {
     "category": "functional",
@@ -527,7 +527,7 @@
       "Step 8: Test rate limiting scenarios",
       "Step 9: Verify graceful degradation when one channel fails"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -544,7 +544,7 @@
       "Step 9: Test that out-of-range values are rejected",
       "Step 10: Verify timestamp validation prevents future dates"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -616,7 +616,7 @@
       "Step 11: Verify custom domain configuration (if applicable)",
       "Step 12: Test that automatic deployments trigger on git push"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -704,7 +704,7 @@
       "Step 11: Test from different browser/device",
       "Step 12: Verify settings are consistent across all access points"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
