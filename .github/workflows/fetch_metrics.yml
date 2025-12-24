@@ -8,6 +8,10 @@ on:
   # Allow manual triggering via UI or API (for Manual Refresh button)
   workflow_dispatch:
 
+  # Allow triggering via Repository Dispatch (from Vercel frontend)
+  repository_dispatch:
+    types: [manual_refresh]
+
 permissions:
   contents: write
 
