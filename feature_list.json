@@ -719,7 +719,7 @@
       "Step 7: Confirm delta/change is clearly visible",
       "Step 8: Check that card includes BTC icon or logo"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -734,7 +734,7 @@
       "Step 7: Check that internal navigation stays in same tab",
       "Step 8: Test multiple link clicks don't create excessive tabs"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",

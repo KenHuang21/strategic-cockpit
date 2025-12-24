@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowUp, ArrowDown } from "lucide-react";
+import { ArrowUp, ArrowDown, Bitcoin } from "lucide-react";
 
 interface MetricCardProps {
   title: string;
@@ -29,24 +29,31 @@ export default function MetricCard({
 
   return (
     <div
-      className={`bg-white dark:bg-gray-800 rounded-lg shadow-md border border-gray-200 dark:border-gray-700 p-6 transition-all hover:shadow-lg ${
-        hero ? "lg:row-span-2" : ""
+      className={`bg-white dark:bg-gray-800 rounded-lg shadow-md border border-gray-200 dark:border-gray-700 transition-all hover:shadow-lg ${
+        hero
+          ? "p-8 shadow-xl border-2 border-blue-200 dark:border-blue-800 bg-gradient-to-br from-white to-blue-50 dark:from-gray-800 dark:to-blue-950"
+          : "p-6"
       }`}
     >
       {/* Header */}
       <div className="mb-4">
-        <h3 className="text-sm font-medium text-gray-600 dark:text-gray-400">
-          {title}
-        </h3>
+        <div className="flex items-center space-x-2 mb-1">
+          {hero && title === "Bitcoin Price" && (
+            <Bitcoin className="w-6 h-6 text-orange-500" />
+          )}
+          <h3 className={`font-medium text-gray-600 dark:text-gray-400 ${hero ? "text-base" : "text-sm"}`}>
+            {title}
+          </h3>
+        </div>
         <p className="text-xs text-gray-500 dark:text-gray-500">{subtitle}</p>
       </div>
 
       {/* Value */}
-      <div className={`${hero ? "mb-6" : "mb-4"}`}>
-        <div className={`font-bold text-gray-900 dark:text-white ${hero ? "text-4xl" : "text-3xl"}`}>
+      <div className={`${hero ? "mb-8" : "mb-4"}`}>
+        <div className={`font-bold text-gray-900 dark:text-white ${hero ? "text-5xl" : "text-3xl"}`}>
           {prefix}
           {formattedValue}
-          {unit && <span className="text-lg ml-1">{unit}</span>}
+          {unit && <span className={`ml-1 ${hero ? "text-2xl" : "text-lg"}`}>{unit}</span>}
         </div>
       </div>
 
