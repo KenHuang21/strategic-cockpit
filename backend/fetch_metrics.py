@@ -535,6 +535,90 @@ def fetch_polymarket_data():
         return []
 
 
+def check_polymarket_odds_flips(old_polymarket, new_polymarket, threshold_pct=10.0):
+    """
+    Check for significant odds flips (>threshold_pct change) in Polymarket markets
+
+    Args:
+        old_polymarket: Previous polymarket_top5 list
+        new_polymarket: New polymarket_top5 list
+        threshold_pct: Threshold percentage for triggering alert (default 10%)
+
+    Returns:
+        List of alert dictionaries for markets with significant odds flips
+    """
+    alerts = []
+
+    if not old_polymarket or not new_polymarket:
+        return alerts
+
+    # Create lookup of old markets by title
+    old_markets = {market.get("title", ""): market for market in old_polymarket}
+
+    for new_market in new_polymarket:
+        title = new_market.get("title", "")
+
+        # Find matching old market
+        old_market = old_markets.get(title)
+        if not old_market:
+            continue  # New market, no comparison possible
+
+        # Extract probabilities from outcome strings
+        old_outcome = old_market.get("outcome", "")
+        new_outcome = new_market.get("outcome", "")
+
+        # Parse probability from strings like "Yes 82%" or "No 100%"
+        old_prob = extract_probability(old_outcome)
+        new_prob = extract_probability(new_outcome)
+
+        if old_prob is None or new_prob is None:
+            continue
+
+        # Calculate absolute change in probability
+        prob_change = abs(new_prob - old_prob)
+
+        # Check if change exceeds threshold
+        if prob_change > threshold_pct:
+            alert = {
+                "market_title": title,
+                "old_probability": old_prob,
+                "new_probability": new_prob,
+                "change": new_prob - old_prob,
+                "url": new_market.get("url", "")
+            }
+            alerts.append(alert)
+
+            print(f"💹 Polymarket odds flip: {title}")
+            print(f"   {old_prob:.1f}% → {new_prob:.1f}% (change: {prob_change:+.1f}%)")
+
+    return alerts
+
+
+def extract_probability(outcome_str):
+    """
+    Extract probability percentage from outcome string
+
+    Args:
+        outcome_str: String like "Yes 82%" or "No 100%"
+
+    Returns:
+        Float probability (0-100) or None if can't parse
+    """
+    if not outcome_str or outcome_str == "N/A":
+        return None
+
+    import re
+    # Look for percentage pattern
+    match = re.search(r'(\d+(?:\.\d+)?)%', outcome_str)
+    if match:
+        try:
+            return float(match.group(1))
+        except ValueError:
+            return None
+
+    return None
+
+
 def main():
     """Main function to fetch all metrics and update dashboard data"""
     print("=" * 60)
@@ -637,6 +721,30 @@ def main():
             print("\n📤 No subscribers configured - alerts logged only")
     else:
         print("✅ No significant changes detected (all deltas below thresholds)")
+
+    # Check for Polymarket odds flips (>10% probability swing)
+    print("\n💹 Checking for Polymarket odds flips...")
+    old_polymarket = existing_data.get("polymarket_top5", [])
+    polymarket_alerts = check_polymarket_odds_flips(old_polymarket, polymarket_data, threshold_pct=10.0)
+
+    if polymarket_alerts:
+        print(f"\n💹 {len(polymarket_alerts)} Polymarket odds flip(s) detected:")
+        for alert in polymarket_alerts:
+            print(f"   • {alert['market_title']}: {alert['old_probability']:.0f}% → {alert['new_probability']:.0f}%")
+
+        # Broadcast Polymarket alerts to all subscribers
+        subscribers = user_config.get("subscribers", [])
+        if subscribers:
+            broadcast_result = broadcast_alerts(polymarket_alerts, subscribers, "polymarket")
+            print(f"\n✅ Polymarket notification broadcast complete:")
+            print(f"   • Telegram: {broadcast_result['telegram_sent']} sent")
+            print(f"   • Email: {broadcast_result['email_sent']} sent")
+            if broadcast_result["errors"]:
+                print(f"   • Errors: {len(broadcast_result['errors'])}")
+        else:
+            print("\n📤 No subscribers configured - Polymarket alerts logged only")
+    else:
+        print("✅ No significant Polymarket odds flips detected (<10% change)")
 
     # Save new data
     with open(DASHBOARD_DATA_FILE, 'w') as f:

@@ -1,11 +1,68 @@
 # Strategic Cockpit Dashboard - Development Progress
 
 ## Current Status
-**Last Updated:** December 24, 2024 - Session 16
-**Tests Passing:** 42/55 (76.4%)
-**Current Phase:** Infrastructure Verification & FRED API Integration
+**Last Updated:** December 24, 2024 - Session 17
+**Tests Passing:** 45/55 (81.8%)
+**Current Phase:** Advanced Alert System Implementation
 
 ## Session Summary
+
+### Session 17 (Dec 24, 2024) - Calendar & Polymarket Alert Implementation ✅✅✅
+**Completed:** Tests #15, #16, #17 - Advanced notification alerts for calendar events and Polymarket odds
+**Status:** Major milestone - Complete alert ecosystem for all data sources
+
+**Part 1: Calendar Pre-Event Warnings (Test #15)** ✅
+- ✅ Implemented `check_pre_event_warnings()` in fetch_calendar.py
+- Detects upcoming high-impact events within 12-hour window
+- Calculates hours until event with precision timing
+- Filters to only High impact events (excludes Medium/Low)
+- Prevents duplicate alerts via notification_states tracking
+- Broadcasts to all subscribers (Telegram + Email)
+- Alert includes: event name, time, forecast, impact level
+- Graceful handling when no subscribers configured
+- Full integration with existing notification system
+
+**Part 2: Calendar Data Release Alerts (Test #16)** ✅
+- ✅ Implemented `check_data_releases()` in fetch_calendar.py
+- Detects when actual data becomes available vs forecast
+- Calculates surprise (deviation from forecast)
+- Supports numeric parsing with K/M/B suffixes and percentages
+- Compares with previous calendar state to identify new releases
+- Prevents duplicate alerts via release_sent flag
+- Broadcasts immediate notifications when data published
+- Alert includes: event name, forecast, actual, surprise calculation
+- Smart diff logic for identifying truly new releases
+
+**Part 3: Polymarket Odds Flip Detection (Test #17)** ✅
+- ✅ Implemented `check_polymarket_odds_flips()` in fetch_metrics.py
+- ✅ Implemented `extract_probability()` helper function
+- Detects probability swings >10% in Polymarket markets
+- Compares old vs new Top 5 markets by title matching
+- Parses probability from outcome strings (e.g., "Yes 82%")
+- Only triggers on absolute change >10% threshold
+- Handles markets entering/exiting Top 5 gracefully
+- Broadcasts odds flip alerts to all subscribers
+- Alert includes: market title, old/new probabilities, change amount, URL
+- Integrated into main metrics fetch workflow
+
+**Technical Implementation:**
+- Added load_user_config() to fetch_calendar.py for subscriber access
+- Updated main() in fetch_calendar.py to call alert check functions
+- Updated main() in fetch_metrics.py to call Polymarket odds check
+- Modified function signatures to accept user_config parameter
+- Proper error handling and logging throughout
+- Graceful fallback when no subscribers configured
+- All alerts use existing broadcast_alerts() notification system
+
+**Progress:** 42/55 → 45/55 (+3 tests, +5.4%)
+
+**Key Technical Achievements:**
+- Complete alert coverage for all data sources (metrics, calendar, Polymarket)
+- Unified notification framework across all alert types
+- Smart deduplication prevents notification spam
+- Flexible threshold system (10% for Polymarket, configurable for metrics)
+- Comprehensive logging for debugging and monitoring
+- Production-ready alert timing logic
 
 ### Session 16 (Dec 24, 2024) - Environment Fixes & Infrastructure Verification ✅✅
 **Completed:** Tests #27, #28 - Critical infrastructure and security verification

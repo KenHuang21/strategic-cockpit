@@ -429,6 +429,184 @@ def generate_fallback_calendar():
     return events
 
 
+def check_pre_event_warnings(events, notification_states, user_config):
+    """
+    Check for events that need 12-hour pre-event warnings
+    Returns list of alerts to send
+    """
+    from notifications import broadcast_alerts
+
+    alerts = []
+    now = datetime.now()
+
+    for event in events:
+        # Only check upcoming high-impact events
+        if event["status"] != "upcoming" or event["impact"] != "High":
+            continue
+
+        event_id = event["id"]
+
+        # Skip if already sent
+        if notification_states.get(event_id, {}).get("pre_event_sent", False):
+            continue
+
+        try:
+            # Parse event datetime
+            event_date_str = f"{event['date']} {event['time']}"
+            event_datetime = datetime.strptime(event_date_str, "%Y-%m-%d %H:%M")
+
+            # Calculate time until event
+            time_until_event = event_datetime - now
+            hours_until = time_until_event.total_seconds() / 3600
+
+            # Check if within 12-hour warning window
+            if 0 < hours_until <= 12:
+                alert = {
+                    "event_name": event["name"],
+                    "time": event_datetime.strftime("%Y-%m-%d %H:%M"),
+                    "hours_until": round(hours_until, 1),
+                    "forecast": event.get("forecast", "N/A"),
+                    "impact": event["impact"]
+                }
+                alerts.append(alert)
+
+                # Mark as sent
+                if event_id not in notification_states:
+                    notification_states[event_id] = {}
+                notification_states[event_id]["pre_event_sent"] = True
+
+                print(f"⚠️  Pre-event warning: {event['name']} in {round(hours_until, 1)} hours")
+
+        except Exception as e:
+            print(f"⚠️  Error processing pre-event warning for {event_id}: {e}")
+            continue
+
+    # Broadcast alerts if any
+    if alerts:
+        try:
+            subscribers = user_config.get("subscribers", [])
+            if subscribers:
+                broadcast_alerts(alerts, subscribers, alert_type="calendar_warning")
+                print(f"✅ Sent {len(alerts)} pre-event warning(s) to {len(subscribers)} subscriber(s)")
+            else:
+                print(f"ℹ️  No subscribers configured, skipping {len(alerts)} alert(s)")
+        except Exception as e:
+            print(f"❌ Error broadcasting pre-event warnings: {e}")
+
+    return notification_states
+
+
+def check_data_releases(events, existing_events, notification_states, user_config):
+    """
+    Check for newly released actual data
+    Returns list of alerts to send
+    """
+    from notifications import broadcast_alerts
+
+    alerts = []
+
+    # Create lookup of existing events by ID
+    existing_lookup = {e["id"]: e for e in existing_events}
+
+    for event in events:
+        event_id = event["id"]
+
+        # Skip if release alert already sent
+        if notification_states.get(event_id, {}).get("release_sent", False):
+            continue
+
+        # Check if actual data is now available
+        if event.get("actual") and event["actual"] != "":
+            # Check if this is new (wasn't in previous data or didn't have actual)
+            existing_event = existing_lookup.get(event_id)
+
+            is_new_release = False
+            if not existing_event:
+                is_new_release = True
+            elif not existing_event.get("actual") or existing_event["actual"] == "":
+                is_new_release = True
+
+            if is_new_release:
+                # Calculate surprise (deviation from forecast)
+                try:
+                    forecast_val = parse_numeric_value(event.get("forecast", ""))
+                    actual_val = parse_numeric_value(event["actual"])
+
+                    if forecast_val is not None and actual_val is not None:
+                        surprise = actual_val - forecast_val
+                        surprise_pct = (surprise / forecast_val * 100) if forecast_val != 0 else 0
+                    else:
+                        surprise = None
+                        surprise_pct = None
+                except:
+                    surprise = None
+                    surprise_pct = None
+
+                alert = {
+                    "event_name": event["name"],
+                    "forecast": event.get("forecast", "N/A"),
+                    "actual": event["actual"],
+                    "previous": event.get("previous", "N/A"),
+                    "surprise": surprise,
+                    "surprise_pct": surprise_pct,
+                    "impact": event["impact"]
+                }
+                alerts.append(alert)
+
+                # Mark as sent
+                if event_id not in notification_states:
+                    notification_states[event_id] = {}
+                notification_states[event_id]["release_sent"] = True
+
+                surprise_str = f" (surprise: {surprise:+.2f})" if surprise is not None else ""
+                print(f"📊 Data release: {event['name']}: {event['actual']} vs {event.get('forecast', 'N/A')} forecast{surprise_str}")
+
+    # Broadcast alerts if any
+    if alerts:
+        try:
+            subscribers = user_config.get("subscribers", [])
+            if subscribers:
+                broadcast_alerts(alerts, subscribers, alert_type="calendar_release")
+                print(f"✅ Sent {len(alerts)} data release alert(s) to {len(subscribers)} subscriber(s)")
+            else:
+                print(f"ℹ️  No subscribers configured, skipping {len(alerts)} alert(s)")
+        except Exception as e:
+            print(f"❌ Error broadcasting data releases: {e}")
+
+    return notification_states
+
+
+def parse_numeric_value(value_str):
+    """Parse numeric value from string (handles %, K, M, B suffixes)"""
+    if not value_str or value_str == "":
+        return None
+
+    try:
+        # Remove commas and spaces
+        value_str = str(value_str).replace(',', '').strip()
+
+        # Handle percentage
+        if '%' in value_str:
+            return float(value_str.replace('%', ''))
+
+        # Handle K (thousands)
+        if 'K' in value_str:
+            return float(value_str.replace('K', '')) * 1000
+
+        # Handle M (millions)
+        if 'M' in value_str:
+            return float(value_str.replace('M', '')) * 1000000
+
+        # Handle B (billions)
+        if 'B' in value_str:
+            return float(value_str.replace('B', '')) * 1000000000
+
+        # Plain number
+        return float(value_str)
+    except:
+        return None
+
+
 def initialize_notification_states(events, existing_states):
     """Initialize notification states for new events"""
     notification_states = existing_states.copy()
@@ -461,6 +639,20 @@ def save_calendar_data(events, notification_states):
     print(f"✅ Calendar data saved to {CALENDAR_DATA_FILE}")
 
 
+def load_user_config():
+    """Load user configuration including thresholds and subscribers"""
+    USER_CONFIG_FILE = DATA_DIR / "user_config.json"
+    try:
+        with open(USER_CONFIG_FILE, 'r') as f:
+            return json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        print("⚠️  user_config.json not found, using default config")
+        return {
+            "thresholds": {},
+            "subscribers": []
+        }
+
+
 def main():
     """Main execution function"""
     print("=" * 60)
@@ -470,6 +662,10 @@ def main():
 
     # Load existing data
     existing_calendar = load_existing_calendar()
+    existing_events = existing_calendar.get("events", [])
+
+    # Load user configuration for subscribers
+    user_config = load_user_config()
 
     # Fetch new calendar data
     events = fetch_investing_calendar()
@@ -479,6 +675,14 @@ def main():
         events,
         existing_calendar.get("notification_states", {})
     )
+
+    # Check for pre-event warnings (12 hours before high-impact events)
+    print("\n🔔 Checking for pre-event warnings...")
+    notification_states = check_pre_event_warnings(events, notification_states, user_config)
+
+    # Check for data releases (new actual values)
+    print("\n📊 Checking for data releases...")
+    notification_states = check_data_releases(events, existing_events, notification_states, user_config)
 
     # Save updated data
     save_calendar_data(events, notification_states)

@@ -260,7 +260,7 @@
       "Step 11: Test that duplicate alerts are NOT sent (check sent_12h flag)",
       "Step 12: Confirm only high-impact events trigger 12h warnings"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -279,7 +279,7 @@
       "Step 11: Test that duplicate release alerts are NOT sent",
       "Step 12: Verify alert timing (should be immediate within hourly check)"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -296,7 +296,7 @@
       "Step 9: Test with multiple simultaneous odds flips",
       "Step 10: Verify proper handling of markets entering/exiting Top 5"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -941,6 +941,21 @@
       "Step 8: Verify links are visually distinct",
       "Step 9: Confirm images or diagrams are properly sized",
       "Step 10: Check responsive design on mobile"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "GitHub Deployment: Project code is successfully pushed to GitHub repository",
+    "steps": [
+      "Step 1: Configure git remote to point to https://github.com/KenHuang21/strategic-cockpit.git",
+      "Step 2: Verify remote is set correctly",
+      "Step 3: Push main branch to remote origin",
+      "Step 4: Verify push completes without authentication errors",
+      "Step 5: Navigate to GitHub repository URL",
+      "Step 6: Confirm all files (frontend, backend, configs) are present",
+      "Step 7: Check that secrets are NOT exposed in strict accordance with .gitignore",
+      "Step 8: Verify README.md renders correctly on GitHub"
     ],
     "passes": true
   }
