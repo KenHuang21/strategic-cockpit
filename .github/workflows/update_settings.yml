@@ -3,7 +3,10 @@ name: Update User Settings
 on:
   # Triggered by the Settings Modal in the frontend via repository_dispatch
   repository_dispatch:
-    types: [update-settings]
+    types: [update_settings]
+
+permissions:
+  contents: write
 
 jobs:
   update-config:

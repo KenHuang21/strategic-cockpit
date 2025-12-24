@@ -8,6 +8,9 @@ on:
   # Allow manual triggering via UI or API (for Manual Refresh button)
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   fetch-and-update:
     runs-on: ubuntu-latest
