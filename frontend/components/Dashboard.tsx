@@ -15,24 +15,66 @@ export default function Dashboard() {
   const [loading, setLoading] = useState(true);
   const [refreshing, setRefreshing] = useState(false);
   const [settingsOpen, setSettingsOpen] = useState(false);
+  const [dataError, setDataError] = useState<string | null>(null);
 
   useEffect(() => {
     loadData();
   }, []);
 
+  const isDataStale = (timestamp: string): boolean => {
+    try {
+      const dataTime = new Date(timestamp).getTime();
+      const now = new Date().getTime();
+      const fifteenMinutes = 15 * 60 * 1000;
+      return (now - dataTime) > fifteenMinutes;
+    } catch {
+      return true;
+    }
+  };
+
   const loadData = async () => {
     try {
+      setDataError(null);
+
       // Load dashboard data from JSON file
       const dashRes = await fetch("/api/data/dashboard");
+      if (!dashRes.ok) {
+        throw new Error(`HTTP ${dashRes.status}: Failed to load dashboard data`);
+      }
+
       const dashData = await dashRes.json();
+
+      // Validate data structure
+      if (!dashData || !dashData.metrics || !dashData.last_updated) {
+        throw new Error("Invalid dashboard data structure");
+      }
+
       setDashboardData(dashData);
+
+      // Check if data is stale
+      if (isDataStale(dashData.last_updated)) {
+        setDataError("Data is more than 15 minutes old. Please refresh.");
+        toast.error("⚠️ Data may be stale. Consider refreshing.", {
+          duration: 6000,
+        });
+      }
 
       // Load calendar data from JSON file
       const calRes = await fetch("/api/data/calendar");
-      const calData = await calRes.json();
-      setCalendarData(calData);
+      if (!calRes.ok) {
+        console.warn("Calendar data unavailable, continuing without it");
+        setCalendarData(null);
+      } else {
+        const calData = await calRes.json();
+        setCalendarData(calData);
+      }
     } catch (error) {
       console.error("Error loading data:", error);
+      const errorMessage = error instanceof Error ? error.message : "Failed to load data";
+      setDataError(errorMessage);
+      toast.error(errorMessage, {
+        duration: 6000,
+      });
     } finally {
       setLoading(false);
     }
@@ -93,8 +135,21 @@ export default function Dashboard() {
   if (!dashboardData) {
     return (
       <div className="flex items-center justify-center min-h-screen">
-        <div className="text-center">
-          <p className="text-red-600 dark:text-red-400">Error loading dashboard data</p>
+        <div className="text-center max-w-md mx-auto p-6">
+          <div className="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg p-6">
+            <h2 className="text-xl font-semibold text-red-600 dark:text-red-400 mb-2">
+              Error Loading Dashboard
+            </h2>
+            <p className="text-red-600 dark:text-red-400 mb-4">
+              {dataError || "Failed to load dashboard data"}
+            </p>
+            <button
+              onClick={() => window.location.reload()}
+              className="px-4 py-2 bg-red-600 hover:bg-red-700 text-white rounded-lg transition-colors"
+            >
+              Reload Page
+            </button>
+          </div>
         </div>
       </div>
     );
@@ -142,6 +197,28 @@ export default function Dashboard() {
         isOpen={settingsOpen}
         onClose={() => setSettingsOpen(false)}
       />
+
+      {/* Stale Data Warning Banner */}
+      {dataError && (
+        <div className="bg-yellow-50 dark:bg-yellow-900/20 border-b border-yellow-200 dark:border-yellow-800">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center space-x-2">
+                <span className="text-yellow-600 dark:text-yellow-400 text-sm font-medium">
+                  ⚠️ {dataError}
+                </span>
+              </div>
+              <button
+                onClick={handleRefresh}
+                disabled={refreshing}
+                className="text-sm text-yellow-700 dark:text-yellow-300 hover:text-yellow-900 dark:hover:text-yellow-100 font-medium underline"
+              >
+                Refresh Now
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Bento Grid Layout */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">

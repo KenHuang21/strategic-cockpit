@@ -511,7 +511,7 @@
       "Step 9: Verify only affected metrics show errors",
       "Step 10: Confirm other metrics display normally"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
