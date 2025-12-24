@@ -11,6 +11,7 @@ from datetime import datetime, timedelta
 from pathlib import Path
 from dotenv import load_dotenv
 from fredapi import Fred
+from notifications import broadcast_alerts
 
 # Try to configure SSL properly
 try:
@@ -622,14 +623,17 @@ def main():
             print(f"   • {alert['metric']}: {alert['direction']} by {alert['pct_change']:.2f}%")
             print(f"     {alert['old_formatted']} → {alert['new_formatted']}")
 
-        # TODO: In future sessions, broadcast alerts to subscribers here
-        # For now, we just log them
-        print("\n📤 Alerts would be sent to:")
-        for subscriber in user_config.get("subscribers", []):
-            if subscriber["type"] == "telegram":
-                print(f"   • Telegram: {subscriber['name']} (ID: {subscriber['id']})")
-            elif subscriber["type"] == "email":
-                print(f"   • Email: {subscriber['name']} ({subscriber['address']})")
+        # Broadcast alerts to all subscribers
+        subscribers = user_config.get("subscribers", [])
+        if subscribers:
+            broadcast_result = broadcast_alerts(alerts, subscribers, "metric")
+            print(f"\n✅ Notification broadcast complete:")
+            print(f"   • Telegram: {broadcast_result['telegram_sent']} sent")
+            print(f"   • Email: {broadcast_result['email_sent']} sent")
+            if broadcast_result["errors"]:
+                print(f"   • Errors: {len(broadcast_result['errors'])}")
+        else:
+            print("\n📤 No subscribers configured - alerts logged only")
     else:
         print("✅ No significant changes detected (all deltas below thresholds)")
 

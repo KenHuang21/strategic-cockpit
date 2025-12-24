@@ -222,7 +222,7 @@
       "Step 11: Check that notification includes metric details and timestamp",
       "Step 12: Test with edge cases (empty subscriber list, single subscriber)"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -241,7 +241,7 @@
       "Step 11: Verify successful sends even if one address fails",
       "Step 12: Check that all emails are delivered within reasonable time"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
