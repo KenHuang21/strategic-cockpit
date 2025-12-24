@@ -408,7 +408,7 @@
       "Step 9: Confirm timestamp reflects the scheduled run time",
       "Step 10: Test that multiple consecutive runs occur at 15-min intervals"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -425,7 +425,7 @@
       "Step 9: Confirm commit was pushed to repository",
       "Step 10: Test multiple consecutive hourly runs"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -442,7 +442,7 @@
       "Step 9: Test that updated config is immediately available",
       "Step 10: Confirm no race conditions with other workflows"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",

@@ -1,0 +1,49 @@
+name: Update User Settings
+
+on:
+  # Triggered by the Settings Modal in the frontend via repository_dispatch
+  repository_dispatch:
+    types: [update-settings]
+
+jobs:
+  update-config:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Update user_config.json
+        run: |
+          # The payload from the UI is available in github.event.client_payload
+          # Write the updated config to the file
+          cat > data/user_config.json << 'EOF'
+          ${{ toJSON(github.event.client_payload.config) }}
+          EOF
+
+      - name: Validate JSON format
+        run: |
+          python -c "import json; json.load(open('data/user_config.json'))" || \
+            (echo "Invalid JSON format" && exit 1)
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add data/user_config.json
+          # Check if there are changes to commit
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            CHANGE_TYPE="${{ github.event.client_payload.change_type }}"
+            CHANGE_DESC="${{ github.event.client_payload.description }}"
+            git commit -m "Update user settings: ${CHANGE_TYPE} - ${CHANGE_DESC}"
+            git push
+          fi
