@@ -9,15 +9,15 @@
       "delta": 0
     },
     "btc_price": {
-      "value": 87824,
+      "value": 87552,
       "delta": 0
     },
     "stablecoin_mcap": {
-      "value": 308.4,
+      "value": 307.41,
       "delta": 0
     },
     "usdt_dominance": {
-      "value": 60.57,
+      "value": 60.76,
       "delta": 0
     },
     "rwa_tvl": {
@@ -29,33 +29,33 @@
     {
       "title": "Russia x Ukraine ceasefire in 2025?",
       "outcome": "No 99%",
-      "volume": 62882546.734465,
+      "volume": 63069518.685269,
       "url": "https://polymarket.com/event/russia-x-ukraine-ceasefire-in-2025"
     },
     {
       "title": "Will Bitcoin reach $1,000,000 by December 31, 2025?",
       "outcome": "No 100%",
-      "volume": 26480085.871631,
+      "volume": 26545465.234631,
       "url": "https://polymarket.com/event/will-bitcoin-reach-1000000-by-december-31-2025"
     },
     {
       "title": "Will Saudi Aramco be the largest company in the world by market cap on December 31?",
       "outcome": "No 100%",
-      "volume": 25128495.823934,
+      "volume": 25134784.605934,
       "url": "https://polymarket.com/event/will-saudi-aramco-be-the-largest-company-in-the-world-by-market-cap-on-december-31"
     },
     {
       "title": "Will Ethereum hit $5,000 by December 31?",
-      "outcome": "No 99%",
-      "volume": 16916969.663199,
+      "outcome": "No 100%",
+      "volume": 16963340.592713,
       "url": "https://polymarket.com/event/will-ethereum-hit-5000-by-december-31-796-376"
     },
     {
       "title": "Will Bitcoin reach $200,000 by December 31, 2025?",
       "outcome": "No 100%",
-      "volume": 15317087.950348,
+      "volume": 15331156.164348,
       "url": "https://polymarket.com/event/will-bitcoin-reach-200000-by-december-31-2025"
     }
   ],
-  "last_updated": "2025-12-23T16:31:23.569869Z"
+  "last_updated": "2025-12-24T01:55:03.471787Z"
 }

@@ -2,6 +2,7 @@
 
 import { RefreshCw, Settings, BookOpen } from "lucide-react";
 import Link from "next/link";
+import { useState, useEffect } from "react";
 
 interface HeaderProps {
   riskStatus: "Risk On" | "Risk Off";
@@ -12,7 +13,18 @@ interface HeaderProps {
 }
 
 export default function Header({ riskStatus, lastUpdated, onRefresh, refreshing, onSettingsClick }: HeaderProps) {
-  const timeAgo = getTimeAgo(lastUpdated);
+  const [timeAgo, setTimeAgo] = useState(getTimeAgo(lastUpdated));
+
+  // Update relative time every 10 seconds
+  useEffect(() => {
+    setTimeAgo(getTimeAgo(lastUpdated));
+
+    const interval = setInterval(() => {
+      setTimeAgo(getTimeAgo(lastUpdated));
+    }, 10000); // Update every 10 seconds
+
+    return () => clearInterval(interval);
+  }, [lastUpdated]);
 
   return (
     <header className="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 sticky top-0 z-50">

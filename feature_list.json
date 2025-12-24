@@ -459,7 +459,7 @@
       "Step 9: Confirm relative time updates dynamically (e.g., 1 min ago -> 2 mins ago)",
       "Step 10: Test that timestamp never shows >15 minutes old under normal operation"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
