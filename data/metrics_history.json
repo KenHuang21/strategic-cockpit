@@ -579,6 +579,35 @@
           "delta": 0
         }
       }
+    },
+    {
+      "timestamp": "2025-12-24T15:51:59.587833",
+      "metrics": {
+        "us_10y_yield": {
+          "value": 4.17,
+          "delta": 0
+        },
+        "fed_net_liquidity": {
+          "value": 6556.86,
+          "delta": 0
+        },
+        "btc_price": {
+          "value": 86926,
+          "delta": 0
+        },
+        "stablecoin_mcap": {
+          "value": 307.8,
+          "delta": 0
+        },
+        "usdt_dominance": {
+          "value": 60.76,
+          "delta": 0
+        },
+        "rwa_tvl": {
+          "value": 8.5,
+          "delta": 0
+        }
+      }
     }
   ]
 }
