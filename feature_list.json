@@ -561,7 +561,7 @@
       "Step 9: Confirm secrets are masked in GitHub Actions output",
       "Step 10: Verify local .env files are gitignored"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -578,7 +578,7 @@
       "Step 9: Verify exponential backoff for retries",
       "Step 10: Confirm no API key cost overruns occur"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
