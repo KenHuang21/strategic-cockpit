@@ -391,7 +391,7 @@
       "Step 11: Confirm issue is labeled appropriately (e.g., 'enhancement')",
       "Step 12: Verify success message with issue link is shown to user"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",

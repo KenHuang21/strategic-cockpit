@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { X, UserPlus, Trash2, Mail, MessageCircle } from "lucide-react";
+import { X, UserPlus, Trash2, Mail, MessageCircle, Lightbulb } from "lucide-react";
 import toast from "react-hot-toast";
 
 interface Subscriber {
@@ -50,6 +50,11 @@ export default function SettingsModal({ isOpen, onClose }: SettingsModalProps) {
     usdt_dom_pct: 0.005,
     rwa_pct: 0.03,
   });
+
+  // Suggest Metric form states
+  const [metricName, setMetricName] = useState("");
+  const [metricDescription, setMetricDescription] = useState("");
+  const [submittingSuggestion, setSubmittingSuggestion] = useState(false);
 
   useEffect(() => {
     if (isOpen) {
@@ -180,6 +185,62 @@ export default function SettingsModal({ isOpen, onClose }: SettingsModalProps) {
       toast.error("Network error: Could not save thresholds");
     } finally {
       setSaving(false);
+    }
+  };
+
+  const handleSuggestMetric = async () => {
+    // Validation
+    if (!metricName.trim()) {
+      toast.error("Please enter a metric name");
+      return;
+    }
+
+    if (!metricDescription.trim()) {
+      toast.error("Please enter a description");
+      return;
+    }
+
+    setSubmittingSuggestion(true);
+    try {
+      const response = await fetch("/api/suggest-metric", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          metricName: metricName.trim(),
+          description: metricDescription.trim(),
+        }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        toast.success(
+          <div>
+            <p>Suggestion submitted successfully!</p>
+            {data.issueUrl && (
+              <a
+                href={data.issueUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-300 hover:underline text-sm"
+              >
+                View Issue →
+              </a>
+            )}
+          </div>
+        );
+
+        // Clear form
+        setMetricName("");
+        setMetricDescription("");
+      } else {
+        toast.error(data.error || "Failed to submit suggestion");
+      }
+    } catch (error) {
+      console.error("Error submitting suggestion:", error);
+      toast.error("Network error: Could not submit suggestion");
+    } finally {
+      setSubmittingSuggestion(false);
     }
   };
 
@@ -497,6 +558,55 @@ export default function SettingsModal({ isOpen, onClose }: SettingsModalProps) {
                 >
                   {saving ? "Saving..." : "Save Thresholds"}
                 </button>
+              </div>
+
+              {/* Suggest Metric Section */}
+              <div>
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+                  Suggest New Metric
+                </h3>
+                <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
+                  Have an idea for a new metric to track? Submit your suggestion and we'll review it.
+                </p>
+
+                <div className="bg-gray-50 dark:bg-gray-900 p-4 rounded-lg">
+                  <div className="flex items-center space-x-2 mb-3">
+                    <Lightbulb className="w-5 h-5 text-yellow-500" />
+                    <h4 className="font-medium text-gray-900 dark:text-white">
+                      Submit Suggestion
+                    </h4>
+                  </div>
+
+                  <div className="space-y-3">
+                    <input
+                      type="text"
+                      placeholder="Metric name (e.g., Gold/BTC Ratio)"
+                      value={metricName}
+                      onChange={(e) => setMetricName(e.target.value)}
+                      className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    />
+
+                    <textarea
+                      placeholder="Description and rationale for this metric..."
+                      value={metricDescription}
+                      onChange={(e) => setMetricDescription(e.target.value)}
+                      rows={4}
+                      className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"
+                    />
+
+                    <button
+                      onClick={handleSuggestMetric}
+                      disabled={submittingSuggestion}
+                      className="w-full bg-yellow-600 hover:bg-yellow-700 disabled:bg-gray-400 text-white px-4 py-2 rounded-lg font-medium transition-colors"
+                    >
+                      {submittingSuggestion ? "Submitting..." : "Submit Suggestion"}
+                    </button>
+                  </div>
+
+                  <p className="text-xs text-gray-500 dark:text-gray-400 mt-2">
+                    Your suggestion will be submitted as a GitHub issue for review.
+                  </p>
+                </div>
               </div>
             </div>
           )}
