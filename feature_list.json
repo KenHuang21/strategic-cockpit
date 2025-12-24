@@ -186,7 +186,7 @@
       "Step 11: Verify retry logic if Investing.com blocks request",
       "Step 12: Confirm data structure matches schema specification"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",

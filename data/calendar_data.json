@@ -3,7 +3,7 @@
     {
       "id": "event_1",
       "name": "Consumer Price Index (CPI)",
-      "date": "2024-12-20",
+      "date": "2025-12-20",
       "time": "08:30",
       "impact": "High",
       "forecast": "3.2%",
@@ -15,7 +15,7 @@
     {
       "id": "event_2",
       "name": "Federal Reserve Interest Rate Decision",
-      "date": "2024-12-18",
+      "date": "2025-12-18",
       "time": "14:00",
       "impact": "High",
       "forecast": "5.50%",
@@ -27,7 +27,7 @@
     {
       "id": "event_3",
       "name": "Initial Jobless Claims",
-      "date": "2024-12-19",
+      "date": "2025-12-19",
       "time": "08:30",
       "impact": "Medium",
       "forecast": "220K",
@@ -39,7 +39,7 @@
     {
       "id": "event_4",
       "name": "GDP Growth Rate (Q3 Final)",
-      "date": "2024-12-26",
+      "date": "2025-12-26",
       "time": "08:30",
       "impact": "High",
       "forecast": "2.8%",
@@ -51,7 +51,7 @@
     {
       "id": "event_5",
       "name": "Consumer Confidence Index",
-      "date": "2024-12-27",
+      "date": "2025-12-27",
       "time": "10:00",
       "impact": "Medium",
       "forecast": "103.5",
@@ -63,7 +63,7 @@
     {
       "id": "event_6",
       "name": "New Home Sales",
-      "date": "2024-12-30",
+      "date": "2025-12-30",
       "time": "10:00",
       "impact": "Medium",
       "forecast": "725K",
@@ -75,7 +75,7 @@
     {
       "id": "event_7",
       "name": "ISM Manufacturing PMI",
-      "date": "2025-01-03",
+      "date": "2026-01-03",
       "time": "10:00",
       "impact": "High",
       "forecast": "48.5",
@@ -87,7 +87,7 @@
     {
       "id": "event_8",
       "name": "Non-Farm Payrolls",
-      "date": "2025-01-05",
+      "date": "2026-01-05",
       "time": "08:30",
       "impact": "High",
       "forecast": "180K",
@@ -99,7 +99,7 @@
     {
       "id": "event_9",
       "name": "Unemployment Rate",
-      "date": "2025-01-05",
+      "date": "2026-01-05",
       "time": "08:30",
       "impact": "High",
       "forecast": "4.2%",
@@ -111,7 +111,7 @@
     {
       "id": "event_10",
       "name": "FOMC Meeting Minutes",
-      "date": "2025-01-08",
+      "date": "2026-01-08",
       "time": "14:00",
       "impact": "High",
       "forecast": null,
@@ -119,18 +119,113 @@
       "previous": null,
       "country": "US",
       "status": "upcoming"
+    },
+    {
+      "id": "event_11",
+      "name": "Retail Sales",
+      "date": "2026-01-10",
+      "time": "08:30",
+      "impact": "High",
+      "forecast": "0.5%",
+      "actual": null,
+      "previous": "0.4%",
+      "country": "US",
+      "status": "upcoming"
+    },
+    {
+      "id": "event_12",
+      "name": "Housing Starts",
+      "date": "2026-01-12",
+      "time": "08:30",
+      "impact": "Medium",
+      "forecast": "1.35M",
+      "actual": null,
+      "previous": "1.31M",
+      "country": "US",
+      "status": "upcoming"
+    },
+    {
+      "id": "event_13",
+      "name": "Durable Goods Orders",
+      "date": "2026-01-17",
+      "time": "08:30",
+      "impact": "Medium",
+      "forecast": "0.3%",
+      "actual": null,
+      "previous": "0.2%",
+      "country": "US",
+      "status": "upcoming"
+    },
+    {
+      "id": "event_14",
+      "name": "Personal Income",
+      "date": "2026-01-19",
+      "time": "08:30",
+      "impact": "Medium",
+      "forecast": "0.4%",
+      "actual": null,
+      "previous": "0.6%",
+      "country": "US",
+      "status": "upcoming"
     }
   ],
   "notification_states": {
-    "event_1": {"pre_event_sent": true, "release_sent": true},
-    "event_2": {"pre_event_sent": true, "release_sent": true},
-    "event_3": {"pre_event_sent": true, "release_sent": true},
-    "event_4": {"pre_event_sent": false, "release_sent": false},
-    "event_5": {"pre_event_sent": false, "release_sent": false},
-    "event_6": {"pre_event_sent": false, "release_sent": false},
-    "event_7": {"pre_event_sent": false, "release_sent": false},
-    "event_8": {"pre_event_sent": false, "release_sent": false},
-    "event_9": {"pre_event_sent": false, "release_sent": false},
-    "event_10": {"pre_event_sent": false, "release_sent": false}
-  }
+    "event_1": {
+      "pre_event_sent": true,
+      "release_sent": true
+    },
+    "event_2": {
+      "pre_event_sent": true,
+      "release_sent": true
+    },
+    "event_3": {
+      "pre_event_sent": true,
+      "release_sent": true
+    },
+    "event_4": {
+      "pre_event_sent": false,
+      "release_sent": false
+    },
+    "event_5": {
+      "pre_event_sent": false,
+      "release_sent": false
+    },
+    "event_6": {
+      "pre_event_sent": false,
+      "release_sent": false
+    },
+    "event_7": {
+      "pre_event_sent": false,
+      "release_sent": false
+    },
+    "event_8": {
+      "pre_event_sent": false,
+      "release_sent": false
+    },
+    "event_9": {
+      "pre_event_sent": false,
+      "release_sent": false
+    },
+    "event_10": {
+      "pre_event_sent": false,
+      "release_sent": false
+    },
+    "event_11": {
+      "pre_event_sent": false,
+      "release_sent": false
+    },
+    "event_12": {
+      "pre_event_sent": false,
+      "release_sent": false
+    },
+    "event_13": {
+      "pre_event_sent": false,
+      "release_sent": false
+    },
+    "event_14": {
+      "pre_event_sent": false,
+      "release_sent": false
+    }
+  },
+  "last_updated": "2025-12-24T01:17:30.625655"
 }
