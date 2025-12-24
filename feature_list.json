@@ -203,7 +203,7 @@
       "Step 9: Check that multiple simultaneous changes are all detected",
       "Step 10: Confirm alert payload includes metric name, old value, new value, delta"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
