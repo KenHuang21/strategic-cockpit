@@ -376,6 +376,122 @@
           "delta": 0
         }
       }
+    },
+    {
+      "timestamp": "2025-12-24T02:49:19.098253",
+      "metrics": {
+        "us_10y_yield": {
+          "value": 0,
+          "delta": 0
+        },
+        "fed_net_liquidity": {
+          "value": 0,
+          "delta": 0
+        },
+        "btc_price": {
+          "value": 86966,
+          "delta": 0
+        },
+        "stablecoin_mcap": {
+          "value": 308.12,
+          "delta": 0
+        },
+        "usdt_dominance": {
+          "value": 60.69,
+          "delta": 0
+        },
+        "rwa_tvl": {
+          "value": 8.5,
+          "delta": 0
+        }
+      }
+    },
+    {
+      "timestamp": "2025-12-24T02:51:05.389192",
+      "metrics": {
+        "us_10y_yield": {
+          "value": 4.5,
+          "delta": 0
+        },
+        "fed_net_liquidity": {
+          "value": 6200,
+          "delta": 0
+        },
+        "btc_price": {
+          "value": 87029,
+          "delta": 0
+        },
+        "stablecoin_mcap": {
+          "value": 308.12,
+          "delta": 0
+        },
+        "usdt_dominance": {
+          "value": 60.69,
+          "delta": 0
+        },
+        "rwa_tvl": {
+          "value": 8.5,
+          "delta": 0
+        }
+      }
+    },
+    {
+      "timestamp": "2025-12-24T02:53:26.747887",
+      "metrics": {
+        "us_10y_yield": {
+          "value": 4.17,
+          "delta": 0
+        },
+        "fed_net_liquidity": {
+          "value": 6556.86,
+          "delta": 0
+        },
+        "btc_price": {
+          "value": 87097,
+          "delta": 0
+        },
+        "stablecoin_mcap": {
+          "value": 308.12,
+          "delta": 0
+        },
+        "usdt_dominance": {
+          "value": 60.69,
+          "delta": 0
+        },
+        "rwa_tvl": {
+          "value": 8.5,
+          "delta": 0
+        }
+      }
+    },
+    {
+      "timestamp": "2025-12-24T03:13:46.206499",
+      "metrics": {
+        "us_10y_yield": {
+          "value": 4.17,
+          "delta": 0
+        },
+        "fed_net_liquidity": {
+          "value": 6556.86,
+          "delta": 0
+        },
+        "btc_price": {
+          "value": 86971,
+          "delta": 0
+        },
+        "stablecoin_mcap": {
+          "value": 308.09,
+          "delta": 0
+        },
+        "usdt_dominance": {
+          "value": 60.7,
+          "delta": 0
+        },
+        "rwa_tvl": {
+          "value": 8.5,
+          "delta": 0
+        }
+      }
     }
   ]
 }
