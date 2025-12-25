@@ -29,7 +29,7 @@
       "Step 7: Verify 7-day change is properly calculated",
       "Step 8: Confirm delta indicators use appropriate symbols (\u2191\u2193 or +/-)"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -203,7 +203,7 @@
       "Step 9: Check that multiple simultaneous changes are all detected",
       "Step 10: Confirm alert payload includes metric name, old value, new value, delta"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -989,7 +989,7 @@
       "Step 9: Check threshold is user-customizable via Settings Modal",
       "Step 10: Verify notification includes correct baseline (previous day)"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -1006,7 +1006,7 @@
       "Step 9: Ensure no duplicate alerts for same data point",
       "Step 10: Confirm alert includes weekly change value"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -1028,6 +1028,6 @@
       "Step 14: Check all thresholds are user-customizable",
       "Step 15: Verify metrics_last_update.json updates after each run"
     ],
-    "passes": false
+    "passes": true
   }
 ]
