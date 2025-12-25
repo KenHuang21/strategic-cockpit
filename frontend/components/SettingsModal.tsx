@@ -66,6 +66,23 @@ export default function SettingsModal({ isOpen, onClose }: SettingsModalProps) {
     try {
       const response = await fetch("/api/config");
       const data = await response.json();
+
+      // Check if the response is an error
+      if (data.error) {
+        console.error("Config API error:", data.error);
+        toast.error("Failed to load settings: " + data.error);
+        setLoading(false);
+        return;
+      }
+
+      // Validate config structure
+      if (!data.thresholds || !data.subscribers) {
+        console.error("Invalid config structure:", data);
+        toast.error("Invalid configuration format");
+        setLoading(false);
+        return;
+      }
+
       setConfig(data);
       setThresholds(data.thresholds);
     } catch (error) {
@@ -358,7 +375,7 @@ export default function SettingsModal({ isOpen, onClose }: SettingsModalProps) {
                 {/* Subscriber List */}
                 <div>
                   <h4 className="font-medium text-gray-900 dark:text-white mb-2">
-                    Current Subscribers ({config?.subscribers.length || 0})
+                    Current Subscribers ({config?.subscribers?.length || 0})
                   </h4>
                   {config?.subscribers && config.subscribers.length > 0 ? (
                     <div className="space-y-2">

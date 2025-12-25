@@ -1,4 +1,6 @@
 import { NextResponse } from "next/server";
+import fs from "fs";
+import path from "path";
 
 const GITHUB_API = "https://api.github.com";
 
@@ -7,14 +9,24 @@ export async function GET() {
     const repo = process.env.GITHUB_REPOSITORY || "KenHuang21/strategic-cockpit";
     const token = process.env.GITHUB_TOKEN;
 
+    // If no GitHub token, fall back to local file (for development)
     if (!token) {
-      return NextResponse.json(
-        { error: "GitHub token not configured" },
-        { status: 500 }
-      );
+      console.log("No GitHub token found, using local file for development");
+      const configPath = path.join(process.cwd(), "..", "data", "user_config.json");
+
+      if (fs.existsSync(configPath)) {
+        const fileContent = fs.readFileSync(configPath, "utf-8");
+        const config = JSON.parse(fileContent);
+        return NextResponse.json(config);
+      } else {
+        return NextResponse.json(
+          { error: "Configuration file not found" },
+          { status: 404 }
+        );
+      }
     }
 
-    // Fetch user_config.json from GitHub
+    // Fetch user_config.json from GitHub (production)
     const response = await fetch(
       `${GITHUB_API}/repos/${repo}/contents/data/user_config.json`,
       {
@@ -49,19 +61,32 @@ export async function POST(request: Request) {
     const repo = process.env.GITHUB_REPOSITORY || "KenHuang21/strategic-cockpit";
     const token = process.env.GITHUB_TOKEN;
 
-    if (!token) {
-      return NextResponse.json(
-        { error: "GitHub token not configured" },
-        { status: 500 }
-      );
-    }
-
     // Validate config structure
     if (!config.thresholds || !config.subscribers) {
       return NextResponse.json(
         { error: "Invalid configuration format" },
         { status: 400 }
       );
+    }
+
+    // If no GitHub token, save to local file (for development)
+    if (!token) {
+      console.log("No GitHub token found, saving to local file for development");
+      const configPath = path.join(process.cwd(), "..", "data", "user_config.json");
+
+      try {
+        fs.writeFileSync(configPath, JSON.stringify(config, null, 2), "utf-8");
+        return NextResponse.json({
+          success: true,
+          message: "Configuration updated successfully (local)"
+        });
+      } catch (error) {
+        console.error("Error writing local config:", error);
+        return NextResponse.json(
+          { error: "Failed to write local configuration" },
+          { status: 500 }
+        );
+      }
     }
 
     // Get current file SHA (required for update)
