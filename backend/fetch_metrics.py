@@ -30,6 +30,7 @@ DATA_DIR = Path(__file__).parent.parent / "data"
 DASHBOARD_DATA_FILE = DATA_DIR / "dashboard_data.json"
 HISTORY_FILE = DATA_DIR / "metrics_history.json"
 USER_CONFIG_FILE = DATA_DIR / "user_config.json"
+LAST_UPDATE_FILE = DATA_DIR / "metrics_last_update.json"  # For 15-minute interval comparisons
 
 # API Keys
 FRED_API_KEY = os.getenv("FRED_API_KEY", "")
@@ -91,6 +92,25 @@ def calculate_delta(current_value, previous_value):
     return ((current_value - previous_value) / previous_value) * 100
 
 
+def load_last_update():
+    """Load last update snapshot for 15-minute interval comparisons"""
+    try:
+        with open(LAST_UPDATE_FILE, 'r') as f:
+            return json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        return None
+
+
+def save_last_update(metrics_data):
+    """Save current metrics as last update for next 15-minute comparison"""
+    snapshot = {
+        "timestamp": datetime.utcnow().isoformat(),
+        "metrics": metrics_data
+    }
+    with open(LAST_UPDATE_FILE, 'w') as f:
+        json.dump(snapshot, f, indent=2)
+
+
 def load_user_config():
     """Load user configuration including thresholds and subscribers"""
     try:
@@ -111,66 +131,107 @@ def load_user_config():
         }
 
 
-def smart_diff(old_data, new_data, thresholds):
+def smart_diff(last_15min_data, yesterday_data, new_data, thresholds):
     """
-    Compare old and new data to identify significant changes
-    Returns a list of alerts that exceed configured thresholds
+    Compare data using different time windows for different metrics:
+    - US 10Y Yield: Daily change (vs yesterday)
+    - Fed Net Liquidity: Any new data (threshold = 0%)
+    - Bitcoin, Stablecoin, USDT Dom, RWA: 15-minute interval (vs last update)
+
+    Args:
+        last_15min_data: Data from last 15-minute update
+        yesterday_data: Data from yesterday (for daily comparisons)
+        new_data: Current data
+        thresholds: User-configured thresholds
+
+    Returns:
+        List of alerts that exceed configured thresholds
     """
     alerts = []
 
-    # Map metric keys to threshold keys and display names
+    # Map metric keys to their comparison strategy
     metric_map = {
-        "btc_price": {
-            "threshold_key": "btc_pct",
-            "display_name": "Bitcoin Price",
-            "unit": "$",
-            "format": ",.2f"
-        },
-        "stablecoin_mcap": {
-            "threshold_key": "stable_pct",
-            "display_name": "Stablecoin Market Cap",
-            "unit": "$",
-            "suffix": "B",
-            "format": ".2f"
-        },
         "us_10y_yield": {
             "threshold_key": "yield_pct",
             "display_name": "US 10Y Treasury Yield",
             "unit": "",
             "suffix": "%",
-            "format": ".2f"
+            "format": ".2f",
+            "comparison_source": "yesterday",  # Compare against yesterday
+            "interval_label": "daily"
         },
         "fed_net_liquidity": {
             "threshold_key": "liquidity_pct",
             "display_name": "Fed Net Liquidity",
             "unit": "$",
             "suffix": "B",
-            "format": ".2f"
+            "format": ".2f",
+            "comparison_source": "yesterday",  # Compare against last week for 7-day display
+            "interval_label": "weekly",
+            "force_alert": True  # Alert on ANY new data
+        },
+        "btc_price": {
+            "threshold_key": "btc_pct",
+            "display_name": "Bitcoin Price",
+            "unit": "$",
+            "format": ",.2f",
+            "comparison_source": "15min",  # Compare against last 15-min update
+            "interval_label": "15m"
+        },
+        "stablecoin_mcap": {
+            "threshold_key": "stable_pct",
+            "display_name": "Stablecoin Market Cap",
+            "unit": "$",
+            "suffix": "B",
+            "format": ".2f",
+            "comparison_source": "15min",  # Compare against last 15-min update
+            "interval_label": "15m"
         },
         "usdt_dominance": {
             "threshold_key": "usdt_dom_pct",
             "display_name": "USDT Dominance",
             "unit": "",
             "suffix": "%",
-            "format": ".2f"
+            "format": ".2f",
+            "comparison_source": "15min",  # Compare against last 15-min update
+            "interval_label": "15m"
         },
         "rwa_tvl": {
             "threshold_key": "rwa_pct",
             "display_name": "RWA TVL",
             "unit": "$",
             "suffix": "B",
-            "format": ".2f"
+            "format": ".2f",
+            "comparison_source": "15min",  # Compare against last 15-min update
+            "interval_label": "15m"
         }
     }
 
     # Check each metric
     for metric_key, config in metric_map.items():
         try:
-            old_value = old_data["metrics"][metric_key]["value"]
             new_value = new_data["metrics"][metric_key]["value"]
 
-            # Skip if values are zero (no data)
-            if old_value == 0 or new_value == 0:
+            # Skip if new value is zero (no data)
+            if new_value == 0:
+                continue
+
+            # Determine which old data to use based on comparison strategy
+            if config["comparison_source"] == "15min":
+                if not last_15min_data or "metrics" not in last_15min_data:
+                    print(f"⚠️  No 15-min baseline for {metric_key}, skipping alert check")
+                    continue
+                old_value = last_15min_data["metrics"][metric_key]["value"]
+            elif config["comparison_source"] == "yesterday":
+                if not yesterday_data or "metrics" not in yesterday_data:
+                    print(f"⚠️  No yesterday baseline for {metric_key}, skipping alert check")
+                    continue
+                old_value = yesterday_data["metrics"][metric_key]["value"]
+            else:
+                continue
+
+            # Skip if old value is zero (no baseline)
+            if old_value == 0:
                 continue
 
             # Calculate percentage change
@@ -179,8 +240,14 @@ def smart_diff(old_data, new_data, thresholds):
             # Get threshold for this metric
             threshold = thresholds.get(config["threshold_key"], 0.01)  # Default 1%
 
+            # Special handling for Fed Net Liquidity: alert on ANY change
+            if config.get("force_alert", False):
+                should_alert = (new_value != old_value)  # Any change triggers alert
+            else:
+                should_alert = (pct_change >= threshold)
+
             # Check if change exceeds threshold
-            if pct_change >= threshold:
+            if should_alert:
                 # Format values for display
                 format_str = config.get("format", ".2f")
                 old_formatted = f"{config.get('unit', '')}{old_value:{format_str}}{config.get('suffix', '')}"
@@ -197,12 +264,17 @@ def smart_diff(old_data, new_data, thresholds):
                     "new_formatted": new_formatted,
                     "pct_change": pct_change * 100,  # Convert to percentage
                     "direction": direction,
-                    "threshold_pct": threshold * 100
+                    "threshold_pct": threshold * 100,
+                    "interval": config["interval_label"]  # Add interval info for notifications
                 }
 
                 alerts.append(alert)
-                print(f"🚨 Alert: {config['display_name']} {direction} by {pct_change*100:.2f}% (threshold: {threshold*100:.2f}%)")
-                print(f"   Old: {old_formatted} → New: {new_formatted}")
+
+                if config.get("force_alert", False):
+                    print(f"🚨 Alert: {config['display_name']} new data released: {old_formatted} → {new_formatted}")
+                else:
+                    print(f"🚨 Alert: {config['display_name']} {direction} by {pct_change*100:.2f}% over {config['interval_label']} (threshold: {threshold*100:.2f}%)")
+                    print(f"   Old: {old_formatted} → New: {new_formatted}")
 
         except (KeyError, TypeError, ZeroDivisionError) as e:
             print(f"⚠️  Error comparing {metric_key}: {e}")
@@ -273,10 +345,11 @@ def fetch_fred_data():
 
 
 def fetch_coingecko_data():
-    """Fetch Bitcoin price and market data from CoinGecko API"""
+    """Fetch Bitcoin price and global market data from CoinGecko API"""
     print("Fetching CoinGecko data...")
 
     try:
+        # Fetch Bitcoin price
         url = "https://api.coingecko.com/api/v3/simple/price"
         params = {
             "ids": "bitcoin",
@@ -301,20 +374,40 @@ def fetch_coingecko_data():
 
         btc_price = data["bitcoin"]["usd"]
 
-        print(f"✅ CoinGecko data fetched: BTC=${btc_price:,.2f}")
+        # Fetch global crypto market data for total market cap
+        global_url = "https://api.coingecko.com/api/v3/global"
+
+        try:
+            global_response = requests.get(global_url, headers=headers, timeout=30, verify=True)
+        except requests.exceptions.SSLError:
+            print("⚠️  SSL verification failed, retrying without verification...")
+            global_response = requests.get(global_url, headers=headers, timeout=30, verify=False)
+
+        global_response.raise_for_status()
+        global_data = global_response.json()
+
+        total_crypto_mcap = global_data["data"]["total_market_cap"]["usd"] / 1e9  # Convert to billions
+
+        print(f"✅ CoinGecko data fetched: BTC=${btc_price:,.2f}, Total Crypto MCap=${total_crypto_mcap:.2f}B")
 
         return {
-            "btc_price": btc_price
+            "btc_price": btc_price,
+            "total_crypto_mcap": total_crypto_mcap
         }
     except Exception as e:
         print(f"❌ Error fetching CoinGecko data: {e}")
         return {
-            "btc_price": 0
+            "btc_price": 0,
+            "total_crypto_mcap": 0
         }
 
 
-def fetch_defillama_data():
-    """Fetch Stablecoin and RWA data from DefiLlama API"""
+def fetch_defillama_data(total_crypto_mcap=0):
+    """Fetch Stablecoin and RWA data from DefiLlama API
+
+    Args:
+        total_crypto_mcap: Total crypto market cap in billions (from CoinGecko)
+    """
     print("Fetching DefiLlama data...")
 
     try:
@@ -345,14 +438,23 @@ def fetch_defillama_data():
 
         # Convert to billions
         total_stablecoin_mcap = total_stablecoin_mcap / 1e9
-        usdt_dominance = (usdt_mcap / (total_stablecoin_mcap * 1e9)) * 100 if total_stablecoin_mcap > 0 else 0
+        usdt_mcap_billions = usdt_mcap / 1e9
+
+        # Calculate USDT Dominance as % of TOTAL CRYPTO market cap (not stablecoin mcap)
+        # This gives us the ~6% value instead of ~60%
+        if total_crypto_mcap > 0:
+            usdt_dominance = (usdt_mcap_billions / total_crypto_mcap) * 100
+        else:
+            # Fallback: use stablecoin dominance if total crypto mcap not available
+            usdt_dominance = (usdt_mcap / (total_stablecoin_mcap * 1e9)) * 100 if total_stablecoin_mcap > 0 else 0
 
         # Fetch RWA TVL data
         # Note: DefiLlama doesn't have a direct RWA endpoint, so we'll use a placeholder
         # In production, you'd fetch from specific RWA protocols
         rwa_tvl = 8.5  # Placeholder value in billions
 
-        print(f"✅ DefiLlama data fetched: Stablecoin MCap=${total_stablecoin_mcap:.2f}B, USDT Dominance={usdt_dominance:.2f}%, RWA TVL=${rwa_tvl}B")
+        print(f"✅ DefiLlama data fetched: Stablecoin MCap=${total_stablecoin_mcap:.2f}B, USDT MCap=${usdt_mcap_billions:.2f}B")
+        print(f"   USDT Dominance={usdt_dominance:.2f}% (of ${total_crypto_mcap:.2f}B total crypto), RWA TVL=${rwa_tvl}B")
 
         return {
             "stablecoin_mcap": total_stablecoin_mcap,
@@ -636,7 +738,8 @@ def main():
     # Fetch new data from all sources
     fred_data = fetch_fred_data()
     coingecko_data = fetch_coingecko_data()
-    defillama_data = fetch_defillama_data()
+    # Pass total crypto mcap to defillama for correct USDT dominance calculation
+    defillama_data = fetch_defillama_data(coingecko_data.get("total_crypto_mcap", 0))
     polymarket_data = fetch_polymarket_data()
 
     # Calculate deltas (7-day change)

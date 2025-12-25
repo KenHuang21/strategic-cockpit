@@ -9,15 +9,15 @@
       "delta": 0
     },
     "btc_price": {
-      "value": 87419,
+      "value": 87726,
       "delta": 0
     },
     "stablecoin_mcap": {
-      "value": 307.73,
+      "value": 307.5,
       "delta": 0
     },
     "usdt_dominance": {
-      "value": 60.77,
+      "value": 6.14,
       "delta": 0
     },
     "rwa_tvl": {
@@ -29,33 +29,33 @@
     {
       "title": "Russia x Ukraine ceasefire in 2025?",
       "outcome": "No 99%",
-      "volume": 63511061.567686,
+      "volume": 64333154.672009,
       "url": "https://polymarket.com/event/russia-x-ukraine-ceasefire-in-2025"
     },
     {
       "title": "Will Bitcoin reach $1,000,000 by December 31, 2025?",
       "outcome": "No 100%",
-      "volume": 28397275.825929,
+      "volume": 28862246.523929,
       "url": "https://polymarket.com/event/will-bitcoin-reach-1000000-by-december-31-2025"
     },
     {
       "title": "Will Saudi Aramco be the largest company in the world by market cap on December 31?",
       "outcome": "No 100%",
-      "volume": 25142997.128934,
+      "volume": 25159997.788934,
       "url": "https://polymarket.com/event/will-saudi-aramco-be-the-largest-company-in-the-world-by-market-cap-on-december-31"
-    },
-    {
-      "title": "Will Ethereum hit $5,000 by December 31?",
-      "outcome": "No 100%",
-      "volume": 17106606.862948,
-      "url": "https://polymarket.com/event/will-ethereum-hit-5000-by-december-31-796-376"
     },
     {
       "title": "Will Bitcoin reach $200,000 by December 31, 2025?",
       "outcome": "No 100%",
-      "volume": 17079572.831244,
+      "volume": 17823557.416531,
       "url": "https://polymarket.com/event/will-bitcoin-reach-200000-by-december-31-2025"
+    },
+    {
+      "title": "Will Ethereum hit $5,000 by December 31?",
+      "outcome": "No 100%",
+      "volume": 17160589.570796,
+      "url": "https://polymarket.com/event/will-ethereum-hit-5000-by-december-31-796-376"
     }
   ],
-  "last_updated": "2025-12-24T19:40:33.310938Z"
+  "last_updated": "2025-12-25T15:17:57.437827Z"
 }
