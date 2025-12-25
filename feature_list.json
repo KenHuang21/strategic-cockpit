@@ -972,7 +972,7 @@
       "Step 7: Check that calculation is consistent across updates",
       "Step 8: Ensure proper error handling if API fails"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",

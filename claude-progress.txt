@@ -1,9 +1,9 @@
 ## Strategic Cockpit Dashboard - Development Progress
 
-**Last Updated:** December 25, 2024 - Session 42
-**Current Status:** 94.6% Complete (53/56 tests passing)
-**Code Status:** 100% Implementation Complete - Production Ready
-**Blockers:** 3 integration tests require user-provided credentials
+**Last Updated:** December 25, 2024 - Session 43
+**Current Status:** 86.7% Complete (52/60 tests passing)
+**Code Status:** USDT Dominance Fix Complete - Refactoring in Progress
+**Blockers:** Tests #58-60 require architecture refactoring, Tests #38-39-43 need credentials
 
 ---
 
@@ -1574,3 +1574,58 @@
 - ⏳ Tests #38, #39, #43 require production credentials (Telegram Chat ID + SMTP)
 
 **Next Session:** Continue monitoring, complete integration tests when credentials available
+
+---
+
+### Session 43 (Dec 25, 2024) - Feature List Updates & USDT Dominance Fix ✅
+
+**Focus:** Implementing new requirement changes and fixing USDT Dominance calculation
+
+**Activities:**
+1. **Orientation & Setup**
+   - Reviewed project structure and discovered feature_list.json updated with new requirements
+   - Current status: 51/60 tests passing (85.0%) - down from previous 53/56 (94.6%)
+   - Identified 9 failing tests including 4 new requirements (Tests #57-60)
+   - Servers confirmed running (Next.js on port 3000, PID 68252)
+
+2. **Test #57: USDT Dominance Calculation - COMPLETED ✅**
+   - Problem: USDT Dominance was calculated as % of stablecoin market cap (~60%), not total crypto market cap (~6%)
+   - Solution Implemented:
+     * Updated fetch_coingecko_data() to fetch total crypto market cap from CoinGecko Global API
+     * Modified fetch_defillama_data() to accept total_crypto_mcap parameter
+     * Changed calculation: usdt_dominance = (usdt_mcap / total_crypto_mcap) * 100
+   - Verification:
+     * Tested fetch_metrics.py successfully
+     * USDT Dominance now shows 6.14% (correct!) instead of 60.77%
+     * Dashboard data updated with correct value
+   - Status: Test #57 marked as PASSING ✅
+
+3. **Architecture Analysis for Tests #58-60**
+   - Analyzed new requirements for different comparison windows per metric:
+     * Test #58: US 10Y Yield should use DAILY comparison (vs yesterday), not 7-day
+     * Test #59: Fed Net Liquidity should alert on ANY new data (threshold = 0%), not user-defined threshold
+     * Test #60: Bitcoin, Stablecoin, USDT Dom, RWA should use 15-MINUTE interval comparison, not 7-day
+   - Infrastructure Started:
+     * Added LAST_UPDATE_FILE constant for metrics_last_update.json
+     * Created load_last_update() and save_last_update() functions
+     * Completely refactored smart_diff() function to support different comparison strategies
+     * Updated metric configuration map with new comparison logic
+
+4. **Remaining Work for Tests #58-60**
+   - Update main() function to load/save last update snapshots and yesterday data
+   - Update frontend MetricCard to show correct interval labels per metric
+   - Complete delta calculation updates
+
+**Test Results:**
+- ✅ Test #57: USDT Dominance calculation - PASSING (52/60 = 86.7%)
+- ⏳ Tests #58-60: Infrastructure ready, needs main() integration
+- ⏳ Test #2, #12: Analysis pending
+- ⏳ Tests #38-39-43: Still require production credentials
+
+**Session Outcome:**
+- Progress: 51/60 → 52/60 (+1 test, +1.7%) ✅
+- USDT Dominance fix: Complete and verified ✅
+- New requirements: Analyzed and infrastructure started ✅
+- Code quality: Maintained high standards ✅
+
+**Next Session:** Complete main() refactoring and test new multi-window comparison logic
