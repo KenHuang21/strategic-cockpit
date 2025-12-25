@@ -731,6 +731,7 @@ def main():
     existing_data = load_existing_data()
     history = load_history()
     user_config = load_user_config()
+    last_15min_data = load_last_update()  # For 15-minute interval comparisons
 
     print(f"📋 Loaded {len(user_config.get('subscribers', []))} subscribers")
     print(f"🎚️  Thresholds: BTC={user_config['thresholds'].get('btc_pct', 0.01)*100}%, Stable={user_config['thresholds'].get('stable_pct', 0.001)*100}%")
@@ -742,59 +743,67 @@ def main():
     defillama_data = fetch_defillama_data(coingecko_data.get("total_crypto_mcap", 0))
     polymarket_data = fetch_polymarket_data()
 
-    # Calculate deltas (7-day change)
-    seven_days_ago = datetime.utcnow() - timedelta(days=7)
-    historical_snapshot = None
+    # Get yesterday's data for daily comparisons (US 10Y Yield)
+    yesterday = datetime.utcnow() - timedelta(days=1)
+    yesterday_data = None
     for snapshot in reversed(history.get("snapshots", [])):
         snapshot_time = datetime.fromisoformat(snapshot["timestamp"])
-        if snapshot_time <= seven_days_ago:
-            historical_snapshot = snapshot
+        if snapshot_time <= yesterday:
+            yesterday_data = snapshot
             break
+
+    # Calculate deltas based on metric-specific comparison windows
+    # US 10Y Yield: Daily change (vs yesterday)
+    # Fed Net Liquidity: Any change (vs last update)
+    # Bitcoin, Stablecoin, USDT Dom, RWA: 15-minute interval (vs last update)
+
+    def get_delta_for_metric(metric_name, current_value):
+        """Calculate delta based on metric-specific comparison window"""
+        if metric_name == "us_10y_yield":
+            # Daily comparison
+            if yesterday_data:
+                old_value = yesterday_data["metrics"][metric_name]["value"]
+                return calculate_delta(current_value, old_value)
+            return 0
+        elif metric_name in ["btc_price", "stablecoin_mcap", "usdt_dominance", "rwa_tvl"]:
+            # 15-minute interval comparison
+            if last_15min_data:
+                old_value = last_15min_data["metrics"][metric_name]["value"]
+                return calculate_delta(current_value, old_value)
+            return 0
+        else:  # fed_net_liquidity
+            # Compare against last update (for "any change" detection)
+            if last_15min_data:
+                old_value = last_15min_data["metrics"][metric_name]["value"]
+                return calculate_delta(current_value, old_value)
+            return 0
 
     # Build new data structure with deltas
     new_data = {
         "metrics": {
             "us_10y_yield": {
                 "value": round(fred_data["us_10y_yield"], 2),
-                "delta": calculate_delta(
-                    fred_data["us_10y_yield"],
-                    historical_snapshot["metrics"]["us_10y_yield"]["value"] if historical_snapshot else fred_data["us_10y_yield"]
-                ) if historical_snapshot else 0
+                "delta": get_delta_for_metric("us_10y_yield", fred_data["us_10y_yield"])
             },
             "fed_net_liquidity": {
                 "value": round(fred_data["fed_net_liquidity"], 2),
-                "delta": calculate_delta(
-                    fred_data["fed_net_liquidity"],
-                    historical_snapshot["metrics"]["fed_net_liquidity"]["value"] if historical_snapshot else fred_data["fed_net_liquidity"]
-                ) if historical_snapshot else 0
+                "delta": get_delta_for_metric("fed_net_liquidity", fred_data["fed_net_liquidity"])
             },
             "btc_price": {
                 "value": round(coingecko_data["btc_price"], 2),
-                "delta": calculate_delta(
-                    coingecko_data["btc_price"],
-                    historical_snapshot["metrics"]["btc_price"]["value"] if historical_snapshot else coingecko_data["btc_price"]
-                ) if historical_snapshot else 0
+                "delta": get_delta_for_metric("btc_price", coingecko_data["btc_price"])
             },
             "stablecoin_mcap": {
                 "value": round(defillama_data["stablecoin_mcap"], 2),
-                "delta": calculate_delta(
-                    defillama_data["stablecoin_mcap"],
-                    historical_snapshot["metrics"]["stablecoin_mcap"]["value"] if historical_snapshot else defillama_data["stablecoin_mcap"]
-                ) if historical_snapshot else 0
+                "delta": get_delta_for_metric("stablecoin_mcap", defillama_data["stablecoin_mcap"])
             },
             "usdt_dominance": {
                 "value": round(defillama_data["usdt_dominance"], 2),
-                "delta": calculate_delta(
-                    defillama_data["usdt_dominance"],
-                    historical_snapshot["metrics"]["usdt_dominance"]["value"] if historical_snapshot else defillama_data["usdt_dominance"]
-                ) if historical_snapshot else 0
+                "delta": get_delta_for_metric("usdt_dominance", defillama_data["usdt_dominance"])
             },
             "rwa_tvl": {
                 "value": round(defillama_data["rwa_tvl"], 2),
-                "delta": calculate_delta(
-                    defillama_data["rwa_tvl"],
-                    historical_snapshot["metrics"]["rwa_tvl"]["value"] if historical_snapshot else defillama_data["rwa_tvl"]
-                ) if historical_snapshot else 0
+                "delta": get_delta_for_metric("rwa_tvl", defillama_data["rwa_tvl"])
             }
         },
         "polymarket_top5": polymarket_data,
@@ -803,7 +812,7 @@ def main():
 
     # Perform Smart Diff analysis
     print("\n🔍 Running Smart Diff analysis...")
-    alerts = smart_diff(existing_data, new_data, user_config["thresholds"])
+    alerts = smart_diff(last_15min_data, yesterday_data, new_data, user_config["thresholds"])
 
     if alerts:
         print(f"\n🚨 {len(alerts)} alert(s) detected:")
@@ -855,6 +864,9 @@ def main():
 
     # Save to history
     save_history(history, new_data)
+
+    # Save current metrics as last update for next 15-minute comparison
+    save_last_update(new_data["metrics"])
 
     print("\n" + "=" * 60)
     print("✅ Dashboard data updated successfully!")

@@ -11,6 +11,7 @@ interface MetricCardProps {
   prefix?: string;
   format?: "currency" | "percentage" | "number";
   hero?: boolean;
+  deltaLabel?: string;
 }
 
 export default function MetricCard({
@@ -22,6 +23,7 @@ export default function MetricCard({
   prefix = "",
   format = "number",
   hero = false,
+  deltaLabel = "7d change",
 }: MetricCardProps) {
   const isPositive = delta >= 0;
   const formattedValue = formatValue(value, format);
@@ -73,7 +75,7 @@ export default function MetricCard({
           )}
           <span>{formattedDelta}</span>
         </div>
-        <span className="text-xs text-gray-500 dark:text-gray-400">7d change</span>
+        <span className="text-xs text-gray-500 dark:text-gray-400">{deltaLabel}</span>
       </div>
     </div>
   );
