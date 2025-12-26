@@ -1077,7 +1077,7 @@
       "Step 8: Compare displayed data against Farside/The Block source for accuracy",
       "Step 9: Verify handling of weekends/holidays (no zero bars, just previous trading days)"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",

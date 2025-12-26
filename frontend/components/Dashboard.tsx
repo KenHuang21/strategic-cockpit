@@ -7,6 +7,7 @@ import MetricCard from "./MetricCard";
 import SmartMoneyRadar from "./SmartMoneyRadar";
 import CatalystCalendar from "./CatalystCalendar";
 import SettingsModal from "./SettingsModal";
+import ETFFlowTracker from "./ETFFlowTracker";
 import toast, { Toaster } from "react-hot-toast";
 
 export default function Dashboard() {
@@ -279,6 +280,12 @@ export default function Dashboard() {
               format="percentage"
               deltaLabel="15m change"
             />
+            {dashboardData.btc_etf_flows && (
+              <ETFFlowTracker
+                flows={dashboardData.btc_etf_flows.flows}
+                net5day={dashboardData.btc_etf_flows.net_5day}
+              />
+            )}
           </div>
 
           {/* Column 3: Alpha */}
