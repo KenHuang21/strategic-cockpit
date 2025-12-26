@@ -9,16 +9,16 @@
       "delta": 1.5251202560428725e-05
     },
     "btc_price": {
-      "value": 88702,
-      "delta": -0.6540779069506978
+      "value": 88817,
+      "delta": -0.5252783191093788
     },
     "stablecoin_mcap": {
       "value": 307.66,
       "delta": 0.04912126657386043
     },
     "usdt_dominance": {
-      "value": 6.09,
-      "delta": 0.5853173401828028
+      "value": 6.08,
+      "delta": 0.56190474895993
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.78,
-    "btc_gold": 0.13,
+    "btc_nasdaq": 0.76,
+    "btc_gold": 0.12,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/will-ethereum-hit-5000-by-december-31-796-376"
     }
   ],
-  "last_updated": "2025-12-26T09:42:47.252318Z"
+  "last_updated": "2025-12-26T09:52:43.383379Z"
 }
