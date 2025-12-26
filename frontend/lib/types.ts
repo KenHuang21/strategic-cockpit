@@ -32,6 +32,10 @@ export interface DashboardData {
     usdt_dominance: MetricData;
     rwa_tvl: MetricData;
   };
+  btc_funding_rate?: {
+    value: number;
+    source: string;
+  };
   polymarket_top5: PolymarketEvent[];
   last_updated: string;
 }

@@ -12,6 +12,7 @@ interface MetricCardProps {
   format?: "currency" | "percentage" | "number";
   hero?: boolean;
   deltaLabel?: string;
+  fundingRate?: number;  // Bitcoin funding rate (APY %)
 }
 
 export default function MetricCard({
@@ -24,10 +25,18 @@ export default function MetricCard({
   format = "number",
   hero = false,
   deltaLabel = "7d change",
+  fundingRate,
 }: MetricCardProps) {
   const isPositive = delta >= 0;
   const formattedValue = formatValue(value, format);
   const formattedDelta = formatDelta(delta, format);
+
+  // Determine funding rate color coding
+  const getFundingRateColor = (rate: number) => {
+    if (rate < 0) return "bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200"; // Short Squeeze
+    if (rate > 20) return "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200"; // Danger
+    return "bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300"; // Neutral
+  };
 
   return (
     <div
@@ -50,13 +59,25 @@ export default function MetricCard({
       </div>
 
       {/* Value */}
-      <div className={`${hero ? "mb-8" : "mb-4"}`}>
+      <div className={`${hero ? "mb-6" : "mb-4"}`}>
         <div className={`font-bold text-gray-900 dark:text-white ${hero ? "text-5xl" : "text-3xl"}`}>
           {prefix}
           {formattedValue}
           {unit && <span className={`ml-1 ${hero ? "text-2xl" : "text-lg"}`}>{unit}</span>}
         </div>
       </div>
+
+      {/* Funding Rate Badge (only for Bitcoin) */}
+      {fundingRate !== undefined && (
+        <div className="mb-4">
+          <div
+            className={`inline-flex items-center px-3 py-1.5 rounded-md text-sm font-medium ${getFundingRateColor(fundingRate)}`}
+          >
+            <span className="mr-1">Funding Rate:</span>
+            <span className="font-bold">{fundingRate.toFixed(2)}% APY</span>
+          </div>
+        </div>
+      )}
 
       {/* Delta */}
       <div className="flex items-center space-x-2">

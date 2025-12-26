@@ -9,53 +9,57 @@
       "delta": 1.5251202560428725e-05
     },
     "btc_price": {
-      "value": 87940,
-      "delta": 0.07852420024809095
+      "value": 88664,
+      "delta": -0.09465002028214721
     },
     "stablecoin_mcap": {
-      "value": 307.5,
-      "delta": -0.0012481890696766256
+      "value": 307.39,
+      "delta": 0.0014251145438670383
     },
     "usdt_dominance": {
-      "value": 6.13,
-      "delta": -0.20992586931239937
+      "value": 6.09,
+      "delta": -0.049540919719874045
     },
     "rwa_tvl": {
       "value": 8.5,
       "delta": 0.0
     }
   },
+  "btc_funding_rate": {
+    "value": 4.79,
+    "source": "Binance"
+  },
   "polymarket_top5": [
     {
       "title": "Russia x Ukraine ceasefire in 2025?",
       "outcome": "No 99%",
-      "volume": 64334558.3898,
+      "volume": 64836284.534061,
       "url": "https://polymarket.com/event/russia-x-ukraine-ceasefire-in-2025"
     },
     {
       "title": "Will Bitcoin reach $1,000,000 by December 31, 2025?",
       "outcome": "No 100%",
-      "volume": 28863357.983929,
+      "volume": 29106132.263929,
       "url": "https://polymarket.com/event/will-bitcoin-reach-1000000-by-december-31-2025"
     },
     {
       "title": "Will Saudi Aramco be the largest company in the world by market cap on December 31?",
       "outcome": "No 100%",
-      "volume": 25159997.788934,
+      "volume": 25171997.788934,
       "url": "https://polymarket.com/event/will-saudi-aramco-be-the-largest-company-in-the-world-by-market-cap-on-december-31"
     },
     {
       "title": "Will Bitcoin reach $200,000 by December 31, 2025?",
       "outcome": "No 100%",
-      "volume": 17829564.416531,
+      "volume": 17896366.399531,
       "url": "https://polymarket.com/event/will-bitcoin-reach-200000-by-december-31-2025"
     },
     {
       "title": "Will Ethereum hit $5,000 by December 31?",
       "outcome": "No 100%",
-      "volume": 17201600.684796,
+      "volume": 17511267.524912,
       "url": "https://polymarket.com/event/will-ethereum-hit-5000-by-december-31-796-376"
     }
   ],
-  "last_updated": "2025-12-25T15:39:34.816010Z"
+  "last_updated": "2025-12-26T03:41:07.312562Z"
 }

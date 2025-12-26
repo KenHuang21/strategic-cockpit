@@ -87,6 +87,26 @@ Change: {abs(alert['new_probability'] - alert['old_probability']):.1f}%
 
 _Automated alert from Strategic Cockpit Dashboard_"""
 
+    elif alert_type == "funding_rate":
+        if alert.get("type") == "extreme_leverage":
+            message = f"""⚠️ *Extreme Leverage Warning*
+
+🔴 Bitcoin Funding Rate: {alert['funding_rate']:.2f}% APY
+
+*DANGER:* Funding rate has exceeded 30%, indicating extreme greed and high leverage in the market. This often precedes sharp corrections.
+
+_Automated alert from Strategic Cockpit Dashboard_"""
+        elif alert.get("type") == "short_squeeze":
+            message = f"""🟣 *Short Squeeze Potential*
+
+💜 Bitcoin Funding Rate: {alert['funding_rate']:.2f}% APY
+
+*ALERT:* Negative funding rate detected! Shorts are paying longs, which may indicate potential for a short squeeze.
+
+_Automated alert from Strategic Cockpit Dashboard_"""
+        else:
+            message = alert.get("message", str(alert))
+
     else:
         message = str(alert)
 

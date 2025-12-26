@@ -258,6 +258,7 @@ export default function Dashboard() {
               hero
               format="percentage"
               deltaLabel="15m change"
+              fundingRate={dashboardData.btc_funding_rate?.value}
             />
             <MetricCard
               title="Stablecoin Market Cap"

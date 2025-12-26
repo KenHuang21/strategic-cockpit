@@ -1029,5 +1029,96 @@
       "Step 15: Verify metrics_last_update.json updates after each run"
     ],
     "passes": true
+  },
+  {
+    "category": "intelligence",
+    "description": "AI Morning Briefing: Generates and delivers a 3-bullet executive summary via Telegram daily at 08:00 Local",
+    "steps": [
+      "Step 1: manually trigger the 'generate_briefing.py' workflow (simulating 08:00 schedule)",
+      "Step 2: Verify script successfully reads 'dashboard_data.json' (Metrics) and 'calendar_data.json' (Events)",
+      "Step 3: Confirm valid API call is made to LLM provider (OpenAI/Anthropic) with correct context prompt",
+      "Step 4: Verify Telegram Bot broadcasts a message starting with '☕ Morning Briefing'",
+      "Step 5: Check message structure contains exactly 3 bullet points: Regime, Flows, Watchlist",
+      "Step 6: Verify 'Regime' bullet accurately reflects current Risk On/Off status from dashboard data",
+      "Step 7: Verify 'Watchlist' bullet correctly identifies the next high-impact event from the calendar",
+      "Step 8: Confirm execution time is under 30 seconds",
+      "Step 9: Test error handling: If LLM API fails, verify fallback message or retry logic"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Leverage Monitor (The Shield): Displays Bitcoin Weighted Funding Rate and triggers alerts on extreme values",
+    "steps": [
+      "Step 1: Navigate to the Bitcoin Price card in the dashboard",
+      "Step 2: Verify 'Funding Rate' badge is visible (e.g., '0.01% APY')",
+      "Step 3: Confirm data matches source (DefiLlama / Coinglass)",
+      "Step 4: Verify Visual Coding: Neutral (0-10%) is Gray/Green",
+      "Step 5: Verify Visual Coding: Danger (>20%) turns Red",
+      "Step 6: Verify Visual Coding: Negative (<0%) turns Purple (Short Squeeze)",
+      "Step 7: Simulate Funding Rate spike to >30% in data source",
+      "Step 8: Verify Telegram alert is sent: '⚠️ Extreme Leverage Warning: Funding Rate > 30%'",
+      "Step 9: Simulate Funding Rate drop to <-5%",
+      "Step 10: Verify Telegram alert is sent: '🟣 Short Squeeze Potential: Funding Rate Negative'"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "ETF Flow Tracker (The Sword): Displays 5-day net inflow/outflow trend for US Spot BTC ETFs",
+    "steps": [
+      "Step 1: Navigate to Column 2 (Market Section) below Stablecoins",
+      "Step 2: Verify the 'Wall St. Flows' bar chart is visible",
+      "Step 3: Confirm chart displays exactly 5 bars (representing last 5 trading days)",
+      "Step 4: Verify Green bars represent Net Inflow (+)",
+      "Step 5: Verify Red bars represent Net Outflow (-)",
+      "Step 6: Hover over a bar and verify exact $ USD million value is shown",
+      "Step 7: Check text summary: '5-Day Net Flow: $X.XB'",
+      "Step 8: Compare displayed data against Farside/The Block source for accuracy",
+      "Step 9: Verify handling of weekends/holidays (no zero bars, just previous trading days)"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Smart Money Radar v2: Sorts by 24h Volume Trend and highlights Sentiment Flips",
+    "steps": [
+      "Step 1: Navigate to Smart Money Radar section",
+      "Step 2: Verify events are sorted by '24h Volume' (Hot Topics) rather than just Total Volume",
+      "Step 3: Locate an event where the top outcome flipped (e.g., Yes 40% -> Yes 60%) in last 24h",
+      "Step 4: Verify '🔀 FLIP' badge or distinct border style is applied to this event",
+      "Step 5: Check that '24h Vol' column is visible and formatted correctly",
+      "Step 6: Simulate a single trade >$10k in the data stream (if Whale Watch enabled)",
+      "Step 7: Verify '🐋 Whale Alert' Telegram notification is sent with event details"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Subscription Manager: System correctly broadcasts alerts to mixed list of Telegram IDs and Emails",
+    "steps": [
+      "Step 1: Configure user_config.json with 1 Telegram ID and 1 Email address",
+      "Step 2: Trigger a manual metric threshold breach (e.g., Force BTC delta > 5%)",
+      "Step 3: Verify Telegram ID receives the alert instantly",
+      "Step 4: Verify Email address receives the alert via SMTP/SendGrid",
+      "Step 5: Confirm Email subject line format: '🚨 Strategic Alert: [Metric Name]'",
+      "Step 6: Confirm Email body supports HTML formatting (bolding, red/green colors)",
+      "Step 7: Verify system logs confirm 'Sent to 2 subscribers'",
+      "Step 8: Test partial failure: If Email fails, Telegram should still send (and vice versa)"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Correlation Radar (Optional): Displays BTC correlation with Nasdaq and Gold",
+    "steps": [
+      "Step 1: Navigate to 'Market Structure' or 'Macro' card",
+      "Step 2: Verify 'Correlation (30d)' section is visible",
+      "Step 3: Check BTC-NDX (Nasdaq) correlation value (-1 to 1)",
+      "Step 4: Check BTC-GOLD correlation value",
+      "Step 5: Verify interpretation label (e.g., >0.8 displayed as 'Macro Driven', <0.3 displayed as 'Uncorrelated')",
+      "Step 6: Confirm calculation logic uses rolling 30-day window"
+    ],
+    "passes": false
   }
 ]

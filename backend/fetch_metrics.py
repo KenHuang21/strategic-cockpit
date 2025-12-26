@@ -637,6 +637,64 @@ def fetch_polymarket_data():
         return []
 
 
+def fetch_btc_funding_rate():
+    """
+    Fetch Bitcoin weighted funding rate from Coinglass API
+
+    Returns:
+        dict: {"funding_rate": float (APY as percentage), "source": str}
+              Returns 0 if API fails
+    """
+    print("Fetching Bitcoin Funding Rate...")
+
+    try:
+        # Coinglass provides funding rate data
+        # Alternative free source: Binance API for funding rate
+        # Using Binance as it's a reliable free source
+
+        url = "https://fapi.binance.com/fapi/v1/fundingRate"
+        params = {
+            "symbol": "BTCUSDT",
+            "limit": 1  # Get most recent funding rate
+        }
+
+        # Try with SSL verification first
+        try:
+            response = requests.get(url, params=params, timeout=10, verify=True)
+        except requests.exceptions.SSLError:
+            print("⚠️  SSL verification failed, retrying without verification...")
+            response = requests.get(url, params=params, timeout=10, verify=False)
+
+        response.raise_for_status()
+        data = response.json()
+
+        if data and len(data) > 0:
+            # Funding rate is typically expressed as a percentage per 8 hours
+            # To convert to APY: funding_rate * 3 (per day) * 365 * 100
+            funding_rate_8h = float(data[0]["fundingRate"])
+            funding_rate_apy = funding_rate_8h * 3 * 365 * 100  # Convert to annualized percentage
+
+            print(f"✅ BTC Funding Rate fetched: {funding_rate_apy:.2f}% APY")
+
+            return {
+                "funding_rate": round(funding_rate_apy, 2),
+                "source": "Binance"
+            }
+        else:
+            print("⚠️  No funding rate data returned from Binance")
+            return {
+                "funding_rate": 0,
+                "source": "none"
+            }
+
+    except Exception as e:
+        print(f"❌ Error fetching funding rate: {e}")
+        return {
+            "funding_rate": 0,
+            "source": "error"
+        }
+
+
 def check_polymarket_odds_flips(old_polymarket, new_polymarket, threshold_pct=10.0):
     """
     Check for significant odds flips (>threshold_pct change) in Polymarket markets
@@ -742,6 +800,7 @@ def main():
     # Pass total crypto mcap to defillama for correct USDT dominance calculation
     defillama_data = fetch_defillama_data(coingecko_data.get("total_crypto_mcap", 0))
     polymarket_data = fetch_polymarket_data()
+    funding_rate_data = fetch_btc_funding_rate()
 
     # Get yesterday's data for daily comparisons (US 10Y Yield)
     yesterday = datetime.utcnow() - timedelta(days=1)
@@ -806,6 +865,10 @@ def main():
                 "delta": get_delta_for_metric("rwa_tvl", defillama_data["rwa_tvl"])
             }
         },
+        "btc_funding_rate": {
+            "value": funding_rate_data["funding_rate"],
+            "source": funding_rate_data["source"]
+        },
         "polymarket_top5": polymarket_data,
         "last_updated": datetime.utcnow().isoformat() + "Z"
     }
@@ -857,6 +920,45 @@ def main():
             print("\n📤 No subscribers configured - Polymarket alerts logged only")
     else:
         print("✅ No significant Polymarket odds flips detected (<10% change)")
+
+    # Check for extreme funding rates
+    print("\n⚡ Checking Bitcoin funding rate...")
+    funding_rate_alerts = []
+    current_funding_rate = funding_rate_data.get("funding_rate", 0)
+
+    if current_funding_rate > 30:
+        # Extreme greed - high leverage warning
+        funding_rate_alerts.append({
+            "type": "extreme_leverage",
+            "funding_rate": current_funding_rate,
+            "message": f"⚠️ Extreme Leverage Warning: Funding Rate > 30% ({current_funding_rate:.2f}% APY)",
+            "severity": "high"
+        })
+        print(f"🚨 Extreme Leverage detected: {current_funding_rate:.2f}% APY")
+    elif current_funding_rate < 0:
+        # Short squeeze potential
+        funding_rate_alerts.append({
+            "type": "short_squeeze",
+            "funding_rate": current_funding_rate,
+            "message": f"🟣 Short Squeeze Potential: Funding Rate Negative ({current_funding_rate:.2f}% APY)",
+            "severity": "medium"
+        })
+        print(f"🟣 Short Squeeze potential detected: {current_funding_rate:.2f}% APY")
+    else:
+        print(f"✅ Funding rate normal: {current_funding_rate:.2f}% APY")
+
+    # Broadcast funding rate alerts if any
+    if funding_rate_alerts:
+        subscribers = user_config.get("subscribers", [])
+        if subscribers:
+            broadcast_result = broadcast_alerts(funding_rate_alerts, subscribers, "funding_rate")
+            print(f"\n✅ Funding rate alert broadcast complete:")
+            print(f"   • Telegram: {broadcast_result['telegram_sent']} sent")
+            print(f"   • Email: {broadcast_result['email_sent']} sent")
+            if broadcast_result["errors"]:
+                print(f"   • Errors: {len(broadcast_result['errors'])}")
+        else:
+            print("\n📤 No subscribers configured - funding rate alerts logged only")
 
     # Save new data
     with open(DASHBOARD_DATA_FILE, 'w') as f:
