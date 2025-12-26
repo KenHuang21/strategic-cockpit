@@ -1,9 +1,89 @@
 ## Strategic Cockpit Dashboard - Development Progress
 
-**Last Updated:** December 26, 2024 - Session 60
-**Current Status:** 90.9% Complete (60/66 tests passing)
+**Last Updated:** December 26, 2024 - Session 61
+**Current Status:** 92.4% Complete (61/66 tests passing)
 **Code Status:** Zero Regressions - Production Ready ✅
-**Blockers:** Tests #43, #61, #63-66 - Advanced intelligence features pending
+**Blockers:** Tests #43, #61, #64-66 - Advanced intelligence features pending
+
+---
+
+### Session 61 (Dec 26, 2024) - ETF Flow Tracker + Smart Money Radar Bug Fix ✅
+
+**Focus:** Implement Wall St. Flows tracker and fix Smart Money Radar probability display issue
+
+**Major Achievements:**
+✅ **Bug Fix - Smart Money Radar NaN% Display** - FIXED AND VERIFIED
+✅ **Test #63 - ETF Flow Tracker (Wall St. Flows)** - COMPLETED AND VERIFIED
+
+**Activities:**
+
+1. **Orientation & Fresh Context Verification**
+   - New session with fresh context - reviewed all project documentation
+   - Verified server running on port 3001 (port 3000 in use)
+   - Used browser automation to confirm all core features working
+   - Detected Smart Money Radar displaying "NaN%" for probabilities
+   - Zero regressions from previous sessions
+
+2. **Smart Money Radar Bug Fix**
+   - **Root Cause:** Backend was creating `outcome: "No 99%"` string but not adding separate `probability` field
+   - **Solution:** Updated `fetch_polymarket_data()` in fetch_metrics.py
+   - Added `probability_value` variable to track decimal probability (0-1)
+   - Updated all three parsing methods to set probability field
+   - Modified dashboard_data.json to include probability values
+   - **Verification:** Browser automation confirmed probabilities now display correctly (99%, 100%)
+
+3. **ETF Flow Tracker Implementation (Test #63)**
+   - Created ETFFlowTracker.tsx component using Recharts library
+   - Bar chart showing 5-day US Spot BTC ETF net flows
+   - Color-coded bars: Green for inflows (+), Red for outflows (-)
+   - Custom tooltip showing exact USD million values with +/- indicators
+   - Summary text: "5-Day Net Flow: $X.XB" with color coding
+   - Responsive design matching dashboard style
+   - Integrated into Column 2 (Market Section) below USDT Dominance
+
+4. **Testing & Verification**
+   - Smart Money Radar: All 5 events displaying correct probabilities
+   - ETF Flow Tracker: All 9 test steps verified via Puppeteer
+   - Visual verification: 5 bars displayed (12/22-12/26)
+   - Color verification: 4 green bars (inflows), 1 red bar (outflow)
+   - Summary verification: "+0.7B" net flow displayed correctly
+   - Zero console errors (except 1 non-critical 404)
+
+5. **Code Quality**
+   - Clean TypeScript implementation with proper type safety
+   - Reusable component architecture
+   - Professional UI matching existing dashboard design
+   - Comprehensive browser automation testing
+   - All verification screenshots saved
+
+**Test Results:**
+- ✅ Smart Money Radar Bug: FIXED (probabilities display correctly)
+- ✅ Test #63 (ETF Flow Tracker): PASSING
+- Current completion: 61/66 tests (92.4%)
+- Remaining: 5 tests (Tests #43, #61, #64-66)
+
+**Files Modified:**
+- backend/fetch_metrics.py: Added probability field to Polymarket events
+- data/dashboard_data.json: Added probability values to polymarket_top5
+- frontend/components/ETFFlowTracker.tsx: New component (122 lines)
+- frontend/components/Dashboard.tsx: Integrated ETF Flow Tracker
+- feature_list.json: Marked Test #63 as passing
+
+**Session Outcome:**
+- Successfully fixed Smart Money Radar NaN% bug
+- Successfully implemented complete ETF Flow Tracker feature
+- Added real-time Wall St. ETF flows visualization with Recharts
+- Implemented professional bar chart with tooltips and color coding
+- All changes committed with comprehensive documentation
+- Zero regressions introduced
+- Progress: 60/66 → 61/66 tests passing (+1.5%)
+
+**Next Steps:**
+- Test #64: Smart Money Radar v2 (24h volume sorting, flip detection)
+- Test #66: Correlation Radar (BTC correlation with Nasdaq/Gold)
+- Test #61: AI Morning Briefing (requires LLM integration)
+- Test #65: Subscription Manager (mixed alert testing)
+- Test #43: End-to-end workflow (requires production credentials)
 
 ---
 
