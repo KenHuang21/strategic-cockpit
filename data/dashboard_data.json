@@ -9,16 +9,16 @@
       "delta": 1.5251202560428725e-05
     },
     "btc_price": {
-      "value": 87437,
-      "delta": -2.0708733732052056
+      "value": 87456,
+      "delta": -2.0495934413009875
     },
     "stablecoin_mcap": {
-      "value": 307.24,
-      "delta": -0.08877033910686097
+      "value": 307.49,
+      "delta": -0.005246780983342319
     },
     "usdt_dominance": {
       "value": 6.16,
-      "delta": 1.7358197951530603
+      "delta": 1.8069155992344008
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.69,
-    "btc_gold": 0.11,
+    "btc_nasdaq": 0.66,
+    "btc_gold": -0.09,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -66,7 +66,7 @@
       "title": "Russia x Ukraine ceasefire in 2025?",
       "outcome": "No 98%",
       "probability": 0.9805,
-      "volume": 65665219.990989,
+      "volume": 65672211.767145,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/russia-x-ukraine-ceasefire-in-2025"
@@ -92,8 +92,8 @@
     {
       "title": "Will Bitcoin reach $200,000 by December 31, 2025?",
       "outcome": "No 100%",
-      "probability": 0.9985,
-      "volume": 18155922.772686,
+      "probability": 0.9995,
+      "volume": 18159535.052686,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-bitcoin-reach-200000-by-december-31-2025"
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/will-ethereum-hit-5000-by-december-31-796-376"
     }
   ],
-  "last_updated": "2025-12-26T19:49:07.922276Z"
+  "last_updated": "2025-12-26T20:16:52.007137Z"
 }
