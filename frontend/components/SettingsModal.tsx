@@ -43,12 +43,12 @@ export default function SettingsModal({ isOpen, onClose }: SettingsModalProps) {
 
   // Threshold states
   const [thresholds, setThresholds] = useState<Thresholds>({
-    btc_pct: 0.005,
-    stable_pct: 0.001,
-    yield_pct: 0.05,
-    liquidity_pct: 0.02,
-    usdt_dom_pct: 0.005,
-    rwa_pct: 0.03,
+    btc_pct: 0.02,
+    stable_pct: 0.01,
+    yield_pct: 0.02,
+    liquidity_pct: 0.0,
+    usdt_dom_pct: 0.02,
+    rwa_pct: 0.01,
   });
 
   // Suggest Metric form states
@@ -313,22 +313,20 @@ export default function SettingsModal({ isOpen, onClose }: SettingsModalProps) {
                   <div className="flex space-x-4 mb-3">
                     <button
                       onClick={() => setSubscriberType("telegram")}
-                      className={`flex items-center space-x-2 px-4 py-2 rounded-lg transition-colors ${
-                        subscriberType === "telegram"
+                      className={`flex items-center space-x-2 px-4 py-2 rounded-lg transition-colors ${subscriberType === "telegram"
                           ? "bg-blue-600 hover:bg-blue-700 text-white"
                           : "bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300"
-                      }`}
+                        }`}
                     >
                       <MessageCircle className="w-4 h-4" />
                       <span>Telegram</span>
                     </button>
                     <button
                       onClick={() => setSubscriberType("email")}
-                      className={`flex items-center space-x-2 px-4 py-2 rounded-lg transition-colors ${
-                        subscriberType === "email"
+                      className={`flex items-center space-x-2 px-4 py-2 rounded-lg transition-colors ${subscriberType === "email"
                           ? "bg-blue-600 hover:bg-blue-700 text-white"
                           : "bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300"
-                      }`}
+                        }`}
                     >
                       <Mail className="w-4 h-4" />
                       <span>Email</span>
@@ -504,21 +502,23 @@ export default function SettingsModal({ isOpen, onClose }: SettingsModalProps) {
                       <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
                         Fed Net Liquidity
                       </span>
-                      <span className="text-sm text-gray-500">
-                        {(thresholds.liquidity_pct * 100).toFixed(1)}%
+                      <span className="text-sm font-semibold text-blue-600 dark:text-blue-400">
+                        Always notifies
                       </span>
                     </label>
-                    <input
-                      type="range"
-                      min="0.5"
-                      max="10.0"
-                      step="0.5"
-                      value={thresholds.liquidity_pct * 100}
-                      onChange={(e) =>
-                        setThresholds({ ...thresholds, liquidity_pct: parseFloat(e.target.value) / 100 })
-                      }
-                      className="w-full"
-                    />
+                    <div className="relative">
+                      <input
+                        type="range"
+                        min="0"
+                        max="0"
+                        value={0}
+                        disabled
+                        className="w-full opacity-50 cursor-not-allowed"
+                      />
+                      <p className="text-xs text-gray-500 dark:text-gray-400 mt-1 italic">
+                        Fed Net Liquidity alerts on every weekly data release (0% threshold, not customizable)
+                      </p>
+                    </div>
                   </div>
 
                   {/* USDT Dominance */}
