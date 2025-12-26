@@ -31,11 +31,10 @@ export default function MetricCard({
 
   return (
     <div
-      className={`bg-white dark:bg-gray-800 rounded-lg shadow-md border border-gray-200 dark:border-gray-700 transition-all hover:shadow-lg ${
-        hero
+      className={`bg-white dark:bg-gray-800 rounded-lg shadow-md border border-gray-200 dark:border-gray-700 transition-all hover:shadow-lg ${hero
           ? "p-8 shadow-xl border-2 border-blue-200 dark:border-blue-800 bg-gradient-to-br from-white to-blue-50 dark:from-gray-800 dark:to-blue-950"
           : "p-6"
-      }`}
+        }`}
     >
       {/* Header */}
       <div className="mb-4">
@@ -62,11 +61,10 @@ export default function MetricCard({
       {/* Delta */}
       <div className="flex items-center space-x-2">
         <div
-          className={`flex items-center space-x-1 px-2 py-1 rounded-md text-sm font-medium ${
-            isPositive
+          className={`flex items-center space-x-1 px-2 py-1 rounded-md text-sm font-medium ${isPositive
               ? "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200"
               : "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200"
-          }`}
+            }`}
         >
           {isPositive ? (
             <ArrowUp className="w-4 h-4" />
@@ -85,21 +83,36 @@ function formatValue(value: number, format: string): string {
   switch (format) {
     case "currency":
       if (value >= 1000000000) {
-        return (value / 1000000000).toFixed(2);
+        return (value / 1000000000).toLocaleString("en-US", {
+          minimumFractionDigits: 2,
+          maximumFractionDigits: 2
+        });
       }
       if (value >= 1000000) {
-        return (value / 1000000).toFixed(2);
+        return (value / 1000000).toLocaleString("en-US", {
+          minimumFractionDigits: 2,
+          maximumFractionDigits: 2
+        });
       }
       if (value >= 1000) {
-        return (value / 1000).toFixed(2);
+        return (value / 1000).toLocaleString("en-US", {
+          minimumFractionDigits: 2,
+          maximumFractionDigits: 2
+        });
       }
-      return value.toFixed(2);
+      return value.toLocaleString("en-US", {
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2
+      });
     case "percentage":
-      return value.toFixed(2);
+      return value.toLocaleString("en-US", {
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2
+      });
     default:
       return value.toLocaleString("en-US", {
-        minimumFractionDigits: 0,
-        maximumFractionDigits: 2,
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2
       });
   }
 }
@@ -108,15 +121,24 @@ function formatDelta(delta: number, format: string): string {
   const absDelta = Math.abs(delta);
 
   if (format === "percentage") {
-    return `${absDelta.toFixed(2)}%`;
+    return absDelta.toLocaleString("en-US", {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2
+    }) + "%";
   }
 
   if (format === "currency") {
     if (absDelta >= 1000000000) {
-      return `$${(absDelta / 1000000000).toFixed(2)}B`;
+      return `$${(absDelta / 1000000000).toLocaleString("en-US", {
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2
+      })}B`;
     }
     if (absDelta >= 1000000) {
-      return `$${(absDelta / 1000000).toFixed(2)}M`;
+      return `$${(absDelta / 1000000).toLocaleString("en-US", {
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2
+      })}M`;
     }
     if (absDelta >= 1000) {
       return `$${(absDelta / 1000).toFixed(2)}K`;
