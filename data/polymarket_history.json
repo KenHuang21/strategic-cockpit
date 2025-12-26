@@ -119,6 +119,86 @@
           "outcome": "No 100%"
         }
       ]
+    },
+    {
+      "timestamp": "2025-12-26T07:10:42.683776",
+      "markets": [
+        {
+          "id": "516719",
+          "title": "Russia x Ukraine ceasefire in 2025?",
+          "volume": 64900197.88973,
+          "probability": 0.9915,
+          "outcome": "No 99%"
+        },
+        {
+          "id": "516861",
+          "title": "Will Bitcoin reach $1,000,000 by December 31, 2025?",
+          "volume": 29171060.273929,
+          "probability": 0.9995,
+          "outcome": "No 100%"
+        },
+        {
+          "id": "516846",
+          "title": "Will Saudi Aramco be the largest company in the world by market cap on December 31?",
+          "volume": 25171997.788934,
+          "probability": 0.9995,
+          "outcome": "No 100%"
+        },
+        {
+          "id": "516863",
+          "title": "Will Bitcoin reach $200,000 by December 31, 2025?",
+          "volume": 18069134.598629,
+          "probability": 0.9985,
+          "outcome": "No 100%"
+        },
+        {
+          "id": "516878",
+          "title": "Will Ethereum hit $5,000 by December 31?",
+          "volume": 17565483.929268,
+          "probability": 0.9975,
+          "outcome": "No 100%"
+        }
+      ]
+    },
+    {
+      "timestamp": "2025-12-26T07:21:41.836644",
+      "markets": [
+        {
+          "id": "516719",
+          "title": "Russia x Ukraine ceasefire in 2025?",
+          "volume": 64902347.344504,
+          "probability": 0.992,
+          "outcome": "No 99%"
+        },
+        {
+          "id": "516861",
+          "title": "Will Bitcoin reach $1,000,000 by December 31, 2025?",
+          "volume": 29171060.273929,
+          "probability": 0.9995,
+          "outcome": "No 100%"
+        },
+        {
+          "id": "516846",
+          "title": "Will Saudi Aramco be the largest company in the world by market cap on December 31?",
+          "volume": 25177097.788934,
+          "probability": 0.9995,
+          "outcome": "No 100%"
+        },
+        {
+          "id": "516863",
+          "title": "Will Bitcoin reach $200,000 by December 31, 2025?",
+          "volume": 18069135.819629,
+          "probability": 0.9985,
+          "outcome": "No 100%"
+        },
+        {
+          "id": "516878",
+          "title": "Will Ethereum hit $5,000 by December 31?",
+          "volume": 17565506.704768,
+          "probability": 0.9975,
+          "outcome": "No 100%"
+        }
+      ]
     }
   ]
 }

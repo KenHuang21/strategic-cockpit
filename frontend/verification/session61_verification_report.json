@@ -1,0 +1,110 @@
+{
+  "timestamp": "2025-12-26T06:39:34.003Z",
+  "url": "http://localhost:3001",
+  "smartMoneyRadar": {
+    "found": true,
+    "containerHTMLPreview": "<div class=\"mb-4 flex items-center space-x-2\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-trending-up w-5 h-5 text-blue-600 dark:text-blue-400\" aria-hidden=\"true\"><path d=\"M16 7h6v6\"></path><path d=\"m22 7-8.5 8.5-5-5L2 17\"></path></svg><h3 class=\"text-lg font-semibold text-gray-900 dark:text-white\">Smart Money Radar</h3></div><p class=\"text-xs text-gray-500 dark:text-gray-400 mb-4\">Top 5 Polymarket markets by volume</p><div class=\"space-y-4\"><div class=\"pb-4 border-b border-gray-200 dark:border-gray-700 last:border-b-0 last:pb-0\"><div class=\"flex items-start justify-between space-x-2\"><div class=\"flex-1\"><a href=\"https://polymarket.com/event/russia-x-ukraine-ceasefire-in-2025\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-sm font-medium text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-c",
+    "eventDivCount": 5,
+    "events": [
+      {
+        "title": "Russia x Ukraine ceasefire in 2025?",
+        "url": "https://polymarket.com/event/russia-x-ukraine-ceasefire-in-2025",
+        "outcome": "No 99%:",
+        "probabilities": [
+          "99%",
+          "99%"
+        ],
+        "probability": "99%",
+        "hasNaN": false,
+        "volume": "64.8M",
+        "fullText": "Russia x Ukraine ceasefire in 2025?No 99%:99%Vol: $64.8M"
+      },
+      {
+        "title": "Will Bitcoin reach $1,000,000 by December 31, 2025?",
+        "url": "https://polymarket.com/event/will-bitcoin-reach-1000000-by-december-31-2025",
+        "outcome": "No 100%:",
+        "probabilities": [
+          "100%",
+          "100%"
+        ],
+        "probability": "100%",
+        "hasNaN": false,
+        "volume": "29.1M",
+        "fullText": "Will Bitcoin reach $1,000,000 by December 31, 2025?No 100%:100%Vol: $29.1M"
+      },
+      {
+        "title": "Will Saudi Aramco be the largest company in the world by market cap on December 31?",
+        "url": "https://polymarket.com/event/will-saudi-aramco-be-the-largest-company-in-the-world-by-market-cap-on-december-31",
+        "outcome": "No 100%:",
+        "probabilities": [
+          "100%",
+          "100%"
+        ],
+        "probability": "100%",
+        "hasNaN": false,
+        "volume": "25.2M",
+        "fullText": "Will Saudi Aramco be the largest company in the world by market cap on December 31?No 100%:100%Vol: $25.2M"
+      },
+      {
+        "title": "Will Bitcoin reach $200,000 by December 31, 2025?",
+        "url": "https://polymarket.com/event/will-bitcoin-reach-200000-by-december-31-2025",
+        "outcome": "No 100%:",
+        "probabilities": [
+          "100%",
+          "100%"
+        ],
+        "probability": "100%",
+        "hasNaN": false,
+        "volume": "17.9M",
+        "fullText": "Will Bitcoin reach $200,000 by December 31, 2025?No 100%:100%Vol: $17.9M"
+      },
+      {
+        "title": "Will Ethereum hit $5,000 by December 31?",
+        "url": "https://polymarket.com/event/will-ethereum-hit-5000-by-december-31-796-376",
+        "outcome": "No 100%:",
+        "probabilities": [
+          "100%",
+          "100%"
+        ],
+        "probability": "100%",
+        "hasNaN": false,
+        "volume": "17.5M",
+        "fullText": "Will Ethereum hit $5,000 by December 31?No 100%:100%Vol: $17.5M"
+      }
+    ],
+    "allPercentagesFound": [
+      "No 99%",
+      "No 100%",
+      "No 100%",
+      "No 100%",
+      "No 100%"
+    ],
+    "eventCount": 5,
+    "hasNaN": false,
+    "allProbabilities": [
+      "99%",
+      "100%",
+      "100%",
+      "100%",
+      "100%"
+    ]
+  },
+  "consoleErrors": [
+    "[error] Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ],
+  "verification": {
+    "sectionFound": true,
+    "eventCount": 5,
+    "expectedEventCount": 5,
+    "hasNaNProbabilities": false,
+    "probabilities": [
+      "99%",
+      "100%",
+      "100%",
+      "100%",
+      "100%"
+    ],
+    "status": "PASS",
+    "issues": []
+  }
+}

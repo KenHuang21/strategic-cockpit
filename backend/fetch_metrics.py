@@ -1080,6 +1080,18 @@ def main():
                 return calculate_delta(current_value, old_value)
             return 0
 
+    # Calculate global risk status (matching frontend logic)
+    def calculate_risk_status(yield_value, liquidity_value):
+        """Determine Risk On/Off based on yields and liquidity"""
+        if yield_value < 4.0 and liquidity_value > 5000:
+            return "Risk On"
+        return "Risk Off"
+
+    global_risk_status = calculate_risk_status(
+        fred_data["us_10y_yield"],
+        fred_data["fed_net_liquidity"]
+    )
+
     # Build new data structure with deltas
     new_data = {
         "metrics": {
@@ -1108,6 +1120,7 @@ def main():
                 "delta": get_delta_for_metric("rwa_tvl", defillama_data["rwa_tvl"])
             }
         },
+        "global_risk_status": global_risk_status,
         "btc_funding_rate": {
             "value": funding_rate_data["funding_rate"],
             "source": funding_rate_data["source"]

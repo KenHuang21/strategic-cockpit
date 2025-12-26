@@ -96,6 +96,26 @@
         - **Operational Protocols**: Refresh policies, Notification rules.
         - **Setup Guide**: "How to find your Telegram Chat ID".
     </documentation_hub>
+
+    <intelligence_layer>
+      <feature id="ai_morning_briefing">
+        <name>AI Executive Briefing</name>
+        <objective>Daily 3-bullet summary (Regime, Flows, Watchlist) sent via Telegram at 08:00 Local.</objective>
+      </feature>
+      <feature id="leverage_monitor">
+        <name>Leverage Monitor</name>
+        <objective>Visual gauge for BTC Funding Rates with alerts for >30% APY (Greed) or <0% (Squeeze).</objective>
+      </feature>
+      <feature id="etf_tracker">
+        <name>Wall St. Flow Tracker</name>
+        <objective>5-Day Bar Chart tracking US Spot BTC ETF Net Inflows/Outflows.</objective>
+      </feature>
+      <feature id="smart_money_radar_v2">
+        <name>Smart Money Radar Upgrade</name>
+        <objective>Sort by 24h Volume Change and highlight Outcome Flips.</objective>
+      </feature>
+    </intelligence_layer>
+    
   </core_features>
 
   <data_pipeline_schema>
