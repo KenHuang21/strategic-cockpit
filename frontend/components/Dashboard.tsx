@@ -8,6 +8,7 @@ import SmartMoneyRadar from "./SmartMoneyRadar";
 import CatalystCalendar from "./CatalystCalendar";
 import SettingsModal from "./SettingsModal";
 import ETFFlowTracker from "./ETFFlowTracker";
+import CorrelationRadar from "./CorrelationRadar";
 import toast, { Toaster } from "react-hot-toast";
 
 export default function Dashboard() {
@@ -245,6 +246,14 @@ export default function Dashboard() {
               format="percentage"
               deltaLabel="since last update"
             />
+            {dashboardData.correlation_radar && (
+              <CorrelationRadar
+                btcNasdaq={dashboardData.correlation_radar.btc_nasdaq}
+                btcGold={dashboardData.correlation_radar.btc_gold}
+                interpretation={dashboardData.correlation_radar.interpretation}
+                periodDays={dashboardData.correlation_radar.period_days}
+              />
+            )}
             <SmartMoneyRadar events={dashboardData.polymarket_top5} />
           </div>
 

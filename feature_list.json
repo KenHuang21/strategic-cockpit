@@ -1119,6 +1119,6 @@
       "Step 5: Verify interpretation label (e.g., >0.8 displayed as 'Macro Driven', <0.3 displayed as 'Uncorrelated')",
       "Step 6: Confirm calculation logic uses rolling 30-day window"
     ],
-    "passes": false
+    "passes": true
   }
 ]

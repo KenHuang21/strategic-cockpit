@@ -47,6 +47,12 @@ export interface DashboardData {
     flows: ETFFlowData[];
     net_5day: number; // in billions USD
   };
+  correlation_radar?: {
+    btc_nasdaq: number;
+    btc_gold: number;
+    interpretation: string;
+    period_days: number;
+  };
   polymarket_top5: PolymarketEvent[];
   last_updated: string;
 }
