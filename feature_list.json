@@ -667,7 +667,7 @@
       "Step 9: Verify all alerts arrive within 60 seconds",
       "Step 10: Confirm no duplicate alerts are sent"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -685,7 +685,7 @@
       "Step 10: Test with multiple simultaneous email alerts",
       "Step 11: Confirm no emails are lost or delayed excessively"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
