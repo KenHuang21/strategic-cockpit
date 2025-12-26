@@ -9,6 +9,8 @@ export interface PolymarketEvent {
   outcome: string;
   probability: number;
   volume: number;
+  volume_24h?: number;
+  flipped?: boolean; // True if outcome flipped in last 24h
   url: string;
 }
 
@@ -23,6 +25,11 @@ export interface CalendarEvent {
   status: "completed" | "upcoming";
 }
 
+export interface ETFFlowData {
+  date: string;
+  flow: number; // in millions USD
+}
+
 export interface DashboardData {
   metrics: {
     us_10y_yield: MetricData;
@@ -35,6 +42,10 @@ export interface DashboardData {
   btc_funding_rate?: {
     value: number;
     source: string;
+  };
+  btc_etf_flows?: {
+    flows: ETFFlowData[];
+    net_5day: number; // in billions USD
   };
   polymarket_top5: PolymarketEvent[];
   last_updated: string;

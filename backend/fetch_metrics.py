@@ -31,6 +31,7 @@ DASHBOARD_DATA_FILE = DATA_DIR / "dashboard_data.json"
 HISTORY_FILE = DATA_DIR / "metrics_history.json"
 USER_CONFIG_FILE = DATA_DIR / "user_config.json"
 LAST_UPDATE_FILE = DATA_DIR / "metrics_last_update.json"  # For 15-minute interval comparisons
+POLYMARKET_HISTORY_FILE = DATA_DIR / "polymarket_history.json"  # For 24h volume and flip detection
 
 # API Keys
 FRED_API_KEY = os.getenv("FRED_API_KEY", "")
@@ -470,8 +471,70 @@ def fetch_defillama_data(total_crypto_mcap=0):
         }
 
 
+def load_polymarket_history():
+    """Load historical Polymarket data for 24h comparisons"""
+    try:
+        with open(POLYMARKET_HISTORY_FILE, 'r') as f:
+            return json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        return {"snapshots": []}
+
+
+def save_polymarket_history(history, current_markets):
+    """Save current Polymarket data to history"""
+    snapshot = {
+        "timestamp": datetime.utcnow().isoformat(),
+        "markets": current_markets
+    }
+    history["snapshots"].append(snapshot)
+
+    # Keep only last 48 hours of snapshots
+    cutoff = datetime.utcnow() - timedelta(hours=48)
+    history["snapshots"] = [
+        s for s in history["snapshots"]
+        if datetime.fromisoformat(s["timestamp"]) > cutoff
+    ]
+
+    with open(POLYMARKET_HISTORY_FILE, 'w') as f:
+        json.dump(history, f, indent=2)
+
+
+def get_24h_data(market_id, history):
+    """Get market data from ~24 hours ago for comparison
+
+    Args:
+        market_id: Unique identifier for the market
+        history: Historical polymarket data
+
+    Returns:
+        dict: Historical data if found, None otherwise
+    """
+    # Find snapshot closest to 24 hours ago
+    target_time = datetime.utcnow() - timedelta(hours=24)
+
+    # Find the closest snapshot to 24h ago
+    closest_snapshot = None
+    min_diff = float('inf')
+
+    for snapshot in history.get("snapshots", []):
+        snapshot_time = datetime.fromisoformat(snapshot["timestamp"])
+        diff = abs((snapshot_time - target_time).total_seconds())
+
+        if diff < min_diff:
+            min_diff = diff
+            closest_snapshot = snapshot
+
+    if closest_snapshot and min_diff < 7200:  # Within 2 hours of 24h target
+        # Find this market in the snapshot
+        for market in closest_snapshot.get("markets", []):
+            if market.get("id") == market_id:
+                return market
+
+    return None
+
+
 def fetch_polymarket_data():
-    """Fetch Top 5 Polymarket markets from Gamma API"""
+    """Fetch Top 5 Polymarket markets from Gamma API with 24h volume tracking and flip detection"""
     print("Fetching Polymarket data...")
 
     try:
@@ -543,6 +606,12 @@ def fetch_polymarket_data():
                         "volume": volume
                     })
 
+        # Load historical data for 24h comparisons
+        history = load_polymarket_history()
+
+        # Prepare to store current markets for history
+        current_markets_for_history = []
+
         # Sort by volume and take top 5
         filtered_markets.sort(key=lambda x: x["volume"], reverse=True)
         top_5 = filtered_markets[:5]
@@ -551,6 +620,7 @@ def fetch_polymarket_data():
         polymarket_top5 = []
         for idx, item in enumerate(top_5):
             market = item["market"]
+            market_id = market.get("id", market.get("conditionId", f"unknown_{idx}"))
 
             # Debug: print first market structure to understand format
             if idx == 0:
@@ -627,13 +697,46 @@ def fetch_polymarket_data():
                 top_outcome = "Active"
                 probability_value = 0.0
 
+            # Get 24h historical data for this market
+            historical_data = get_24h_data(market_id, history)
+
+            # Calculate 24h volume change
+            volume_24h = 0
+            if historical_data:
+                historical_volume = historical_data.get("volume", 0)
+                current_volume = item["volume"]
+                volume_24h = current_volume - historical_volume
+
+            # Detect outcome flip (probability swing > 10%)
+            flipped = False
+            if historical_data:
+                historical_prob = historical_data.get("probability", 0)
+                prob_change = abs(probability_value - historical_prob)
+                if prob_change > 0.10:  # >10% probability swing
+                    flipped = True
+                    print(f"🔀 FLIP detected: {market.get('question', '')[:50]} - {prob_change*100:.1f}% swing")
+
+            # Store current market data for history
+            current_markets_for_history.append({
+                "id": market_id,
+                "title": market.get("question", "Unknown Market"),
+                "volume": item["volume"],
+                "probability": probability_value,
+                "outcome": top_outcome
+            })
+
             polymarket_top5.append({
                 "title": market.get("question", "Unknown Market"),
                 "outcome": top_outcome,
                 "probability": probability_value,  # Add probability field (0-1 decimal)
                 "volume": item["volume"],
+                "volume_24h": volume_24h,  # 24h volume change
+                "flipped": flipped,  # True if outcome flipped >10%
                 "url": f"https://polymarket.com/event/{market.get('slug', '')}"
             })
+
+        # Save current markets to history for future comparisons
+        save_polymarket_history(history, current_markets_for_history)
 
         print(f"✅ Polymarket data fetched: {len(polymarket_top5)} markets")
 

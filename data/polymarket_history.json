@@ -1,0 +1,124 @@
+{
+  "snapshots": [
+    {
+      "timestamp": "2025-12-25T07:01:32.151474",
+      "markets": [
+        {
+          "id": "516719",
+          "title": "Russia x Ukraine ceasefire in 2025?",
+          "volume": 60000000.0,
+          "probability": 0.85,
+          "outcome": "No 85%"
+        },
+        {
+          "id": "516861",
+          "title": "Will Bitcoin reach $1,000,000 by December 31, 2025?",
+          "volume": 25000000.0,
+          "probability": 0.9995,
+          "outcome": "No 100%"
+        },
+        {
+          "id": "516846",
+          "title": "Will Saudi Aramco be the largest company in the world by market cap on December 31?",
+          "volume": 25000000.0,
+          "probability": 0.9995,
+          "outcome": "No 100%"
+        },
+        {
+          "id": "516863",
+          "title": "Will Bitcoin reach $200,000 by December 31, 2025?",
+          "volume": 16000000.0,
+          "probability": 0.9985,
+          "outcome": "No 100%"
+        },
+        {
+          "id": "516878",
+          "title": "Will Ethereum hit $5,000 by December 31?",
+          "volume": 15000000.0,
+          "probability": 0.997,
+          "outcome": "No 100%"
+        }
+      ]
+    },
+    {
+      "timestamp": "2025-12-26T07:01:32.151474",
+      "markets": [
+        {
+          "id": "516719",
+          "title": "Russia x Ukraine ceasefire in 2025?",
+          "volume": 64868931.06973,
+          "probability": 0.9935,
+          "outcome": "No 99%"
+        },
+        {
+          "id": "516861",
+          "title": "Will Bitcoin reach $1,000,000 by December 31, 2025?",
+          "volume": 29171060.273929,
+          "probability": 0.9995,
+          "outcome": "No 100%"
+        },
+        {
+          "id": "516846",
+          "title": "Will Saudi Aramco be the largest company in the world by market cap on December 31?",
+          "volume": 25171997.788934,
+          "probability": 0.9995,
+          "outcome": "No 100%"
+        },
+        {
+          "id": "516863",
+          "title": "Will Bitcoin reach $200,000 by December 31, 2025?",
+          "volume": 18069134.598629,
+          "probability": 0.9985,
+          "outcome": "No 100%"
+        },
+        {
+          "id": "516878",
+          "title": "Will Ethereum hit $5,000 by December 31?",
+          "volume": 17563974.462768,
+          "probability": 0.997,
+          "outcome": "No 100%"
+        }
+      ]
+    },
+    {
+      "timestamp": "2025-12-26T07:03:08.809515",
+      "markets": [
+        {
+          "id": "516719",
+          "title": "Russia x Ukraine ceasefire in 2025?",
+          "volume": 64868931.06973,
+          "probability": 0.9935,
+          "outcome": "No 99%"
+        },
+        {
+          "id": "516861",
+          "title": "Will Bitcoin reach $1,000,000 by December 31, 2025?",
+          "volume": 29171060.273929,
+          "probability": 0.9995,
+          "outcome": "No 100%"
+        },
+        {
+          "id": "516846",
+          "title": "Will Saudi Aramco be the largest company in the world by market cap on December 31?",
+          "volume": 25171997.788934,
+          "probability": 0.9995,
+          "outcome": "No 100%"
+        },
+        {
+          "id": "516863",
+          "title": "Will Bitcoin reach $200,000 by December 31, 2025?",
+          "volume": 18069134.598629,
+          "probability": 0.9985,
+          "outcome": "No 100%"
+        },
+        {
+          "id": "516878",
+          "title": "Will Ethereum hit $5,000 by December 31?",
+          "volume": 17563974.462768,
+          "probability": 0.997,
+          "outcome": "No 100%"
+        }
+      ]
+    }
+  ]
+}
