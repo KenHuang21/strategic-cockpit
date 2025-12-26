@@ -241,6 +241,7 @@ export default function Dashboard() {
               delta={dashboardData.metrics.fed_net_liquidity.delta}
               unit="B"
               prefix="$"
+              format="percentage"
               deltaLabel="since last update"
             />
             <SmartMoneyRadar events={dashboardData.polymarket_top5} />
@@ -288,6 +289,7 @@ export default function Dashboard() {
               delta={dashboardData.metrics.rwa_tvl.delta}
               unit="B"
               prefix="$"
+              format="percentage"
               deltaLabel="15m change"
             />
             {calendarData && <CatalystCalendar events={calendarData.events} />}
