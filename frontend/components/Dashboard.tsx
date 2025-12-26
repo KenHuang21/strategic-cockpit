@@ -255,6 +255,7 @@ export default function Dashboard() {
               delta={dashboardData.metrics.btc_price.delta}
               prefix="$"
               hero
+              format="percentage"
               deltaLabel="15m change"
             />
             <MetricCard
@@ -264,6 +265,7 @@ export default function Dashboard() {
               delta={dashboardData.metrics.stablecoin_mcap.delta}
               unit="B"
               prefix="$"
+              format="percentage"
               deltaLabel="15m change"
             />
             <MetricCard
