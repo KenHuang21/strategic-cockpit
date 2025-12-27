@@ -3,7 +3,7 @@
     "btc_pct": 0.02,
     "stable_pct": 0.01,
     "yield_pct": 0.02,
-    "liquidity_pct": 0.0,
+    "liquidity_pct": 0,
     "usdt_dom_pct": 0.02,
     "rwa_pct": 0.01
   },
