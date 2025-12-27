@@ -9,8 +9,8 @@
       "delta": 1.5251202560428725e-05
     },
     "btc_price": {
-      "value": 87495,
-      "delta": -2.0059135810765403
+      "value": 87460,
+      "delta": -2.0451134556369417
     },
     "stablecoin_mcap": {
       "value": 307.48,
@@ -18,7 +18,7 @@
     },
     "usdt_dominance": {
       "value": 6.14,
-      "delta": 1.4887574767926746
+      "delta": 1.5359680931741633
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,9 +56,9 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.73,
-    "btc_gold": -0.05,
-    "interpretation": "Moderately Correlated",
+    "btc_nasdaq": 0.83,
+    "btc_gold": -0.13,
+    "interpretation": "Macro Driven",
     "period_days": 30
   },
   "polymarket_top5": [
@@ -102,11 +102,11 @@
       "title": "Will Ethereum hit $5,000 by December 31?",
       "outcome": "No 100%",
       "probability": 0.9985,
-      "volume": 18102482.91122,
+      "volume": 18102495.393698,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-ethereum-hit-5000-by-december-31-796-376"
     }
   ],
-  "last_updated": "2025-12-27T16:45:21.730333Z"
+  "last_updated": "2025-12-27T16:56:23.575247Z"
 }
