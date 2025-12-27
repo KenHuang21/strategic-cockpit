@@ -9,8 +9,8 @@
       "delta": 1.5251202560428725e-05
     },
     "btc_price": {
-      "value": 87501,
-      "delta": -1.9991936025804717
+      "value": 87539,
+      "delta": -1.9566337387720358
     },
     "stablecoin_mcap": {
       "value": 307.48,
@@ -18,7 +18,7 @@
     },
     "usdt_dominance": {
       "value": 6.14,
-      "delta": 1.5122636340026083
+      "delta": 1.4642139050814473
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,17 +56,17 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.69,
-    "btc_gold": -0.1,
-    "interpretation": "Moderately Correlated",
+    "btc_nasdaq": 0.83,
+    "btc_gold": -0.07,
+    "interpretation": "Macro Driven",
     "period_days": 30
   },
   "polymarket_top5": [
     {
       "title": "Russia x Ukraine ceasefire in 2025?",
       "outcome": "No 98%",
-      "probability": 0.98,
-      "volume": 66564316.244556,
+      "probability": 0.9785,
+      "volume": 66573387.476772,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/russia-x-ukraine-ceasefire-in-2025"
@@ -75,7 +75,7 @@
       "title": "Will Bitcoin reach $1,000,000 by December 31, 2025?",
       "outcome": "No 100%",
       "probability": 0.9995,
-      "volume": 29331818.366929,
+      "volume": 29333873.726929,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-bitcoin-reach-1000000-by-december-31-2025"
@@ -93,7 +93,7 @@
       "title": "Will Bitcoin reach $200,000 by December 31, 2025?",
       "outcome": "No 100%",
       "probability": 0.9985,
-      "volume": 18509750.011498,
+      "volume": 18510350.827498,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-bitcoin-reach-200000-by-december-31-2025"
@@ -102,11 +102,11 @@
       "title": "Will Ethereum hit $5,000 by December 31?",
       "outcome": "No 100%",
       "probability": 0.9985,
-      "volume": 18100560.793512,
+      "volume": 18100879.233429,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-ethereum-hit-5000-by-december-31-796-376"
     }
   ],
-  "last_updated": "2025-12-27T15:32:55.693508Z"
+  "last_updated": "2025-12-27T15:49:26.290203Z"
 }
