@@ -9,16 +9,16 @@
       "delta": 1.5251202560428725e-05
     },
     "btc_price": {
-      "value": 87735,
-      "delta": 0.20444058659600714
+      "value": 87504,
+      "delta": -0.05939056146923112
     },
     "stablecoin_mcap": {
-      "value": 306.8,
-      "delta": -0.04621042259018778
+      "value": 306.77,
+      "delta": -0.054877074828298164
     },
     "usdt_dominance": {
-      "value": 6.11,
-      "delta": -0.01012815424824134
+      "value": 6.13,
+      "delta": 0.28065091482877474
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.65,
-    "btc_gold": -0.05,
+    "btc_nasdaq": 0.66,
+    "btc_gold": -0.03,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -66,7 +66,7 @@
       "title": "Russia x Ukraine ceasefire in 2025?",
       "outcome": "No 100%",
       "probability": 0.9975,
-      "volume": 70415190.204894,
+      "volume": 70424705.50156,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/russia-x-ukraine-ceasefire-in-2025"
@@ -84,7 +84,7 @@
       "title": "Will Saudi Aramco be the largest company in the world by market cap on December 31?",
       "outcome": "No 100%",
       "probability": 0.9995,
-      "volume": 25217281.668934,
+      "volume": 25217342.288934,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-saudi-aramco-be-the-largest-company-in-the-world-by-market-cap-on-december-31"
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/will-ethereum-hit-5000-by-december-31-796-376"
     }
   ],
-  "last_updated": "2025-12-29T18:23:55.015411Z"
+  "last_updated": "2025-12-29T18:51:17.889698Z"
 }
