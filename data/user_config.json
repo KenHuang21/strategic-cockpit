@@ -7,11 +7,5 @@
     "usdt_dom_pct": 0.02,
     "rwa_pct": 0.01
   },
-  "subscribers": [
-    {
-      "type": "telegram",
-      "name": "Session 18 Test User",
-      "id": "999888777"
-    }
-  ]
+  "subscribers": []
 }
