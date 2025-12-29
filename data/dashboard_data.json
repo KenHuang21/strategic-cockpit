@@ -5,20 +5,20 @@
       "delta": -0.7194244604316606
     },
     "fed_net_liquidity": {
-      "value": 6556.86,
-      "delta": 1.5251202560428725e-05
+      "value": 6581.23,
+      "delta": 0.3716870575244873
     },
     "btc_price": {
-      "value": 87220,
-      "delta": -0.38375439718580107
+      "value": 87012,
+      "delta": -0.6213166430627256
     },
     "stablecoin_mcap": {
-      "value": 306.63,
-      "delta": -0.09989138965002516
+      "value": 306.5,
+      "delta": -0.14227901842889776
     },
     "usdt_dominance": {
       "value": 6.14,
-      "delta": 0.4660033471693895
+      "delta": 0.5721609894904677
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.65,
-    "btc_gold": 0.09,
+    "btc_nasdaq": 0.76,
+    "btc_gold": 0.1,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -66,7 +66,7 @@
       "title": "Russia x Ukraine ceasefire in 2025?",
       "outcome": "No 100%",
       "probability": 0.9985,
-      "volume": 70848208.787402,
+      "volume": 70867792.730058,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/russia-x-ukraine-ceasefire-in-2025"
@@ -75,7 +75,7 @@
       "title": "Will Bitcoin reach $1,000,000 by December 31, 2025?",
       "outcome": "No 100%",
       "probability": 0.9995,
-      "volume": 31127507.538008,
+      "volume": 31127657.828008,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-bitcoin-reach-1000000-by-december-31-2025"
@@ -102,11 +102,11 @@
       "title": "Will Ethereum hit $5,000 by December 31?",
       "outcome": "No 100%",
       "probability": 0.9985,
-      "volume": 18350022.83629,
+      "volume": 18352476.07829,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-ethereum-hit-5000-by-december-31-796-376"
     }
   ],
-  "last_updated": "2025-12-29T21:49:58.017875Z"
+  "last_updated": "2025-12-29T22:15:39.772579Z"
 }
