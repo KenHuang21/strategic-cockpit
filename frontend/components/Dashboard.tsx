@@ -58,6 +58,7 @@ export default function Dashboard() {
         setDataError("Data is more than 15 minutes old. Please refresh.");
         toast.error("⚠️ Data may be stale. Consider refreshing.", {
           duration: 6000,
+          id: 'stale-data-warning', // Prevent duplicate toasts
         });
       }
 

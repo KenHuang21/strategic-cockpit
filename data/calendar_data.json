@@ -3,7 +3,7 @@
     {
       "id": "event_1",
       "name": "Consumer Price Index (CPI)",
-      "date": "2025-12-20",
+      "date": "2025-12-25",
       "time": "08:30",
       "impact": "High",
       "forecast": "3.2%",
@@ -15,7 +15,7 @@
     {
       "id": "event_2",
       "name": "Federal Reserve Interest Rate Decision",
-      "date": "2025-12-18",
+      "date": "2025-12-23",
       "time": "14:00",
       "impact": "High",
       "forecast": "5.50%",
@@ -27,7 +27,7 @@
     {
       "id": "event_3",
       "name": "Initial Jobless Claims",
-      "date": "2025-12-19",
+      "date": "2025-12-24",
       "time": "08:30",
       "impact": "Medium",
       "forecast": "220K",
@@ -37,9 +37,21 @@
       "status": "completed"
     },
     {
+      "id": "event_oil",
+      "name": "Crude Oil Inventories",
+      "date": "2026-01-03",
+      "time": "10:30",
+      "impact": "High",
+      "forecast": "-2.000M",
+      "actual": null,
+      "previous": "-1.425M",
+      "country": "US",
+      "status": "upcoming"
+    },
+    {
       "id": "event_4",
       "name": "GDP Growth Rate (Q3 Final)",
-      "date": "2025-12-26",
+      "date": "2025-12-31",
       "time": "08:30",
       "impact": "High",
       "forecast": "2.8%",
@@ -51,7 +63,7 @@
     {
       "id": "event_5",
       "name": "Consumer Confidence Index",
-      "date": "2025-12-27",
+      "date": "2026-01-01",
       "time": "10:00",
       "impact": "Medium",
       "forecast": "103.5",
@@ -63,7 +75,7 @@
     {
       "id": "event_6",
       "name": "New Home Sales",
-      "date": "2025-12-30",
+      "date": "2026-01-04",
       "time": "10:00",
       "impact": "Medium",
       "forecast": "725K",
@@ -75,7 +87,7 @@
     {
       "id": "event_7",
       "name": "ISM Manufacturing PMI",
-      "date": "2026-01-03",
+      "date": "2026-01-08",
       "time": "10:00",
       "impact": "High",
       "forecast": "48.5",
@@ -87,7 +99,7 @@
     {
       "id": "event_8",
       "name": "Non-Farm Payrolls",
-      "date": "2026-01-05",
+      "date": "2026-01-10",
       "time": "08:30",
       "impact": "High",
       "forecast": "180K",
@@ -99,7 +111,7 @@
     {
       "id": "event_9",
       "name": "Unemployment Rate",
-      "date": "2026-01-05",
+      "date": "2026-01-10",
       "time": "08:30",
       "impact": "High",
       "forecast": "4.2%",
@@ -111,7 +123,7 @@
     {
       "id": "event_10",
       "name": "FOMC Meeting Minutes",
-      "date": "2026-01-08",
+      "date": "2026-01-13",
       "time": "14:00",
       "impact": "High",
       "forecast": null,
@@ -123,7 +135,7 @@
     {
       "id": "event_11",
       "name": "Retail Sales",
-      "date": "2026-01-10",
+      "date": "2026-01-15",
       "time": "08:30",
       "impact": "High",
       "forecast": "0.5%",
@@ -135,7 +147,7 @@
     {
       "id": "event_12",
       "name": "Housing Starts",
-      "date": "2026-01-12",
+      "date": "2026-01-17",
       "time": "08:30",
       "impact": "Medium",
       "forecast": "1.35M",
@@ -147,7 +159,7 @@
     {
       "id": "event_13",
       "name": "Durable Goods Orders",
-      "date": "2026-01-17",
+      "date": "2026-01-22",
       "time": "08:30",
       "impact": "Medium",
       "forecast": "0.3%",
@@ -159,7 +171,7 @@
     {
       "id": "event_14",
       "name": "Personal Income",
-      "date": "2026-01-19",
+      "date": "2026-01-24",
       "time": "08:30",
       "impact": "Medium",
       "forecast": "0.4%",
@@ -225,7 +237,11 @@
     "event_14": {
       "pre_event_sent": false,
       "release_sent": false
+    },
+    "event_oil": {
+      "pre_event_sent": false,
+      "release_sent": false
     }
   },
-  "last_updated": "2025-12-24T02:56:43.540230"
+  "last_updated": "2025-12-29T11:46:46.953967"
 }
