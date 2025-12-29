@@ -842,12 +842,21 @@ def fetch_btc_etf_flows():
             200    # Today: good inflow
         ]
 
-        for i in range(5):
-            day = today - timedelta(days=4-i)
-            # Skip weekends (in production, would only fetch trading days)
-            while day.weekday() >= 5:  # Saturday = 5, Sunday = 6
-                day -= timedelta(days=1)
+        # Generate dates for last 5 TRADING days (Mon-Fri only)
+        trading_days = []
+        current_day = today
+        
+        while len(trading_days) < 5:
+            # Only include weekdays (0=Monday, 4=Friday)
+            if current_day.weekday() < 5:
+                trading_days.append(current_day)
+            current_day -= timedelta(days=1)
+        
+        # Reverse to get chronological order (oldest to newest)
+        trading_days.reverse()
 
+        # Create flow data for each trading day
+        for i, day in enumerate(trading_days):
             flow_value = base_flows[i]
 
             flows.append({
@@ -859,6 +868,7 @@ def fetch_btc_etf_flows():
         net_5day = sum(f["flow"] for f in flows) / 1000  # Convert millions to billions
 
         print(f"✅ BTC ETF Flows fetched: 5-day net = ${net_5day:.2f}B")
+        print(f"   Trading days: {[f['date'] for f in flows]}")
 
         return {
             "flows": flows,
@@ -871,6 +881,7 @@ def fetch_btc_etf_flows():
             "flows": [],
             "net_5day": 0
         }
+
 
 
 def fetch_correlation_data():

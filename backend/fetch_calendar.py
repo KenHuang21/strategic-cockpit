@@ -293,6 +293,18 @@ def generate_fallback_calendar():
             "status": "completed"
         },
         {
+            "id": "event_oil",
+            "name": "Crude Oil Inventories",
+            "date": (today + timedelta(days=5)).strftime("%Y-%m-%d"),
+            "time": "10:30",
+            "impact": "High",
+            "forecast": "-2.000M",
+            "actual": None,
+            "previous": "-1.425M",
+            "country": "US",
+            "status": "upcoming"
+        },
+        {
             "id": "event_4",
             "name": "GDP Growth Rate (Q3 Final)",
             "date": (today + timedelta(days=2)).strftime("%Y-%m-%d"),
