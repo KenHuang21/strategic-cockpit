@@ -9,11 +9,6 @@
   },
   "subscribers": [
     {
-      "type": "telegram",
-      "name": "Test User Alpha",
-      "id": "123456789"
-    },
-    {
       "type": "email",
       "name": "Test User Beta",
       "address": "beta@example.com"
