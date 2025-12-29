@@ -9,8 +9,8 @@
       "delta": 1.5251202560428725e-05
     },
     "btc_price": {
-      "value": 87118,
-      "delta": -0.5002512677600621
+      "value": 87307,
+      "delta": -0.28438941934304907
     },
     "stablecoin_mcap": {
       "value": 306.68,
@@ -18,7 +18,7 @@
     },
     "usdt_dominance": {
       "value": 6.14,
-      "delta": 0.4883784355441542
+      "delta": 0.5088228124778379
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.75,
-    "btc_gold": -0.04,
+    "btc_nasdaq": 0.72,
+    "btc_gold": 0.05,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -65,8 +65,8 @@
     {
       "title": "Russia x Ukraine ceasefire in 2025?",
       "outcome": "No 100%",
-      "probability": 0.9965,
-      "volume": 69812978.361596,
+      "probability": 0.9975,
+      "volume": 69854628.53576,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/russia-x-ukraine-ceasefire-in-2025"
@@ -75,7 +75,7 @@
       "title": "Will Bitcoin reach $1,000,000 by December 31, 2025?",
       "outcome": "No 100%",
       "probability": 0.9985,
-      "volume": 30723001.334996,
+      "volume": 30723491.372996,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-bitcoin-reach-1000000-by-december-31-2025"
@@ -102,11 +102,11 @@
       "title": "Will Ethereum hit $5,000 by December 31?",
       "outcome": "No 100%",
       "probability": 0.9985,
-      "volume": 18318068.513315,
+      "volume": 18318149.514316,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-ethereum-hit-5000-by-december-31-796-376"
     }
   ],
-  "last_updated": "2025-12-29T13:53:14.898303Z"
+  "last_updated": "2025-12-29T14:17:11.776376Z"
 }
