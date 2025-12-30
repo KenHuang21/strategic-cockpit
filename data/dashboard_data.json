@@ -9,16 +9,16 @@
       "delta": 0.3716870575244873
     },
     "btc_price": {
-      "value": 87957,
-      "delta": 0.45799259902234
+      "value": 88036,
+      "delta": 0.5482205674082873
     },
     "stablecoin_mcap": {
-      "value": 306.6,
-      "delta": -0.10940085809853005
+      "value": 306.8,
+      "delta": -0.04527167518083281
     },
     "usdt_dominance": {
-      "value": 6.1,
-      "delta": -0.0933341146226559
+      "value": 6.11,
+      "delta": -0.03835869445688699
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.74,
-    "btc_gold": -0.08,
+    "btc_nasdaq": 0.78,
+    "btc_gold": -0.13,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -65,9 +65,9 @@
     {
       "title": "Russia x Ukraine ceasefire in 2025?",
       "outcome": "No 100%",
-      "probability": 0.9985,
-      "volume": 71657739.356437,
-      "volume_24h": 1902049.6175009906,
+      "probability": 0.998,
+      "volume": 71665732.733103,
+      "volume_24h": 1910042.994167,
       "flipped": false,
       "url": "https://polymarket.com/event/russia-x-ukraine-ceasefire-in-2025"
     },
@@ -75,8 +75,8 @@
       "title": "Will Bitcoin reach $1,000,000 by December 31, 2025?",
       "outcome": "No 100%",
       "probability": 0.9995,
-      "volume": 31167393.048008,
-      "volume_24h": 736803.2534100004,
+      "volume": 31167430.028008,
+      "volume_24h": 736840.2334100008,
       "flipped": false,
       "url": "https://polymarket.com/event/will-bitcoin-reach-1000000-by-december-31-2025"
     },
@@ -102,11 +102,11 @@
       "title": "Will Ethereum hit $5,000 by December 31?",
       "outcome": "No 100%",
       "probability": 0.999,
-      "volume": 18407842.617303,
-      "volume_24h": 90832.99884999916,
+      "volume": 18408576.297303,
+      "volume_24h": 91566.67884999886,
       "flipped": false,
       "url": "https://polymarket.com/event/will-ethereum-hit-5000-by-december-31-796-376"
     }
   ],
-  "last_updated": "2025-12-30T10:20:21.894289Z"
+  "last_updated": "2025-12-30T10:46:25.611321Z"
 }
