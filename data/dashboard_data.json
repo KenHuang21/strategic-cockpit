@@ -9,16 +9,16 @@
       "delta": 0.3716870575244873
     },
     "btc_price": {
-      "value": 87117,
-      "delta": -0.5013933939421628
+      "value": 87158,
+      "delta": -0.45456622047603823
     },
     "stablecoin_mcap": {
-      "value": 306.84,
-      "delta": -0.031062610976748183
+      "value": 306.59,
+      "delta": -0.11397604473205195
     },
     "usdt_dominance": {
-      "value": 6.16,
-      "delta": 0.8488564373554186
+      "value": 6.17,
+      "delta": 0.9024203126138233
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -33,31 +33,31 @@
   "btc_etf_flows": {
     "flows": [
       {
-        "date": "2025-12-23",
+        "date": "2025-12-24",
         "flow": 150
       },
       {
-        "date": "2025-12-24",
+        "date": "2025-12-25",
         "flow": -50
       },
       {
-        "date": "2025-12-25",
+        "date": "2025-12-26",
         "flow": 300
       },
       {
-        "date": "2025-12-26",
+        "date": "2025-12-29",
         "flow": 100
       },
       {
-        "date": "2025-12-29",
+        "date": "2025-12-30",
         "flow": 200
       }
     ],
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.8,
-    "btc_gold": 0.04,
+    "btc_nasdaq": 0.75,
+    "btc_gold": 0.03,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -66,7 +66,7 @@
       "title": "Russia x Ukraine ceasefire in 2025?",
       "outcome": "No 100%",
       "probability": 0.9985,
-      "volume": 70888636.848304,
+      "volume": 70900168.924437,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/russia-x-ukraine-ceasefire-in-2025"
@@ -102,11 +102,11 @@
       "title": "Will Ethereum hit $5,000 by December 31?",
       "outcome": "No 100%",
       "probability": 0.9985,
-      "volume": 18364743.729059,
+      "volume": 18368040.996876,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-ethereum-hit-5000-by-december-31-796-376"
     }
   ],
-  "last_updated": "2025-12-29T23:50:07.572205Z"
+  "last_updated": "2025-12-30T01:14:47.552458Z"
 }
