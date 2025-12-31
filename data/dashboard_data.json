@@ -9,16 +9,16 @@
       "delta": 0.3716870575244873
     },
     "btc_price": {
-      "value": 87412,
-      "delta": -0.16446617022248616
+      "value": 87507,
+      "delta": -0.055964182922929324
     },
     "stablecoin_mcap": {
-      "value": 305.87,
-      "delta": -0.34706764029073944
+      "value": 306.25,
+      "delta": -0.22328659070074713
     },
     "usdt_dominance": {
-      "value": 6.14,
-      "delta": 0.4919416836624402
+      "value": 6.13,
+      "delta": 0.3790406347875666
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,17 +56,17 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.76,
-    "btc_gold": -0.04,
-    "interpretation": "Moderately Correlated",
+    "btc_nasdaq": 0.83,
+    "btc_gold": 0.07,
+    "interpretation": "Macro Driven",
     "period_days": 30
   },
   "polymarket_top5": [
     {
       "title": "Russia x Ukraine ceasefire in 2025?",
       "outcome": "No 100%",
-      "probability": 0.9985,
-      "volume": 73587061.389361,
+      "probability": 0.9995,
+      "volume": 73589244.597722,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/russia-x-ukraine-ceasefire-in-2025"
@@ -75,7 +75,7 @@
       "title": "Will Bitcoin reach $1,000,000 by December 31, 2025?",
       "outcome": "No 100%",
       "probability": 0.9995,
-      "volume": 31374867.448008,
+      "volume": 31384867.448008,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-bitcoin-reach-1000000-by-december-31-2025"
@@ -84,7 +84,7 @@
       "title": "Will Saudi Aramco be the largest company in the world by market cap on December 31?",
       "outcome": "No 100%",
       "probability": 0.9995,
-      "volume": 25240682.288934,
+      "volume": 25240782.288934,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-saudi-aramco-be-the-largest-company-in-the-world-by-market-cap-on-december-31"
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/will-ethereum-hit-5000-by-december-31-796-376"
     }
   ],
-  "last_updated": "2025-12-31T17:14:26.214451Z"
+  "last_updated": "2025-12-31T17:33:50.294826Z"
 }
