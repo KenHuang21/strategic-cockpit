@@ -9,16 +9,16 @@
       "delta": 0.3716870575244873
     },
     "btc_price": {
-      "value": 87830,
-      "delta": 0.31294257389556396
+      "value": 87935,
+      "delta": 0.43286582301612686
     },
     "stablecoin_mcap": {
-      "value": 305.53,
-      "delta": -0.4586026622645152
+      "value": 305.54,
+      "delta": -0.4547720287272652
     },
     "usdt_dominance": {
       "value": 6.1,
-      "delta": -0.10426191222027306
+      "delta": -0.20248822513671041
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -57,7 +57,7 @@
   },
   "correlation_radar": {
     "btc_nasdaq": 0.73,
-    "btc_gold": 0.06,
+    "btc_gold": -0.08,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -75,7 +75,7 @@
       "title": "Will Captain America: Brave New World be the top grossing movie of 2025?",
       "outcome": "No 100%",
       "probability": 0.9995,
-      "volume": 14760738.490922,
+      "volume": 14762918.490922,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-captain-america-new-world-order-be-the-top-grossing-movie-of-2025"
@@ -92,8 +92,8 @@
     {
       "title": "MicroStrategy sells any Bitcoin in 2025?",
       "outcome": "No 100%",
-      "probability": 0.998,
-      "volume": 13799971.422383,
+      "probability": 0.9975,
+      "volume": 13814272.412892,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/microstrategy-sell-any-bitcoin-in-2025"
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/will-the-fantastic-four-first-steps-be-the-top-grossing-movie-of-2025"
     }
   ],
-  "last_updated": "2026-01-01T16:48:53.606713Z"
+  "last_updated": "2026-01-01T17:15:10.881888Z"
 }
