@@ -9,8 +9,8 @@
       "delta": 0.3716870575244873
     },
     "btc_price": {
-      "value": 88072,
-      "delta": 0.5893371099639089
+      "value": 88012,
+      "delta": 0.5208095390378729
     },
     "stablecoin_mcap": {
       "value": 305.6,
@@ -18,7 +18,7 @@
     },
     "usdt_dominance": {
       "value": 6.09,
-      "delta": -0.327446068353252
+      "delta": -0.3440771021340243
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,9 +56,9 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.78,
-    "btc_gold": 0.13,
-    "interpretation": "Moderately Correlated",
+    "btc_nasdaq": 0.82,
+    "btc_gold": -0.07,
+    "interpretation": "Macro Driven",
     "period_days": 30
   },
   "polymarket_top5": [
@@ -83,8 +83,8 @@
     {
       "title": "MicroStrategy sells any Bitcoin in 2025?",
       "outcome": "No 100%",
-      "probability": 0.9985,
-      "volume": 14035691.589301,
+      "probability": 0.9975,
+      "volume": 14298424.093287,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/microstrategy-sell-any-bitcoin-in-2025"
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/will-the-fantastic-four-first-steps-be-the-top-grossing-movie-of-2025"
     }
   ],
-  "last_updated": "2026-01-01T18:51:06.166527Z"
+  "last_updated": "2026-01-01T19:13:17.432707Z"
 }
