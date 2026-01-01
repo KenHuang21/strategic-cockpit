@@ -9,8 +9,8 @@
       "delta": 0.3716870575244873
     },
     "btc_price": {
-      "value": 87862,
-      "delta": 0.3494906117227832
+      "value": 87849,
+      "delta": 0.3346429713554754
     },
     "stablecoin_mcap": {
       "value": 305.53,
@@ -18,7 +18,7 @@
     },
     "usdt_dominance": {
       "value": 6.1,
-      "delta": -0.08304154553839342
+      "delta": -0.09080955102840887
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,9 +56,9 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.85,
-    "btc_gold": 0.02,
-    "interpretation": "Macro Driven",
+    "btc_nasdaq": 0.74,
+    "btc_gold": -0.1,
+    "interpretation": "Moderately Correlated",
     "period_days": 30
   },
   "polymarket_top5": [
@@ -102,11 +102,11 @@
       "title": "MicroStrategy sells any Bitcoin in 2025?",
       "outcome": "No 100%",
       "probability": 0.9985,
-      "volume": 12737619.860948,
+      "volume": 13149827.108964,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/microstrategy-sell-any-bitcoin-in-2025"
     }
   ],
-  "last_updated": "2026-01-01T13:21:35.441207Z"
+  "last_updated": "2026-01-01T13:49:34.235542Z"
 }
