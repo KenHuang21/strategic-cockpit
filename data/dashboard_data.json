@@ -9,16 +9,16 @@
       "delta": 0.3716870575244873
     },
     "btc_price": {
-      "value": 87868,
-      "delta": 0.3563433688153867
+      "value": 87504,
+      "delta": -0.05939056146923112
     },
     "stablecoin_mcap": {
-      "value": 305.78,
-      "delta": -0.37701243088703185
+      "value": 305.73,
+      "delta": -0.3935140238685455
     },
     "usdt_dominance": {
-      "value": 6.12,
-      "delta": 0.1394361961439551
+      "value": 6.14,
+      "delta": 0.46216074598625506
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.84,
-    "btc_gold": 0.07,
+    "btc_nasdaq": 0.82,
+    "btc_gold": 0.08,
     "interpretation": "Macro Driven",
     "period_days": 30
   },
@@ -66,7 +66,7 @@
       "title": "Russia x Ukraine ceasefire in 2025?",
       "outcome": "No 100%",
       "probability": 0.9995,
-      "volume": 73731604.787722,
+      "volume": 73733432.137722,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/russia-x-ukraine-ceasefire-in-2025"
@@ -75,7 +75,7 @@
       "title": "Will Bitcoin reach $1,000,000 by December 31, 2025?",
       "outcome": "No 100%",
       "probability": 0.9995,
-      "volume": 31393707.628008,
+      "volume": 31393866.288008,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-bitcoin-reach-1000000-by-december-31-2025"
@@ -84,7 +84,7 @@
       "title": "Will Bitcoin reach $200,000 by December 31, 2025?",
       "outcome": "No 100%",
       "probability": 0.9995,
-      "volume": 19275701.596605,
+      "volume": 19275707.736605,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-bitcoin-reach-200000-by-december-31-2025"
@@ -102,11 +102,11 @@
       "title": "Will Bitcoin reach $150,000 by December 31, 2025?",
       "outcome": "No 100%",
       "probability": 0.9995,
-      "volume": 16383857.733217,
+      "volume": 16383864.543217,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-bitcoin-reach-150000-by-december-31-2025-188"
     }
   ],
-  "last_updated": "2026-01-01T03:22:45.010725Z"
+  "last_updated": "2026-01-01T04:32:30.822585Z"
 }
