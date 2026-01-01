@@ -9,16 +9,16 @@
       "delta": 0.3716870575244873
     },
     "btc_price": {
-      "value": 87514,
-      "delta": -0.04796929964822513
+      "value": 87595,
+      "delta": 0.04454292110192334
     },
     "stablecoin_mcap": {
-      "value": 305.44,
-      "delta": -0.4872918692970939
+      "value": 305.47,
+      "delta": -0.4789210483977957
     },
     "usdt_dominance": {
-      "value": 6.13,
-      "delta": 0.2930540567401031
+      "value": 6.12,
+      "delta": 0.19238607450126188
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.8,
-    "btc_gold": -0.13,
+    "btc_nasdaq": 0.7,
+    "btc_gold": 0.14,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -66,7 +66,7 @@
       "title": "Maduro out in 2025?",
       "outcome": "No 100%",
       "probability": 0.9995,
-      "volume": 34640553.887049,
+      "volume": 34640600.627049,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/maduro-out-in-2025-411"
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/will-the-fantastic-four-first-steps-be-the-top-grossing-movie-of-2025"
     }
   ],
-  "last_updated": "2026-01-01T07:52:58.333092Z"
+  "last_updated": "2026-01-01T08:22:32.583850Z"
 }
