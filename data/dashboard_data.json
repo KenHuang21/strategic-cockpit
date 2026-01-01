@@ -9,16 +9,16 @@
       "delta": 0.3716870575244873
     },
     "btc_price": {
-      "value": 88151,
-      "delta": 0.679565078349856
+      "value": 88279,
+      "delta": 0.8257572296587327
     },
     "stablecoin_mcap": {
-      "value": 305.6,
-      "delta": -0.43702267000538514
+      "value": 305.63,
+      "delta": -0.4251664610341531
     },
     "usdt_dominance": {
-      "value": 6.08,
-      "delta": -0.4770770042330213
+      "value": 6.07,
+      "delta": -0.6317986210603435
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,9 +56,9 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.74,
-    "btc_gold": 0.1,
-    "interpretation": "Moderately Correlated",
+    "btc_nasdaq": 0.81,
+    "btc_gold": 0.05,
+    "interpretation": "Macro Driven",
     "period_days": 30
   },
   "polymarket_top5": [
@@ -102,11 +102,11 @@
       "title": "Will The Fantastic Four: First Steps be the top grossing movie of 2025?",
       "outcome": "No 100%",
       "probability": 0.9995,
-      "volume": 13648968.484383,
+      "volume": 13649028.544383,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-fantastic-four-first-steps-be-the-top-grossing-movie-of-2025"
     }
   ],
-  "last_updated": "2026-01-01T20:54:28.317883Z"
+  "last_updated": "2026-01-01T21:15:16.494220Z"
 }
