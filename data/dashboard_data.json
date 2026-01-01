@@ -9,16 +9,16 @@
       "delta": 0.3716870575244873
     },
     "btc_price": {
-      "value": 87520,
-      "delta": -0.04111654255562154
+      "value": 87494,
+      "delta": -0.07081182329023711
     },
     "stablecoin_mcap": {
-      "value": 305.55,
-      "delta": -0.45432951171850633
+      "value": 305.44,
+      "delta": -0.4872918692970939
     },
     "usdt_dominance": {
       "value": 6.13,
-      "delta": 0.29006086809657566
+      "delta": 0.286204800181133
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,57 +56,57 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.78,
-    "btc_gold": -0.1,
+    "btc_nasdaq": 0.71,
+    "btc_gold": 0.11,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
   "polymarket_top5": [
     {
-      "title": "Russia x Ukraine ceasefire in 2025?",
+      "title": "Maduro out in 2025?",
       "outcome": "No 100%",
       "probability": 0.9995,
-      "volume": 73752993.267722,
+      "volume": 34640471.237049,
       "volume_24h": 0,
       "flipped": false,
-      "url": "https://polymarket.com/event/russia-x-ukraine-ceasefire-in-2025"
+      "url": "https://polymarket.com/event/maduro-out-in-2025-411"
     },
     {
-      "title": "Will Bitcoin reach $1,000,000 by December 31, 2025?",
+      "title": "Will Thunderbolts be the top grossing movie of 2025?",
       "outcome": "No 100%",
       "probability": 0.9995,
-      "volume": 31394167.188008,
+      "volume": 15697140.156287,
       "volume_24h": 0,
       "flipped": false,
-      "url": "https://polymarket.com/event/will-bitcoin-reach-1000000-by-december-31-2025"
+      "url": "https://polymarket.com/event/will-thunderbolts-be-the-top-grossing-movie-of-2025"
     },
     {
-      "title": "Will Bitcoin reach $200,000 by December 31, 2025?",
+      "title": "Will Captain America: Brave New World be the top grossing movie of 2025?",
       "outcome": "No 100%",
       "probability": 0.9995,
-      "volume": 19275707.736605,
+      "volume": 14760738.490922,
       "volume_24h": 0,
       "flipped": false,
-      "url": "https://polymarket.com/event/will-bitcoin-reach-200000-by-december-31-2025"
+      "url": "https://polymarket.com/event/will-captain-america-new-world-order-be-the-top-grossing-movie-of-2025"
     },
     {
-      "title": "Will Ethereum hit $5,000 by December 31?",
+      "title": "Will How to Train Your Dragon be the top grossing movie of 2025?",
       "outcome": "No 100%",
       "probability": 0.9995,
-      "volume": 18467737.400303,
+      "volume": 13955358.209758,
       "volume_24h": 0,
       "flipped": false,
-      "url": "https://polymarket.com/event/will-ethereum-hit-5000-by-december-31-796-376"
+      "url": "https://polymarket.com/event/will-how-to-train-your-dragon-be-the-top-grossing-movie-of-2025"
     },
     {
-      "title": "Will Bitcoin reach $150,000 by December 31, 2025?",
+      "title": "Will The Fantastic Four: First Steps be the top grossing movie of 2025?",
       "outcome": "No 100%",
       "probability": 0.9995,
-      "volume": 16414060.383217,
+      "volume": 13641898.274383,
       "volume_24h": 0,
       "flipped": false,
-      "url": "https://polymarket.com/event/will-bitcoin-reach-150000-by-december-31-2025-188"
+      "url": "https://polymarket.com/event/will-the-fantastic-four-first-steps-be-the-top-grossing-movie-of-2025"
     }
   ],
-  "last_updated": "2026-01-01T07:00:16.308371Z"
+  "last_updated": "2026-01-01T07:30:13.029154Z"
 }
