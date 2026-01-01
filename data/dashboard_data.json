@@ -9,16 +9,16 @@
       "delta": 0.3716870575244873
     },
     "btc_price": {
-      "value": 88012,
-      "delta": 0.5208095390378729
+      "value": 88038,
+      "delta": 0.5505048197724884
     },
     "stablecoin_mcap": {
-      "value": 305.6,
-      "delta": -0.43517617435772527
+      "value": 304.3,
+      "delta": -0.8597458452876249
     },
     "usdt_dominance": {
       "value": 6.09,
-      "delta": -0.3440771021340243
+      "delta": -0.3524837719707036
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.82,
-    "btc_gold": -0.07,
+    "btc_nasdaq": 0.81,
+    "btc_gold": -0.01,
     "interpretation": "Macro Driven",
     "period_days": 30
   },
@@ -66,34 +66,34 @@
       "title": "Will Thunderbolts be the top grossing movie of 2025?",
       "outcome": "No 100%",
       "probability": 0.9995,
-      "volume": 15698140.156287,
+      "volume": 15699140.156287,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-thunderbolts-be-the-top-grossing-movie-of-2025"
     },
     {
-      "title": "Will Captain America: Brave New World be the top grossing movie of 2025?",
-      "outcome": "No 100%",
-      "probability": 0.9995,
-      "volume": 14762918.490922,
-      "volume_24h": 0,
-      "flipped": false,
-      "url": "https://polymarket.com/event/will-captain-america-new-world-order-be-the-top-grossing-movie-of-2025"
-    },
-    {
       "title": "MicroStrategy sells any Bitcoin in 2025?",
       "outcome": "No 100%",
-      "probability": 0.9975,
-      "volume": 14298424.093287,
+      "probability": 0.997,
+      "volume": 14890285.132642,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/microstrategy-sell-any-bitcoin-in-2025"
     },
     {
+      "title": "Will Captain America: Brave New World be the top grossing movie of 2025?",
+      "outcome": "No 100%",
+      "probability": 0.9995,
+      "volume": 14763918.490922,
+      "volume_24h": 0,
+      "flipped": false,
+      "url": "https://polymarket.com/event/will-captain-america-new-world-order-be-the-top-grossing-movie-of-2025"
+    },
+    {
       "title": "Will How to Train Your Dragon be the top grossing movie of 2025?",
       "outcome": "No 100%",
       "probability": 0.9995,
-      "volume": 13955358.209758,
+      "volume": 13956358.209758,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-how-to-train-your-dragon-be-the-top-grossing-movie-of-2025"
@@ -102,11 +102,11 @@
       "title": "Will The Fantastic Four: First Steps be the top grossing movie of 2025?",
       "outcome": "No 100%",
       "probability": 0.9995,
-      "volume": 13641898.274383,
+      "volume": 13642898.274383,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-fantastic-four-first-steps-be-the-top-grossing-movie-of-2025"
     }
   ],
-  "last_updated": "2026-01-01T19:13:17.432707Z"
+  "last_updated": "2026-01-01T19:29:04.092548Z"
 }
