@@ -9,16 +9,16 @@
       "delta": 0.3716870575244873
     },
     "btc_price": {
-      "value": 88186,
-      "delta": 0.7195394947233771
+      "value": 88219,
+      "delta": 0.7572296587326968
     },
     "stablecoin_mcap": {
-      "value": 304.3,
-      "delta": -0.8597458452876249
+      "value": 305.6,
+      "delta": -0.43702267000538514
     },
     "usdt_dominance": {
       "value": 6.08,
-      "delta": -0.527671164280458
+      "delta": -0.5608984919220676
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,12 +56,21 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.79,
-    "btc_gold": 0.04,
+    "btc_nasdaq": 0.72,
+    "btc_gold": 0.12,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
   "polymarket_top5": [
+    {
+      "title": "MicroStrategy sells any Bitcoin in 2025?",
+      "outcome": "No 100%",
+      "probability": 0.9985,
+      "volume": 15743436.905352,
+      "volume_24h": 0,
+      "flipped": false,
+      "url": "https://polymarket.com/event/microstrategy-sell-any-bitcoin-in-2025"
+    },
     {
       "title": "Will Thunderbolts be the top grossing movie of 2025?",
       "outcome": "No 100%",
@@ -70,15 +79,6 @@
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-thunderbolts-be-the-top-grossing-movie-of-2025"
-    },
-    {
-      "title": "MicroStrategy sells any Bitcoin in 2025?",
-      "outcome": "No 100%",
-      "probability": 0.9975,
-      "volume": 14890637.298771,
-      "volume_24h": 0,
-      "flipped": false,
-      "url": "https://polymarket.com/event/microstrategy-sell-any-bitcoin-in-2025"
     },
     {
       "title": "Will Captain America: Brave New World be the top grossing movie of 2025?",
@@ -102,11 +102,11 @@
       "title": "Will The Fantastic Four: First Steps be the top grossing movie of 2025?",
       "outcome": "No 100%",
       "probability": 0.9995,
-      "volume": 13648888.404383,
+      "volume": 13648928.444383,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-fantastic-four-first-steps-be-the-top-grossing-movie-of-2025"
     }
   ],
-  "last_updated": "2026-01-01T19:49:12.669845Z"
+  "last_updated": "2026-01-01T20:18:20.851026Z"
 }
