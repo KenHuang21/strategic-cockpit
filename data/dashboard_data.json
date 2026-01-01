@@ -9,16 +9,16 @@
       "delta": 0.3716870575244873
     },
     "btc_price": {
-      "value": 87865,
-      "delta": 0.3529169902690849
+      "value": 87895,
+      "delta": 0.3871807757321029
     },
     "stablecoin_mcap": {
       "value": 305.51,
       "delta": -0.4666701555379509
     },
     "usdt_dominance": {
-      "value": 6.11,
-      "delta": -0.08111786250196835
+      "value": 6.1,
+      "delta": -0.17487637700719352
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.79,
-    "btc_gold": 0.09,
+    "btc_nasdaq": 0.77,
+    "btc_gold": 0.14,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/microstrategy-sell-any-bitcoin-in-2025"
     }
   ],
-  "last_updated": "2026-01-01T15:41:16.405854Z"
+  "last_updated": "2026-01-01T15:52:00.457411Z"
 }
