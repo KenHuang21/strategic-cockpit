@@ -9,16 +9,16 @@
       "delta": 0.3716870575244873
     },
     "btc_price": {
-      "value": 87566,
-      "delta": 0.011421261821005984
+      "value": 87510,
+      "delta": -0.05253780437662753
     },
     "stablecoin_mcap": {
-      "value": 305.39,
-      "delta": -0.505481251705707
+      "value": 305.55,
+      "delta": -0.45432951171850633
     },
     "usdt_dominance": {
-      "value": 6.12,
-      "delta": 0.22324514728246572
+      "value": 6.13,
+      "delta": 0.2782778233865194
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,9 +56,9 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.84,
-    "btc_gold": 0.09,
-    "interpretation": "Macro Driven",
+    "btc_nasdaq": 0.66,
+    "btc_gold": 0.15,
+    "interpretation": "Moderately Correlated",
     "period_days": 30
   },
   "polymarket_top5": [
@@ -66,7 +66,7 @@
       "title": "Russia x Ukraine ceasefire in 2025?",
       "outcome": "No 100%",
       "probability": 0.9995,
-      "volume": 73752938.797722,
+      "volume": 73752993.267722,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/russia-x-ukraine-ceasefire-in-2025"
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/will-bitcoin-reach-150000-by-december-31-2025-188"
     }
   ],
-  "last_updated": "2026-01-01T05:56:44.358266Z"
+  "last_updated": "2026-01-01T06:31:17.922120Z"
 }
