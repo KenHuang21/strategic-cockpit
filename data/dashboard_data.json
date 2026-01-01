@@ -9,8 +9,8 @@
       "delta": 0.3716870575244873
     },
     "btc_price": {
-      "value": 87510,
-      "delta": -0.05253780437662753
+      "value": 87520,
+      "delta": -0.04111654255562154
     },
     "stablecoin_mcap": {
       "value": 305.55,
@@ -18,7 +18,7 @@
     },
     "usdt_dominance": {
       "value": 6.13,
-      "delta": 0.2782778233865194
+      "delta": 0.29006086809657566
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.66,
-    "btc_gold": 0.15,
+    "btc_nasdaq": 0.78,
+    "btc_gold": -0.1,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/will-bitcoin-reach-150000-by-december-31-2025-188"
     }
   ],
-  "last_updated": "2026-01-01T06:31:17.922120Z"
+  "last_updated": "2026-01-01T07:00:16.308371Z"
 }
