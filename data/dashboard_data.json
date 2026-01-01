@@ -9,16 +9,16 @@
       "delta": 0.3716870575244873
     },
     "btc_price": {
-      "value": 87504,
-      "delta": -0.05939056146923112
+      "value": 87510,
+      "delta": -0.05253780437662753
     },
     "stablecoin_mcap": {
-      "value": 305.73,
-      "delta": -0.3935140238685455
+      "value": 305.39,
+      "delta": -0.505481251705707
     },
     "usdt_dominance": {
-      "value": 6.14,
-      "delta": 0.46216074598625506
+      "value": 6.13,
+      "delta": 0.3692560781021803
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,9 +56,9 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.82,
-    "btc_gold": 0.08,
-    "interpretation": "Macro Driven",
+    "btc_nasdaq": 0.72,
+    "btc_gold": 0.06,
+    "interpretation": "Moderately Correlated",
     "period_days": 30
   },
   "polymarket_top5": [
@@ -102,11 +102,11 @@
       "title": "Will Bitcoin reach $150,000 by December 31, 2025?",
       "outcome": "No 100%",
       "probability": 0.9995,
-      "volume": 16383864.543217,
+      "volume": 16397614.523217,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-bitcoin-reach-150000-by-december-31-2025-188"
     }
   ],
-  "last_updated": "2026-01-01T04:32:30.822585Z"
+  "last_updated": "2026-01-01T05:05:20.098354Z"
 }
