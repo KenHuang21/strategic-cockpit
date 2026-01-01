@@ -9,8 +9,8 @@
       "delta": 0.3716870575244873
     },
     "btc_price": {
-      "value": 87512,
-      "delta": -0.05025355201242634
+      "value": 87514,
+      "delta": -0.04796929964822513
     },
     "stablecoin_mcap": {
       "value": 305.44,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.76,
-    "btc_gold": -0.03,
+    "btc_nasdaq": 0.8,
+    "btc_gold": -0.13,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/will-the-fantastic-four-first-steps-be-the-top-grossing-movie-of-2025"
     }
   ],
-  "last_updated": "2026-01-01T07:44:47.793000Z"
+  "last_updated": "2026-01-01T07:52:58.333092Z"
 }
