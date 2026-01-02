@@ -9,16 +9,16 @@
       "delta": 0.3716870575244873
     },
     "btc_price": {
-      "value": 89789,
-      "delta": 2.5503677646306366
+      "value": 89939,
+      "delta": 2.721686691945726
     },
     "stablecoin_mcap": {
       "value": 306.23,
       "delta": -0.23091448555270797
     },
     "usdt_dominance": {
-      "value": 5.95,
-      "delta": -2.5694985185155077
+      "value": 5.94,
+      "delta": -2.7941975096741896
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.7,
-    "btc_gold": -0.11,
+    "btc_nasdaq": 0.71,
+    "btc_gold": 0.12,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/will-jurassic-world-rebirth-be-the-top-grossing-movie-of-2025"
     }
   ],
-  "last_updated": "2026-01-02T19:10:39.742524Z"
+  "last_updated": "2026-01-02T19:24:10.341260Z"
 }
