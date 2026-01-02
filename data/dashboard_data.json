@@ -9,16 +9,16 @@
       "delta": 0.3716870575244873
     },
     "btc_price": {
-      "value": 88643,
-      "delta": 1.2414911599433505
+      "value": 88704,
+      "delta": 1.311160857051487
     },
     "stablecoin_mcap": {
-      "value": 305.41,
-      "delta": -0.49944586002149294
+      "value": 305.7,
+      "delta": -0.4049992194695439
     },
     "usdt_dominance": {
-      "value": 6.05,
-      "delta": -0.9994195298974159
+      "value": 6.06,
+      "delta": -0.795939147245993
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,9 +56,9 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.83,
-    "btc_gold": 0.12,
-    "interpretation": "Macro Driven",
+    "btc_nasdaq": 0.76,
+    "btc_gold": -0.08,
+    "interpretation": "Moderately Correlated",
     "period_days": 30
   },
   "polymarket_top5": [
@@ -66,25 +66,16 @@
       "title": "MicroStrategy sells any Bitcoin in 2025?",
       "outcome": "No 100%",
       "probability": 0.9985,
-      "volume": 15822432.566352,
+      "volume": 15950809.208352,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/microstrategy-sell-any-bitcoin-in-2025"
     },
     {
-      "title": "Will Thunderbolts be the top grossing movie of 2025?",
-      "outcome": "No 100%",
-      "probability": 0.9995,
-      "volume": 15699200.216287,
-      "volume_24h": 0,
-      "flipped": false,
-      "url": "https://polymarket.com/event/will-thunderbolts-be-the-top-grossing-movie-of-2025"
-    },
-    {
       "title": "Will Captain America: Brave New World be the top grossing movie of 2025?",
       "outcome": "No 100%",
       "probability": 0.9995,
-      "volume": 14763978.550922,
+      "volume": 14764459.030922,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-captain-america-new-world-order-be-the-top-grossing-movie-of-2025"
@@ -102,11 +93,20 @@
       "title": "Will The Fantastic Four: First Steps be the top grossing movie of 2025?",
       "outcome": "No 100%",
       "probability": 0.9995,
-      "volume": 13649088.604383,
+      "volume": 13650569.084383,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-fantastic-four-first-steps-be-the-top-grossing-movie-of-2025"
+    },
+    {
+      "title": "Will Jurassic World: Rebirth be the top grossing movie of 2025?",
+      "outcome": "No 100%",
+      "probability": 0.9995,
+      "volume": 11612378.758951,
+      "volume_24h": 0,
+      "flipped": false,
+      "url": "https://polymarket.com/event/will-jurassic-world-rebirth-be-the-top-grossing-movie-of-2025"
     }
   ],
-  "last_updated": "2026-01-02T01:16:38.233646Z"
+  "last_updated": "2026-01-02T03:13:59.881507Z"
 }
