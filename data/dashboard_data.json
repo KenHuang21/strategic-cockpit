@@ -9,16 +9,16 @@
       "delta": 1.2774102237961573
     },
     "btc_price": {
-      "value": 90126,
-      "delta": 2.935264287998538
+      "value": 90313,
+      "delta": 3.1488418840513503
     },
     "stablecoin_mcap": {
-      "value": 306.33,
-      "delta": -0.19935392165317178
+      "value": 306.79,
+      "delta": -0.0480170621747548
     },
     "usdt_dominance": {
-      "value": 5.92,
-      "delta": -3.1874633776459578
+      "value": 5.91,
+      "delta": -3.3005645104903003
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,9 +56,9 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.81,
-    "btc_gold": -0.06,
-    "interpretation": "Macro Driven",
+    "btc_nasdaq": 0.77,
+    "btc_gold": 0.02,
+    "interpretation": "Moderately Correlated",
     "period_days": 30
   },
   "polymarket_top5": [
@@ -66,7 +66,7 @@
       "title": "MicroStrategy sells any Bitcoin in 2025?",
       "outcome": "No 100%",
       "probability": 0.9985,
-      "volume": 16377855.584541,
+      "volume": 16401348.044364,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/microstrategy-sell-any-bitcoin-in-2025"
@@ -93,7 +93,7 @@
       "title": "Will The Fantastic Four: First Steps be the top grossing movie of 2025?",
       "outcome": "No 100%",
       "probability": 0.9995,
-      "volume": 13669477.954383,
+      "volume": 13671477.954383,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-fantastic-four-first-steps-be-the-top-grossing-movie-of-2025"
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/will-jurassic-world-rebirth-be-the-top-grossing-movie-of-2025"
     }
   ],
-  "last_updated": "2026-01-03T01:11:47.038951Z"
+  "last_updated": "2026-01-03T02:57:46.868737Z"
 }
