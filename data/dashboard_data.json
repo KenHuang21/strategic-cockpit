@@ -9,16 +9,16 @@
       "delta": 1.2774102237961573
     },
     "btc_price": {
-      "value": 89468,
-      "delta": 2.183745260176344
+      "value": 89530,
+      "delta": 2.2545570834665813
     },
     "stablecoin_mcap": {
-      "value": 306.77,
-      "delta": -0.05690994260609944
+      "value": 306.72,
+      "delta": -0.07107181329219078
     },
     "usdt_dominance": {
       "value": 5.96,
-      "delta": -2.425868972462497
+      "delta": -2.4387869818321133
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,17 +56,17 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.72,
-    "btc_gold": -0.14,
-    "interpretation": "Moderately Correlated",
+    "btc_nasdaq": 0.83,
+    "btc_gold": 0.03,
+    "interpretation": "Macro Driven",
     "period_days": 30
   },
   "polymarket_top5": [
     {
       "title": "MicroStrategy sells any Bitcoin in 2025?",
       "outcome": "No 100%",
-      "probability": 0.9995,
-      "volume": 16519268.585792,
+      "probability": 0.9985,
+      "volume": 16531654.695792,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/microstrategy-sell-any-bitcoin-in-2025"
@@ -84,7 +84,7 @@
       "title": "Will How to Train Your Dragon be the top grossing movie of 2025?",
       "outcome": "No 100%",
       "probability": 0.9995,
-      "volume": 13960418.269758,
+      "volume": 13960448.509758,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-how-to-train-your-dragon-be-the-top-grossing-movie-of-2025"
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/will-jurassic-world-rebirth-be-the-top-grossing-movie-of-2025"
     }
   ],
-  "last_updated": "2026-01-03T07:49:05.503846Z"
+  "last_updated": "2026-01-03T08:20:38.411622Z"
 }
