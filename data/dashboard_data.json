@@ -9,16 +9,16 @@
       "delta": 1.2774102237961573
     },
     "btc_price": {
-      "value": 91393,
-      "delta": 4.382338160719996
+      "value": 91654,
+      "delta": 4.680433094248253
     },
     "stablecoin_mcap": {
-      "value": 306.58,
-      "delta": -0.11704026840177041
+      "value": 306.49,
+      "delta": -0.1462857594620332
     },
     "usdt_dominance": {
-      "value": 5.83,
-      "delta": -4.5115165983384085
+      "value": 5.82,
+      "delta": -4.68910205310105
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -57,7 +57,7 @@
   },
   "correlation_radar": {
     "btc_nasdaq": 0.76,
-    "btc_gold": -0.1,
+    "btc_gold": 0.12,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -66,7 +66,7 @@
       "title": "MicroStrategy sells any Bitcoin in 2025?",
       "outcome": "No 100%",
       "probability": 0.9995,
-      "volume": 17766517.829867,
+      "volume": 17774100.969867,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/microstrategy-sell-any-bitcoin-in-2025"
@@ -75,7 +75,7 @@
       "title": "Will Captain America: Brave New World be the top grossing movie of 2025?",
       "outcome": "No 100%",
       "probability": 0.9995,
-      "volume": 14774980.820922,
+      "volume": 14775030.870922,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-captain-america-new-world-order-be-the-top-grossing-movie-of-2025"
@@ -93,7 +93,7 @@
       "title": "Will The Fantastic Four: First Steps be the top grossing movie of 2025?",
       "outcome": "No 100%",
       "probability": 0.9995,
-      "volume": 13681477.954383,
+      "volume": 13681497.974383,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-fantastic-four-first-steps-be-the-top-grossing-movie-of-2025"
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/will-jurassic-world-rebirth-be-the-top-grossing-movie-of-2025"
     }
   ],
-  "last_updated": "2026-01-04T05:55:28.566766Z"
+  "last_updated": "2026-01-04T06:24:29.032877Z"
 }
