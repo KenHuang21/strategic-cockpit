@@ -9,16 +9,16 @@
       "delta": 1.2774102237961573
     },
     "btc_price": {
-      "value": 91355,
-      "delta": 4.338937365800174
+      "value": 91327,
+      "delta": 4.3069578327013565
     },
     "stablecoin_mcap": {
-      "value": 306.63,
-      "delta": -0.09993953046800137
+      "value": 306.58,
+      "delta": -0.11704026840177041
     },
     "usdt_dominance": {
       "value": 5.84,
-      "delta": -4.470060559511623
+      "delta": -4.452757340803658
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.71,
-    "btc_gold": -0.12,
+    "btc_nasdaq": 0.68,
+    "btc_gold": -0.13,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -66,7 +66,7 @@
       "title": "MicroStrategy sells any Bitcoin in 2025?",
       "outcome": "No 100%",
       "probability": 0.9985,
-      "volume": 17749099.109867,
+      "volume": 17752921.419867,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/microstrategy-sell-any-bitcoin-in-2025"
@@ -102,11 +102,11 @@
       "title": "Will Jurassic World: Rebirth be the top grossing movie of 2025?",
       "outcome": "No 100%",
       "probability": 0.9995,
-      "volume": 11623083.458951,
+      "volume": 11624083.458951,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-jurassic-world-rebirth-be-the-top-grossing-movie-of-2025"
     }
   ],
-  "last_updated": "2026-01-04T04:33:01.944298Z"
+  "last_updated": "2026-01-04T05:05:34.618985Z"
 }
