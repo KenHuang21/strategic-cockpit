@@ -9,16 +9,16 @@
       "delta": 1.2774102237961573
     },
     "btc_price": {
-      "value": 91323,
-      "delta": 4.302389327972954
+      "value": 91340,
+      "delta": 4.321805473068665
     },
     "stablecoin_mcap": {
-      "value": 306.71,
-      "delta": -0.07568268020003044
+      "value": 306.69,
+      "delta": -0.08196869071863756
     },
     "usdt_dominance": {
       "value": 5.83,
-      "delta": -4.617928227673908
+      "delta": -4.640727355880675
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.65,
-    "btc_gold": 0.14,
+    "btc_nasdaq": 0.66,
+    "btc_gold": 0.08,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -66,7 +66,7 @@
       "title": "MicroStrategy sells any Bitcoin in 2025?",
       "outcome": "No 100%",
       "probability": 0.9995,
-      "volume": 17829864.049867,
+      "volume": 17838568.009867,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/microstrategy-sell-any-bitcoin-in-2025"
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/will-jurassic-world-rebirth-be-the-top-grossing-movie-of-2025"
     }
   ],
-  "last_updated": "2026-01-04T17:13:17.363845Z"
+  "last_updated": "2026-01-04T17:32:15.203171Z"
 }
