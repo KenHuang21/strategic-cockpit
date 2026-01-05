@@ -9,16 +9,16 @@
       "delta": 1.2774102237961573
     },
     "btc_price": {
-      "value": 91265,
-      "delta": 4.23614600941112
+      "value": 92815,
+      "delta": 6.0064415916670475
     },
     "stablecoin_mcap": {
-      "value": 306.78,
-      "delta": -0.052518500717599045
+      "value": 306.69,
+      "delta": -0.08050473265260741
     },
     "usdt_dominance": {
-      "value": 5.83,
-      "delta": -4.539299220388902
+      "value": 5.76,
+      "delta": -5.80866740348041
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -33,31 +33,31 @@
   "btc_etf_flows": {
     "flows": [
       {
-        "date": "2025-12-29",
+        "date": "2025-12-30",
         "flow": 150
       },
       {
-        "date": "2025-12-30",
+        "date": "2025-12-31",
         "flow": -50
       },
       {
-        "date": "2025-12-31",
+        "date": "2026-01-01",
         "flow": 300
       },
       {
-        "date": "2026-01-01",
+        "date": "2026-01-02",
         "flow": 100
       },
       {
-        "date": "2026-01-02",
+        "date": "2026-01-05",
         "flow": 200
       }
     ],
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.8,
-    "btc_gold": -0.14,
+    "btc_nasdaq": 0.71,
+    "btc_gold": 0.13,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -66,7 +66,7 @@
       "title": "MicroStrategy sells any Bitcoin in 2025?",
       "outcome": "No 100%",
       "probability": 0.9995,
-      "volume": 17946944.159867,
+      "volume": 17947861.109867,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/microstrategy-sell-any-bitcoin-in-2025"
@@ -93,7 +93,7 @@
       "title": "Will The Fantastic Four: First Steps be the top grossing movie of 2025?",
       "outcome": "No 100%",
       "probability": 0.9995,
-      "volume": 13686459.074383,
+      "volume": 13686465.124383,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-fantastic-four-first-steps-be-the-top-grossing-movie-of-2025"
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/will-jurassic-world-rebirth-be-the-top-grossing-movie-of-2025"
     }
   ],
-  "last_updated": "2026-01-04T23:50:45.579297Z"
+  "last_updated": "2026-01-05T01:22:27.006831Z"
 }
