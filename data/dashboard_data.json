@@ -9,16 +9,16 @@
       "delta": 1.2774102237961573
     },
     "btc_price": {
-      "value": 93010,
-      "delta": 6.229156197176664
+      "value": 93634,
+      "delta": 6.941842934807438
     },
     "stablecoin_mcap": {
-      "value": 306.85,
-      "delta": -0.029805475321557414
+      "value": 306.82,
+      "delta": -0.03889882299449074
     },
     "usdt_dominance": {
-      "value": 5.77,
-      "delta": -5.624272136112005
+      "value": 5.75,
+      "delta": -5.921239280952683
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,9 +56,9 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.82,
-    "btc_gold": 0.12,
-    "interpretation": "Macro Driven",
+    "btc_nasdaq": 0.73,
+    "btc_gold": 0.01,
+    "interpretation": "Moderately Correlated",
     "period_days": 30
   },
   "polymarket_top5": [
@@ -75,7 +75,7 @@
       "title": "Will How to Train Your Dragon be the top grossing movie of 2025?",
       "outcome": "No 100%",
       "probability": 0.9995,
-      "volume": 13963585.349758,
+      "volume": 13963929.619758,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-how-to-train-your-dragon-be-the-top-grossing-movie-of-2025"
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/will-a-minecraft-movie-be-the-top-grossing-movie-of-2025"
     }
   ],
-  "last_updated": "2026-01-05T14:50:13.458990Z"
+  "last_updated": "2026-01-05T15:19:04.520309Z"
 }
