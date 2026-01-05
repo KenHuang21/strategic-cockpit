@@ -9,16 +9,16 @@
       "delta": 1.2774102237961573
     },
     "btc_price": {
-      "value": 92735,
-      "delta": 5.9150714970989995
+      "value": 93010,
+      "delta": 6.229156197176664
     },
     "stablecoin_mcap": {
-      "value": 306.8,
-      "delta": -0.04677978326729827
+      "value": 306.85,
+      "delta": -0.029805475321557414
     },
     "usdt_dominance": {
-      "value": 5.78,
-      "delta": -5.453679915282629
+      "value": 5.77,
+      "delta": -5.624272136112005
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,9 +56,9 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.71,
-    "btc_gold": -0.06,
-    "interpretation": "Moderately Correlated",
+    "btc_nasdaq": 0.82,
+    "btc_gold": 0.12,
+    "interpretation": "Macro Driven",
     "period_days": 30
   },
   "polymarket_top5": [
@@ -75,7 +75,7 @@
       "title": "Will How to Train Your Dragon be the top grossing movie of 2025?",
       "outcome": "No 100%",
       "probability": 0.9995,
-      "volume": 13963413.139758,
+      "volume": 13963585.349758,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-how-to-train-your-dragon-be-the-top-grossing-movie-of-2025"
@@ -102,11 +102,11 @@
       "title": "Will A Minecraft Movie be the top grossing movie of 2025?",
       "outcome": "Yes 100%",
       "probability": 0.9995,
-      "volume": 11522285.943814,
+      "volume": 11522350.423814,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-a-minecraft-movie-be-the-top-grossing-movie-of-2025"
     }
   ],
-  "last_updated": "2026-01-05T14:24:39.451581Z"
+  "last_updated": "2026-01-05T14:50:13.458990Z"
 }
