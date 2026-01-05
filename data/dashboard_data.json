@@ -9,16 +9,16 @@
       "delta": 1.2774102237961573
     },
     "btc_price": {
-      "value": 94193,
-      "delta": 7.580291470601671
+      "value": 93987,
+      "delta": 7.3450134770889495
     },
     "stablecoin_mcap": {
-      "value": 307.39,
-      "delta": 0.14787677590310472
+      "value": 307.53,
+      "delta": 0.1932451483348416
     },
     "usdt_dominance": {
-      "value": 5.66,
-      "delta": -7.288467834498319
+      "value": 5.67,
+      "delta": -7.130502600358593
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -57,7 +57,7 @@
   },
   "correlation_radar": {
     "btc_nasdaq": 0.78,
-    "btc_gold": -0.08,
+    "btc_gold": 0.01,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/will-a-minecraft-movie-be-the-top-grossing-movie-of-2025"
     }
   ],
-  "last_updated": "2026-01-05T20:45:30.938492Z"
+  "last_updated": "2026-01-05T21:16:07.338387Z"
 }
