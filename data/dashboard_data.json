@@ -9,16 +9,16 @@
       "delta": 1.2774102237961573
     },
     "btc_price": {
-      "value": 92142,
-      "delta": 5.237790671113345
+      "value": 92501,
+      "delta": 5.6478139704874595
     },
     "stablecoin_mcap": {
-      "value": 306.82,
-      "delta": -0.03859117434430676
+      "value": 306.86,
+      "delta": -0.024691692515344938
     },
     "usdt_dominance": {
-      "value": 5.8,
-      "delta": -5.142700739302516
+      "value": 5.78,
+      "delta": -5.375168757776616
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.66,
-    "btc_gold": -0.13,
+    "btc_nasdaq": 0.78,
+    "btc_gold": 0.11,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -84,7 +84,7 @@
       "title": "Will The Fantastic Four: First Steps be the top grossing movie of 2025?",
       "outcome": "No 100%",
       "probability": 0.9995,
-      "volume": 13686565.124383,
+      "volume": 13686665.124383,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-fantastic-four-first-steps-be-the-top-grossing-movie-of-2025"
@@ -93,7 +93,7 @@
       "title": "Will Jurassic World: Rebirth be the top grossing movie of 2025?",
       "outcome": "No 100%",
       "probability": 0.9995,
-      "volume": 11625294.258951,
+      "volume": 11625394.258951,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-jurassic-world-rebirth-be-the-top-grossing-movie-of-2025"
@@ -102,11 +102,11 @@
       "title": "Will A Minecraft Movie be the top grossing movie of 2025?",
       "outcome": "Yes 100%",
       "probability": 0.9995,
-      "volume": 11466315.463814,
+      "volume": 11468180.243814,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-a-minecraft-movie-be-the-top-grossing-movie-of-2025"
     }
   ],
-  "last_updated": "2026-01-05T06:32:31.464976Z"
+  "last_updated": "2026-01-05T07:05:35.383219Z"
 }
