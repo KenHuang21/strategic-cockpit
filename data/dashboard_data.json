@@ -9,16 +9,16 @@
       "delta": 1.2774102237961573
     },
     "btc_price": {
-      "value": 94250,
-      "delta": 7.645392662981407
+      "value": 94316,
+      "delta": 7.720772991000045
     },
     "stablecoin_mcap": {
       "value": 307.07,
       "delta": 0.043532748160622775
     },
     "usdt_dominance": {
-      "value": 5.67,
-      "delta": -7.1810968552302405
+      "value": 5.66,
+      "delta": -7.292133589270522
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.65,
-    "btc_gold": 0.04,
+    "btc_nasdaq": 0.66,
+    "btc_gold": 0.09,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -75,7 +75,7 @@
       "title": "Will How to Train Your Dragon be the top grossing movie of 2025?",
       "outcome": "No 100%",
       "probability": 0.9995,
-      "volume": 13966563.439758,
+      "volume": 13966774.209758,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-how-to-train-your-dragon-be-the-top-grossing-movie-of-2025"
@@ -93,7 +93,7 @@
       "title": "Will Jurassic World: Rebirth be the top grossing movie of 2025?",
       "outcome": "No 100%",
       "probability": 0.9995,
-      "volume": 11628010.658951,
+      "volume": 11628156.668951,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-jurassic-world-rebirth-be-the-top-grossing-movie-of-2025"
@@ -102,11 +102,11 @@
       "title": "Will A Minecraft Movie be the top grossing movie of 2025?",
       "outcome": "Yes 100%",
       "probability": 0.9995,
-      "volume": 11577004.853814,
+      "volume": 11578238.453814,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-a-minecraft-movie-be-the-top-grossing-movie-of-2025"
     }
   ],
-  "last_updated": "2026-01-05T19:17:40.765415Z"
+  "last_updated": "2026-01-05T19:39:35.211127Z"
 }
