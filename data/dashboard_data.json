@@ -9,8 +9,8 @@
       "delta": 1.2774102237961573
     },
     "btc_price": {
-      "value": 92924,
-      "delta": 6.130933345516013
+      "value": 93054,
+      "delta": 6.279409749189091
     },
     "stablecoin_mcap": {
       "value": 306.82,
@@ -18,7 +18,7 @@
     },
     "usdt_dominance": {
       "value": 5.76,
-      "delta": -5.698504505232782
+      "delta": -5.662065834467487
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.75,
-    "btc_gold": -0.03,
+    "btc_nasdaq": 0.8,
+    "btc_gold": 0.09,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -84,7 +84,7 @@
       "title": "Will The Fantastic Four: First Steps be the top grossing movie of 2025?",
       "outcome": "No 100%",
       "probability": 0.9995,
-      "volume": 13690070.124383,
+      "volume": 13700070.124383,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-fantastic-four-first-steps-be-the-top-grossing-movie-of-2025"
@@ -102,11 +102,11 @@
       "title": "Will A Minecraft Movie be the top grossing movie of 2025?",
       "outcome": "Yes 100%",
       "probability": 0.9995,
-      "volume": 11520503.953814,
+      "volume": 11520506.713814,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-a-minecraft-movie-be-the-top-grossing-movie-of-2025"
     }
   ],
-  "last_updated": "2026-01-05T11:34:04.739675Z"
+  "last_updated": "2026-01-05T11:50:20.044572Z"
 }
