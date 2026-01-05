@@ -9,16 +9,16 @@
       "delta": 1.2774102237961573
     },
     "btc_price": {
-      "value": 93822,
-      "delta": 7.15656265704235
+      "value": 93888,
+      "delta": 7.231942985060989
     },
     "stablecoin_mcap": {
       "value": 306.82,
       "delta": -0.03889882299449074
     },
     "usdt_dominance": {
-      "value": 5.72,
-      "delta": -6.3083228718534805
+      "value": 5.71,
+      "delta": -6.494263175875307
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,9 +56,9 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.71,
-    "btc_gold": -0.06,
-    "interpretation": "Moderately Correlated",
+    "btc_nasdaq": 0.84,
+    "btc_gold": 0.06,
+    "interpretation": "Macro Driven",
     "period_days": 30
   },
   "polymarket_top5": [
@@ -66,7 +66,7 @@
       "title": "Will Captain America: Brave New World be the top grossing movie of 2025?",
       "outcome": "No 100%",
       "probability": 0.9995,
-      "volume": 14776540.710922,
+      "volume": 14777007.830922,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-captain-america-new-world-order-be-the-top-grossing-movie-of-2025"
@@ -75,7 +75,7 @@
       "title": "Will How to Train Your Dragon be the top grossing movie of 2025?",
       "outcome": "No 100%",
       "probability": 0.9995,
-      "volume": 13964382.259758,
+      "volume": 13964749.959758,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-how-to-train-your-dragon-be-the-top-grossing-movie-of-2025"
@@ -84,7 +84,7 @@
       "title": "Will The Fantastic Four: First Steps be the top grossing movie of 2025?",
       "outcome": "No 100%",
       "probability": 0.9995,
-      "volume": 13700360.614383,
+      "volume": 13700880.034383,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-fantastic-four-first-steps-be-the-top-grossing-movie-of-2025"
@@ -93,7 +93,7 @@
       "title": "Will Jurassic World: Rebirth be the top grossing movie of 2025?",
       "outcome": "No 100%",
       "probability": 0.9995,
-      "volume": 11626428.388951,
+      "volume": 11626752.128951,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-jurassic-world-rebirth-be-the-top-grossing-movie-of-2025"
@@ -102,11 +102,11 @@
       "title": "Will A Minecraft Movie be the top grossing movie of 2025?",
       "outcome": "Yes 100%",
       "probability": 0.9995,
-      "volume": 11522357.843814,
+      "volume": 11522367.853814,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-a-minecraft-movie-be-the-top-grossing-movie-of-2025"
     }
   ],
-  "last_updated": "2026-01-05T15:45:45.337840Z"
+  "last_updated": "2026-01-05T16:21:27.923876Z"
 }
