@@ -1,24 +1,24 @@
 {
   "metrics": {
     "us_10y_yield": {
-      "value": 4.18,
-      "delta": 0.23980815347721313
+      "value": 4.19,
+      "delta": 0.4796163069544475
     },
     "fed_net_liquidity": {
       "value": 6640.62,
       "delta": 1.2774102237961573
     },
     "btc_price": {
-      "value": 93987,
-      "delta": 7.3450134770889495
+      "value": 94016,
+      "delta": 7.378135136369866
     },
     "stablecoin_mcap": {
       "value": 307.53,
       "delta": 0.1932451483348416
     },
     "usdt_dominance": {
-      "value": 5.67,
-      "delta": -7.130502600358593
+      "value": 5.68,
+      "delta": -7.020628490700675
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.78,
-    "btc_gold": 0.01,
+    "btc_nasdaq": 0.66,
+    "btc_gold": -0.02,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/will-a-minecraft-movie-be-the-top-grossing-movie-of-2025"
     }
   ],
-  "last_updated": "2026-01-05T21:16:07.338387Z"
+  "last_updated": "2026-01-05T21:41:39.448920Z"
 }
