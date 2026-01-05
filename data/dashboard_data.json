@@ -9,16 +9,16 @@
       "delta": 1.2774102237961573
     },
     "btc_price": {
-      "value": 92911,
-      "delta": 6.116085705148705
+      "value": 92469,
+      "delta": 5.61126593266024
     },
     "stablecoin_mcap": {
-      "value": 306.97,
-      "delta": 0.010863507541554768
+      "value": 306.84,
+      "delta": -0.033254115550728
     },
     "usdt_dominance": {
-      "value": 5.75,
-      "delta": -5.911604769670524
+      "value": 5.78,
+      "delta": -5.388561387187555
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,21 +56,12 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.74,
-    "btc_gold": -0.09,
-    "interpretation": "Moderately Correlated",
+    "btc_nasdaq": 0.81,
+    "btc_gold": 0.0,
+    "interpretation": "Macro Driven",
     "period_days": 30
   },
   "polymarket_top5": [
-    {
-      "title": "MicroStrategy sells any Bitcoin in 2025?",
-      "outcome": "No 100%",
-      "probability": 0.9995,
-      "volume": 17952535.979867,
-      "volume_24h": 0,
-      "flipped": false,
-      "url": "https://polymarket.com/event/microstrategy-sell-any-bitcoin-in-2025"
-    },
     {
       "title": "Will Captain America: Brave New World be the top grossing movie of 2025?",
       "outcome": "No 100%",
@@ -106,7 +97,16 @@
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-jurassic-world-rebirth-be-the-top-grossing-movie-of-2025"
+    },
+    {
+      "title": "Will A Minecraft Movie be the top grossing movie of 2025?",
+      "outcome": "Yes 100%",
+      "probability": 0.9995,
+      "volume": 11430087.463814,
+      "volume_24h": 0,
+      "flipped": false,
+      "url": "https://polymarket.com/event/will-a-minecraft-movie-be-the-top-grossing-movie-of-2025"
     }
   ],
-  "last_updated": "2026-01-05T03:27:02.209837Z"
+  "last_updated": "2026-01-05T04:41:09.431274Z"
 }
