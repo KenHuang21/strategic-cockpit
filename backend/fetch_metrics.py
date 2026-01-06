@@ -562,7 +562,7 @@ def fetch_polymarket_data():
             print(f"⚠️  Unexpected response format from Polymarket API")
             return []
 
-        # Collect all unique tags for debugging
+        # Collect all unique tags for debugging (API may not provide tags anymore)
         all_tags = set()
         for market in markets:
             tags = market.get("tags", [])
@@ -571,36 +571,68 @@ def fetch_polymarket_data():
                     if isinstance(tag, str):
                         all_tags.add(tag.lower())
 
-        print(f"🏷️  Sample tags found: {sorted(list(all_tags))[:10]}")  # Show first 10 tags
+        print(f"🏷️  Sample tags found: {sorted(list(all_tags))[:10] if all_tags else []}")
 
-        # Filter by tags and sort by volume - more flexible matching
-        relevant_tags = ["economics", "finance", "crypto", "federal reserve", "fed", "interest rates", "inflation", "politics"]
+        # Filter by keywords in question/title/description - NEW V3 APPROACH
+        # Finance/Economics keywords to match
+        finance_keywords = [
+            "bitcoin", "btc", "crypto", "ethereum", "fed", "federal reserve",
+            "interest rate", "inflation", "recession", "economy", "gdp",
+            "unemployment", "cpi", "treasury", "dollar", "stock market",
+            "s&p", "nasdaq", "dow", "rate cut", "rate hike", "fomc"
+        ]
+
+        # Noise keywords to exclude
+        noise_keywords = [
+            "movie", "film", "box office", "actor", "actress", "director",
+            "pop culture", "celebrity", "sport", "football", "basketball",
+            "baseball", "soccer", "nfl", "nba", "mlb", "oscars", "grammy",
+            "emmy", "taylor swift", "kardashian"
+        ]
+
         filtered_markets = []
 
         for market in markets:
-            tags = market.get("tags", [])
-            if not isinstance(tags, list):
+            # Get searchable text from multiple fields
+            question = market.get("question", "").lower()
+            description = market.get("description", "").lower()
+            slug = market.get("slug", "").lower()
+
+            # Combine all searchable text
+            searchable_text = f"{question} {description} {slug}"
+
+            # Check for noise keywords (exclude these)
+            has_noise = any(keyword in searchable_text for keyword in noise_keywords)
+            if has_noise:
                 continue
 
-            tags_lower = [tag.lower() if isinstance(tag, str) else str(tag).lower() for tag in tags]
-            tags_str = " ".join(tags_lower)
+            # Check for finance keywords (include these)
+            has_finance = any(keyword in searchable_text for keyword in finance_keywords)
 
-            # Match if any relevant tag is found
-            if any(relevant_tag in tags_str for relevant_tag in relevant_tags):
+            # Also try legacy tags if available
+            tags = market.get("tags", [])
+            if isinstance(tags, list):
+                tags_lower = [str(tag).lower() for tag in tags]
+                tags_str = " ".join(tags_lower)
+                has_finance = has_finance or any(
+                    keyword in tags_str for keyword in ["economics", "finance", "crypto", "federal", "politics"]
+                )
+
+            if has_finance:
                 volume = float(market.get("volume", 0))
                 filtered_markets.append({
                     "market": market,
                     "volume": volume
                 })
 
-        print(f"✅ Filtered to {len(filtered_markets)} relevant markets")
+        print(f"✅ Filtered to {len(filtered_markets)} finance/economics markets")
 
-        # If no matches with tags, just take top 5 by volume (fallback)
+        # If still no matches, take top 5 by volume as fallback
         if len(filtered_markets) == 0:
-            print("⚠️  No markets matched tags, taking top 5 by volume")
+            print("⚠️  No finance markets found, taking top 5 by volume")
             for market in markets:
                 volume = float(market.get("volume", 0))
-                if volume > 0:  # Only include markets with volume
+                if volume > 0:
                     filtered_markets.append({
                         "market": market,
                         "volume": volume

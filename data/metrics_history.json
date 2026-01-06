@@ -1159,6 +1159,35 @@
           "delta": 0.0
         }
       }
+    },
+    {
+      "timestamp": "2026-01-06T02:11:13.985507",
+      "metrics": {
+        "us_10y_yield": {
+          "value": 4.19,
+          "delta": 0.4796163069544475
+        },
+        "fed_net_liquidity": {
+          "value": 6640.62,
+          "delta": -3.011766972809706e-05
+        },
+        "btc_price": {
+          "value": 93729,
+          "delta": -0.11296424575051953
+        },
+        "stablecoin_mcap": {
+          "value": 307.61,
+          "delta": 0.2486819559778638
+        },
+        "usdt_dominance": {
+          "value": 5.68,
+          "delta": -0.014276597751928627
+        },
+        "rwa_tvl": {
+          "value": 8.5,
+          "delta": 0.0
+        }
+      }
     }
   ]
 }

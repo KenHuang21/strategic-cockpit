@@ -79,6 +79,46 @@
           "outcome": "Yes 100%"
         }
       ]
+    },
+    {
+      "timestamp": "2026-01-06T02:11:03.753721",
+      "markets": [
+        {
+          "id": "537485",
+          "title": "Will the U.S. collect between $100b and $200b in revenue in 2025?",
+          "volume": 734166.673143,
+          "probability": 0.635,
+          "outcome": "No 64%"
+        },
+        {
+          "id": "521949",
+          "title": "Will Elon and DOGE cut more than $250b in federal spending in 2025?",
+          "volume": 659944.304576,
+          "probability": 0.991,
+          "outcome": "No 99%"
+        },
+        {
+          "id": "537484",
+          "title": "Will the U.S. collect less than $100b in revenue in 2025?",
+          "volume": 567963.800174,
+          "probability": 0.652,
+          "outcome": "No 65%"
+        },
+        {
+          "id": "521948",
+          "title": "Will Elon and DOGE cut between $200-250b in federal spending in 2025?",
+          "volume": 417364.111307,
+          "probability": 0.9985,
+          "outcome": "No 100%"
+        },
+        {
+          "id": "521945",
+          "title": "Will Elon and DOGE cut between $50-100b in federal spending in 2025?",
+          "volume": 348405.502237,
+          "probability": 0.997,
+          "outcome": "No 100%"
+        }
+      ]
     }
   ]
 }

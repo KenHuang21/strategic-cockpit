@@ -1159,7 +1159,7 @@
             "Step 5: Verify top 5 results are strictly Finance/Economic related",
             "Step 6: Check that 'outcome' and 'probability' are correctly parsed from the new API structure"
         ],
-        "passes": false
+        "passes": true
     },
     {
         "category": "intelligence",

@@ -9,16 +9,16 @@
       "delta": -3.011766972809706e-05
     },
     "btc_price": {
-      "value": 93835,
-      "delta": 1.6146149181322016
+      "value": 93729,
+      "delta": -0.11296424575051953
     },
     "stablecoin_mcap": {
-      "value": 306.85,
-      "delta": -0.005591363680323065
+      "value": 307.61,
+      "delta": 0.2486819559778638
     },
     "usdt_dominance": {
       "value": 5.68,
-      "delta": -1.7453285255790298
+      "delta": -0.014276597751928627
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,57 +56,57 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.66,
-    "btc_gold": -0.02,
+    "btc_nasdaq": 0.72,
+    "btc_gold": -0.01,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
   "polymarket_top5": [
     {
-      "title": "Will Captain America: Brave New World be the top grossing movie of 2025?",
-      "outcome": "No 100%",
-      "probability": 0.9995,
-      "volume": 14777628.500922,
+      "title": "Will the U.S. collect between $100b and $200b in revenue in 2025?",
+      "outcome": "No 64%",
+      "probability": 0.635,
+      "volume": 734166.673143,
       "volume_24h": 0,
       "flipped": false,
-      "url": "https://polymarket.com/event/will-captain-america-new-world-order-be-the-top-grossing-movie-of-2025"
+      "url": "https://polymarket.com/event/will-the-us-collect-between-100b-and-200b-in-revenue-in-2025"
     },
     {
-      "title": "Will How to Train Your Dragon be the top grossing movie of 2025?",
-      "outcome": "No 100%",
-      "probability": 0.9995,
-      "volume": 13967519.399758,
+      "title": "Will Elon and DOGE cut more than $250b in federal spending in 2025?",
+      "outcome": "No 99%",
+      "probability": 0.991,
+      "volume": 659944.304576,
       "volume_24h": 0,
       "flipped": false,
-      "url": "https://polymarket.com/event/will-how-to-train-your-dragon-be-the-top-grossing-movie-of-2025"
+      "url": "https://polymarket.com/event/will-elon-and-doge-cut-more-than-250b-in-federal-spending-in-2025"
     },
     {
-      "title": "Will The Fantastic Four: First Steps be the top grossing movie of 2025?",
-      "outcome": "No 100%",
-      "probability": 0.9995,
-      "volume": 13701560.344383,
+      "title": "Will the U.S. collect less than $100b in revenue in 2025?",
+      "outcome": "No 65%",
+      "probability": 0.652,
+      "volume": 567963.800174,
       "volume_24h": 0,
       "flipped": false,
-      "url": "https://polymarket.com/event/will-the-fantastic-four-first-steps-be-the-top-grossing-movie-of-2025"
+      "url": "https://polymarket.com/event/will-the-us-collect-less-than-100b-in-revenue-in-2025"
     },
     {
-      "title": "Will Jurassic World: Rebirth be the top grossing movie of 2025?",
+      "title": "Will Elon and DOGE cut between $200-250b in federal spending in 2025?",
       "outcome": "No 100%",
-      "probability": 0.9995,
-      "volume": 11628791.048951,
+      "probability": 0.9985,
+      "volume": 417364.111307,
       "volume_24h": 0,
       "flipped": false,
-      "url": "https://polymarket.com/event/will-jurassic-world-rebirth-be-the-top-grossing-movie-of-2025"
+      "url": "https://polymarket.com/event/will-elon-and-doge-cut-between-200-250b-in-federal-spending-in-2025"
     },
     {
-      "title": "Will A Minecraft Movie be the top grossing movie of 2025?",
-      "outcome": "Yes 100%",
-      "probability": 0.9995,
-      "volume": 11580322.793814,
+      "title": "Will Elon and DOGE cut between $50-100b in federal spending in 2025?",
+      "outcome": "No 100%",
+      "probability": 0.997,
+      "volume": 348405.502237,
       "volume_24h": 0,
       "flipped": false,
-      "url": "https://polymarket.com/event/will-a-minecraft-movie-be-the-top-grossing-movie-of-2025"
+      "url": "https://polymarket.com/event/will-elon-and-doge-cut-between-50-100b-in-federal-spending-in-2025"
     }
   ],
-  "last_updated": "2026-01-06T02:04:30.207092Z"
+  "last_updated": "2026-01-06T02:11:03.981612Z"
 }
