@@ -1174,7 +1174,7 @@
             "Step 7: Verify 'Watchlist' bullet correctly identifies the next high-impact event from the calendar",
             "Step 8: Confirm execution time is under 30 seconds"
         ],
-        "passes": false
+        "passes": true
     },
     {
         "category": "data_fidelity",
