@@ -1101,6 +1101,64 @@
           "delta": 0.0
         }
       }
+    },
+    {
+      "timestamp": "2026-01-05T09:09:24.153151",
+      "metrics": {
+        "us_10y_yield": {
+          "value": 4.18,
+          "delta": 0.23980815347721313
+        },
+        "fed_net_liquidity": {
+          "value": 6640.62,
+          "delta": 1.2774102237961573
+        },
+        "btc_price": {
+          "value": 92344,
+          "delta": 5.4685001598976655
+        },
+        "stablecoin_mcap": {
+          "value": 306.87,
+          "delta": -0.02214653957311772
+        },
+        "usdt_dominance": {
+          "value": 5.78,
+          "delta": -5.423558838117919
+        },
+        "rwa_tvl": {
+          "value": 8.5,
+          "delta": 0.0
+        }
+      }
+    },
+    {
+      "timestamp": "2026-01-06T02:04:40.010028",
+      "metrics": {
+        "us_10y_yield": {
+          "value": 4.19,
+          "delta": 0.4796163069544475
+        },
+        "fed_net_liquidity": {
+          "value": 6640.62,
+          "delta": -3.011766972809706e-05
+        },
+        "btc_price": {
+          "value": 93835,
+          "delta": 1.6146149181322016
+        },
+        "stablecoin_mcap": {
+          "value": 306.85,
+          "delta": -0.005591363680323065
+        },
+        "usdt_dominance": {
+          "value": 5.68,
+          "delta": -1.7453285255790298
+        },
+        "rwa_tvl": {
+          "value": 8.5,
+          "delta": 0.0
+        }
+      }
     }
   ]
 }

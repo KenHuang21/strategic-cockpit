@@ -1,42 +1,82 @@
 {
   "snapshots": [
     {
-      "timestamp": "2025-12-29T11:46:10.186703",
+      "timestamp": "2026-01-05T09:09:12.307453",
       "markets": [
         {
-          "id": "516719",
-          "title": "Russia x Ukraine ceasefire in 2025?",
-          "volume": 69755689.738936,
-          "probability": 0.9965,
-          "outcome": "No 100%"
-        },
-        {
-          "id": "516861",
-          "title": "Will Bitcoin reach $1,000,000 by December 31, 2025?",
-          "volume": 30430589.794598,
-          "probability": 0.9985,
-          "outcome": "No 100%"
-        },
-        {
-          "id": "516846",
-          "title": "Will Saudi Aramco be the largest company in the world by market cap on December 31?",
-          "volume": 25192699.138934,
+          "id": "517016",
+          "title": "Will Captain America: Brave New World be the top grossing movie of 2025?",
+          "volume": 14776262.420922,
           "probability": 0.9995,
           "outcome": "No 100%"
         },
         {
-          "id": "516863",
-          "title": "Will Bitcoin reach $200,000 by December 31, 2025?",
-          "volume": 19212003.736605,
+          "id": "517019",
+          "title": "Will How to Train Your Dragon be the top grossing movie of 2025?",
+          "volume": 13962310.639758,
           "probability": 0.9995,
           "outcome": "No 100%"
         },
         {
-          "id": "516878",
-          "title": "Will Ethereum hit $5,000 by December 31?",
-          "volume": 18317009.618453,
-          "probability": 0.9985,
+          "id": "517014",
+          "title": "Will The Fantastic Four: First Steps be the top grossing movie of 2025?",
+          "volume": 13690065.124383,
+          "probability": 0.9995,
           "outcome": "No 100%"
+        },
+        {
+          "id": "517015",
+          "title": "Will Jurassic World: Rebirth be the top grossing movie of 2025?",
+          "volume": 11625394.258951,
+          "probability": 0.9995,
+          "outcome": "No 100%"
+        },
+        {
+          "id": "517020",
+          "title": "Will A Minecraft Movie be the top grossing movie of 2025?",
+          "volume": 11519336.503814,
+          "probability": 0.9995,
+          "outcome": "Yes 100%"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-01-06T02:04:29.971879",
+      "markets": [
+        {
+          "id": "517016",
+          "title": "Will Captain America: Brave New World be the top grossing movie of 2025?",
+          "volume": 14777628.500922,
+          "probability": 0.9995,
+          "outcome": "No 100%"
+        },
+        {
+          "id": "517019",
+          "title": "Will How to Train Your Dragon be the top grossing movie of 2025?",
+          "volume": 13967519.399758,
+          "probability": 0.9995,
+          "outcome": "No 100%"
+        },
+        {
+          "id": "517014",
+          "title": "Will The Fantastic Four: First Steps be the top grossing movie of 2025?",
+          "volume": 13701560.344383,
+          "probability": 0.9995,
+          "outcome": "No 100%"
+        },
+        {
+          "id": "517015",
+          "title": "Will Jurassic World: Rebirth be the top grossing movie of 2025?",
+          "volume": 11628791.048951,
+          "probability": 0.9995,
+          "outcome": "No 100%"
+        },
+        {
+          "id": "517020",
+          "title": "Will A Minecraft Movie be the top grossing movie of 2025?",
+          "volume": 11580322.793814,
+          "probability": 0.9995,
+          "outcome": "Yes 100%"
         }
       ]
     }
