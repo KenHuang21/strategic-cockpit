@@ -9,16 +9,16 @@
       "delta": -3.011766972809706e-05
     },
     "btc_price": {
-      "value": 93718,
-      "delta": -0.011735962188863639
+      "value": 93853,
+      "delta": 0.1322963010380992
     },
     "stablecoin_mcap": {
-      "value": 307.63,
-      "delta": 0.005015893603333982
+      "value": 307.6,
+      "delta": -0.0035949124371497908
     },
     "usdt_dominance": {
-      "value": 5.69,
-      "delta": 0.14592628145399827
+      "value": 5.68,
+      "delta": -0.055097314413798636
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,17 +56,17 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.71,
-    "btc_gold": 0.04,
+    "btc_nasdaq": 0.76,
+    "btc_gold": -0.09,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
   "polymarket_top5": [
     {
       "title": "Will the U.S. collect between $100b and $200b in revenue in 2025?",
-      "outcome": "No 63%",
-      "probability": 0.63,
-      "volume": 734166.673143,
+      "outcome": "No 62%",
+      "probability": 0.625,
+      "volume": 734311.103143,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-between-100b-and-200b-in-revenue-in-2025"
@@ -74,7 +74,7 @@
     {
       "title": "Will Elon and DOGE cut more than $250b in federal spending in 2025?",
       "outcome": "No 99%",
-      "probability": 0.9905,
+      "probability": 0.991,
       "volume": 659944.304576,
       "volume_24h": 0,
       "flipped": false,
@@ -82,9 +82,9 @@
     },
     {
       "title": "Will the U.S. collect less than $100b in revenue in 2025?",
-      "outcome": "No 66%",
-      "probability": 0.6595,
-      "volume": 567963.800174,
+      "outcome": "No 67%",
+      "probability": 0.6665,
+      "volume": 571792.000174,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-less-than-100b-in-revenue-in-2025"
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/will-elon-and-doge-cut-between-50-100b-in-federal-spending-in-2025"
     }
   ],
-  "last_updated": "2026-01-06T03:13:05.032524Z"
+  "last_updated": "2026-01-06T04:10:07.441238Z"
 }
