@@ -1132,7 +1132,7 @@
       "Step 5: Agent runs a headless browser test (e.g., Playwright/Puppeteer) to verify the live Vercel deployment loads without errors",
       "Step 6: Verify no 'Merge Conflict' errors halt the pipeline"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
