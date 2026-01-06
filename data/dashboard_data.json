@@ -9,16 +9,16 @@
       "delta": -3.011766972809706e-05
     },
     "btc_price": {
-      "value": 93729,
-      "delta": -0.11296424575051953
+      "value": 93611,
+      "delta": -0.12589486711690084
     },
     "stablecoin_mcap": {
       "value": 307.61,
-      "delta": 0.2486819559778638
+      "delta": 0.0010014570131283557
     },
     "usdt_dominance": {
-      "value": 5.68,
-      "delta": -0.014276597751928627
+      "value": 5.69,
+      "delta": 0.19235069171196234
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -27,8 +27,8 @@
   },
   "global_risk_status": "Risk Off",
   "btc_funding_rate": {
-    "value": -1.51,
-    "source": "Binance"
+    "value": 0,
+    "source": "error"
   },
   "btc_etf_flows": {
     "flows": [
@@ -56,16 +56,16 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.72,
-    "btc_gold": -0.01,
-    "interpretation": "Moderately Correlated",
+    "btc_nasdaq": 0.85,
+    "btc_gold": -0.08,
+    "interpretation": "Macro Driven",
     "period_days": 30
   },
   "polymarket_top5": [
     {
       "title": "Will the U.S. collect between $100b and $200b in revenue in 2025?",
-      "outcome": "No 64%",
-      "probability": 0.635,
+      "outcome": "No 63%",
+      "probability": 0.63,
       "volume": 734166.673143,
       "volume_24h": 0,
       "flipped": false,
@@ -74,7 +74,7 @@
     {
       "title": "Will Elon and DOGE cut more than $250b in federal spending in 2025?",
       "outcome": "No 99%",
-      "probability": 0.991,
+      "probability": 0.9905,
       "volume": 659944.304576,
       "volume_24h": 0,
       "flipped": false,
@@ -82,8 +82,8 @@
     },
     {
       "title": "Will the U.S. collect less than $100b in revenue in 2025?",
-      "outcome": "No 65%",
-      "probability": 0.652,
+      "outcome": "No 66%",
+      "probability": 0.659,
       "volume": 567963.800174,
       "volume_24h": 0,
       "flipped": false,
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/will-elon-and-doge-cut-between-50-100b-in-federal-spending-in-2025"
     }
   ],
-  "last_updated": "2026-01-06T02:11:03.981612Z"
+  "last_updated": "2026-01-06T03:01:28.687239Z"
 }
