@@ -9,16 +9,16 @@
       "delta": 1.2774102237961573
     },
     "btc_price": {
-      "value": 93911,
-      "delta": 7.2582118872493036
+      "value": 93913,
+      "delta": 7.2604961396135055
     },
     "stablecoin_mcap": {
-      "value": 307.36,
-      "delta": 0.13714912767123844
+      "value": 307.6,
+      "delta": 0.21387569860069666
     },
     "usdt_dominance": {
-      "value": 5.67,
-      "delta": -7.212826985775177
+      "value": 5.68,
+      "delta": -7.071709419616627
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -33,31 +33,31 @@
   "btc_etf_flows": {
     "flows": [
       {
-        "date": "2025-12-30",
+        "date": "2025-12-31",
         "flow": 150
       },
       {
-        "date": "2025-12-31",
+        "date": "2026-01-01",
         "flow": -50
       },
       {
-        "date": "2026-01-01",
+        "date": "2026-01-02",
         "flow": 300
       },
       {
-        "date": "2026-01-02",
+        "date": "2026-01-05",
         "flow": 100
       },
       {
-        "date": "2026-01-05",
+        "date": "2026-01-06",
         "flow": 200
       }
     ],
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.66,
-    "btc_gold": -0.14,
+    "btc_nasdaq": 0.77,
+    "btc_gold": 0.06,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -102,11 +102,11 @@
       "title": "Will A Minecraft Movie be the top grossing movie of 2025?",
       "outcome": "Yes 100%",
       "probability": 0.9995,
-      "volume": 11578677.313814,
+      "volume": 11578711.793814,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-a-minecraft-movie-be-the-top-grossing-movie-of-2025"
     }
   ],
-  "last_updated": "2026-01-05T23:49:44.927935Z"
+  "last_updated": "2026-01-06T01:16:16.637291Z"
 }
