@@ -9,16 +9,16 @@
       "delta": -3.011766972809706e-05
     },
     "btc_price": {
-      "value": 92617,
-      "delta": -1.1863990867287606
+      "value": 92708,
+      "delta": -1.0893106722572523
     },
     "stablecoin_mcap": {
-      "value": 307.16,
-      "delta": -0.14591787072012946
+      "value": 307.17,
+      "delta": -0.14396547320933703
     },
     "usdt_dominance": {
       "value": 5.72,
-      "delta": 0.671831846532868
+      "delta": 0.6560104061045282
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.7,
-    "btc_gold": -0.08,
+    "btc_nasdaq": 0.73,
+    "btc_gold": -0.01,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/will-elon-and-doge-cut-between-200-250b-in-federal-spending-in-2025"
     }
   ],
-  "last_updated": "2026-01-07T04:52:33.116118Z"
+  "last_updated": "2026-01-07T05:21:16.804641Z"
 }
