@@ -9,16 +9,16 @@
       "delta": -3.011766972809706e-05
     },
     "btc_price": {
-      "value": 91268,
-      "delta": -2.625654813344856
+      "value": 91484,
+      "delta": -2.3952031921817154
     },
     "stablecoin_mcap": {
       "value": 307.05,
       "delta": -0.1811752867978745
     },
     "usdt_dominance": {
-      "value": 5.82,
-      "delta": 2.3886168767500795
+      "value": 5.8,
+      "delta": 2.1139302610623014
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,9 +56,9 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.83,
-    "btc_gold": 0.12,
-    "interpretation": "Macro Driven",
+    "btc_nasdaq": 0.77,
+    "btc_gold": 0.1,
+    "interpretation": "Moderately Correlated",
     "period_days": 30
   },
   "polymarket_top5": [
@@ -74,8 +74,8 @@
     {
       "title": "Will the U.S. collect between $100b and $200b in revenue in 2025?",
       "outcome": "No 70%",
-      "probability": 0.695,
-      "volume": 743163.816575,
+      "probability": 0.7,
+      "volume": 743204.816575,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-between-100b-and-200b-in-revenue-in-2025"
@@ -84,7 +84,7 @@
       "title": "Will Elon and DOGE cut more than $250b in federal spending in 2025?",
       "outcome": "No 99%",
       "probability": 0.994,
-      "volume": 660051.214576,
+      "volume": 660088.964576,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-elon-and-doge-cut-more-than-250b-in-federal-spending-in-2025"
@@ -102,11 +102,11 @@
       "title": "Will Elon and DOGE cut between $200-250b in federal spending in 2025?",
       "outcome": "No 100%",
       "probability": 0.998,
-      "volume": 417477.911307,
+      "volume": 417490.663307,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-elon-and-doge-cut-between-200-250b-in-federal-spending-in-2025"
     }
   ],
-  "last_updated": "2026-01-07T15:47:57.041874Z"
+  "last_updated": "2026-01-07T16:23:33.196616Z"
 }
