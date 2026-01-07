@@ -9,16 +9,16 @@
       "delta": -3.011766972809706e-05
     },
     "btc_price": {
-      "value": 91561,
-      "delta": -2.31305145685967
+      "value": 91745,
+      "delta": -2.116740816609587
     },
     "stablecoin_mcap": {
-      "value": 307.01,
-      "delta": -0.19423995970555108
+      "value": 307.03,
+      "delta": -0.18941818644538946
     },
     "usdt_dominance": {
-      "value": 5.78,
-      "delta": 1.706362545403499
+      "value": 5.77,
+      "delta": 1.5598908518370787
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,16 +56,16 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.74,
-    "btc_gold": -0.02,
-    "interpretation": "Moderately Correlated",
+    "btc_nasdaq": 0.81,
+    "btc_gold": 0.06,
+    "interpretation": "Macro Driven",
     "period_days": 30
   },
   "polymarket_top5": [
     {
       "title": "Will tariffs generate >$250b in 2025?",
       "outcome": "No 98%",
-      "probability": 0.983,
+      "probability": 0.9835,
       "volume": 1027300.319073,
       "volume_24h": 0,
       "flipped": false,
@@ -73,9 +73,9 @@
     },
     {
       "title": "Will the U.S. collect between $100b and $200b in revenue in 2025?",
-      "outcome": "No 72%",
-      "probability": 0.715,
-      "volume": 741140.156575,
+      "outcome": "No 70%",
+      "probability": 0.705,
+      "volume": 741282.146575,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-between-100b-and-200b-in-revenue-in-2025"
@@ -93,7 +93,7 @@
       "title": "Will the U.S. collect less than $100b in revenue in 2025?",
       "outcome": "No 72%",
       "probability": 0.715,
-      "volume": 596333.491264,
+      "volume": 596343.944224,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-less-than-100b-in-revenue-in-2025"
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/will-elon-and-doge-cut-between-200-250b-in-federal-spending-in-2025"
     }
   ],
-  "last_updated": "2026-01-07T09:49:00.019721Z"
+  "last_updated": "2026-01-07T10:18:49.071231Z"
 }
