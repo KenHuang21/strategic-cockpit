@@ -1,24 +1,24 @@
 {
   "metrics": {
     "us_10y_yield": {
-      "value": 4.17,
-      "delta": -0.477326968973758
+      "value": 4.18,
+      "delta": -0.23866348448688962
     },
     "fed_net_liquidity": {
       "value": 6640.62,
       "delta": -3.011766972809706e-05
     },
     "btc_price": {
-      "value": 91075,
-      "delta": -2.831567604476736
+      "value": 90985,
+      "delta": -2.927589113294711
     },
     "stablecoin_mcap": {
-      "value": 306.9,
-      "delta": -0.23129222953960316
+      "value": 306.88,
+      "delta": -0.23850062519371454
     },
     "usdt_dominance": {
       "value": 5.83,
-      "delta": 2.660904289372892
+      "delta": 2.645716753764862
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.66,
-    "btc_gold": 0.05,
+    "btc_nasdaq": 0.79,
+    "btc_gold": -0.12,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -65,7 +65,7 @@
     {
       "title": "Will tariffs generate >$250b in 2025?",
       "outcome": "No 99%",
-      "probability": 0.986,
+      "probability": 0.987,
       "volume": 1027509.854739,
       "volume_24h": 0,
       "flipped": false,
@@ -74,7 +74,7 @@
     {
       "title": "Will the U.S. collect between $100b and $200b in revenue in 2025?",
       "outcome": "No 72%",
-      "probability": 0.725,
+      "probability": 0.72,
       "volume": 743478.496575,
       "volume_24h": 0,
       "flipped": false,
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/will-elon-and-doge-cut-between-200-250b-in-federal-spending-in-2025"
     }
   ],
-  "last_updated": "2026-01-07T21:15:33.107381Z"
+  "last_updated": "2026-01-07T21:41:00.317076Z"
 }
