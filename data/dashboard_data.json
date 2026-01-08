@@ -9,16 +9,16 @@
       "delta": -3.011766972809706e-05
     },
     "btc_price": {
-      "value": 89778,
-      "delta": -4.215344237109112
+      "value": 89965,
+      "delta": -4.01583287989843
     },
     "stablecoin_mcap": {
-      "value": 306.64,
-      "delta": -0.3147248092186448
+      "value": 306.56,
+      "delta": -0.34223096855533036
     },
     "usdt_dominance": {
-      "value": 5.92,
-      "delta": 4.145339083539806
+      "value": 5.91,
+      "delta": 4.030199849709176
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,16 +56,16 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.83,
-    "btc_gold": 0.11,
-    "interpretation": "Macro Driven",
+    "btc_nasdaq": 0.74,
+    "btc_gold": -0.01,
+    "interpretation": "Moderately Correlated",
     "period_days": 30
   },
   "polymarket_top5": [
     {
       "title": "Will tariffs generate >$250b in 2025?",
-      "outcome": "No 98%",
-      "probability": 0.985,
+      "outcome": "No 99%",
+      "probability": 0.9855,
       "volume": 1027997.078737,
       "volume_24h": 0,
       "flipped": false,
@@ -73,9 +73,9 @@
     },
     {
       "title": "Will the U.S. collect between $100b and $200b in revenue in 2025?",
-      "outcome": "No 72%",
-      "probability": 0.725,
-      "volume": 748276.135204,
+      "outcome": "No 73%",
+      "probability": 0.73,
+      "volume": 748279.583478,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-between-100b-and-200b-in-revenue-in-2025"
@@ -83,7 +83,7 @@
     {
       "title": "Will Elon and DOGE cut more than $250b in federal spending in 2025?",
       "outcome": "No 99%",
-      "probability": 0.993,
+      "probability": 0.9935,
       "volume": 660211.924576,
       "volume_24h": 0,
       "flipped": false,
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/will-elon-and-doge-cut-between-200-250b-in-federal-spending-in-2025"
     }
   ],
-  "last_updated": "2026-01-08T12:35:06.346750Z"
+  "last_updated": "2026-01-08T13:27:38.620247Z"
 }
