@@ -9,16 +9,16 @@
       "delta": -3.011766972809706e-05
     },
     "btc_price": {
-      "value": 91325,
-      "delta": -2.5648411910934716
+      "value": 90985,
+      "delta": -2.927589113294711
     },
     "stablecoin_mcap": {
-      "value": 306.89,
-      "delta": -0.23326595884979223
+      "value": 306.87,
+      "delta": -0.240608443332074
     },
     "usdt_dominance": {
-      "value": 5.81,
-      "delta": 2.241785041943465
+      "value": 5.82,
+      "delta": 2.526251604688386
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.8,
-    "btc_gold": 0.1,
+    "btc_nasdaq": 0.66,
+    "btc_gold": -0.02,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -75,7 +75,7 @@
       "title": "Will the U.S. collect between $100b and $200b in revenue in 2025?",
       "outcome": "No 74%",
       "probability": 0.735,
-      "volume": 747243.565204,
+      "volume": 747354.565204,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-between-100b-and-200b-in-revenue-in-2025"
@@ -83,7 +83,7 @@
     {
       "title": "Will Elon and DOGE cut more than $250b in federal spending in 2025?",
       "outcome": "No 99%",
-      "probability": 0.9945,
+      "probability": 0.994,
       "volume": 660206.914576,
       "volume_24h": 0,
       "flipped": false,
@@ -92,8 +92,8 @@
     {
       "title": "Will the U.S. collect less than $100b in revenue in 2025?",
       "outcome": "No 71%",
-      "probability": 0.707,
-      "volume": 599247.399208,
+      "probability": 0.709,
+      "volume": 599262.399208,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-less-than-100b-in-revenue-in-2025"
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/will-elon-and-doge-cut-between-200-250b-in-federal-spending-in-2025"
     }
   ],
-  "last_updated": "2026-01-08T01:17:02.236478Z"
+  "last_updated": "2026-01-08T03:13:00.971282Z"
 }
