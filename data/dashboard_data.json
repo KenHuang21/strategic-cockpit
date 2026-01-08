@@ -9,16 +9,16 @@
       "delta": -3.011766972809706e-05
     },
     "btc_price": {
-      "value": 90004,
-      "delta": -3.974223559410641
+      "value": 90306,
+      "delta": -3.6520180520436574
     },
     "stablecoin_mcap": {
-      "value": 306.75,
-      "delta": -0.28005315926782937
+      "value": 306.72,
+      "delta": -0.28947861051458534
     },
     "usdt_dominance": {
-      "value": 5.89,
-      "delta": 3.7339355503036638
+      "value": 5.88,
+      "delta": 3.4376702475327177
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,9 +56,9 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.69,
-    "btc_gold": 0.01,
-    "interpretation": "Moderately Correlated",
+    "btc_nasdaq": 0.84,
+    "btc_gold": 0.12,
+    "interpretation": "Macro Driven",
     "period_days": 30
   },
   "polymarket_top5": [
@@ -83,7 +83,7 @@
     {
       "title": "Will Elon and DOGE cut more than $250b in federal spending in 2025?",
       "outcome": "No 99%",
-      "probability": 0.9935,
+      "probability": 0.994,
       "volume": 660206.914576,
       "volume_24h": 0,
       "flipped": false,
@@ -92,8 +92,8 @@
     {
       "title": "Will the U.S. collect less than $100b in revenue in 2025?",
       "outcome": "No 71%",
-      "probability": 0.7085,
-      "volume": 606254.999208,
+      "probability": 0.707,
+      "volume": 609374.999208,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-less-than-100b-in-revenue-in-2025"
@@ -102,11 +102,11 @@
       "title": "Will Elon and DOGE cut between $200-250b in federal spending in 2025?",
       "outcome": "No 100%",
       "probability": 0.998,
-      "volume": 417529.303307,
+      "volume": 417533.023307,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-elon-and-doge-cut-between-200-250b-in-federal-spending-in-2025"
     }
   ],
-  "last_updated": "2026-01-08T07:23:50.995577Z"
+  "last_updated": "2026-01-08T07:43:30.140536Z"
 }
