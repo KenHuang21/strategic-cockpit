@@ -1,24 +1,24 @@
 {
   "metrics": {
     "us_10y_yield": {
-      "value": 4.15,
-      "delta": -0.9546539379474948
+      "value": 4.5,
+      "delta": 7.3985680190930685
     },
     "fed_net_liquidity": {
       "value": 6573.6,
       "delta": -1.009212995172138
     },
     "btc_price": {
-      "value": 91057,
-      "delta": -2.850771906240331
+      "value": 91190,
+      "delta": -2.7088734543204347
     },
     "stablecoin_mcap": {
-      "value": 306.17,
-      "delta": -0.46933759113700946
+      "value": 305.93,
+      "delta": -0.54500605757391
     },
     "usdt_dominance": {
-      "value": 5.82,
-      "delta": 2.4753316133605887
+      "value": 5.81,
+      "delta": 2.307041967555221
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -33,31 +33,31 @@
   "btc_etf_flows": {
     "flows": [
       {
-        "date": "2026-01-02",
+        "date": "2026-01-05",
         "flow": 150
       },
       {
-        "date": "2026-01-05",
+        "date": "2026-01-06",
         "flow": -50
       },
       {
-        "date": "2026-01-06",
+        "date": "2026-01-07",
         "flow": 300
       },
       {
-        "date": "2026-01-07",
+        "date": "2026-01-08",
         "flow": 100
       },
       {
-        "date": "2026-01-08",
+        "date": "2026-01-09",
         "flow": 200
       }
     ],
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.67,
-    "btc_gold": 0.08,
+    "btc_nasdaq": 0.75,
+    "btc_gold": -0.15,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -66,7 +66,7 @@
       "title": "Will tariffs generate >$250b in 2025?",
       "outcome": "No 98%",
       "probability": 0.9835,
-      "volume": 1028217.213737,
+      "volume": 1028219.244137,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-tariffs-generate-250b-in-2025"
@@ -74,8 +74,8 @@
     {
       "title": "Will the U.S. collect between $100b and $200b in revenue in 2025?",
       "outcome": "No 74%",
-      "probability": 0.74,
-      "volume": 749451.593118,
+      "probability": 0.735,
+      "volume": 749480.593118,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-between-100b-and-200b-in-revenue-in-2025"
@@ -92,8 +92,8 @@
     {
       "title": "Will the U.S. collect less than $100b in revenue in 2025?",
       "outcome": "No 70%",
-      "probability": 0.6955,
-      "volume": 630720.646158,
+      "probability": 0.705,
+      "volume": 630867.436158,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-less-than-100b-in-revenue-in-2025"
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/will-elon-and-doge-cut-between-200-250b-in-federal-spending-in-2025"
     }
   ],
-  "last_updated": "2026-01-08T23:50:17.116663Z"
+  "last_updated": "2026-01-09T01:17:05.657211Z"
 }
