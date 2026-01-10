@@ -9,16 +9,16 @@
       "delta": -1.009212995172138
     },
     "btc_price": {
-      "value": 90459,
-      "delta": -3.4887814870530995
+      "value": 90411,
+      "delta": -3.5399929584226864
     },
     "stablecoin_mcap": {
-      "value": 307.04,
-      "delta": -0.18559080549345677
+      "value": 306.97,
+      "delta": -0.20828235408427415
     },
     "usdt_dominance": {
       "value": 5.88,
-      "delta": 3.5644120310887164
+      "delta": 3.607216902704461
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -57,7 +57,7 @@
   },
   "correlation_radar": {
     "btc_nasdaq": 0.76,
-    "btc_gold": 0.11,
+    "btc_gold": 0.03,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -65,7 +65,7 @@
     {
       "title": "Will tariffs generate >$250b in 2025?",
       "outcome": "No 98%",
-      "probability": 0.9845,
+      "probability": 0.985,
       "volume": 1038026.636001,
       "volume_24h": 0,
       "flipped": false,
@@ -73,18 +73,18 @@
     },
     {
       "title": "Will the U.S. collect between $100b and $200b in revenue in 2025?",
-      "outcome": "No 72%",
-      "probability": 0.715,
-      "volume": 761378.797048,
+      "outcome": "No 70%",
+      "probability": 0.705,
+      "volume": 761632.158337,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-between-100b-and-200b-in-revenue-in-2025"
     },
     {
       "title": "Will the U.S. collect less than $100b in revenue in 2025?",
-      "outcome": "No 70%",
-      "probability": 0.698,
-      "volume": 671693.375281,
+      "outcome": "No 71%",
+      "probability": 0.713,
+      "volume": 671728.375281,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-less-than-100b-in-revenue-in-2025"
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/will-elon-and-doge-cut-between-200-250b-in-federal-spending-in-2025"
     }
   ],
-  "last_updated": "2026-01-10T20:52:18.170857Z"
+  "last_updated": "2026-01-10T21:14:03.527246Z"
 }
