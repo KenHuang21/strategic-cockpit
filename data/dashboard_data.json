@@ -9,8 +9,8 @@
       "delta": -1.009212995172138
     },
     "btc_price": {
-      "value": 90404,
-      "delta": -3.547461297997418
+      "value": 90415,
+      "delta": -3.5357253358085545
     },
     "stablecoin_mcap": {
       "value": 306.98,
@@ -18,7 +18,7 @@
     },
     "usdt_dominance": {
       "value": 5.89,
-      "delta": 3.7115948619094943
+      "delta": 3.673222680173252
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,16 +56,16 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.68,
-    "btc_gold": 0.15,
+    "btc_nasdaq": 0.65,
+    "btc_gold": -0.03,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
   "polymarket_top5": [
     {
       "title": "Will tariffs generate >$250b in 2025?",
-      "outcome": "No 98%",
-      "probability": 0.9845,
+      "outcome": "No 99%",
+      "probability": 0.9855,
       "volume": 1038853.712666,
       "volume_24h": 0,
       "flipped": false,
@@ -73,9 +73,9 @@
     },
     {
       "title": "Will the U.S. collect between $100b and $200b in revenue in 2025?",
-      "outcome": "No 70%",
-      "probability": 0.705,
-      "volume": 762612.190594,
+      "outcome": "No 71%",
+      "probability": 0.71,
+      "volume": 762626.190594,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-between-100b-and-200b-in-revenue-in-2025"
@@ -83,8 +83,8 @@
     {
       "title": "Will the U.S. collect less than $100b in revenue in 2025?",
       "outcome": "No 71%",
-      "probability": 0.709,
-      "volume": 673950.624786,
+      "probability": 0.7125,
+      "volume": 674195.524786,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-less-than-100b-in-revenue-in-2025"
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/will-elon-and-doge-cut-between-200-250b-in-federal-spending-in-2025"
     }
   ],
-  "last_updated": "2026-01-10T23:15:01.970782Z"
+  "last_updated": "2026-01-10T23:32:33.959457Z"
 }
