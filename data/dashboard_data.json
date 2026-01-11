@@ -9,16 +9,16 @@
       "delta": -1.009212995172138
     },
     "btc_price": {
-      "value": 90522,
-      "delta": -3.4215664308805174
+      "value": 90596,
+      "delta": -3.3426154125190712
     },
     "stablecoin_mcap": {
-      "value": 306.71,
-      "delta": -0.2940215034503145
+      "value": 307.01,
+      "delta": -0.19532039295785303
     },
     "usdt_dominance": {
       "value": 5.88,
-      "delta": 3.5547131970536787
+      "delta": 3.462262209456815
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.71,
-    "btc_gold": 0.12,
+    "btc_nasdaq": 0.8,
+    "btc_gold": 0.03,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -65,26 +65,26 @@
     {
       "title": "Will tariffs generate >$250b in 2025?",
       "outcome": "No 99%",
-      "probability": 0.986,
-      "volume": 1038853.712666,
+      "probability": 0.9865,
+      "volume": 1038919.332666,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-tariffs-generate-250b-in-2025"
     },
     {
       "title": "Will the U.S. collect between $100b and $200b in revenue in 2025?",
-      "outcome": "No 73%",
-      "probability": 0.73,
-      "volume": 763446.000594,
+      "outcome": "No 75%",
+      "probability": 0.75,
+      "volume": 764181.420594,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-between-100b-and-200b-in-revenue-in-2025"
     },
     {
       "title": "Will the U.S. collect less than $100b in revenue in 2025?",
-      "outcome": "No 69%",
-      "probability": 0.6895,
-      "volume": 674514.434786,
+      "outcome": "No 65%",
+      "probability": 0.649,
+      "volume": 674954.206136,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-less-than-100b-in-revenue-in-2025"
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/will-elon-and-doge-cut-between-200-250b-in-federal-spending-in-2025"
     }
   ],
-  "last_updated": "2026-01-11T01:23:26.352763Z"
+  "last_updated": "2026-01-11T03:23:21.161612Z"
 }
