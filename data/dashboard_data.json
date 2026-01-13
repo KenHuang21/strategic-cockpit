@@ -9,16 +9,16 @@
       "delta": -1.009212995172138
     },
     "btc_price": {
-      "value": 91807,
-      "delta": -2.050592666090538
+      "value": 91957,
+      "delta": -1.8905568180605787
     },
     "stablecoin_mcap": {
-      "value": 306.09,
-      "delta": -0.49549769409138755
+      "value": 306.11,
+      "delta": -0.4881901565524851
     },
     "usdt_dominance": {
       "value": 5.81,
-      "delta": 2.3105089587569547
+      "delta": 2.213385350574097
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.78,
-    "btc_gold": -0.14,
+    "btc_nasdaq": 0.65,
+    "btc_gold": 0.08,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -66,25 +66,25 @@
       "title": "Will tariffs generate >$250b in 2025?",
       "outcome": "No 98%",
       "probability": 0.985,
-      "volume": 1043719.372517,
+      "volume": 1043739.372517,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-tariffs-generate-250b-in-2025"
     },
     {
       "title": "Will the U.S. collect between $100b and $200b in revenue in 2025?",
-      "outcome": "No 72%",
-      "probability": 0.725,
-      "volume": 769551.090569,
+      "outcome": "No 73%",
+      "probability": 0.73,
+      "volume": 769626.350569,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-between-100b-and-200b-in-revenue-in-2025"
     },
     {
       "title": "Will the U.S. collect less than $100b in revenue in 2025?",
-      "outcome": "No 67%",
-      "probability": 0.6695,
-      "volume": 705275.405814,
+      "outcome": "No 68%",
+      "probability": 0.682,
+      "volume": 709791.325814,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-less-than-100b-in-revenue-in-2025"
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/will-elon-and-doge-cut-between-200-250b-in-federal-spending-in-2025"
     }
   ],
-  "last_updated": "2026-01-13T07:54:13.700919Z"
+  "last_updated": "2026-01-13T08:24:00.450764Z"
 }
