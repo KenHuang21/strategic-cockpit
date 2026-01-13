@@ -9,16 +9,16 @@
       "delta": -1.009212995172138
     },
     "btc_price": {
-      "value": 91354,
-      "delta": -2.533900927141013
+      "value": 91054,
+      "delta": -2.85397262320093
     },
     "stablecoin_mcap": {
-      "value": 306.25,
-      "delta": -0.44221573630872024
+      "value": 306.13,
+      "delta": -0.4796862975179254
     },
     "usdt_dominance": {
-      "value": 5.84,
-      "delta": 2.8384582431274024
+      "value": 5.86,
+      "delta": 3.116249033706117
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.67,
-    "btc_gold": -0.01,
+    "btc_nasdaq": 0.77,
+    "btc_gold": -0.07,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -75,7 +75,7 @@
       "title": "Will the U.S. collect between $100b and $200b in revenue in 2025?",
       "outcome": "No 72%",
       "probability": 0.725,
-      "volume": 768962.040569,
+      "volume": 768967.540569,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-between-100b-and-200b-in-revenue-in-2025"
@@ -83,8 +83,8 @@
     {
       "title": "Will the U.S. collect less than $100b in revenue in 2025?",
       "outcome": "No 67%",
-      "probability": 0.669,
-      "volume": 684954.455814,
+      "probability": 0.6675,
+      "volume": 685034.455814,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-less-than-100b-in-revenue-in-2025"
@@ -101,12 +101,12 @@
     {
       "title": "Will Elon and DOGE cut between $200-250b in federal spending in 2025?",
       "outcome": "No 99%",
-      "probability": 0.986,
+      "probability": 0.9855,
       "volume": 419214.873307,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-elon-and-doge-cut-between-200-250b-in-federal-spending-in-2025"
     }
   ],
-  "last_updated": "2026-01-13T01:13:31.377122Z"
+  "last_updated": "2026-01-13T03:04:20.621516Z"
 }
