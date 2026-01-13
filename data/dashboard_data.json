@@ -9,16 +9,16 @@
       "delta": -1.009212995172138
     },
     "btc_price": {
-      "value": 92329,
-      "delta": -1.4936679149462813
+      "value": 92963,
+      "delta": -0.8172497306063224
     },
     "stablecoin_mcap": {
-      "value": 306.05,
-      "delta": -0.5070284189881747
+      "value": 306.25,
+      "delta": -0.4435086933071079
     },
     "usdt_dominance": {
-      "value": 5.78,
-      "delta": 1.7290299192399974
+      "value": 5.74,
+      "delta": 1.067867551267127
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.75,
-    "btc_gold": -0.08,
+    "btc_nasdaq": 0.71,
+    "btc_gold": -0.06,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -83,7 +83,7 @@
     {
       "title": "Will the U.S. collect less than $100b in revenue in 2025?",
       "outcome": "No 64%",
-      "probability": 0.637,
+      "probability": 0.6355,
       "volume": 727149.620549,
       "volume_24h": 0,
       "flipped": false,
@@ -92,7 +92,7 @@
     {
       "title": "Will Elon and DOGE cut more than $250b in federal spending in 2025?",
       "outcome": "No 99%",
-      "probability": 0.9935,
+      "probability": 0.993,
       "volume": 661973.851576,
       "volume_24h": 0,
       "flipped": false,
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/will-elon-and-doge-cut-between-200-250b-in-federal-spending-in-2025"
     }
   ],
-  "last_updated": "2026-01-13T15:20:27.559186Z"
+  "last_updated": "2026-01-13T15:48:26.097728Z"
 }
