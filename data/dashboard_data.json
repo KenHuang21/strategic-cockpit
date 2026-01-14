@@ -9,16 +9,16 @@
       "delta": -1.009212995172138
     },
     "btc_price": {
-      "value": 94763,
-      "delta": 1.103180445753182
+      "value": 95038,
+      "delta": 1.396579500474773
     },
     "stablecoin_mcap": {
-      "value": 307.27,
-      "delta": -0.11095902053601002
+      "value": 307.2,
+      "delta": -0.13359652098283956
     },
     "usdt_dominance": {
-      "value": 5.63,
-      "delta": -0.8444041179077458
+      "value": 5.62,
+      "delta": -1.0740318256892833
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,9 +56,9 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.8,
-    "btc_gold": 0.12,
-    "interpretation": "Moderately Correlated",
+    "btc_nasdaq": 0.83,
+    "btc_gold": 0.06,
+    "interpretation": "Macro Driven",
     "period_days": 30
   },
   "polymarket_top5": [
@@ -75,16 +75,16 @@
       "title": "Will the U.S. collect between $100b and $200b in revenue in 2025?",
       "outcome": "No 74%",
       "probability": 0.745,
-      "volume": 770762.100871,
+      "volume": 770782.100871,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-between-100b-and-200b-in-revenue-in-2025"
     },
     {
       "title": "Will the U.S. collect less than $100b in revenue in 2025?",
-      "outcome": "No 59%",
-      "probability": 0.5885,
-      "volume": 731749.743964,
+      "outcome": "No 58%",
+      "probability": 0.58,
+      "volume": 731914.763964,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-less-than-100b-in-revenue-in-2025"
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/will-elon-and-doge-cut-between-200-250b-in-federal-spending-in-2025"
     }
   ],
-  "last_updated": "2026-01-14T11:52:47.385482Z"
+  "last_updated": "2026-01-14T12:35:23.717644Z"
 }
