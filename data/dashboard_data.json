@@ -9,16 +9,16 @@
       "delta": -1.009212995172138
     },
     "btc_price": {
-      "value": 97353,
-      "delta": 3.8664660884038025
+      "value": 97035,
+      "delta": 3.52719009058029
     },
     "stablecoin_mcap": {
-      "value": 308.32,
-      "delta": 0.23104416190446883
+      "value": 308.58,
+      "delta": 0.31595201578588944
     },
     "usdt_dominance": {
-      "value": 5.52,
-      "delta": -2.7820622477459875
+      "value": 5.54,
+      "delta": -2.528360529015232
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,16 +56,16 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.82,
-    "btc_gold": -0.05,
-    "interpretation": "Macro Driven",
+    "btc_nasdaq": 0.69,
+    "btc_gold": -0.02,
+    "interpretation": "Moderately Correlated",
     "period_days": 30
   },
   "polymarket_top5": [
     {
       "title": "Will tariffs generate >$250b in 2025?",
       "outcome": "No 98%",
-      "probability": 0.982,
+      "probability": 0.981,
       "volume": 1054419.153474,
       "volume_24h": 0,
       "flipped": false,
@@ -83,8 +83,8 @@
     {
       "title": "Will the U.S. collect less than $100b in revenue in 2025?",
       "outcome": "No 59%",
-      "probability": 0.5915,
-      "volume": 732705.105273,
+      "probability": 0.587,
+      "volume": 732995.395865,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-less-than-100b-in-revenue-in-2025"
@@ -93,7 +93,7 @@
       "title": "Will Elon and DOGE cut more than $250b in federal spending in 2025?",
       "outcome": "No 100%",
       "probability": 0.9975,
-      "volume": 662958.994576,
+      "volume": 662960.36732,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-elon-and-doge-cut-more-than-250b-in-federal-spending-in-2025"
@@ -101,12 +101,12 @@
     {
       "title": "Will Elon and DOGE cut between $200-250b in federal spending in 2025?",
       "outcome": "No 100%",
-      "probability": 0.995,
+      "probability": 0.996,
       "volume": 421473.254875,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-elon-and-doge-cut-between-200-250b-in-federal-spending-in-2025"
     }
   ],
-  "last_updated": "2026-01-14T22:17:14.647955Z"
+  "last_updated": "2026-01-14T22:45:57.291497Z"
 }
