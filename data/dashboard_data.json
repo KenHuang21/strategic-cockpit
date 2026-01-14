@@ -9,16 +9,16 @@
       "delta": -1.009212995172138
     },
     "btc_price": {
-      "value": 95209,
-      "delta": 1.5790203672289258
+      "value": 94871,
+      "delta": 1.2184062563347524
     },
     "stablecoin_mcap": {
-      "value": 307.16,
-      "delta": -0.14673693002291982
+      "value": 307.17,
+      "delta": -0.1434644374219709
     },
     "usdt_dominance": {
-      "value": 5.6,
-      "delta": -1.494102577713497
+      "value": 5.61,
+      "delta": -1.1961474673387065
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.73,
-    "btc_gold": 0.09,
+    "btc_nasdaq": 0.79,
+    "btc_gold": -0.06,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -82,8 +82,8 @@
     },
     {
       "title": "Will the U.S. collect less than $100b in revenue in 2025?",
-      "outcome": "No 60%",
-      "probability": 0.602,
+      "outcome": "No 61%",
+      "probability": 0.6115,
       "volume": 730528.735002,
       "volume_24h": 0,
       "flipped": false,
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/will-elon-and-doge-cut-between-200-250b-in-federal-spending-in-2025"
     }
   ],
-  "last_updated": "2026-01-14T08:23:30.736953Z"
+  "last_updated": "2026-01-14T08:53:11.148170Z"
 }
