@@ -9,8 +9,8 @@
       "delta": -1.009212995172138
     },
     "btc_price": {
-      "value": 96557,
-      "delta": 3.0172091881914884
+      "value": 96620,
+      "delta": 3.084424244364071
     },
     "stablecoin_mcap": {
       "value": 308.33,
@@ -18,7 +18,7 @@
     },
     "usdt_dominance": {
       "value": 5.57,
-      "delta": -2.0002538128145204
+      "delta": -1.9974975059661564
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.73,
-    "btc_gold": 0.02,
+    "btc_nasdaq": 0.75,
+    "btc_gold": -0.07,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -73,9 +73,9 @@
     },
     {
       "title": "Will the U.S. collect between $100b and $200b in revenue in 2025?",
-      "outcome": "No 81%",
-      "probability": 0.81,
-      "volume": 772712.840141,
+      "outcome": "No 80%",
+      "probability": 0.8,
+      "volume": 772881.280141,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-between-100b-and-200b-in-revenue-in-2025"
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/new-playboi-carti-album-before-gta-vi-421"
     }
   ],
-  "last_updated": "2026-01-15T08:52:52.648712Z"
+  "last_updated": "2026-01-15T09:23:47.697463Z"
 }
