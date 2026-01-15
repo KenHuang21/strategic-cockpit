@@ -9,16 +9,16 @@
       "delta": -1.009212995172138
     },
     "btc_price": {
-      "value": 96517,
-      "delta": 2.9745329620501657
+      "value": 96497,
+      "delta": 2.953194848979505
     },
     "stablecoin_mcap": {
-      "value": 308.63,
-      "delta": 0.3308326401002859
+      "value": 308.33,
+      "delta": 0.23341488276117395
     },
     "usdt_dominance": {
       "value": 5.57,
-      "delta": -1.9829140718303835
+      "delta": -1.9420993487864473
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,16 +56,16 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.68,
-    "btc_gold": -0.07,
+    "btc_nasdaq": 0.75,
+    "btc_gold": 0.03,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
   "polymarket_top5": [
     {
       "title": "Will tariffs generate >$250b in 2025?",
-      "outcome": "No 97%",
-      "probability": 0.966,
+      "outcome": "No 96%",
+      "probability": 0.965,
       "volume": 1054535.213474,
       "volume_24h": 0,
       "flipped": false,
@@ -73,9 +73,9 @@
     },
     {
       "title": "Will the U.S. collect between $100b and $200b in revenue in 2025?",
-      "outcome": "No 81%",
-      "probability": 0.81,
-      "volume": 772660.840141,
+      "outcome": "No 80%",
+      "probability": 0.805,
+      "volume": 772672.840141,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-between-100b-and-200b-in-revenue-in-2025"
@@ -83,7 +83,7 @@
     {
       "title": "Will the U.S. collect less than $100b in revenue in 2025?",
       "outcome": "No 58%",
-      "probability": 0.58,
+      "probability": 0.579,
       "volume": 733825.996816,
       "volume_24h": 0,
       "flipped": false,
@@ -92,8 +92,8 @@
     {
       "title": "Will Elon and DOGE cut more than $250b in federal spending in 2025?",
       "outcome": "No 99%",
-      "probability": 0.9895,
-      "volume": 663021.03732,
+      "probability": 0.9875,
+      "volume": 663064.69732,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-elon-and-doge-cut-more-than-250b-in-federal-spending-in-2025"
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/new-playboi-carti-album-before-gta-vi-421"
     }
   ],
-  "last_updated": "2026-01-15T07:54:34.344141Z"
+  "last_updated": "2026-01-15T08:24:26.228793Z"
 }
