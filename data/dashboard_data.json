@@ -9,16 +9,16 @@
       "delta": -1.009212995172138
     },
     "btc_price": {
-      "value": 96747,
-      "delta": 3.2199212623627695
+      "value": 96719,
+      "delta": 3.190047904063844
     },
     "stablecoin_mcap": {
-      "value": 308.72,
-      "delta": 0.36030815292397916
+      "value": 308.7,
+      "delta": 0.35300072648558595
     },
     "usdt_dominance": {
-      "value": 5.55,
-      "delta": -2.2529386364861943
+      "value": 5.56,
+      "delta": -2.195451292206766
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,26 +56,26 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.84,
-    "btc_gold": -0.06,
+    "btc_nasdaq": 0.81,
+    "btc_gold": -0.09,
     "interpretation": "Macro Driven",
     "period_days": 30
   },
   "polymarket_top5": [
     {
       "title": "Will tariffs generate >$250b in 2025?",
-      "outcome": "No 98%",
-      "probability": 0.977,
-      "volume": 1054535.213474,
+      "outcome": "No 97%",
+      "probability": 0.9665,
+      "volume": 1055114.528785,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-tariffs-generate-250b-in-2025"
     },
     {
       "title": "Will the U.S. collect between $100b and $200b in revenue in 2025?",
-      "outcome": "No 79%",
-      "probability": 0.79,
-      "volume": 772913.280141,
+      "outcome": "No 80%",
+      "probability": 0.8,
+      "volume": 772961.280141,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-between-100b-and-200b-in-revenue-in-2025"
@@ -83,7 +83,7 @@
     {
       "title": "Will the U.S. collect less than $100b in revenue in 2025?",
       "outcome": "No 59%",
-      "probability": 0.587,
+      "probability": 0.5875,
       "volume": 733984.60315,
       "volume_24h": 0,
       "flipped": false,
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/new-playboi-carti-album-before-gta-vi-421"
     }
   ],
-  "last_updated": "2026-01-15T10:48:22.224463Z"
+  "last_updated": "2026-01-15T11:16:01.086585Z"
 }
