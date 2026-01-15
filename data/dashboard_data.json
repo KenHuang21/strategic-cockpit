@@ -9,16 +9,16 @@
       "delta": -1.009212995172138
     },
     "btc_price": {
-      "value": 96268,
-      "delta": 2.7088734543204347
+      "value": 96037,
+      "delta": 2.462418248354298
     },
     "stablecoin_mcap": {
-      "value": 308.65,
-      "delta": 0.3388555164144666
+      "value": 308.64,
+      "delta": 0.33448464358865154
     },
     "usdt_dominance": {
-      "value": 5.59,
-      "delta": -1.672201095911734
+      "value": 5.6,
+      "delta": -1.3989808837977358
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,16 +56,16 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.67,
-    "btc_gold": 0.1,
+    "btc_nasdaq": 0.79,
+    "btc_gold": -0.07,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
   "polymarket_top5": [
     {
       "title": "Will tariffs generate >$250b in 2025?",
-      "outcome": "No 97%",
-      "probability": 0.9725,
+      "outcome": "No 98%",
+      "probability": 0.977,
       "volume": 1054534.153474,
       "volume_24h": 0,
       "flipped": false,
@@ -73,8 +73,8 @@
     },
     {
       "title": "Will the U.S. collect between $100b and $200b in revenue in 2025?",
-      "outcome": "No 82%",
-      "probability": 0.82,
+      "outcome": "No 80%",
+      "probability": 0.8,
       "volume": 772394.020179,
       "volume_24h": 0,
       "flipped": false,
@@ -84,7 +84,7 @@
       "title": "Will the U.S. collect less than $100b in revenue in 2025?",
       "outcome": "No 59%",
       "probability": 0.5875,
-      "volume": 733359.306816,
+      "volume": 733543.066816,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-less-than-100b-in-revenue-in-2025"
@@ -100,13 +100,13 @@
     },
     {
       "title": "New Playboi Carti Album before GTA VI?",
-      "outcome": "Yes 53%",
-      "probability": 0.53,
+      "outcome": "Yes 54%",
+      "probability": 0.535,
       "volume": 584423.50187,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/new-playboi-carti-album-before-gta-vi-421"
     }
   ],
-  "last_updated": "2026-01-15T03:08:43.286398Z"
+  "last_updated": "2026-01-15T04:12:04.052833Z"
 }
