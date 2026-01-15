@@ -9,16 +9,16 @@
       "delta": -0.8872665504124626
     },
     "btc_price": {
-      "value": 95575,
-      "delta": 1.9695078364220253
+      "value": 95501,
+      "delta": 1.8905568180605787
     },
     "stablecoin_mcap": {
-      "value": 309.19,
-      "delta": 0.5150037532364116
+      "value": 309.18,
+      "delta": 0.5108325485396016
     },
     "usdt_dominance": {
-      "value": 5.62,
-      "delta": -1.0013574771780671
+      "value": 5.63,
+      "delta": -0.9169107189518872
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,9 +56,9 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.8,
-    "btc_gold": -0.14,
-    "interpretation": "Moderately Correlated",
+    "btc_nasdaq": 0.85,
+    "btc_gold": 0.15,
+    "interpretation": "Macro Driven",
     "period_days": 30
   },
   "polymarket_top5": [
@@ -75,7 +75,7 @@
       "title": "Will the U.S. collect between $100b and $200b in revenue in 2025?",
       "outcome": "No 78%",
       "probability": 0.775,
-      "volume": 774298.681603,
+      "volume": 774356.451603,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-between-100b-and-200b-in-revenue-in-2025"
@@ -84,7 +84,7 @@
       "title": "Will the U.S. collect less than $100b in revenue in 2025?",
       "outcome": "No 59%",
       "probability": 0.587,
-      "volume": 734256.451628,
+      "volume": 734262.954232,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-less-than-100b-in-revenue-in-2025"
@@ -100,13 +100,13 @@
     },
     {
       "title": "New Playboi Carti Album before GTA VI?",
-      "outcome": "Yes 52%",
-      "probability": 0.525,
+      "outcome": "Yes 53%",
+      "probability": 0.53,
       "volume": 584456.603909,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/new-playboi-carti-album-before-gta-vi-421"
     }
   ],
-  "last_updated": "2026-01-15T21:52:30.188287Z"
+  "last_updated": "2026-01-15T22:17:07.510396Z"
 }
