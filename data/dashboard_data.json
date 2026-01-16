@@ -9,16 +9,16 @@
       "delta": -0.8872665504124626
     },
     "btc_price": {
-      "value": 95403,
-      "delta": 1.786000064014339
+      "value": 95381,
+      "delta": 1.762528139636612
     },
     "stablecoin_mcap": {
-      "value": 309.35,
-      "delta": 0.5667173856238928
+      "value": 309.33,
+      "delta": 0.5581185102456199
     },
     "usdt_dominance": {
       "value": 5.63,
-      "delta": -0.8995756476225384
+      "delta": -0.8697689120495017
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.8,
-    "btc_gold": -0.09,
+    "btc_nasdaq": 0.79,
+    "btc_gold": -0.11,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -92,7 +92,7 @@
     {
       "title": "Will Elon and DOGE cut more than $250b in federal spending in 2025?",
       "outcome": "No 99%",
-      "probability": 0.9935,
+      "probability": 0.992,
       "volume": 663545.995891,
       "volume_24h": 0,
       "flipped": false,
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/new-playboi-carti-album-before-gta-vi-421"
     }
   ],
-  "last_updated": "2026-01-16T13:54:24.299390Z"
+  "last_updated": "2026-01-16T14:19:06.871282Z"
 }
