@@ -9,16 +9,16 @@
       "delta": -0.8872665504124626
     },
     "btc_price": {
-      "value": 95474,
-      "delta": 1.8617503654151861
+      "value": 94454,
+      "delta": 0.7735065988114671
     },
     "stablecoin_mcap": {
-      "value": 309.27,
-      "delta": 0.5393118404565356
+      "value": 309.29,
+      "delta": 0.5446519474303181
     },
     "usdt_dominance": {
-      "value": 5.63,
-      "delta": -0.9372354437828676
+      "value": 5.68,
+      "delta": 0.07447939556925239
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.8,
-    "btc_gold": -0.08,
+    "btc_nasdaq": 0.76,
+    "btc_gold": 0.13,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -65,7 +65,7 @@
     {
       "title": "Will tariffs generate >$250b in 2025?",
       "outcome": "No 97%",
-      "probability": 0.9745,
+      "probability": 0.9735,
       "volume": 1056078.465002,
       "volume_24h": 0,
       "flipped": false,
@@ -73,9 +73,9 @@
     },
     {
       "title": "Will the U.S. collect between $100b and $200b in revenue in 2025?",
-      "outcome": "No 80%",
-      "probability": 0.8,
-      "volume": 774720.125197,
+      "outcome": "No 78%",
+      "probability": 0.785,
+      "volume": 774882.125197,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-between-100b-and-200b-in-revenue-in-2025"
@@ -83,7 +83,7 @@
     {
       "title": "Will the U.S. collect less than $100b in revenue in 2025?",
       "outcome": "No 59%",
-      "probability": 0.587,
+      "probability": 0.586,
       "volume": 736576.760701,
       "volume_24h": 0,
       "flipped": false,
@@ -92,7 +92,7 @@
     {
       "title": "Will Elon and DOGE cut more than $250b in federal spending in 2025?",
       "outcome": "No 99%",
-      "probability": 0.9925,
+      "probability": 0.992,
       "volume": 663545.995891,
       "volume_24h": 0,
       "flipped": false,
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/new-playboi-carti-album-before-gta-vi-421"
     }
   ],
-  "last_updated": "2026-01-16T15:18:59.289138Z"
+  "last_updated": "2026-01-16T15:45:03.217409Z"
 }
