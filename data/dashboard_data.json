@@ -9,16 +9,16 @@
       "delta": -0.8872665504124626
     },
     "btc_price": {
-      "value": 94843,
-      "delta": 1.1885328980358267
+      "value": 95132,
+      "delta": 1.4968686319068805
     },
     "stablecoin_mcap": {
       "value": 309.14,
       "delta": 0.49731277483652847
     },
     "usdt_dominance": {
-      "value": 5.66,
-      "delta": -0.3658095927917533
+      "value": 5.64,
+      "delta": -0.6816298191068807
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.74,
-    "btc_gold": -0.09,
+    "btc_nasdaq": 0.78,
+    "btc_gold": -0.04,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -65,7 +65,7 @@
     {
       "title": "Will tariffs generate >$250b in 2025?",
       "outcome": "No 97%",
-      "probability": 0.9655,
+      "probability": 0.966,
       "volume": 1056761.526844,
       "volume_24h": 0,
       "flipped": false,
@@ -73,9 +73,9 @@
     },
     {
       "title": "Will the U.S. collect between $100b and $200b in revenue in 2025?",
-      "outcome": "No 82%",
-      "probability": 0.82,
-      "volume": 775014.22065,
+      "outcome": "No 80%",
+      "probability": 0.795,
+      "volume": 775031.43065,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-between-100b-and-200b-in-revenue-in-2025"
@@ -83,7 +83,7 @@
     {
       "title": "Will the U.S. collect less than $100b in revenue in 2025?",
       "outcome": "No 59%",
-      "probability": 0.586,
+      "probability": 0.587,
       "volume": 737084.452043,
       "volume_24h": 0,
       "flipped": false,
@@ -92,7 +92,7 @@
     {
       "title": "Will Elon and DOGE cut more than $250b in federal spending in 2025?",
       "outcome": "No 99%",
-      "probability": 0.988,
+      "probability": 0.993,
       "volume": 663607.307974,
       "volume_24h": 0,
       "flipped": false,
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/new-playboi-carti-album-before-gta-vi-421"
     }
   ],
-  "last_updated": "2026-01-16T20:17:35.862789Z"
+  "last_updated": "2026-01-16T20:42:00.109229Z"
 }
