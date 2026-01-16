@@ -9,16 +9,16 @@
       "delta": -0.8872665504124626
     },
     "btc_price": {
-      "value": 94911,
-      "delta": 1.2610824824760747
+      "value": 94843,
+      "delta": 1.1885328980358267
     },
     "stablecoin_mcap": {
-      "value": 309.09,
-      "delta": 0.4799948276916516
+      "value": 309.14,
+      "delta": 0.49731277483652847
     },
     "usdt_dominance": {
       "value": 5.66,
-      "delta": -0.41196737554142954
+      "delta": -0.3658095927917533
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.8,
-    "btc_gold": 0.15,
+    "btc_nasdaq": 0.74,
+    "btc_gold": -0.09,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -65,17 +65,17 @@
     {
       "title": "Will tariffs generate >$250b in 2025?",
       "outcome": "No 97%",
-      "probability": 0.9735,
-      "volume": 1056186.125002,
+      "probability": 0.9655,
+      "volume": 1056761.526844,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-tariffs-generate-250b-in-2025"
     },
     {
       "title": "Will the U.S. collect between $100b and $200b in revenue in 2025?",
-      "outcome": "No 80%",
-      "probability": 0.8,
-      "volume": 774949.22065,
+      "outcome": "No 82%",
+      "probability": 0.82,
+      "volume": 775014.22065,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-between-100b-and-200b-in-revenue-in-2025"
@@ -84,7 +84,7 @@
       "title": "Will the U.S. collect less than $100b in revenue in 2025?",
       "outcome": "No 59%",
       "probability": 0.586,
-      "volume": 737069.452043,
+      "volume": 737084.452043,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-less-than-100b-in-revenue-in-2025"
@@ -92,7 +92,7 @@
     {
       "title": "Will Elon and DOGE cut more than $250b in federal spending in 2025?",
       "outcome": "No 99%",
-      "probability": 0.987,
+      "probability": 0.988,
       "volume": 663607.307974,
       "volume_24h": 0,
       "flipped": false,
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/new-playboi-carti-album-before-gta-vi-421"
     }
   ],
-  "last_updated": "2026-01-16T19:49:02.651787Z"
+  "last_updated": "2026-01-16T20:17:35.862789Z"
 }
