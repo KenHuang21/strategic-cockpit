@@ -9,8 +9,8 @@
       "delta": -0.8872665504124626
     },
     "btc_price": {
-      "value": 94454,
-      "delta": 0.7735065988114671
+      "value": 94576,
+      "delta": 0.9036690885425003
     },
     "stablecoin_mcap": {
       "value": 309.29,
@@ -18,7 +18,7 @@
     },
     "usdt_dominance": {
       "value": 5.68,
-      "delta": 0.07447939556925239
+      "delta": -0.04667472116017312
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,9 +56,9 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.76,
-    "btc_gold": 0.13,
-    "interpretation": "Moderately Correlated",
+    "btc_nasdaq": 0.84,
+    "btc_gold": -0.13,
+    "interpretation": "Macro Driven",
     "period_days": 30
   },
   "polymarket_top5": [
@@ -66,7 +66,7 @@
       "title": "Will tariffs generate >$250b in 2025?",
       "outcome": "No 97%",
       "probability": 0.9735,
-      "volume": 1056078.465002,
+      "volume": 1056115.465002,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-tariffs-generate-250b-in-2025"
@@ -92,7 +92,7 @@
     {
       "title": "Will Elon and DOGE cut more than $250b in federal spending in 2025?",
       "outcome": "No 99%",
-      "probability": 0.992,
+      "probability": 0.9885,
       "volume": 663545.995891,
       "volume_24h": 0,
       "flipped": false,
@@ -102,11 +102,11 @@
       "title": "New Playboi Carti Album before GTA VI?",
       "outcome": "Yes 52%",
       "probability": 0.515,
-      "volume": 584732.08678,
+      "volume": 584752.08678,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/new-playboi-carti-album-before-gta-vi-421"
     }
   ],
-  "last_updated": "2026-01-16T15:45:03.217409Z"
+  "last_updated": "2026-01-16T15:58:17.343265Z"
 }
