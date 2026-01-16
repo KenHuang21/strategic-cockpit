@@ -1,24 +1,24 @@
 {
   "metrics": {
     "us_10y_yield": {
-      "value": 4.15,
-      "delta": -0.9546539379474948
+      "value": 4.17,
+      "delta": -0.477326968973758
     },
     "fed_net_liquidity": {
       "value": 6581.7,
       "delta": -0.8872665504124626
     },
     "btc_price": {
-      "value": 95408,
-      "delta": 1.7913345922820048
+      "value": 95461,
+      "delta": 1.8478805919192567
     },
     "stablecoin_mcap": {
-      "value": 309.14,
-      "delta": 0.49731277483652847
+      "value": 310.09,
+      "delta": 0.805407690330928
     },
     "usdt_dominance": {
-      "value": 5.63,
-      "delta": -0.911030344340261
+      "value": 5.62,
+      "delta": -1.0301325947795557
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.74,
-    "btc_gold": 0.14,
+    "btc_nasdaq": 0.69,
+    "btc_gold": 0.01,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -65,7 +65,7 @@
     {
       "title": "Will tariffs generate >$250b in 2025?",
       "outcome": "No 97%",
-      "probability": 0.966,
+      "probability": 0.9665,
       "volume": 1056761.526844,
       "volume_24h": 0,
       "flipped": false,
@@ -73,8 +73,8 @@
     },
     {
       "title": "Will the U.S. collect between $100b and $200b in revenue in 2025?",
-      "outcome": "No 80%",
-      "probability": 0.795,
+      "outcome": "No 82%",
+      "probability": 0.815,
       "volume": 775031.43065,
       "volume_24h": 0,
       "flipped": false,
@@ -83,7 +83,7 @@
     {
       "title": "Will the U.S. collect less than $100b in revenue in 2025?",
       "outcome": "No 59%",
-      "probability": 0.5865,
+      "probability": 0.5875,
       "volume": 737185.452043,
       "volume_24h": 0,
       "flipped": false,
@@ -92,7 +92,7 @@
     {
       "title": "Will Elon and DOGE cut more than $250b in federal spending in 2025?",
       "outcome": "No 99%",
-      "probability": 0.993,
+      "probability": 0.994,
       "volume": 663607.307974,
       "volume_24h": 0,
       "flipped": false,
@@ -101,12 +101,12 @@
     {
       "title": "New Playboi Carti Album before GTA VI?",
       "outcome": "Yes 52%",
-      "probability": 0.515,
+      "probability": 0.52,
       "volume": 584764.51678,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/new-playboi-carti-album-before-gta-vi-421"
     }
   ],
-  "last_updated": "2026-01-16T21:16:13.165945Z"
+  "last_updated": "2026-01-16T21:41:00.346913Z"
 }
