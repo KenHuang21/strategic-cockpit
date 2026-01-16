@@ -9,16 +9,16 @@
       "delta": -0.8872665504124626
     },
     "btc_price": {
-      "value": 95455,
-      "delta": 1.841479157998058
+      "value": 95546,
+      "delta": 1.9385675724695666
     },
     "stablecoin_mcap": {
-      "value": 309.36,
-      "delta": 0.5695261702365662
+      "value": 309.66,
+      "delta": 0.6652554160776213
     },
     "usdt_dominance": {
       "value": 5.62,
-      "delta": -0.975319086052674
+      "delta": -1.0904210078811623
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.75,
-    "btc_gold": 0.03,
+    "btc_nasdaq": 0.74,
+    "btc_gold": -0.06,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -75,7 +75,7 @@
       "title": "Will the U.S. collect between $100b and $200b in revenue in 2025?",
       "outcome": "No 78%",
       "probability": 0.785,
-      "volume": 774506.621603,
+      "volume": 774515.352471,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-between-100b-and-200b-in-revenue-in-2025"
@@ -83,8 +83,8 @@
     {
       "title": "Will the U.S. collect less than $100b in revenue in 2025?",
       "outcome": "No 59%",
-      "probability": 0.593,
-      "volume": 734686.504232,
+      "probability": 0.5915,
+      "volume": 735253.074232,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-less-than-100b-in-revenue-in-2025"
@@ -100,13 +100,13 @@
     },
     {
       "title": "New Playboi Carti Album before GTA VI?",
-      "outcome": "Yes 51%",
-      "probability": 0.51,
-      "volume": 584656.703909,
+      "outcome": "Yes 52%",
+      "probability": 0.515,
+      "volume": 584667.80678,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/new-playboi-carti-album-before-gta-vi-421"
     }
   ],
-  "last_updated": "2026-01-16T01:17:33.709362Z"
+  "last_updated": "2026-01-16T03:13:55.120852Z"
 }
