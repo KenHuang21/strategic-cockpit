@@ -9,16 +9,16 @@
       "delta": -0.8872665504124626
     },
     "btc_price": {
-      "value": 95578,
-      "delta": 1.9727085533826245
+      "value": 95455,
+      "delta": 1.841479157998058
     },
     "stablecoin_mcap": {
-      "value": 309.14,
-      "delta": 0.49674461337157877
+      "value": 309.36,
+      "delta": 0.5695261702365662
     },
     "usdt_dominance": {
       "value": 5.62,
-      "delta": -1.103642502809092
+      "delta": -0.975319086052674
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -33,49 +33,49 @@
   "btc_etf_flows": {
     "flows": [
       {
-        "date": "2026-01-09",
+        "date": "2026-01-12",
         "flow": 150
       },
       {
-        "date": "2026-01-12",
+        "date": "2026-01-13",
         "flow": -50
       },
       {
-        "date": "2026-01-13",
+        "date": "2026-01-14",
         "flow": 300
       },
       {
-        "date": "2026-01-14",
+        "date": "2026-01-15",
         "flow": 100
       },
       {
-        "date": "2026-01-15",
+        "date": "2026-01-16",
         "flow": 200
       }
     ],
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.81,
-    "btc_gold": 0.14,
-    "interpretation": "Macro Driven",
+    "btc_nasdaq": 0.75,
+    "btc_gold": 0.03,
+    "interpretation": "Moderately Correlated",
     "period_days": 30
   },
   "polymarket_top5": [
     {
       "title": "Will tariffs generate >$250b in 2025?",
-      "outcome": "No 97%",
-      "probability": 0.9745,
-      "volume": 1055482.095002,
+      "outcome": "No 98%",
+      "probability": 0.975,
+      "volume": 1055507.735002,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-tariffs-generate-250b-in-2025"
     },
     {
       "title": "Will the U.S. collect between $100b and $200b in revenue in 2025?",
-      "outcome": "No 79%",
-      "probability": 0.79,
-      "volume": 774482.621603,
+      "outcome": "No 78%",
+      "probability": 0.785,
+      "volume": 774506.621603,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-between-100b-and-200b-in-revenue-in-2025"
@@ -102,11 +102,11 @@
       "title": "New Playboi Carti Album before GTA VI?",
       "outcome": "Yes 51%",
       "probability": 0.51,
-      "volume": 584615.903909,
+      "volume": 584656.703909,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/new-playboi-carti-album-before-gta-vi-421"
     }
   ],
-  "last_updated": "2026-01-15T23:50:58.120892Z"
+  "last_updated": "2026-01-16T01:17:33.709362Z"
 }
