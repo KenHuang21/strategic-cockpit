@@ -9,8 +9,8 @@
       "delta": -0.8872665504124626
     },
     "btc_price": {
-      "value": 95381,
-      "delta": 1.762528139636612
+      "value": 95345,
+      "delta": 1.7241195361094217
     },
     "stablecoin_mcap": {
       "value": 309.33,
@@ -18,7 +18,7 @@
     },
     "usdt_dominance": {
       "value": 5.63,
-      "delta": -0.8697689120495017
+      "delta": -0.8728630049625405
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,9 +56,9 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.79,
-    "btc_gold": -0.11,
-    "interpretation": "Moderately Correlated",
+    "btc_nasdaq": 0.81,
+    "btc_gold": -0.13,
+    "interpretation": "Macro Driven",
     "period_days": 30
   },
   "polymarket_top5": [
@@ -66,7 +66,7 @@
       "title": "Will tariffs generate >$250b in 2025?",
       "outcome": "No 98%",
       "probability": 0.9775,
-      "volume": 1055823.465002,
+      "volume": 1055895.465002,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-tariffs-generate-250b-in-2025"
@@ -83,8 +83,8 @@
     {
       "title": "Will the U.S. collect less than $100b in revenue in 2025?",
       "outcome": "No 59%",
-      "probability": 0.587,
-      "volume": 736564.120701,
+      "probability": 0.5875,
+      "volume": 736566.760701,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-less-than-100b-in-revenue-in-2025"
@@ -100,13 +100,13 @@
     },
     {
       "title": "New Playboi Carti Album before GTA VI?",
-      "outcome": "Yes 52%",
-      "probability": 0.515,
-      "volume": 584671.92678,
+      "outcome": "Yes 51%",
+      "probability": 0.51,
+      "volume": 584696.04678,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/new-playboi-carti-album-before-gta-vi-421"
     }
   ],
-  "last_updated": "2026-01-16T14:19:06.871282Z"
+  "last_updated": "2026-01-16T14:47:50.068149Z"
 }
