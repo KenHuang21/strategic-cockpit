@@ -9,16 +9,16 @@
       "delta": -0.8872665504124626
     },
     "btc_price": {
-      "value": 95493,
-      "delta": 1.8820215728323146
+      "value": 95324,
+      "delta": 1.7017145173852277
     },
     "stablecoin_mcap": {
       "value": 310.09,
       "delta": 0.805407690330928
     },
     "usdt_dominance": {
-      "value": 5.62,
-      "delta": -1.0428706717842973
+      "value": 5.63,
+      "delta": -0.858320135671475
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,16 +56,16 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.72,
-    "btc_gold": 0.05,
-    "interpretation": "Moderately Correlated",
+    "btc_nasdaq": 0.81,
+    "btc_gold": -0.1,
+    "interpretation": "Macro Driven",
     "period_days": 30
   },
   "polymarket_top5": [
     {
       "title": "Will tariffs generate >$250b in 2025?",
       "outcome": "No 97%",
-      "probability": 0.97,
+      "probability": 0.9695,
       "volume": 1056861.526844,
       "volume_24h": 0,
       "flipped": false,
@@ -74,7 +74,7 @@
     {
       "title": "Will the U.S. collect between $100b and $200b in revenue in 2025?",
       "outcome": "No 80%",
-      "probability": 0.8,
+      "probability": 0.795,
       "volume": 775056.43065,
       "volume_24h": 0,
       "flipped": false,
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/new-playboi-carti-album-before-gta-vi-421"
     }
   ],
-  "last_updated": "2026-01-16T21:51:40.477911Z"
+  "last_updated": "2026-01-16T22:16:36.586884Z"
 }
