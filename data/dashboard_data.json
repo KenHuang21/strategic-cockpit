@@ -9,16 +9,16 @@
       "delta": -0.8872665504124626
     },
     "btc_price": {
-      "value": 95260,
-      "delta": 1.6334325555591118
+      "value": 95335,
+      "delta": 1.7134504795740912
     },
     "stablecoin_mcap": {
       "value": 310.96,
       "delta": 1.0886094706742206
     },
     "usdt_dominance": {
-      "value": 5.62,
-      "delta": -1.1155535794670073
+      "value": 5.61,
+      "delta": -1.187160969382977
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.78,
-    "btc_gold": -0.09,
+    "btc_nasdaq": 0.71,
+    "btc_gold": 0.02,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -74,7 +74,7 @@
     {
       "title": "Will the U.S. collect between $100b and $200b in revenue in 2025?",
       "outcome": "No 80%",
-      "probability": 0.805,
+      "probability": 0.795,
       "volume": 776161.90065,
       "volume_24h": 0,
       "flipped": false,
@@ -82,9 +82,9 @@
     },
     {
       "title": "Will the U.S. collect less than $100b in revenue in 2025?",
-      "outcome": "No 56%",
-      "probability": 0.565,
-      "volume": 742343.512492,
+      "outcome": "No 57%",
+      "probability": 0.5665,
+      "volume": 742372.512492,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-less-than-100b-in-revenue-in-2025"
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/new-playboi-carti-album-before-gta-vi-421"
     }
   ],
-  "last_updated": "2026-01-17T20:41:35.145720Z"
+  "last_updated": "2026-01-17T20:51:56.491926Z"
 }
