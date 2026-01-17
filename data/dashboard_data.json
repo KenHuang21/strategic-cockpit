@@ -9,16 +9,16 @@
       "delta": -0.8872665504124626
     },
     "btc_price": {
-      "value": 95115,
-      "delta": 1.4787312357968185
+      "value": 95075,
+      "delta": 1.4360550096554963
     },
     "stablecoin_mcap": {
       "value": 310.29,
       "delta": 0.8703661746279832
     },
     "usdt_dominance": {
-      "value": 5.63,
-      "delta": -0.794539280273741
+      "value": 5.64,
+      "delta": -0.7743587950942667
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.79,
-    "btc_gold": -0.02,
+    "btc_nasdaq": 0.75,
+    "btc_gold": -0.11,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/new-playboi-carti-album-before-gta-vi-421"
     }
   ],
-  "last_updated": "2026-01-17T07:38:09.900671Z"
+  "last_updated": "2026-01-17T07:49:09.185091Z"
 }
