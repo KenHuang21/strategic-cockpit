@@ -9,16 +9,16 @@
       "delta": -0.8872665504124626
     },
     "btc_price": {
-      "value": 95462,
-      "delta": 1.8489474975727898
+      "value": 95349,
+      "delta": 1.728387158723554
     },
     "stablecoin_mcap": {
-      "value": 310.61,
-      "delta": 0.9742109189817506
+      "value": 310.63,
+      "delta": 0.9819000809798019
     },
     "usdt_dominance": {
-      "value": 5.6,
-      "delta": -1.326893070928969
+      "value": 5.61,
+      "delta": -1.1861292144335818
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.76,
-    "btc_gold": -0.02,
+    "btc_nasdaq": 0.74,
+    "btc_gold": 0.13,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -82,8 +82,8 @@
     },
     {
       "title": "Will the U.S. collect less than $100b in revenue in 2025?",
-      "outcome": "No 57%",
-      "probability": 0.5655,
+      "outcome": "No 56%",
+      "probability": 0.557,
       "volume": 742019.583363,
       "volume_24h": 0,
       "flipped": false,
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/new-playboi-carti-album-before-gta-vi-421"
     }
   ],
-  "last_updated": "2026-01-17T16:17:42.750574Z"
+  "last_updated": "2026-01-17T16:44:18.626086Z"
 }
