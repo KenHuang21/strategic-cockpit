@@ -9,16 +9,16 @@
       "delta": -0.8872665504124626
     },
     "btc_price": {
-      "value": 95331,
-      "delta": 1.709182856959959
+      "value": 95248,
+      "delta": 1.6206296877167152
     },
     "stablecoin_mcap": {
       "value": 310.84,
       "delta": 1.048854260108904
     },
     "usdt_dominance": {
-      "value": 5.61,
-      "delta": -1.1610645032811129
+      "value": 5.62,
+      "delta": -1.080602133742023
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.76,
-    "btc_gold": 0.08,
+    "btc_nasdaq": 0.79,
+    "btc_gold": -0.03,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -65,7 +65,7 @@
     {
       "title": "Will tariffs generate >$250b in 2025?",
       "outcome": "No 97%",
-      "probability": 0.9665,
+      "probability": 0.967,
       "volume": 1063350.205119,
       "volume_24h": 0,
       "flipped": false,
@@ -73,18 +73,18 @@
     },
     {
       "title": "Will the U.S. collect between $100b and $200b in revenue in 2025?",
-      "outcome": "No 78%",
-      "probability": 0.785,
-      "volume": 776181.90065,
+      "outcome": "No 80%",
+      "probability": 0.795,
+      "volume": 776225.23065,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-between-100b-and-200b-in-revenue-in-2025"
     },
     {
       "title": "Will the U.S. collect less than $100b in revenue in 2025?",
-      "outcome": "No 56%",
-      "probability": 0.565,
-      "volume": 742408.512492,
+      "outcome": "No 57%",
+      "probability": 0.5655,
+      "volume": 742451.490419,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-less-than-100b-in-revenue-in-2025"
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/new-playboi-carti-album-before-gta-vi-421"
     }
   ],
-  "last_updated": "2026-01-17T21:30:56.815286Z"
+  "last_updated": "2026-01-17T21:48:59.014345Z"
 }
