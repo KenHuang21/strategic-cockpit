@@ -9,8 +9,8 @@
       "delta": -0.8872665504124626
     },
     "btc_price": {
-      "value": 95201,
-      "delta": 1.5704851220006617
+      "value": 95073,
+      "delta": 1.4339211983484301
     },
     "stablecoin_mcap": {
       "value": 310.01,
@@ -18,7 +18,7 @@
     },
     "usdt_dominance": {
       "value": 5.63,
-      "delta": -0.8476993265603086
+      "delta": -0.8257767201217668
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.67,
-    "btc_gold": -0.07,
+    "btc_nasdaq": 0.77,
+    "btc_gold": -0.04,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -65,7 +65,7 @@
     {
       "title": "Will tariffs generate >$250b in 2025?",
       "outcome": "No 97%",
-      "probability": 0.9715,
+      "probability": 0.972,
       "volume": 1062566.740953,
       "volume_24h": 0,
       "flipped": false,
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/new-playboi-carti-album-before-gta-vi-421"
     }
   ],
-  "last_updated": "2026-01-17T06:51:44.344942Z"
+  "last_updated": "2026-01-17T07:15:39.776152Z"
 }
