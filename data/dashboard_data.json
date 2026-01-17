@@ -9,16 +9,16 @@
       "delta": -0.8872665504124626
     },
     "btc_price": {
-      "value": 95162,
-      "delta": 1.5288758015128723
+      "value": 95097,
+      "delta": 1.4595269340332233
     },
     "stablecoin_mcap": {
-      "value": 310.86,
-      "delta": 1.055662248196432
+      "value": 310.09,
+      "delta": 0.807255875753828
     },
     "usdt_dominance": {
       "value": 5.63,
-      "delta": -0.9351874027481228
+      "delta": -0.8766311687630906
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.78,
-    "btc_gold": -0.06,
+    "btc_nasdaq": 0.76,
+    "btc_gold": -0.02,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -100,13 +100,13 @@
     },
     {
       "title": "New Playboi Carti Album before GTA VI?",
-      "outcome": "Yes 52%",
-      "probability": 0.52,
-      "volume": 584920.811495,
+      "outcome": "Yes 60%",
+      "probability": 0.6,
+      "volume": 585394.171495,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/new-playboi-carti-album-before-gta-vi-421"
     }
   ],
-  "last_updated": "2026-01-17T23:15:00.187846Z"
+  "last_updated": "2026-01-17T23:32:34.958592Z"
 }
