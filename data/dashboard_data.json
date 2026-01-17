@@ -9,16 +9,16 @@
       "delta": -0.8872665504124626
     },
     "btc_price": {
-      "value": 95270,
-      "delta": 1.6441016120944423
+      "value": 95219,
+      "delta": 1.5896894237642563
     },
     "stablecoin_mcap": {
-      "value": 310.33,
-      "delta": 0.8839038064835101
+      "value": 310.4,
+      "delta": 0.9074523033636326
     },
     "usdt_dominance": {
-      "value": 5.62,
-      "delta": -0.9709087585869542
+      "value": 5.63,
+      "delta": -0.9495674682254407
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.74,
-    "btc_gold": -0.04,
+    "btc_nasdaq": 0.8,
+    "btc_gold": -0.08,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -75,7 +75,7 @@
       "title": "Will the U.S. collect between $100b and $200b in revenue in 2025?",
       "outcome": "No 78%",
       "probability": 0.785,
-      "volume": 775885.59065,
+      "volume": 775895.59065,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-between-100b-and-200b-in-revenue-in-2025"
@@ -83,8 +83,8 @@
     {
       "title": "Will the U.S. collect less than $100b in revenue in 2025?",
       "outcome": "No 56%",
-      "probability": 0.558,
-      "volume": 737546.2383,
+      "probability": 0.5575,
+      "volume": 737586.2383,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-less-than-100b-in-revenue-in-2025"
@@ -92,7 +92,7 @@
     {
       "title": "Will Elon and DOGE cut more than $250b in federal spending in 2025?",
       "outcome": "No 99%",
-      "probability": 0.989,
+      "probability": 0.988,
       "volume": 663618.637974,
       "volume_24h": 0,
       "flipped": false,
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/new-playboi-carti-album-before-gta-vi-421"
     }
   ],
-  "last_updated": "2026-01-17T11:49:02.318950Z"
+  "last_updated": "2026-01-17T12:29:45.155270Z"
 }
