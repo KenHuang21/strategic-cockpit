@@ -9,16 +9,16 @@
       "delta": -0.8872665504124626
     },
     "btc_price": {
-      "value": 95260,
-      "delta": 1.6334325555591118
+      "value": 95307,
+      "delta": 1.6835771212751656
     },
     "stablecoin_mcap": {
-      "value": 310.63,
-      "delta": 0.9819000809798019
+      "value": 310.67,
+      "delta": 0.9957661095095145
     },
     "usdt_dominance": {
-      "value": 5.62,
-      "delta": -1.1009152456056865
+      "value": 5.61,
+      "delta": -1.1675070612874583
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.78,
-    "btc_gold": 0.04,
+    "btc_nasdaq": 0.77,
+    "btc_gold": -0.07,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -83,8 +83,8 @@
     {
       "title": "Will the U.S. collect less than $100b in revenue in 2025?",
       "outcome": "No 57%",
-      "probability": 0.566,
-      "volume": 742029.583363,
+      "probability": 0.5655,
+      "volume": 742053.583363,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-less-than-100b-in-revenue-in-2025"
@@ -101,12 +101,12 @@
     {
       "title": "New Playboi Carti Album before GTA VI?",
       "outcome": "Yes 52%",
-      "probability": 0.515,
-      "volume": 584800.05678,
+      "probability": 0.52,
+      "volume": 584920.811495,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/new-playboi-carti-album-before-gta-vi-421"
     }
   ],
-  "last_updated": "2026-01-17T16:54:41.662103Z"
+  "last_updated": "2026-01-17T17:13:33.839904Z"
 }
