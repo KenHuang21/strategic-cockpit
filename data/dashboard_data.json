@@ -9,16 +9,16 @@
       "delta": -0.8872665504124626
     },
     "btc_price": {
-      "value": 95063,
-      "delta": 1.4232521418130994
+      "value": 95184,
+      "delta": 1.5523477258905996
     },
     "stablecoin_mcap": {
-      "value": 310.38,
-      "delta": 0.9015622879028977
+      "value": 310.33,
+      "delta": 0.8839038064835101
     },
     "usdt_dominance": {
       "value": 5.63,
-      "delta": -0.8149056798469546
+      "delta": -0.9212111575201574
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.71,
-    "btc_gold": -0.15,
+    "btc_nasdaq": 0.78,
+    "btc_gold": -0.14,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -92,7 +92,7 @@
     {
       "title": "Will Elon and DOGE cut more than $250b in federal spending in 2025?",
       "outcome": "No 99%",
-      "probability": 0.9935,
+      "probability": 0.989,
       "volume": 663618.637974,
       "volume_24h": 0,
       "flipped": false,
@@ -101,12 +101,12 @@
     {
       "title": "New Playboi Carti Album before GTA VI?",
       "outcome": "Yes 52%",
-      "probability": 0.52,
+      "probability": 0.515,
       "volume": 584784.51678,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/new-playboi-carti-album-before-gta-vi-421"
     }
   ],
-  "last_updated": "2026-01-17T11:13:08.646558Z"
+  "last_updated": "2026-01-17T11:28:43.089621Z"
 }
