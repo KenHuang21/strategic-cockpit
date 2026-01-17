@@ -9,16 +9,16 @@
       "delta": -0.8872665504124626
     },
     "btc_price": {
-      "value": 95272,
-      "delta": 1.6462354234015086
+      "value": 95306,
+      "delta": 1.6825102156216327
     },
     "stablecoin_mcap": {
-      "value": 309.99,
-      "delta": 0.7732813233613983
+      "value": 310.21,
+      "delta": 0.8449709126363633
     },
     "usdt_dominance": {
       "value": 5.63,
-      "delta": -0.8563145802937884
+      "delta": -0.9197443365724015
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.79,
-    "btc_gold": 0.07,
+    "btc_nasdaq": 0.72,
+    "btc_gold": -0.05,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -65,8 +65,8 @@
     {
       "title": "Will tariffs generate >$250b in 2025?",
       "outcome": "No 97%",
-      "probability": 0.97,
-      "volume": 1062205.730953,
+      "probability": 0.9665,
+      "volume": 1062230.730953,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-tariffs-generate-250b-in-2025"
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/new-playboi-carti-album-before-gta-vi-421"
     }
   ],
-  "last_updated": "2026-01-17T04:30:55.028902Z"
+  "last_updated": "2026-01-17T04:57:36.937629Z"
 }
