@@ -9,16 +9,16 @@
       "delta": -0.8872665504124626
     },
     "btc_price": {
-      "value": 95068,
-      "delta": 1.4285866700807648
+      "value": 95056,
+      "delta": 1.415783802238368
     },
     "stablecoin_mcap": {
       "value": 310.88,
       "delta": 1.0639868580855887
     },
     "usdt_dominance": {
-      "value": 5.64,
-      "delta": -0.7757923068515463
+      "value": 5.63,
+      "delta": -0.8130072619657638
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,12 +56,21 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.66,
-    "btc_gold": -0.01,
-    "interpretation": "Moderately Correlated",
+    "btc_nasdaq": 0.84,
+    "btc_gold": -0.12,
+    "interpretation": "Macro Driven",
     "period_days": 30
   },
   "polymarket_top5": [
+    {
+      "title": "Will Jesus Christ return before GTA VI?",
+      "outcome": "No 50%",
+      "probability": 0.505,
+      "volume": 7874282.755639,
+      "volume_24h": 0,
+      "flipped": false,
+      "url": "https://polymarket.com/event/will-jesus-christ-return-before-gta-vi-665"
+    },
     {
       "title": "Will tariffs generate >$250b in 2025?",
       "outcome": "No 97%",
@@ -75,7 +84,7 @@
       "title": "Will the U.S. collect between $100b and $200b in revenue in 2025?",
       "outcome": "No 78%",
       "probability": 0.78,
-      "volume": 777382.731558,
+      "volume": 777403.252426,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-between-100b-and-200b-in-revenue-in-2025"
@@ -84,7 +93,7 @@
       "title": "Will the U.S. collect less than $100b in revenue in 2025?",
       "outcome": "No 56%",
       "probability": 0.5645,
-      "volume": 746354.778906,
+      "volume": 746366.628906,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-less-than-100b-in-revenue-in-2025"
@@ -97,16 +106,7 @@
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-elon-and-doge-cut-more-than-250b-in-federal-spending-in-2025"
-    },
-    {
-      "title": "New Playboi Carti Album before GTA VI?",
-      "outcome": "Yes 56%",
-      "probability": 0.56,
-      "volume": 585412.271495,
-      "volume_24h": 0,
-      "flipped": false,
-      "url": "https://polymarket.com/event/new-playboi-carti-album-before-gta-vi-421"
     }
   ],
-  "last_updated": "2026-01-18T04:27:32.229086Z"
+  "last_updated": "2026-01-18T04:57:49.932195Z"
 }
