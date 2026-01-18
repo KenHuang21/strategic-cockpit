@@ -9,16 +9,16 @@
       "delta": -0.8872665504124626
     },
     "btc_price": {
-      "value": 95102,
-      "delta": 1.4648614623008887
+      "value": 94943,
+      "delta": 1.2952234633891324
     },
     "stablecoin_mcap": {
-      "value": 310.09,
-      "delta": 0.807255875753828
+      "value": 310.61,
+      "delta": 0.9767305900558245
     },
     "usdt_dominance": {
-      "value": 5.63,
-      "delta": -0.8968891254044866
+      "value": 5.64,
+      "delta": -0.6883845328534183
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.7,
-    "btc_gold": -0.06,
+    "btc_nasdaq": 0.71,
+    "btc_gold": 0.11,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -74,8 +74,8 @@
     {
       "title": "Will the U.S. collect between $100b and $200b in revenue in 2025?",
       "outcome": "No 80%",
-      "probability": 0.805,
-      "volume": 776285.321558,
+      "probability": 0.8,
+      "volume": 776525.321558,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-between-100b-and-200b-in-revenue-in-2025"
@@ -83,8 +83,8 @@
     {
       "title": "Will the U.S. collect less than $100b in revenue in 2025?",
       "outcome": "No 57%",
-      "probability": 0.5675,
-      "volume": 742612.490419,
+      "probability": 0.567,
+      "volume": 742716.490419,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-less-than-100b-in-revenue-in-2025"
@@ -100,13 +100,13 @@
     },
     {
       "title": "New Playboi Carti Album before GTA VI?",
-      "outcome": "Yes 58%",
-      "probability": 0.585,
+      "outcome": "Yes 60%",
+      "probability": 0.595,
       "volume": 585394.171495,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/new-playboi-carti-album-before-gta-vi-421"
     }
   ],
-  "last_updated": "2026-01-17T23:49:37.651883Z"
+  "last_updated": "2026-01-18T01:22:33.492682Z"
 }
