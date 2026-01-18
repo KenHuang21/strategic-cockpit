@@ -9,16 +9,16 @@
       "delta": -0.8872665504124626
     },
     "btc_price": {
-      "value": 95428,
-      "delta": 1.8126727053526657
+      "value": 95342,
+      "delta": 1.7209188191488227
     },
     "stablecoin_mcap": {
       "value": 310.52,
       "delta": 0.9474777581718645
     },
     "usdt_dominance": {
-      "value": 5.62,
-      "delta": -1.0386353428747246
+      "value": 5.63,
+      "delta": -0.965980836126905
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.8,
-    "btc_gold": 0.13,
+    "btc_nasdaq": 0.68,
+    "btc_gold": 0.06,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/will-the-us-collect-between-100b-and-200b-in-revenue-in-2025"
     }
   ],
-  "last_updated": "2026-01-18T19:37:41.139471Z"
+  "last_updated": "2026-01-18T19:48:59.470640Z"
 }
