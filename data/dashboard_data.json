@@ -9,8 +9,8 @@
       "delta": -0.8872665504124626
     },
     "btc_price": {
-      "value": 95113,
-      "delta": 1.4765974244897524
+      "value": 95129,
+      "delta": 1.4936679149462813
     },
     "stablecoin_mcap": {
       "value": 310.14,
@@ -18,7 +18,7 @@
     },
     "usdt_dominance": {
       "value": 5.63,
-      "delta": -0.8780365322780103
+      "delta": -0.8892084199020464
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.66,
-    "btc_gold": -0.0,
+    "btc_nasdaq": 0.65,
+    "btc_gold": 0.15,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -66,7 +66,7 @@
       "title": "Will Jesus Christ return before GTA VI?",
       "outcome": "No 50%",
       "probability": 0.505,
-      "volume": 7874282.755639,
+      "volume": 7874304.324264,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-jesus-christ-return-before-gta-vi-665"
@@ -74,8 +74,8 @@
     {
       "title": "Will tariffs generate >$250b in 2025?",
       "outcome": "No 97%",
-      "probability": 0.9665,
-      "volume": 1063378.205119,
+      "probability": 0.9745,
+      "volume": 1063492.545119,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-tariffs-generate-250b-in-2025"
@@ -83,7 +83,7 @@
     {
       "title": "Will the U.S. collect between $100b and $200b in revenue in 2025?",
       "outcome": "No 78%",
-      "probability": 0.78,
+      "probability": 0.785,
       "volume": 777413.773294,
       "volume_24h": 0,
       "flipped": false,
@@ -92,7 +92,7 @@
     {
       "title": "Will the U.S. collect less than $100b in revenue in 2025?",
       "outcome": "No 57%",
-      "probability": 0.567,
+      "probability": 0.5665,
       "volume": 746366.628906,
       "volume_24h": 0,
       "flipped": false,
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/will-elon-and-doge-cut-more-than-250b-in-federal-spending-in-2025"
     }
   ],
-  "last_updated": "2026-01-18T06:23:56.153730Z"
+  "last_updated": "2026-01-18T06:52:45.427547Z"
 }
