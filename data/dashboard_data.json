@@ -9,8 +9,8 @@
       "delta": -0.8872665504124626
     },
     "btc_price": {
-      "value": 95049,
-      "delta": 1.4083154626636367
+      "value": 95015,
+      "delta": 1.3720406704435129
     },
     "stablecoin_mcap": {
       "value": 310.31,
@@ -18,7 +18,7 @@
     },
     "usdt_dominance": {
       "value": 5.64,
-      "delta": -0.7854719775999777
+      "delta": -0.7599036222014663
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.68,
-    "btc_gold": 0.12,
+    "btc_nasdaq": 0.75,
+    "btc_gold": 0.02,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -66,7 +66,7 @@
       "title": "Will Jesus Christ return before GTA VI?",
       "outcome": "No 50%",
       "probability": 0.505,
-      "volume": 7874304.324264,
+      "volume": 7874804.224264,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-jesus-christ-return-before-gta-vi-665"
@@ -93,7 +93,7 @@
       "title": "Will the U.S. collect less than $100b in revenue in 2025?",
       "outcome": "No 57%",
       "probability": 0.5665,
-      "volume": 746366.628906,
+      "volume": 746385.241425,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-less-than-100b-in-revenue-in-2025"
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/will-elon-and-doge-cut-more-than-250b-in-federal-spending-in-2025"
     }
   ],
-  "last_updated": "2026-01-18T07:16:08.585320Z"
+  "last_updated": "2026-01-18T07:39:22.344337Z"
 }
