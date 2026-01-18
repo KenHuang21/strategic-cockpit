@@ -9,16 +9,16 @@
       "delta": -0.8872665504124626
     },
     "btc_price": {
-      "value": 94943,
-      "delta": 1.2952234633891324
+      "value": 95013,
+      "delta": 1.3699068591364467
     },
     "stablecoin_mcap": {
-      "value": 310.61,
-      "delta": 0.9767305900558245
+      "value": 310.75,
+      "delta": 1.0206623096975147
     },
     "usdt_dominance": {
       "value": 5.64,
-      "delta": -0.6883845328534183
+      "delta": -0.7619462980478235
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,9 +56,9 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.71,
-    "btc_gold": 0.11,
-    "interpretation": "Moderately Correlated",
+    "btc_nasdaq": 0.81,
+    "btc_gold": -0.12,
+    "interpretation": "Macro Driven",
     "period_days": 30
   },
   "polymarket_top5": [
@@ -73,9 +73,9 @@
     },
     {
       "title": "Will the U.S. collect between $100b and $200b in revenue in 2025?",
-      "outcome": "No 80%",
-      "probability": 0.8,
-      "volume": 776525.321558,
+      "outcome": "No 78%",
+      "probability": 0.785,
+      "volume": 776662.731558,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-between-100b-and-200b-in-revenue-in-2025"
@@ -83,8 +83,8 @@
     {
       "title": "Will the U.S. collect less than $100b in revenue in 2025?",
       "outcome": "No 57%",
-      "probability": 0.567,
-      "volume": 742716.490419,
+      "probability": 0.5655,
+      "volume": 745974.24296,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-less-than-100b-in-revenue-in-2025"
@@ -100,13 +100,13 @@
     },
     {
       "title": "New Playboi Carti Album before GTA VI?",
-      "outcome": "Yes 60%",
-      "probability": 0.595,
-      "volume": 585394.171495,
+      "outcome": "Yes 57%",
+      "probability": 0.575,
+      "volume": 585412.271495,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/new-playboi-carti-album-before-gta-vi-421"
     }
   ],
-  "last_updated": "2026-01-18T01:22:33.492682Z"
+  "last_updated": "2026-01-18T03:20:15.462350Z"
 }
