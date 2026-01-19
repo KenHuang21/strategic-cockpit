@@ -9,16 +9,16 @@
       "delta": -0.8872665504124626
     },
     "btc_price": {
-      "value": 92982,
-      "delta": -0.7969785231891944
+      "value": 93201,
+      "delta": -0.5633261850654546
     },
     "stablecoin_mcap": {
-      "value": 310.15,
-      "delta": 0.8270505271893059
+      "value": 310.09,
+      "delta": 0.8064890515327969
     },
     "usdt_dominance": {
-      "value": 5.78,
-      "delta": 1.8449794226408622
+      "value": 5.77,
+      "delta": 1.6282310234002821
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.7,
-    "btc_gold": -0.06,
+    "btc_nasdaq": 0.78,
+    "btc_gold": -0.15,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -66,7 +66,7 @@
       "title": "Will Jesus Christ return before GTA VI?",
       "outcome": "No 50%",
       "probability": 0.505,
-      "volume": 7896987.179429,
+      "volume": 7897158.722171,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-jesus-christ-return-before-gta-vi-665"
@@ -75,7 +75,7 @@
       "title": "Will bitcoin hit $1m before GTA VI?",
       "outcome": "No 52%",
       "probability": 0.515,
-      "volume": 2787970.023128,
+      "volume": 2788056.561588,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-bitcoin-hit-1m-before-gta-vi-872"
@@ -102,11 +102,11 @@
       "title": "Will the U.S. collect between $100b and $200b in revenue in 2025?",
       "outcome": "No 84%",
       "probability": 0.845,
-      "volume": 782064.078557,
+      "volume": 782094.098557,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-between-100b-and-200b-in-revenue-in-2025"
     }
   ],
-  "last_updated": "2026-01-19T11:18:17.407074Z"
+  "last_updated": "2026-01-19T11:42:47.679039Z"
 }
