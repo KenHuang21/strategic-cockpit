@@ -9,16 +9,16 @@
       "delta": -0.8872665504124626
     },
     "btc_price": {
-      "value": 92716,
-      "delta": -1.0807754270289878
+      "value": 92382,
+      "delta": -1.437121915309029
     },
     "stablecoin_mcap": {
-      "value": 310.08,
-      "delta": 0.804425640595041
+      "value": 310.06,
+      "delta": 0.7948684557638936
     },
     "usdt_dominance": {
-      "value": 5.8,
-      "delta": 2.1181207573106753
+      "value": 5.81,
+      "delta": 2.330422082650158
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,9 +56,9 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.83,
-    "btc_gold": 0.01,
-    "interpretation": "Macro Driven",
+    "btc_nasdaq": 0.77,
+    "btc_gold": 0.12,
+    "interpretation": "Moderately Correlated",
     "period_days": 30
   },
   "polymarket_top5": [
@@ -66,7 +66,7 @@
       "title": "Will Jesus Christ return before GTA VI?",
       "outcome": "No 50%",
       "probability": 0.505,
-      "volume": 7910209.790346,
+      "volume": 7910278.417794,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-jesus-christ-return-before-gta-vi-665"
@@ -75,7 +75,7 @@
       "title": "Will bitcoin hit $1m before GTA VI?",
       "outcome": "No 52%",
       "probability": 0.515,
-      "volume": 2792233.606955,
+      "volume": 2792302.818491,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-bitcoin-hit-1m-before-gta-vi-872"
@@ -100,13 +100,13 @@
     },
     {
       "title": "Will the U.S. collect between $100b and $200b in revenue in 2025?",
-      "outcome": "No 87%",
-      "probability": 0.87,
-      "volume": 786312.101554,
+      "outcome": "No 86%",
+      "probability": 0.865,
+      "volume": 787196.580014,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-between-100b-and-200b-in-revenue-in-2025"
     }
   ],
-  "last_updated": "2026-01-19T22:55:27.573261Z"
+  "last_updated": "2026-01-19T23:16:37.942368Z"
 }
