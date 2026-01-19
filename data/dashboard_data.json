@@ -9,16 +9,16 @@
       "delta": -0.8872665504124626
     },
     "btc_price": {
-      "value": 93292,
-      "delta": -0.4662377705939464
+      "value": 93140,
+      "delta": -0.6284074299309712
     },
     "stablecoin_mcap": {
-      "value": 310.28,
-      "delta": 0.8667566340333924
+      "value": 310.18,
+      "delta": 0.8348042279533051
     },
     "usdt_dominance": {
-      "value": 5.77,
-      "delta": 1.5255871751970858
+      "value": 5.78,
+      "delta": 1.6848968118723981
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.74,
-    "btc_gold": -0.07,
+    "btc_nasdaq": 0.71,
+    "btc_gold": 0.03,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -66,7 +66,7 @@
       "title": "Will Jesus Christ return before GTA VI?",
       "outcome": "No 50%",
       "probability": 0.505,
-      "volume": 7905621.256849,
+      "volume": 7905787.923514,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-jesus-christ-return-before-gta-vi-665"
@@ -75,7 +75,7 @@
       "title": "Will bitcoin hit $1m before GTA VI?",
       "outcome": "No 52%",
       "probability": 0.515,
-      "volume": 2789654.95773,
+      "volume": 2789704.95773,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-bitcoin-hit-1m-before-gta-vi-872"
@@ -91,9 +91,9 @@
     },
     {
       "title": "Will tariffs generate >$250b in 2025?",
-      "outcome": "No 97%",
-      "probability": 0.9725,
-      "volume": 1069232.451897,
+      "outcome": "No 98%",
+      "probability": 0.9755,
+      "volume": 1069422.791897,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-tariffs-generate-250b-in-2025"
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/will-the-us-collect-between-100b-and-200b-in-revenue-in-2025"
     }
   ],
-  "last_updated": "2026-01-19T17:20:00.452082Z"
+  "last_updated": "2026-01-19T17:46:29.696306Z"
 }
