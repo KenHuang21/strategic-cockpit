@@ -9,16 +9,16 @@
       "delta": -0.8872665504124626
     },
     "btc_price": {
-      "value": 92562,
-      "delta": -1.2450788976730787
+      "value": 92602,
+      "delta": -1.2024026715317564
     },
     "stablecoin_mcap": {
-      "value": 310.29,
-      "delta": 0.8727226978945523
+      "value": 310.28,
+      "delta": 0.8685754522524122
     },
     "usdt_dominance": {
       "value": 5.81,
-      "delta": 2.2582189174441627
+      "delta": 2.2112953591427686
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,9 +56,9 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.81,
-    "btc_gold": 0.01,
-    "interpretation": "Macro Driven",
+    "btc_nasdaq": 0.7,
+    "btc_gold": 0.08,
+    "interpretation": "Moderately Correlated",
     "period_days": 30
   },
   "polymarket_top5": [
@@ -66,7 +66,7 @@
       "title": "Will Jesus Christ return before GTA VI?",
       "outcome": "No 50%",
       "probability": 0.505,
-      "volume": 7891306.197869,
+      "volume": 7891336.509436,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-jesus-christ-return-before-gta-vi-665"
@@ -75,7 +75,7 @@
       "title": "Will bitcoin hit $1m before GTA VI?",
       "outcome": "No 52%",
       "probability": 0.515,
-      "volume": 2787559.797747,
+      "volume": 2787563.643899,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-bitcoin-hit-1m-before-gta-vi-872"
@@ -92,21 +92,21 @@
     {
       "title": "Will tariffs generate >$250b in 2025?",
       "outcome": "No 97%",
-      "probability": 0.969,
-      "volume": 1063936.35686,
+      "probability": 0.972,
+      "volume": 1069099.533329,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-tariffs-generate-250b-in-2025"
     },
     {
       "title": "Will the U.S. collect between $100b and $200b in revenue in 2025?",
-      "outcome": "No 83%",
-      "probability": 0.83,
-      "volume": 780675.132743,
+      "outcome": "No 84%",
+      "probability": 0.845,
+      "volume": 780762.072743,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-between-100b-and-200b-in-revenue-in-2025"
     }
   ],
-  "last_updated": "2026-01-19T07:06:05.742841Z"
+  "last_updated": "2026-01-19T07:42:33.915795Z"
 }
