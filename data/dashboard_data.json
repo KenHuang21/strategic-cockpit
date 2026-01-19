@@ -9,16 +9,16 @@
       "delta": -0.8872665504124626
     },
     "btc_price": {
-      "value": 92973,
-      "delta": -0.8065806740709919
+      "value": 92792,
+      "delta": -0.9996905973604755
     },
     "stablecoin_mcap": {
       "value": 310.27,
       "delta": 0.8658107510012546
     },
     "usdt_dominance": {
-      "value": 5.78,
-      "delta": 1.779820729519839
+      "value": 5.79,
+      "delta": 1.998068851165383
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.84,
-    "btc_gold": -0.07,
+    "btc_nasdaq": 0.81,
+    "btc_gold": 0.01,
     "interpretation": "Macro Driven",
     "period_days": 30
   },
@@ -66,7 +66,7 @@
       "title": "Will Jesus Christ return before GTA VI?",
       "outcome": "No 50%",
       "probability": 0.505,
-      "volume": 7909727.37506,
+      "volume": 7909899.917214,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-jesus-christ-return-before-gta-vi-665"
@@ -84,7 +84,7 @@
       "title": "Will China invades Taiwan before GTA VI?",
       "outcome": "Yes 52%",
       "probability": 0.515,
-      "volume": 1148977.81202,
+      "volume": 1148998.21202,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-china-invades-taiwan-before-gta-vi-716"
@@ -92,7 +92,7 @@
     {
       "title": "Will tariffs generate >$250b in 2025?",
       "outcome": "No 98%",
-      "probability": 0.976,
+      "probability": 0.977,
       "volume": 1069422.791897,
       "volume_24h": 0,
       "flipped": false,
@@ -102,11 +102,11 @@
       "title": "Will the U.S. collect between $100b and $200b in revenue in 2025?",
       "outcome": "No 88%",
       "probability": 0.88,
-      "volume": 786098.774889,
+      "volume": 786103.774889,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-between-100b-and-200b-in-revenue-in-2025"
     }
   ],
-  "last_updated": "2026-01-19T21:51:16.058474Z"
+  "last_updated": "2026-01-19T22:16:44.899345Z"
 }
