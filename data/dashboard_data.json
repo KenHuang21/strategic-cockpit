@@ -9,16 +9,16 @@
       "delta": -0.8872665504124626
     },
     "btc_price": {
-      "value": 92556,
-      "delta": -1.251480331594277
+      "value": 92506,
+      "delta": -1.30482561427093
     },
     "stablecoin_mcap": {
-      "value": 310.3,
-      "delta": 0.8760875420797398
+      "value": 310.29,
+      "delta": 0.8727226978945523
     },
     "usdt_dominance": {
       "value": 5.81,
-      "delta": 2.2457070854291588
+      "delta": 2.2916555476285683
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -57,7 +57,7 @@
   },
   "correlation_radar": {
     "btc_nasdaq": 0.72,
-    "btc_gold": 0.14,
+    "btc_gold": 0.02,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -66,7 +66,7 @@
       "title": "Will Jesus Christ return before GTA VI?",
       "outcome": "No 50%",
       "probability": 0.505,
-      "volume": 7890933.707869,
+      "volume": 7891232.377869,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-jesus-christ-return-before-gta-vi-665"
@@ -84,7 +84,7 @@
       "title": "Will China invades Taiwan before GTA VI?",
       "outcome": "Yes 52%",
       "probability": 0.515,
-      "volume": 1148608.269418,
+      "volume": 1148647.269418,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-china-invades-taiwan-before-gta-vi-716"
@@ -92,7 +92,7 @@
     {
       "title": "Will tariffs generate >$250b in 2025?",
       "outcome": "No 97%",
-      "probability": 0.967,
+      "probability": 0.9675,
       "volume": 1063936.35686,
       "volume_24h": 0,
       "flipped": false,
@@ -101,12 +101,12 @@
     {
       "title": "Will the U.S. collect between $100b and $200b in revenue in 2025?",
       "outcome": "No 82%",
-      "probability": 0.82,
-      "volume": 780572.124243,
+      "probability": 0.825,
+      "volume": 780675.132743,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-between-100b-and-200b-in-revenue-in-2025"
     }
   ],
-  "last_updated": "2026-01-19T05:53:09.795969Z"
+  "last_updated": "2026-01-19T06:31:02.360580Z"
 }
