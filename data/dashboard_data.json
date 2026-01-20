@@ -9,16 +9,16 @@
       "delta": -0.8872665504124626
     },
     "btc_price": {
-      "value": 90854,
-      "delta": -3.067353753907542
+      "value": 91052,
+      "delta": -2.8561064345079967
     },
     "stablecoin_mcap": {
-      "value": 309.88,
-      "delta": 0.7366714443520243
+      "value": 309.81,
+      "delta": 0.7155080281392644
     },
     "usdt_dominance": {
-      "value": 5.9,
-      "delta": 3.9135455968805437
+      "value": 5.89,
+      "delta": 3.6551379340610883
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.68,
-    "btc_gold": 0.13,
+    "btc_nasdaq": 0.72,
+    "btc_gold": -0.14,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -75,7 +75,7 @@
       "title": "Will bitcoin hit $1m before GTA VI?",
       "outcome": "No 52%",
       "probability": 0.515,
-      "volume": 2792797.454633,
+      "volume": 2796449.714633,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-bitcoin-hit-1m-before-gta-vi-872"
@@ -92,21 +92,21 @@
     {
       "title": "Will tariffs generate >$250b in 2025?",
       "outcome": "No 98%",
-      "probability": 0.9775,
-      "volume": 1071713.681897,
+      "probability": 0.976,
+      "volume": 1071763.681897,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-tariffs-generate-250b-in-2025"
     },
     {
       "title": "Will the U.S. collect between $100b and $200b in revenue in 2025?",
-      "outcome": "No 79%",
-      "probability": 0.79,
-      "volume": 791009.607486,
+      "outcome": "No 78%",
+      "probability": 0.785,
+      "volume": 792265.110818,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-between-100b-and-200b-in-revenue-in-2025"
     }
   ],
-  "last_updated": "2026-01-20T07:01:28.799500Z"
+  "last_updated": "2026-01-20T07:41:03.195237Z"
 }
