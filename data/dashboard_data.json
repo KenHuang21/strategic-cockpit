@@ -9,16 +9,16 @@
       "delta": -0.8872665504124626
     },
     "btc_price": {
-      "value": 88326,
-      "delta": -5.764491246039113
+      "value": 88955,
+      "delta": -5.0934075899668185
     },
     "stablecoin_mcap": {
-      "value": 307.76,
-      "delta": 0.048210249079041305
+      "value": 307.71,
+      "delta": 0.03176242983587852
     },
     "usdt_dominance": {
-      "value": 6.04,
-      "delta": 6.402902067010119
+      "value": 6.0,
+      "delta": 5.634543224618601
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -33,32 +33,32 @@
   "btc_etf_flows": {
     "flows": [
       {
-        "date": "2026-01-14",
+        "date": "2026-01-15",
         "flow": 150
       },
       {
-        "date": "2026-01-15",
+        "date": "2026-01-16",
         "flow": -50
       },
       {
-        "date": "2026-01-16",
+        "date": "2026-01-19",
         "flow": 300
       },
       {
-        "date": "2026-01-19",
+        "date": "2026-01-20",
         "flow": 100
       },
       {
-        "date": "2026-01-20",
+        "date": "2026-01-21",
         "flow": 200
       }
     ],
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.69,
-    "btc_gold": -0.05,
-    "interpretation": "Moderately Correlated",
+    "btc_nasdaq": 0.81,
+    "btc_gold": 0.01,
+    "interpretation": "Macro Driven",
     "period_days": 30
   },
   "polymarket_top5": [
@@ -66,7 +66,7 @@
       "title": "Will Jesus Christ return before GTA VI?",
       "outcome": "No 50%",
       "probability": 0.505,
-      "volume": 7947514.745137,
+      "volume": 7947922.625134,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-jesus-christ-return-before-gta-vi-665"
@@ -84,29 +84,29 @@
       "title": "Will China invades Taiwan before GTA VI?",
       "outcome": "Yes 52%",
       "probability": 0.515,
-      "volume": 1149820.346748,
+      "volume": 1149925.606748,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-china-invades-taiwan-before-gta-vi-716"
     },
     {
       "title": "Will tariffs generate >$250b in 2025?",
-      "outcome": "No 98%",
-      "probability": 0.9815,
-      "volume": 1095797.990317,
+      "outcome": "No 99%",
+      "probability": 0.9895,
+      "volume": 1097047.860317,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-tariffs-generate-250b-in-2025"
     },
     {
       "title": "Will the U.S. collect between $100b and $200b in revenue in 2025?",
-      "outcome": "No 86%",
-      "probability": 0.855,
-      "volume": 805980.343358,
+      "outcome": "No 88%",
+      "probability": 0.875,
+      "volume": 806143.943358,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-between-100b-and-200b-in-revenue-in-2025"
     }
   ],
-  "last_updated": "2026-01-20T23:53:48.461104Z"
+  "last_updated": "2026-01-21T01:18:46.680431Z"
 }
