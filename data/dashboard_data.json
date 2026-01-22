@@ -9,16 +9,16 @@
       "delta": -0.8872665504124626
     },
     "btc_price": {
-      "value": 89520,
-      "delta": -4.490605895720642
+      "value": 90001,
+      "delta": -3.9774242763712406
     },
     "stablecoin_mcap": {
-      "value": 308.09,
-      "delta": 0.15643724837435846
+      "value": 307.55,
+      "delta": -0.017924166488836192
     },
     "usdt_dominance": {
-      "value": 6.0,
-      "delta": 5.605304838255825
+      "value": 5.96,
+      "delta": 4.904699020313249
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -33,32 +33,32 @@
   "btc_etf_flows": {
     "flows": [
       {
-        "date": "2026-01-15",
+        "date": "2026-01-16",
         "flow": 150
       },
       {
-        "date": "2026-01-16",
+        "date": "2026-01-19",
         "flow": -50
       },
       {
-        "date": "2026-01-19",
+        "date": "2026-01-20",
         "flow": 300
       },
       {
-        "date": "2026-01-20",
+        "date": "2026-01-21",
         "flow": 100
       },
       {
-        "date": "2026-01-21",
+        "date": "2026-01-22",
         "flow": 200
       }
     ],
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.81,
-    "btc_gold": -0.14,
-    "interpretation": "Macro Driven",
+    "btc_nasdaq": 0.75,
+    "btc_gold": 0.06,
+    "interpretation": "Moderately Correlated",
     "period_days": 30
   },
   "polymarket_top5": [
@@ -66,7 +66,7 @@
       "title": "Will Jesus Christ return before GTA VI?",
       "outcome": "No 50%",
       "probability": 0.505,
-      "volume": 8048564.420611,
+      "volume": 8068040.332736,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-jesus-christ-return-before-gta-vi-665"
@@ -75,7 +75,7 @@
       "title": "Will bitcoin hit $1m before GTA VI?",
       "outcome": "No 52%",
       "probability": 0.515,
-      "volume": 2818555.501579,
+      "volume": 2818560.601579,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-bitcoin-hit-1m-before-gta-vi-872"
@@ -84,7 +84,7 @@
       "title": "Will China invades Taiwan before GTA VI?",
       "outcome": "Yes 52%",
       "probability": 0.515,
-      "volume": 1151768.332525,
+      "volume": 1151780.57334,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-china-invades-taiwan-before-gta-vi-716"
@@ -93,20 +93,20 @@
       "title": "Will tariffs generate >$250b in 2025?",
       "outcome": "No 98%",
       "probability": 0.9825,
-      "volume": 1106152.871393,
+      "volume": 1106325.701393,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-tariffs-generate-250b-in-2025"
     },
     {
       "title": "Will the U.S. collect between $100b and $200b in revenue in 2025?",
-      "outcome": "No 87%",
-      "probability": 0.866,
-      "volume": 822846.576097,
+      "outcome": "No 86%",
+      "probability": 0.859,
+      "volume": 822876.576097,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-between-100b-and-200b-in-revenue-in-2025"
     }
   ],
-  "last_updated": "2026-01-21T23:45:47.458638Z"
+  "last_updated": "2026-01-22T01:19:02.408588Z"
 }
