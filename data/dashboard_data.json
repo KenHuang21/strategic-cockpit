@@ -9,16 +9,16 @@
       "delta": -0.8872665504124626
     },
     "btc_price": {
-      "value": 89875,
-      "delta": -4.111854388716406
+      "value": 89940,
+      "delta": -4.042505521236757
     },
     "stablecoin_mcap": {
       "value": 307.86,
       "delta": 0.08094991725541634
     },
     "usdt_dominance": {
-      "value": 5.97,
-      "delta": 5.045457132356054
+      "value": 5.96,
+      "delta": 4.956279461153372
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,17 +56,17 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.83,
-    "btc_gold": -0.12,
-    "interpretation": "Macro Driven",
+    "btc_nasdaq": 0.75,
+    "btc_gold": -0.14,
+    "interpretation": "Moderately Correlated",
     "period_days": 30
   },
   "polymarket_top5": [
     {
       "title": "Will Jesus Christ return before GTA VI?",
-      "outcome": "No 52%",
-      "probability": 0.515,
-      "volume": 8232079.630972,
+      "outcome": "No 51%",
+      "probability": 0.51,
+      "volume": 8232532.842504,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-jesus-christ-return-before-gta-vi-665"
@@ -75,16 +75,16 @@
       "title": "Will bitcoin hit $1m before GTA VI?",
       "outcome": "No 52%",
       "probability": 0.515,
-      "volume": 2818826.742126,
+      "volume": 2818828.665201,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-bitcoin-hit-1m-before-gta-vi-872"
     },
     {
       "title": "Will China invades Taiwan before GTA VI?",
-      "outcome": "Yes 52%",
-      "probability": 0.515,
-      "volume": 1151780.57334,
+      "outcome": "Yes 51%",
+      "probability": 0.51,
+      "volume": 1152185.57334,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-china-invades-taiwan-before-gta-vi-716"
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/will-the-us-collect-between-100b-and-200b-in-revenue-in-2025"
     }
   ],
-  "last_updated": "2026-01-22T04:32:15.187742Z"
+  "last_updated": "2026-01-22T05:06:07.115100Z"
 }
