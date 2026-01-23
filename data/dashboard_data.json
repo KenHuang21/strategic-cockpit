@@ -9,8 +9,8 @@
       "delta": -0.8438971059931145
     },
     "btc_price": {
-      "value": 89422,
-      "delta": -4.595162649766881
+      "value": 89399,
+      "delta": -4.619701479798141
     },
     "stablecoin_mcap": {
       "value": 307.94,
@@ -18,7 +18,7 @@
     },
     "usdt_dominance": {
       "value": 6.01,
-      "delta": 5.818019568575572
+      "delta": 5.816183209583426
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.76,
-    "btc_gold": 0.03,
+    "btc_nasdaq": 0.66,
+    "btc_gold": 0.01,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -66,7 +66,7 @@
       "title": "Will Jesus Christ return before GTA VI?",
       "outcome": "No 52%",
       "probability": 0.515,
-      "volume": 8473562.678889,
+      "volume": 8473796.325811,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-jesus-christ-return-before-gta-vi-665"
@@ -84,7 +84,7 @@
       "title": "Will China invades Taiwan before GTA VI?",
       "outcome": "Yes 50%",
       "probability": 0.505,
-      "volume": 1160023.500356,
+      "volume": 1160043.500356,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-china-invades-taiwan-before-gta-vi-716"
@@ -92,8 +92,8 @@
     {
       "title": "Will tariffs generate >$250b in 2025?",
       "outcome": "No 98%",
-      "probability": 0.9805,
-      "volume": 1124019.442119,
+      "probability": 0.9815,
+      "volume": 1124049.442119,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-tariffs-generate-250b-in-2025"
@@ -101,12 +101,12 @@
     {
       "title": "Will the U.S. collect between $100b and $200b in revenue in 2025?",
       "outcome": "No 88%",
-      "probability": 0.8795,
+      "probability": 0.88,
       "volume": 844370.481814,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-between-100b-and-200b-in-revenue-in-2025"
     }
   ],
-  "last_updated": "2026-01-23T23:41:45.210052Z"
+  "last_updated": "2026-01-23T23:52:21.310576Z"
 }
