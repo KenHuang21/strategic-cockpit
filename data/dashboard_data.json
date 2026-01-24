@@ -9,16 +9,16 @@
       "delta": -0.8438971059931145
     },
     "btc_price": {
-      "value": 89654,
-      "delta": -4.347640538147211
+      "value": 89630,
+      "delta": -4.373246273832005
     },
     "stablecoin_mcap": {
       "value": 307.92,
       "delta": 0.10209867249976992
     },
     "usdt_dominance": {
-      "value": 5.99,
-      "delta": 5.539998052993419
+      "value": 6.0,
+      "delta": 5.574359473435546
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,9 +56,9 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.75,
-    "btc_gold": 0.13,
-    "interpretation": "Moderately Correlated",
+    "btc_nasdaq": 0.82,
+    "btc_gold": 0.08,
+    "interpretation": "Macro Driven",
     "period_days": 30
   },
   "polymarket_top5": [
@@ -100,13 +100,13 @@
     },
     {
       "title": "Will the U.S. collect between $100b and $200b in revenue in 2025?",
-      "outcome": "No 85%",
-      "probability": 0.854,
+      "outcome": "No 86%",
+      "probability": 0.856,
       "volume": 848596.760634,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-between-100b-and-200b-in-revenue-in-2025"
     }
   ],
-  "last_updated": "2026-01-24T05:43:28.080012Z"
+  "last_updated": "2026-01-24T05:53:25.509967Z"
 }
