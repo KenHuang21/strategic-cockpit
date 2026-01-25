@@ -9,16 +9,16 @@
       "delta": -0.8438971059931145
     },
     "btc_price": {
-      "value": 88591,
-      "delta": -5.481761247852853
+      "value": 88474,
+      "delta": -5.60658920931622
     },
     "stablecoin_mcap": {
       "value": 307.93,
       "delta": 0.10282072783948039
     },
     "usdt_dominance": {
-      "value": 6.06,
-      "delta": 6.692999983586098
+      "value": 6.07,
+      "delta": 6.796104301658383
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,9 +56,9 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.81,
-    "btc_gold": 0.07,
-    "interpretation": "Macro Driven",
+    "btc_nasdaq": 0.71,
+    "btc_gold": -0.0,
+    "interpretation": "Moderately Correlated",
     "period_days": 30
   },
   "polymarket_top5": [
@@ -101,12 +101,12 @@
     {
       "title": "Will the U.S. collect less than $100b in revenue in 2025?",
       "outcome": "Yes 75%",
-      "probability": 0.746,
+      "probability": 0.7475,
       "volume": 889004.921379,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-less-than-100b-in-revenue-in-2025"
     }
   ],
-  "last_updated": "2026-01-25T15:34:39.504526Z"
+  "last_updated": "2026-01-25T15:50:55.426374Z"
 }
