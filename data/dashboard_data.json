@@ -9,8 +9,8 @@
       "delta": -0.8438971059931145
     },
     "btc_price": {
-      "value": 88601,
-      "delta": -5.4710921913175214
+      "value": 88622,
+      "delta": -5.448687172593328
     },
     "stablecoin_mcap": {
       "value": 307.82,
@@ -18,7 +18,7 @@
     },
     "usdt_dominance": {
       "value": 6.05,
-      "delta": 6.578659055132794
+      "delta": 6.5626044213359584
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.73,
-    "btc_gold": 0.11,
+    "btc_nasdaq": 0.69,
+    "btc_gold": 0.02,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -66,7 +66,7 @@
       "title": "Will Jesus Christ return before GTA VI?",
       "outcome": "No 52%",
       "probability": 0.515,
-      "volume": 8530230.304061,
+      "volume": 8532362.227136,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-jesus-christ-return-before-gta-vi-665"
@@ -75,7 +75,7 @@
       "title": "Will bitcoin hit $1m before GTA VI?",
       "outcome": "No 52%",
       "probability": 0.515,
-      "volume": 2880461.28307,
+      "volume": 2881561.28307,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-bitcoin-hit-1m-before-gta-vi-872"
@@ -84,7 +84,7 @@
       "title": "Will China invades Taiwan before GTA VI?",
       "outcome": "Yes 51%",
       "probability": 0.51,
-      "volume": 1161740.174951,
+      "volume": 1162451.114951,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-china-invades-taiwan-before-gta-vi-716"
@@ -101,12 +101,12 @@
     {
       "title": "Will the U.S. collect less than $100b in revenue in 2025?",
       "outcome": "Yes 64%",
-      "probability": 0.636,
-      "volume": 877732.593804,
+      "probability": 0.6425,
+      "volume": 877885.713804,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-less-than-100b-in-revenue-in-2025"
     }
   ],
-  "last_updated": "2026-01-25T07:18:17.456211Z"
+  "last_updated": "2026-01-25T07:40:33.614964Z"
 }
