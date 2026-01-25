@@ -9,16 +9,16 @@
       "delta": -0.8438971059931145
     },
     "btc_price": {
-      "value": 88276,
-      "delta": -5.817836528715765
+      "value": 88357,
+      "delta": -5.731417170779588
     },
     "stablecoin_mcap": {
-      "value": 307.83,
-      "delta": 0.0728713937895839
+      "value": 307.84,
+      "delta": 0.07588663986077203
     },
     "usdt_dominance": {
       "value": 6.06,
-      "delta": 6.774627962356466
+      "delta": 6.710115206549597
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,9 +56,9 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.83,
-    "btc_gold": -0.03,
-    "interpretation": "Macro Driven",
+    "btc_nasdaq": 0.75,
+    "btc_gold": 0.15,
+    "interpretation": "Moderately Correlated",
     "period_days": 30
   },
   "polymarket_top5": [
@@ -66,7 +66,7 @@
       "title": "Will Jesus Christ return before GTA VI?",
       "outcome": "No 52%",
       "probability": 0.515,
-      "volume": 8539310.442554,
+      "volume": 8539521.981013,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-jesus-christ-return-before-gta-vi-665"
@@ -92,21 +92,21 @@
     {
       "title": "Will tariffs generate >$250b in 2025?",
       "outcome": "No 99%",
-      "probability": 0.987,
-      "volume": 1126161.254341,
+      "probability": 0.9895,
+      "volume": 1126380.244341,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-tariffs-generate-250b-in-2025"
     },
     {
       "title": "Will the U.S. collect less than $100b in revenue in 2025?",
-      "outcome": "Yes 62%",
-      "probability": 0.625,
-      "volume": 878484.009451,
+      "outcome": "Yes 63%",
+      "probability": 0.631,
+      "volume": 878679.385239,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-less-than-100b-in-revenue-in-2025"
     }
   ],
-  "last_updated": "2026-01-25T09:51:51.365981Z"
+  "last_updated": "2026-01-25T10:17:05.881517Z"
 }
