@@ -9,16 +9,16 @@
       "delta": -0.8438971059931145
     },
     "btc_price": {
-      "value": 88562,
-      "delta": -5.512701511805311
+      "value": 88522,
+      "delta": -5.555377737946634
     },
     "stablecoin_mcap": {
       "value": 307.8,
       "delta": 0.06183157381209008
     },
     "usdt_dominance": {
-      "value": 6.06,
-      "delta": 6.746040696011907
+      "value": 6.07,
+      "delta": 6.7817134559285215
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.69,
-    "btc_gold": 0.05,
+    "btc_nasdaq": 0.66,
+    "btc_gold": -0.05,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -92,21 +92,21 @@
     {
       "title": "Will tariffs generate >$250b in 2025?",
       "outcome": "No 99%",
-      "probability": 0.9885,
-      "volume": 1126690.432033,
+      "probability": 0.988,
+      "volume": 1126702.352033,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-tariffs-generate-250b-in-2025"
     },
     {
       "title": "Will the U.S. collect less than $100b in revenue in 2025?",
-      "outcome": "Yes 72%",
-      "probability": 0.7235,
-      "volume": 888221.205813,
+      "outcome": "Yes 74%",
+      "probability": 0.738,
+      "volume": 888427.025813,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-less-than-100b-in-revenue-in-2025"
     }
   ],
-  "last_updated": "2026-01-25T14:36:20.386622Z"
+  "last_updated": "2026-01-25T14:51:51.717468Z"
 }
