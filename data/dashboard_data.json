@@ -9,16 +9,16 @@
       "delta": -0.8438971059931145
     },
     "btc_price": {
-      "value": 87945,
-      "delta": -6.170982300035208
+      "value": 87931,
+      "delta": -6.185918979184671
     },
     "stablecoin_mcap": {
-      "value": 307.0,
-      "delta": -0.19915407456276166
+      "value": 306.95,
+      "delta": -0.21543240699078073
     },
     "usdt_dominance": {
       "value": 6.08,
-      "delta": 7.091490579818843
+      "delta": 7.067729034502945
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.8,
-    "btc_gold": -0.15,
+    "btc_nasdaq": 0.75,
+    "btc_gold": 0.1,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -66,7 +66,7 @@
       "title": "Will Jesus Christ return before GTA VI?",
       "outcome": "No 52%",
       "probability": 0.515,
-      "volume": 8693719.941845,
+      "volume": 8694160.822281,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-jesus-christ-return-before-gta-vi-665"
@@ -75,7 +75,7 @@
       "title": "Will bitcoin hit $1m before GTA VI?",
       "outcome": "No 52%",
       "probability": 0.515,
-      "volume": 2891408.286177,
+      "volume": 2891417.896177,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-bitcoin-hit-1m-before-gta-vi-872"
@@ -92,7 +92,7 @@
     {
       "title": "Will tariffs generate >$250b in 2025?",
       "outcome": "No 99%",
-      "probability": 0.986,
+      "probability": 0.9855,
       "volume": 1136878.588237,
       "volume_24h": 0,
       "flipped": false,
@@ -101,12 +101,12 @@
     {
       "title": "Will the U.S. collect less than $100b in revenue in 2025?",
       "outcome": "Yes 80%",
-      "probability": 0.8025,
+      "probability": 0.7985,
       "volume": 946841.827139,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-less-than-100b-in-revenue-in-2025"
     }
   ],
-  "last_updated": "2026-01-27T11:54:27.741286Z"
+  "last_updated": "2026-01-27T12:37:14.097059Z"
 }
