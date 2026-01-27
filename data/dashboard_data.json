@@ -9,16 +9,16 @@
       "delta": -0.8438971059931145
     },
     "btc_price": {
-      "value": 88620,
-      "delta": -5.450820983900393
+      "value": 88798,
+      "delta": -5.2609117775715095
     },
     "stablecoin_mcap": {
-      "value": 306.81,
-      "delta": -0.26162889311887777
+      "value": 306.71,
+      "delta": -0.29270939078347424
     },
     "usdt_dominance": {
-      "value": 6.02,
-      "delta": 5.9769793318626885
+      "value": 6.01,
+      "delta": 5.726851403986263
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.72,
-    "btc_gold": -0.12,
+    "btc_nasdaq": 0.78,
+    "btc_gold": -0.11,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -66,7 +66,7 @@
       "title": "Will Jesus Christ return before GTA VI?",
       "outcome": "No 52%",
       "probability": 0.515,
-      "volume": 8713738.312094,
+      "volume": 8713917.155166,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-jesus-christ-return-before-gta-vi-665"
@@ -75,7 +75,7 @@
       "title": "Will bitcoin hit $1m before GTA VI?",
       "outcome": "No 52%",
       "probability": 0.515,
-      "volume": 2892686.860057,
+      "volume": 2892744.552363,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-bitcoin-hit-1m-before-gta-vi-872"
@@ -92,8 +92,8 @@
     {
       "title": "Will tariffs generate >$250b in 2025?",
       "outcome": "No 97%",
-      "probability": 0.9695,
-      "volume": 1142522.849327,
+      "probability": 0.9655,
+      "volume": 1143091.17301,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-tariffs-generate-250b-in-2025"
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/will-the-us-collect-less-than-100b-in-revenue-in-2025"
     }
   ],
-  "last_updated": "2026-01-27T20:18:10.878205Z"
+  "last_updated": "2026-01-27T20:45:47.336590Z"
 }
