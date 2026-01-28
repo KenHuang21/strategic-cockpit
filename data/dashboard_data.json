@@ -9,16 +9,16 @@
       "delta": -0.8438971059931145
     },
     "btc_price": {
-      "value": 89209,
-      "delta": -4.822413553969422
+      "value": 89306,
+      "delta": -4.7189237055767155
     },
     "stablecoin_mcap": {
-      "value": 306.59,
-      "delta": -0.33140300063384165
+      "value": 306.34,
+      "delta": -0.41269974952237287
     },
     "usdt_dominance": {
       "value": 5.98,
-      "delta": 5.299842072271898
+      "delta": 5.283629678594785
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -33,31 +33,31 @@
   "btc_etf_flows": {
     "flows": [
       {
-        "date": "2026-01-21",
+        "date": "2026-01-22",
         "flow": 150
       },
       {
-        "date": "2026-01-22",
+        "date": "2026-01-23",
         "flow": -50
       },
       {
-        "date": "2026-01-23",
+        "date": "2026-01-26",
         "flow": 300
       },
       {
-        "date": "2026-01-26",
+        "date": "2026-01-27",
         "flow": 100
       },
       {
-        "date": "2026-01-27",
+        "date": "2026-01-28",
         "flow": 200
       }
     ],
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.71,
-    "btc_gold": -0.06,
+    "btc_nasdaq": 0.65,
+    "btc_gold": 0.12,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -66,7 +66,7 @@
       "title": "Will Jesus Christ return before GTA VI?",
       "outcome": "No 52%",
       "probability": 0.515,
-      "volume": 8722355.287441,
+      "volume": 8722838.897476,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-jesus-christ-return-before-gta-vi-665"
@@ -75,7 +75,7 @@
       "title": "Will bitcoin hit $1m before GTA VI?",
       "outcome": "No 52%",
       "probability": 0.515,
-      "volume": 2892951.584712,
+      "volume": 2893077.507784,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-bitcoin-hit-1m-before-gta-vi-872"
@@ -92,8 +92,8 @@
     {
       "title": "Will tariffs generate >$250b in 2025?",
       "outcome": "No 97%",
-      "probability": 0.9675,
-      "volume": 1143132.042945,
+      "probability": 0.97,
+      "volume": 1143227.641473,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-tariffs-generate-250b-in-2025"
@@ -101,12 +101,12 @@
     {
       "title": "Will the U.S. collect less than $100b in revenue in 2025?",
       "outcome": "Yes 80%",
-      "probability": 0.7965,
-      "volume": 952658.581452,
+      "probability": 0.8025,
+      "volume": 952748.952286,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-less-than-100b-in-revenue-in-2025"
     }
   ],
-  "last_updated": "2026-01-27T23:54:42.311593Z"
+  "last_updated": "2026-01-28T01:18:27.859254Z"
 }
