@@ -9,8 +9,8 @@
       "delta": -0.8438971059931145
     },
     "btc_price": {
-      "value": 89305,
-      "delta": -4.719990611230249
+      "value": 89286,
+      "delta": -4.740261818647377
     },
     "stablecoin_mcap": {
       "value": 306.82,
@@ -18,7 +18,7 @@
     },
     "usdt_dominance": {
       "value": 5.98,
-      "delta": 5.2313188210075925
+      "delta": 5.210734989133843
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,9 +56,9 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.71,
-    "btc_gold": -0.03,
-    "interpretation": "Moderately Correlated",
+    "btc_nasdaq": 0.84,
+    "btc_gold": 0.07,
+    "interpretation": "Macro Driven",
     "period_days": 30
   },
   "polymarket_top5": [
@@ -84,7 +84,7 @@
       "title": "Will China invades Taiwan before GTA VI?",
       "outcome": "Yes 51%",
       "probability": 0.51,
-      "volume": 1168573.235274,
+      "volume": 1168575.158349,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-china-invades-taiwan-before-gta-vi-716"
@@ -101,12 +101,12 @@
     {
       "title": "Will the U.S. collect less than $100b in revenue in 2025?",
       "outcome": "Yes 72%",
-      "probability": 0.721,
-      "volume": 981390.103955,
+      "probability": 0.717,
+      "volume": 981595.773021,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-less-than-100b-in-revenue-in-2025"
     }
   ],
-  "last_updated": "2026-01-28T21:44:16.679123Z"
+  "last_updated": "2026-01-28T22:00:15.044617Z"
 }
