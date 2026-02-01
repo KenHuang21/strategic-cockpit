@@ -9,8 +9,8 @@
       "delta": -0.7989013074080384
     },
     "btc_price": {
-      "value": 78700,
-      "delta": -16.03452506694833
+      "value": 78661,
+      "delta": -16.07613438743612
     },
     "stablecoin_mcap": {
       "value": 303.94,
@@ -18,7 +18,7 @@
     },
     "usdt_dominance": {
       "value": 6.77,
-      "delta": 19.127759209175064
+      "delta": 19.1361430632685
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.71,
-    "btc_gold": 0.12,
+    "btc_nasdaq": 0.76,
+    "btc_gold": -0.12,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -66,7 +66,7 @@
       "title": "Will Jesus Christ return before GTA VI?",
       "outcome": "No 52%",
       "probability": 0.52,
-      "volume": 8905004.908158,
+      "volume": 8905577.395237,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-jesus-christ-return-before-gta-vi-665"
@@ -84,7 +84,7 @@
       "title": "Will China invades Taiwan before GTA VI?",
       "outcome": "Yes 52%",
       "probability": 0.515,
-      "volume": 1221796.326229,
+      "volume": 1221999.979289,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-china-invades-taiwan-before-gta-vi-716"
@@ -101,12 +101,12 @@
     {
       "title": "Will the U.S. collect less than $100b in revenue in 2025?",
       "outcome": "Yes 76%",
-      "probability": 0.755,
+      "probability": 0.7555,
       "volume": 1070401.259014,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-less-than-100b-in-revenue-in-2025"
     }
   ],
-  "last_updated": "2026-02-01T11:43:06.973663Z"
+  "last_updated": "2026-02-01T11:54:39.330217Z"
 }
