@@ -9,8 +9,8 @@
       "delta": -0.7989013074080384
     },
     "btc_price": {
-      "value": 78652,
-      "delta": -16.085736538317917
+      "value": 78732,
+      "delta": -16.00038408603527
     },
     "stablecoin_mcap": {
       "value": 303.58,
@@ -18,7 +18,7 @@
     },
     "usdt_dominance": {
       "value": 6.77,
-      "delta": 19.269585259593285
+      "delta": 19.261231854016312
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,9 +56,9 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.83,
-    "btc_gold": -0.13,
-    "interpretation": "Macro Driven",
+    "btc_nasdaq": 0.69,
+    "btc_gold": 0.15,
+    "interpretation": "Moderately Correlated",
     "period_days": 30
   },
   "polymarket_top5": [
@@ -66,7 +66,7 @@
       "title": "Will Jesus Christ return before GTA VI?",
       "outcome": "No 52%",
       "probability": 0.525,
-      "volume": 8956945.716381,
+      "volume": 8957386.883282,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-jesus-christ-return-before-gta-vi-665"
@@ -84,7 +84,7 @@
       "title": "Will China invades Taiwan before GTA VI?",
       "outcome": "Yes 52%",
       "probability": 0.52,
-      "volume": 1276241.614801,
+      "volume": 1276245.381592,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-china-invades-taiwan-before-gta-vi-716"
@@ -92,7 +92,7 @@
     {
       "title": "Will tariffs generate >$250b in 2025?",
       "outcome": "No 97%",
-      "probability": 0.974,
+      "probability": 0.9745,
       "volume": 1167681.627591,
       "volume_24h": 0,
       "flipped": false,
@@ -102,11 +102,11 @@
       "title": "Will the U.S. collect less than $100b in revenue in 2025?",
       "outcome": "Yes 76%",
       "probability": 0.756,
-      "volume": 1086896.832029,
+      "volume": 1087083.022029,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-less-than-100b-in-revenue-in-2025"
     }
   ],
-  "last_updated": "2026-02-02T15:25:30.988005Z"
+  "last_updated": "2026-02-02T15:57:13.254530Z"
 }
