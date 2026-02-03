@@ -9,16 +9,16 @@
       "delta": -0.7989013074080384
     },
     "btc_price": {
-      "value": 75622,
-      "delta": -19.318460668523084
+      "value": 75663,
+      "delta": -19.27471753672823
     },
     "stablecoin_mcap": {
       "value": 304.14,
       "delta": -1.1279400980484062
     },
     "usdt_dominance": {
-      "value": 6.99,
-      "delta": 23.10476802573799
+      "value": 7.0,
+      "delta": 23.15688085572689
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,9 +56,9 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.75,
-    "btc_gold": 0.01,
-    "interpretation": "Moderately Correlated",
+    "btc_nasdaq": 0.84,
+    "btc_gold": -0.03,
+    "interpretation": "Macro Driven",
     "period_days": 30
   },
   "polymarket_top5": [
@@ -66,7 +66,7 @@
       "title": "Will Jesus Christ return before GTA VI?",
       "outcome": "No 52%",
       "probability": 0.515,
-      "volume": 9024524.51109,
+      "volume": 9024653.485694,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-jesus-christ-return-before-gta-vi-665"
@@ -93,20 +93,20 @@
       "title": "Will tariffs generate >$250b in 2025?",
       "outcome": "No 98%",
       "probability": 0.9825,
-      "volume": 1186697.288433,
+      "volume": 1186707.488433,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-tariffs-generate-250b-in-2025"
     },
     {
       "title": "Will the U.S. collect less than $100b in revenue in 2025?",
-      "outcome": "Yes 82%",
-      "probability": 0.822,
-      "volume": 1143536.128113,
+      "outcome": "Yes 81%",
+      "probability": 0.814,
+      "volume": 1143805.611344,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-less-than-100b-in-revenue-in-2025"
     }
   ],
-  "last_updated": "2026-02-03T22:56:10.018013Z"
+  "last_updated": "2026-02-03T23:25:43.196080Z"
 }
