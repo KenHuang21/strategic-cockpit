@@ -9,16 +9,16 @@
       "delta": -0.7989013074080384
     },
     "btc_price": {
-      "value": 73661,
-      "delta": -21.410662655101408
+      "value": 72374,
+      "delta": -22.783770231198456
     },
     "stablecoin_mcap": {
       "value": 305.15,
       "delta": -0.7990047758286027
     },
     "usdt_dominance": {
-      "value": 7.23,
-      "delta": 27.309663149402834
+      "value": 7.31,
+      "delta": 28.641524237043747
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.72,
-    "btc_gold": 0.01,
+    "btc_nasdaq": 0.77,
+    "btc_gold": -0.09,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -66,7 +66,7 @@
       "title": "Will Jesus Christ return before GTA VI?",
       "outcome": "No 52%",
       "probability": 0.525,
-      "volume": 9059422.73424,
+      "volume": 9060051.62626,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-jesus-christ-return-before-gta-vi-665"
@@ -75,7 +75,7 @@
       "title": "Will bitcoin hit $1m before GTA VI?",
       "outcome": "No 52%",
       "probability": 0.525,
-      "volume": 2976426.588576,
+      "volume": 2976472.092537,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-bitcoin-hit-1m-before-gta-vi-872"
@@ -84,7 +84,7 @@
       "title": "Will China invades Taiwan before GTA VI?",
       "outcome": "Yes 52%",
       "probability": 0.515,
-      "volume": 1281109.077725,
+      "volume": 1281988.710377,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-china-invades-taiwan-before-gta-vi-716"
@@ -92,8 +92,8 @@
     {
       "title": "Will tariffs generate >$250b in 2025?",
       "outcome": "No 99%",
-      "probability": 0.9885,
-      "volume": 1191125.942887,
+      "probability": 0.99,
+      "volume": 1192903.942887,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-tariffs-generate-250b-in-2025"
@@ -101,12 +101,12 @@
     {
       "title": "Will the U.S. collect less than $100b in revenue in 2025?",
       "outcome": "Yes 87%",
-      "probability": 0.87,
-      "volume": 1161191.881083,
+      "probability": 0.869,
+      "volume": 1161244.881083,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-less-than-100b-in-revenue-in-2025"
     }
   ],
-  "last_updated": "2026-02-04T16:58:58.905570Z"
+  "last_updated": "2026-02-04T17:50:45.200468Z"
 }
