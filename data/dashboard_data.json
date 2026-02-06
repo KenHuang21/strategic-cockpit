@@ -9,16 +9,16 @@
       "delta": -0.5227072170972024
     },
     "btc_price": {
-      "value": 67357,
-      "delta": -28.136435894973804
+      "value": 68017,
+      "delta": -27.43227816364199
     },
     "stablecoin_mcap": {
-      "value": 302.67,
-      "delta": -1.6046913030337562
+      "value": 302.62,
+      "delta": -1.6223213282129212
     },
     "usdt_dominance": {
-      "value": 7.72,
-      "delta": 35.989073491383536
+      "value": 7.66,
+      "delta": 34.81802860017262
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.65,
-    "btc_gold": 0.12,
+    "btc_nasdaq": 0.72,
+    "btc_gold": 0.05,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -66,7 +66,7 @@
       "title": "Will Jesus Christ return before GTA VI?",
       "outcome": "No 52%",
       "probability": 0.515,
-      "volume": 9118516.66399,
+      "volume": 9120694.107043,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-jesus-christ-return-before-gta-vi-665"
@@ -75,7 +75,7 @@
       "title": "Will bitcoin hit $1m before GTA VI?",
       "outcome": "No 52%",
       "probability": 0.515,
-      "volume": 3039087.28599,
+      "volume": 3039183.48137,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-bitcoin-hit-1m-before-gta-vi-872"
@@ -92,8 +92,8 @@
     {
       "title": "Will the U.S. collect less than $100b in revenue in 2025?",
       "outcome": "Yes 84%",
-      "probability": 0.8355,
-      "volume": 1214691.790807,
+      "probability": 0.835,
+      "volume": 1214702.190807,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-less-than-100b-in-revenue-in-2025"
@@ -101,12 +101,12 @@
     {
       "title": "Will tariffs generate >$250b in 2025?",
       "outcome": "No 98%",
-      "probability": 0.9835,
-      "volume": 1214025.276641,
+      "probability": 0.9845,
+      "volume": 1214330.536641,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-tariffs-generate-250b-in-2025"
     }
   ],
-  "last_updated": "2026-02-06T13:58:50.860055Z"
+  "last_updated": "2026-02-06T14:42:14.657602Z"
 }
