@@ -9,16 +9,16 @@
       "delta": -0.5227072170972024
     },
     "btc_price": {
-      "value": 70288,
-      "delta": -25.009335424468414
+      "value": 70473,
+      "delta": -24.8119578785648
     },
     "stablecoin_mcap": {
-      "value": 303.61,
-      "delta": -1.3004160348051357
+      "value": 304.17,
+      "delta": -1.118751864764305
     },
     "usdt_dominance": {
-      "value": 7.45,
-      "delta": 31.085562995364167
+      "value": 7.43,
+      "delta": 30.775974724876935
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.69,
-    "btc_gold": -0.09,
+    "btc_nasdaq": 0.77,
+    "btc_gold": 0.13,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -66,7 +66,7 @@
       "title": "Will Jesus Christ return before GTA VI?",
       "outcome": "No 52%",
       "probability": 0.515,
-      "volume": 9133638.804597,
+      "volume": 9133696.563825,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-jesus-christ-return-before-gta-vi-665"
@@ -75,7 +75,7 @@
       "title": "Will bitcoin hit $1m before GTA VI?",
       "outcome": "No 52%",
       "probability": 0.515,
-      "volume": 3041788.751495,
+      "volume": 3041791.201495,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-bitcoin-hit-1m-before-gta-vi-872"
@@ -91,9 +91,9 @@
     },
     {
       "title": "Will the U.S. collect less than $100b in revenue in 2025?",
-      "outcome": "Yes 87%",
-      "probability": 0.867,
-      "volume": 1224301.50275,
+      "outcome": "Yes 86%",
+      "probability": 0.859,
+      "volume": 1224537.33275,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-less-than-100b-in-revenue-in-2025"
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/will-tariffs-generate-250b-in-2025"
     }
   ],
-  "last_updated": "2026-02-06T21:51:27.742228Z"
+  "last_updated": "2026-02-06T22:18:12.646435Z"
 }
