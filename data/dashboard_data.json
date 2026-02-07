@@ -9,8 +9,8 @@
       "delta": -0.5227072170972024
     },
     "btc_price": {
-      "value": 67832,
-      "delta": -27.629655709545602
+      "value": 67700,
+      "delta": -27.77048725581197
     },
     "stablecoin_mcap": {
       "value": 304.62,
@@ -18,7 +18,7 @@
     },
     "usdt_dominance": {
       "value": 7.66,
-      "delta": 34.777653217725494
+      "delta": 34.82627168756047
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,9 +56,9 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.84,
-    "btc_gold": 0.13,
-    "interpretation": "Macro Driven",
+    "btc_nasdaq": 0.8,
+    "btc_gold": 0.09,
+    "interpretation": "Moderately Correlated",
     "period_days": 30
   },
   "polymarket_top5": [
@@ -66,7 +66,7 @@
       "title": "Will Jesus Christ return before GTA VI?",
       "outcome": "No 52%",
       "probability": 0.515,
-      "volume": 9141357.456132,
+      "volume": 9141920.552283,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-jesus-christ-return-before-gta-vi-665"
@@ -84,7 +84,7 @@
       "title": "Will the U.S. collect between $500b and $1t in revenue in 2025?",
       "outcome": "No 100%",
       "probability": 0.9955,
-      "volume": 1918608.553384,
+      "volume": 1918629.173384,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-between-500b-and-1t-in-revenue-in-2025"
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/will-the-us-collect-less-than-100b-in-revenue-in-2025"
     }
   ],
-  "last_updated": "2026-02-07T11:43:06.477979Z"
+  "last_updated": "2026-02-07T11:54:58.113500Z"
 }
