@@ -9,16 +9,16 @@
       "delta": -0.5227072170972024
     },
     "btc_price": {
-      "value": 68623,
-      "delta": -26.785733337600952
+      "value": 68579,
+      "delta": -26.832677186356413
     },
     "stablecoin_mcap": {
       "value": 304.58,
       "delta": -0.9846826285186594
     },
     "usdt_dominance": {
-      "value": 7.58,
-      "delta": 33.43135676738895
+      "value": 7.59,
+      "delta": 33.619107304678955
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,9 +56,9 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.7,
-    "btc_gold": -0.11,
-    "interpretation": "Moderately Correlated",
+    "btc_nasdaq": 0.84,
+    "btc_gold": -0.1,
+    "interpretation": "Macro Driven",
     "period_days": 30
   },
   "polymarket_top5": [
@@ -66,7 +66,7 @@
       "title": "Will Jesus Christ return before GTA VI?",
       "outcome": "No 52%",
       "probability": 0.515,
-      "volume": 9143468.331492,
+      "volume": 9143601.244669,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-jesus-christ-return-before-gta-vi-665"
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/will-the-us-collect-less-than-100b-in-revenue-in-2025"
     }
   ],
-  "last_updated": "2026-02-07T14:43:37.887190Z"
+  "last_updated": "2026-02-07T14:59:59.398950Z"
 }
