@@ -9,16 +9,16 @@
       "delta": -0.5227072170972024
     },
     "btc_price": {
-      "value": 70199,
-      "delta": -25.104290027632857
+      "value": 70034,
+      "delta": -25.28032946046581
     },
     "stablecoin_mcap": {
-      "value": 304.63,
-      "delta": -0.9697371452892909
+      "value": 304.65,
+      "delta": -0.9632512485174478
     },
     "usdt_dominance": {
-      "value": 7.43,
-      "delta": 30.820409632858166
+      "value": 7.45,
+      "delta": 31.1860937091976
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,9 +56,9 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.67,
-    "btc_gold": 0.02,
-    "interpretation": "Moderately Correlated",
+    "btc_nasdaq": 0.85,
+    "btc_gold": 0.11,
+    "interpretation": "Macro Driven",
     "period_days": 30
   },
   "polymarket_top5": [
@@ -66,7 +66,7 @@
       "title": "Will Jesus Christ return before GTA VI?",
       "outcome": "No 52%",
       "probability": 0.515,
-      "volume": 9153422.082406,
+      "volume": 9153925.558547,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-jesus-christ-return-before-gta-vi-665"
@@ -84,7 +84,7 @@
       "title": "Will the U.S. collect between $500b and $1t in revenue in 2025?",
       "outcome": "No 100%",
       "probability": 0.997,
-      "volume": 2056425.811678,
+      "volume": 2056554.46953,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-between-500b-and-1t-in-revenue-in-2025"
@@ -102,11 +102,11 @@
       "title": "Will the U.S. collect less than $100b in revenue in 2025?",
       "outcome": "Yes 82%",
       "probability": 0.8225,
-      "volume": 1245355.816352,
+      "volume": 1245535.813807,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-less-than-100b-in-revenue-in-2025"
     }
   ],
-  "last_updated": "2026-02-08T09:58:32.905652Z"
+  "last_updated": "2026-02-08T10:31:27.586948Z"
 }
