@@ -9,16 +9,16 @@
       "delta": -0.5227072170972024
     },
     "btc_price": {
-      "value": 68594,
-      "delta": -26.816673601553415
+      "value": 68676,
+      "delta": -26.729187337963705
     },
     "stablecoin_mcap": {
-      "value": 306.81,
-      "delta": -0.2602174415383401
+      "value": 306.78,
+      "delta": -0.27108288377716017
     },
     "usdt_dominance": {
-      "value": 7.66,
-      "delta": 34.93346507935515
+      "value": 7.65,
+      "delta": 34.76740732894866
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.75,
-    "btc_gold": -0.11,
+    "btc_nasdaq": 0.74,
+    "btc_gold": 0.01,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -66,7 +66,7 @@
       "title": "Will Jesus Christ return before GTA VI?",
       "outcome": "No 52%",
       "probability": 0.515,
-      "volume": 9216814.694899,
+      "volume": 9217185.942583,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-jesus-christ-return-before-gta-vi-665"
@@ -84,16 +84,16 @@
       "title": "Will the U.S. collect between $500b and $1t in revenue in 2025?",
       "outcome": "No 100%",
       "probability": 0.9985,
-      "volume": 2090156.461495,
+      "volume": 2092202.501495,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-between-500b-and-1t-in-revenue-in-2025"
     },
     {
       "title": "GTA VI released before June 2026?",
-      "outcome": "No 98%",
-      "probability": 0.9765,
-      "volume": 1484463.495414,
+      "outcome": "No 97%",
+      "probability": 0.971,
+      "volume": 1484586.575414,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/gta-vi-released-before-june-2026"
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/will-china-invades-taiwan-before-gta-vi-716"
     }
   ],
-  "last_updated": "2026-02-10T21:59:27.557265Z"
+  "last_updated": "2026-02-10T22:47:58.547321Z"
 }
