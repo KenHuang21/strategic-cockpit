@@ -9,16 +9,16 @@
       "delta": -0.5227072170972024
     },
     "btc_price": {
-      "value": 66971,
-      "delta": -28.548261477237567
+      "value": 67443,
+      "delta": -28.044682008769968
     },
     "stablecoin_mcap": {
-      "value": 306.03,
-      "delta": -0.5124389464141904
+      "value": 306.05,
+      "delta": -0.5069059251610785
     },
     "usdt_dominance": {
-      "value": 7.8,
-      "delta": 37.26105958446403
+      "value": 7.75,
+      "delta": 36.38043324138645
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -33,32 +33,32 @@
   "btc_etf_flows": {
     "flows": [
       {
-        "date": "2026-02-05",
+        "date": "2026-02-06",
         "flow": 150
       },
       {
-        "date": "2026-02-06",
+        "date": "2026-02-09",
         "flow": -50
       },
       {
-        "date": "2026-02-09",
+        "date": "2026-02-10",
         "flow": 300
       },
       {
-        "date": "2026-02-10",
+        "date": "2026-02-11",
         "flow": 100
       },
       {
-        "date": "2026-02-11",
+        "date": "2026-02-12",
         "flow": 200
       }
     ],
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.71,
-    "btc_gold": -0.09,
-    "interpretation": "Moderately Correlated",
+    "btc_nasdaq": 0.81,
+    "btc_gold": -0.1,
+    "interpretation": "Macro Driven",
     "period_days": 30
   },
   "polymarket_top5": [
@@ -66,7 +66,7 @@
       "title": "Will Jesus Christ return before GTA VI?",
       "outcome": "No 52%",
       "probability": 0.52,
-      "volume": 9284500.049066,
+      "volume": 9285777.842924,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-jesus-christ-return-before-gta-vi-665"
@@ -75,7 +75,7 @@
       "title": "Will bitcoin hit $1m before GTA VI?",
       "outcome": "No 52%",
       "probability": 0.515,
-      "volume": 3082792.915359,
+      "volume": 3082929.145359,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-bitcoin-hit-1m-before-gta-vi-872"
@@ -83,30 +83,30 @@
     {
       "title": "GTA VI released before June 2026?",
       "outcome": "No 97%",
-      "probability": 0.972,
-      "volume": 2715024.484565,
+      "probability": 0.9745,
+      "volume": 2812014.839726,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/gta-vi-released-before-june-2026"
     },
     {
       "title": "Will the U.S. collect between $500b and $1t in revenue in 2025?",
-      "outcome": "No 100%",
-      "probability": 0.999,
-      "volume": 2400349.055495,
+      "outcome": "No 99%",
+      "probability": 0.9925,
+      "volume": 2433181.136245,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-between-500b-and-1t-in-revenue-in-2025"
     },
     {
       "title": "Will the U.S. collect less than $100b in revenue in 2025?",
-      "outcome": "Yes 88%",
-      "probability": 0.876,
-      "volume": 1382670.646738,
+      "outcome": "Yes 87%",
+      "probability": 0.869,
+      "volume": 1388565.540243,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-less-than-100b-in-revenue-in-2025"
     }
   ],
-  "last_updated": "2026-02-11T23:58:20.608511Z"
+  "last_updated": "2026-02-12T02:31:23.994267Z"
 }
