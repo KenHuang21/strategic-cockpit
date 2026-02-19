@@ -9,16 +9,16 @@
       "delta": -0.2746430303194624
     },
     "btc_price": {
-      "value": 66794,
-      "delta": -28.73710377791292
+      "value": 67147,
+      "delta": -28.36048608221575
     },
     "stablecoin_mcap": {
-      "value": 307.1,
-      "delta": -0.16554365527548107
+      "value": 307.16,
+      "delta": -0.14691288587098092
     },
     "usdt_dominance": {
-      "value": 7.74,
-      "delta": 36.248604366049925
+      "value": 7.69,
+      "delta": 35.46823935892399
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.77,
-    "btc_gold": 0.03,
+    "btc_nasdaq": 0.79,
+    "btc_gold": -0.09,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -75,7 +75,7 @@
       "title": "GTA VI released before June 2026?",
       "outcome": "No 97%",
       "probability": 0.9675,
-      "volume": 4219757.37033,
+      "volume": 4219898.833076,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/gta-vi-released-before-june-2026"
@@ -84,7 +84,7 @@
       "title": "Will bitcoin hit $1m before GTA VI?",
       "outcome": "No 52%",
       "probability": 0.515,
-      "volume": 3146647.200567,
+      "volume": 3146651.040567,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-bitcoin-hit-1m-before-gta-vi-872"
@@ -102,11 +102,11 @@
       "title": "Will the U.S. collect less than $100b in revenue in 2025?",
       "outcome": "Yes 95%",
       "probability": 0.9455,
-      "volume": 1636625.878917,
+      "volume": 1636634.338917,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-less-than-100b-in-revenue-in-2025"
     }
   ],
-  "last_updated": "2026-02-19T05:55:46.843144Z"
+  "last_updated": "2026-02-19T06:54:49.693292Z"
 }
