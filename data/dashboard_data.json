@@ -9,8 +9,8 @@
       "delta": -0.4099767792766256
     },
     "btc_price": {
-      "value": 67614,
-      "delta": -27.862241142015808
+      "value": 67649,
+      "delta": -27.824899444142154
     },
     "stablecoin_mcap": {
       "value": 306.57,
@@ -18,7 +18,7 @@
     },
     "usdt_dominance": {
       "value": 7.61,
-      "delta": 34.06317058634784
+      "delta": 33.96549772019285
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,9 +56,9 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.67,
-    "btc_gold": 0.09,
-    "interpretation": "Moderately Correlated",
+    "btc_nasdaq": 0.85,
+    "btc_gold": -0.01,
+    "interpretation": "Macro Driven",
     "period_days": 30
   },
   "polymarket_top5": [
@@ -66,7 +66,7 @@
       "title": "Will Jesus Christ return before GTA VI?",
       "outcome": "No 52%",
       "probability": 0.515,
-      "volume": 9460104.557861,
+      "volume": 9460336.678734,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-jesus-christ-return-before-gta-vi-665"
@@ -74,8 +74,8 @@
     {
       "title": "GTA VI released before June 2026?",
       "outcome": "No 97%",
-      "probability": 0.967,
-      "volume": 5040642.565575,
+      "probability": 0.9665,
+      "volume": 5040907.629588,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/gta-vi-released-before-june-2026"
@@ -100,13 +100,13 @@
     },
     {
       "title": "Will the U.S. collect less than $100b in revenue in 2025?",
-      "outcome": "Yes 97%",
-      "probability": 0.9685,
-      "volume": 1732525.756036,
+      "outcome": "Yes 96%",
+      "probability": 0.9605,
+      "volume": 1733581.29489,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-less-than-100b-in-revenue-in-2025"
     }
   ],
-  "last_updated": "2026-02-20T20:24:23.639942Z"
+  "last_updated": "2026-02-20T20:53:11.999253Z"
 }
