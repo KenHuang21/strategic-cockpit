@@ -9,16 +9,16 @@
       "delta": -0.4099767792766256
     },
     "btc_price": {
-      "value": 68359,
-      "delta": -27.067396430133684
+      "value": 68272,
+      "delta": -27.16021722199106
     },
     "stablecoin_mcap": {
       "value": 306.7,
       "delta": -0.2944368633005175
     },
     "usdt_dominance": {
-      "value": 7.55,
-      "delta": 32.887126856045576
+      "value": 7.56,
+      "delta": 33.05313034039636
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.71,
-    "btc_gold": -0.03,
+    "btc_nasdaq": 0.7,
+    "btc_gold": -0.13,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -75,7 +75,7 @@
       "title": "GTA VI released before June 2026?",
       "outcome": "No 97%",
       "probability": 0.9685,
-      "volume": 5321489.484422,
+      "volume": 5321773.137227,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/gta-vi-released-before-june-2026"
@@ -93,7 +93,7 @@
       "title": "Will the U.S. collect between $500b and $1t in revenue in 2025?",
       "outcome": "No 100%",
       "probability": 0.9985,
-      "volume": 2595052.296793,
+      "volume": 2595282.296793,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-between-500b-and-1t-in-revenue-in-2025"
@@ -101,12 +101,12 @@
     {
       "title": "Will the U.S. collect less than $100b in revenue in 2025?",
       "outcome": "Yes 94%",
-      "probability": 0.942,
-      "volume": 1751986.302758,
+      "probability": 0.939,
+      "volume": 1754040.360003,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-less-than-100b-in-revenue-in-2025"
     }
   ],
-  "last_updated": "2026-02-21T20:47:22.346801Z"
+  "last_updated": "2026-02-21T21:17:57.645245Z"
 }
