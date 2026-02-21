@@ -9,16 +9,16 @@
       "delta": -0.4099767792766256
     },
     "btc_price": {
-      "value": 68138,
-      "delta": -27.30318257956449
+      "value": 68173,
+      "delta": -27.265840881690835
     },
     "stablecoin_mcap": {
-      "value": 306.69,
-      "delta": -0.2992716778203718
+      "value": 306.72,
+      "delta": -0.2886472390577319
     },
     "usdt_dominance": {
       "value": 7.56,
-      "delta": 33.15219597378986
+      "delta": 33.07948619117804
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.8,
-    "btc_gold": -0.1,
+    "btc_nasdaq": 0.76,
+    "btc_gold": 0.12,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -75,7 +75,7 @@
       "title": "GTA VI released before June 2026?",
       "outcome": "No 97%",
       "probability": 0.967,
-      "volume": 5061552.726124,
+      "volume": 5061631.007499,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/gta-vi-released-before-june-2026"
@@ -100,13 +100,13 @@
     },
     {
       "title": "Will the U.S. collect less than $100b in revenue in 2025?",
-      "outcome": "Yes 94%",
-      "probability": 0.944,
-      "volume": 1741341.386,
+      "outcome": "Yes 95%",
+      "probability": 0.951,
+      "volume": 1742377.536,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-less-than-100b-in-revenue-in-2025"
     }
   ],
-  "last_updated": "2026-02-21T09:59:08.033950Z"
+  "last_updated": "2026-02-21T10:31:37.949431Z"
 }
