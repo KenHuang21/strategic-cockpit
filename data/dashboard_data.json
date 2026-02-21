@@ -9,16 +9,16 @@
       "delta": -0.4099767792766256
     },
     "btc_price": {
-      "value": 67960,
-      "delta": -27.493091785893377
+      "value": 68033,
+      "delta": -27.41520767318546
     },
     "stablecoin_mcap": {
       "value": 306.74,
       "delta": -0.2842679686933144
     },
     "usdt_dominance": {
-      "value": 7.59,
-      "delta": 33.57957498622852
+      "value": 7.58,
+      "delta": 33.37523190493713
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,9 +56,9 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.81,
-    "btc_gold": -0.04,
-    "interpretation": "Macro Driven",
+    "btc_nasdaq": 0.75,
+    "btc_gold": 0.1,
+    "interpretation": "Moderately Correlated",
     "period_days": 30
   },
   "polymarket_top5": [
@@ -66,7 +66,7 @@
       "title": "Will Jesus Christ return before GTA VI?",
       "outcome": "No 52%",
       "probability": 0.515,
-      "volume": 9466260.016321,
+      "volume": 9466286.939395,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-jesus-christ-return-before-gta-vi-665"
@@ -75,7 +75,7 @@
       "title": "GTA VI released before June 2026?",
       "outcome": "No 97%",
       "probability": 0.967,
-      "volume": 5061046.092939,
+      "volume": 5061071.909595,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/gta-vi-released-before-june-2026"
@@ -92,7 +92,7 @@
     {
       "title": "Will the U.S. collect between $500b and $1t in revenue in 2025?",
       "outcome": "No 100%",
-      "probability": 0.999,
+      "probability": 0.9995,
       "volume": 2593014.126793,
       "volume_24h": 0,
       "flipped": false,
@@ -102,11 +102,11 @@
       "title": "Will the U.S. collect less than $100b in revenue in 2025?",
       "outcome": "Yes 94%",
       "probability": 0.945,
-      "volume": 1741065.929555,
+      "volume": 1741227.762888,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-less-than-100b-in-revenue-in-2025"
     }
   ],
-  "last_updated": "2026-02-21T08:37:25.766068Z"
+  "last_updated": "2026-02-21T09:01:45.203320Z"
 }
