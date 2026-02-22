@@ -9,8 +9,8 @@
       "delta": -0.4099767792766256
     },
     "btc_price": {
-      "value": 67547,
-      "delta": -27.933723820802527
+      "value": 67610,
+      "delta": -27.866508764629945
     },
     "stablecoin_mcap": {
       "value": 307.61,
@@ -18,7 +18,7 @@
     },
     "usdt_dominance": {
       "value": 7.69,
-      "delta": 35.45307947829279
+      "delta": 35.32180768135413
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -57,7 +57,7 @@
   },
   "correlation_radar": {
     "btc_nasdaq": 0.69,
-    "btc_gold": 0.13,
+    "btc_gold": 0.15,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -66,7 +66,7 @@
       "title": "Will Jesus Christ return before GTA VI?",
       "outcome": "No 52%",
       "probability": 0.515,
-      "volume": 9487607.352682,
+      "volume": 9487721.57729,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-jesus-christ-return-before-gta-vi-665"
@@ -75,7 +75,7 @@
       "title": "GTA VI released before June 2026?",
       "outcome": "No 97%",
       "probability": 0.9685,
-      "volume": 5338102.307629,
+      "volume": 5338522.276915,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/gta-vi-released-before-june-2026"
@@ -83,8 +83,8 @@
     {
       "title": "Will bitcoin hit $1m before GTA VI?",
       "outcome": "No 52%",
-      "probability": 0.515,
-      "volume": 3168612.975025,
+      "probability": 0.5155,
+      "volume": 3168622.646203,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-bitcoin-hit-1m-before-gta-vi-872"
@@ -101,12 +101,12 @@
     {
       "title": "Will the U.S. collect less than $100b in revenue in 2025?",
       "outcome": "Yes 96%",
-      "probability": 0.9585,
-      "volume": 1771903.26149,
+      "probability": 0.9615,
+      "volume": 1771915.88149,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-less-than-100b-in-revenue-in-2025"
     }
   ],
-  "last_updated": "2026-02-22T16:28:27.696491Z"
+  "last_updated": "2026-02-22T16:56:35.272421Z"
 }
