@@ -9,16 +9,16 @@
       "delta": -0.4099767792766256
     },
     "btc_price": {
-      "value": 63822,
-      "delta": -31.90794738021317
+      "value": 64044,
+      "delta": -31.67109432512883
     },
     "stablecoin_mcap": {
-      "value": 307.53,
-      "delta": -0.027556274171043657
+      "value": 307.46,
+      "delta": -0.04730780765183786
     },
     "usdt_dominance": {
-      "value": 8.04,
-      "delta": 41.60533848486291
+      "value": 8.06,
+      "delta": 41.92581136151475
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.66,
-    "btc_gold": 0.04,
+    "btc_nasdaq": 0.78,
+    "btc_gold": -0.14,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -66,7 +66,7 @@
       "title": "Will Jesus Christ return before GTA VI?",
       "outcome": "No 52%",
       "probability": 0.515,
-      "volume": 9509279.89171,
+      "volume": 9509586.306309,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-jesus-christ-return-before-gta-vi-665"
@@ -75,7 +75,7 @@
       "title": "GTA VI released before June 2026?",
       "outcome": "No 97%",
       "probability": 0.9695,
-      "volume": 6445395.790937,
+      "volume": 6449525.770661,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/gta-vi-released-before-june-2026"
@@ -83,17 +83,17 @@
     {
       "title": "Will bitcoin hit $1m before GTA VI?",
       "outcome": "No 51%",
-      "probability": 0.513,
-      "volume": 3180394.597226,
+      "probability": 0.5125,
+      "volume": 3180399.757226,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-bitcoin-hit-1m-before-gta-vi-872"
     },
     {
       "title": "Will the U.S. collect between $500b and $1t in revenue in 2025?",
-      "outcome": "No 100%",
-      "probability": 0.9965,
-      "volume": 2630339.397854,
+      "outcome": "No 99%",
+      "probability": 0.994,
+      "volume": 2631479.397854,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-between-500b-and-1t-in-revenue-in-2025"
@@ -101,12 +101,12 @@
     {
       "title": "Will the U.S. collect less than $100b in revenue in 2025?",
       "outcome": "Yes 97%",
-      "probability": 0.9685,
-      "volume": 1832475.597219,
+      "probability": 0.9655,
+      "volume": 1833043.151294,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-less-than-100b-in-revenue-in-2025"
     }
   ],
-  "last_updated": "2026-02-24T15:37:49.051199Z"
+  "last_updated": "2026-02-24T16:43:48.142286Z"
 }
