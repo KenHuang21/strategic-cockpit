@@ -9,16 +9,16 @@
       "delta": -0.4099767792766256
     },
     "btc_price": {
-      "value": 65202,
-      "delta": -30.43561757833755
+      "value": 65395,
+      "delta": -30.22970478720567
     },
     "stablecoin_mcap": {
-      "value": 307.87,
-      "delta": 0.08314244620877709
+      "value": 307.85,
+      "delta": 0.07709959485300523
     },
     "usdt_dominance": {
-      "value": 7.88,
-      "delta": 38.729641687237844
+      "value": 7.86,
+      "delta": 38.40994306479515
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -66,7 +66,7 @@
       "title": "Will Jesus Christ return before GTA VI?",
       "outcome": "No 52%",
       "probability": 0.515,
-      "volume": 9520466.358302,
+      "volume": 9520729.546694,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-jesus-christ-return-before-gta-vi-665"
@@ -74,8 +74,8 @@
     {
       "title": "GTA VI released before June 2026?",
       "outcome": "No 97%",
-      "probability": 0.9685,
-      "volume": 6471045.07284,
+      "probability": 0.9665,
+      "volume": 6479485.506769,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/gta-vi-released-before-june-2026"
@@ -83,8 +83,8 @@
     {
       "title": "Will bitcoin hit $1m before GTA VI?",
       "outcome": "No 51%",
-      "probability": 0.512,
-      "volume": 3352221.174479,
+      "probability": 0.513,
+      "volume": 3352284.300147,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-bitcoin-hit-1m-before-gta-vi-872"
@@ -101,12 +101,12 @@
     {
       "title": "Will the U.S. collect less than $100b in revenue in 2025?",
       "outcome": "Yes 97%",
-      "probability": 0.973,
-      "volume": 1869979.846657,
+      "probability": 0.9695,
+      "volume": 1870253.755407,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-less-than-100b-in-revenue-in-2025"
     }
   ],
-  "last_updated": "2026-02-25T11:22:15.764462Z"
+  "last_updated": "2026-02-25T11:57:56.959994Z"
 }
