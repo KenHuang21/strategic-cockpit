@@ -9,8 +9,8 @@
       "delta": -0.4039231276597715
     },
     "btc_price": {
-      "value": 65344,
-      "delta": -30.284116975535852
+      "value": 65398,
+      "delta": -30.22650407024507
     },
     "stablecoin_mcap": {
       "value": 307.89,
@@ -18,7 +18,7 @@
     },
     "usdt_dominance": {
       "value": 7.88,
-      "delta": 38.75190298261874
+      "delta": 38.67492427657398
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.69,
-    "btc_gold": -0.02,
+    "btc_nasdaq": 0.72,
+    "btc_gold": 0.05,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -66,7 +66,7 @@
       "title": "Will Jesus Christ return before GTA VI?",
       "outcome": "No 52%",
       "probability": 0.515,
-      "volume": 9561164.078619,
+      "volume": 9563346.680916,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-jesus-christ-return-before-gta-vi-665"
@@ -75,7 +75,7 @@
       "title": "GTA VI released before June 2026?",
       "outcome": "No 98%",
       "probability": 0.9775,
-      "volume": 6936996.18686,
+      "volume": 6937131.18686,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/gta-vi-released-before-june-2026"
@@ -83,7 +83,7 @@
     {
       "title": "Will bitcoin hit $1m before GTA VI?",
       "outcome": "No 51%",
-      "probability": 0.5145,
+      "probability": 0.5135,
       "volume": 3379540.360148,
       "volume_24h": 0,
       "flipped": false,
@@ -100,13 +100,13 @@
     },
     {
       "title": "Will the U.S. collect less than $100b in revenue in 2025?",
-      "outcome": "Yes 98%",
-      "probability": 0.985,
-      "volume": 2057544.743753,
+      "outcome": "Yes 99%",
+      "probability": 0.988,
+      "volume": 2057581.323753,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-the-us-collect-less-than-100b-in-revenue-in-2025"
     }
   ],
-  "last_updated": "2026-02-27T19:29:24.852083Z"
+  "last_updated": "2026-02-27T19:55:12.053963Z"
 }
