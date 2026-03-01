@@ -9,16 +9,16 @@
       "delta": -0.4039231276597715
     },
     "btc_price": {
-      "value": 65686,
-      "delta": -29.919235242027547
+      "value": 66068,
+      "delta": -29.511677282377917
     },
     "stablecoin_mcap": {
-      "value": 308.43,
-      "delta": 0.2679291324983442
+      "value": 308.51,
+      "delta": 0.29138388792987635
     },
     "usdt_dominance": {
-      "value": 7.85,
-      "delta": 38.239727042555856
+      "value": 7.8,
+      "delta": 37.263692338014046
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,9 +56,9 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.82,
-    "btc_gold": -0.02,
-    "interpretation": "Macro Driven",
+    "btc_nasdaq": 0.77,
+    "btc_gold": 0.09,
+    "interpretation": "Moderately Correlated",
     "period_days": 30
   },
   "polymarket_top5": [
@@ -66,7 +66,7 @@
       "title": "Will Jesus Christ return before GTA VI?",
       "outcome": "No 52%",
       "probability": 0.525,
-      "volume": 9690078.976231,
+      "volume": 9692239.408682,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-jesus-christ-return-before-gta-vi-665"
@@ -74,8 +74,8 @@
     {
       "title": "GTA VI released before June 2026?",
       "outcome": "No 98%",
-      "probability": 0.9785,
-      "volume": 7539897.130626,
+      "probability": 0.978,
+      "volume": 7540935.789946,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/gta-vi-released-before-june-2026"
@@ -102,11 +102,11 @@
       "title": "New Playboi Carti Album before GTA VI?",
       "outcome": "No 56%",
       "probability": 0.555,
-      "volume": 677210.535654,
+      "volume": 677232.274783,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/new-playboi-carti-album-before-gta-vi-421"
     }
   ],
-  "last_updated": "2026-03-01T21:54:21.263944Z"
+  "last_updated": "2026-03-01T22:18:25.574719Z"
 }
