@@ -9,8 +9,8 @@
       "delta": -0.4039231276597715
     },
     "btc_price": {
-      "value": 65754,
-      "delta": -29.8466856575873
+      "value": 65699,
+      "delta": -29.90536546853162
     },
     "stablecoin_mcap": {
       "value": 308.41,
@@ -18,7 +18,7 @@
     },
     "usdt_dominance": {
       "value": 7.84,
-      "delta": 38.04766364151758
+      "delta": 37.96525799914059
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.7,
-    "btc_gold": 0.03,
+    "btc_nasdaq": 0.66,
+    "btc_gold": 0.08,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -74,8 +74,8 @@
     {
       "title": "GTA VI released before June 2026?",
       "outcome": "No 98%",
-      "probability": 0.9775,
-      "volume": 7541524.504793,
+      "probability": 0.978,
+      "volume": 7541915.893443,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/gta-vi-released-before-june-2026"
@@ -83,8 +83,8 @@
     {
       "title": "Will bitcoin hit $1m before GTA VI?",
       "outcome": "No 51%",
-      "probability": 0.5115,
-      "volume": 3393338.157857,
+      "probability": 0.511,
+      "volume": 3393738.098517,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-bitcoin-hit-1m-before-gta-vi-872"
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/new-playboi-carti-album-before-gta-vi-421"
     }
   ],
-  "last_updated": "2026-03-01T23:44:33.609653Z"
+  "last_updated": "2026-03-01T23:57:29.097553Z"
 }
