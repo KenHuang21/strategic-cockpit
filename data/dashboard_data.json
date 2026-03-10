@@ -9,16 +9,16 @@
       "delta": -0.17657989766015308
     },
     "btc_price": {
-      "value": 69512,
-      "delta": -25.837254211610066
+      "value": 69704,
+      "delta": -25.632408326131724
     },
     "stablecoin_mcap": {
-      "value": 313.16,
-      "delta": 1.8036866688528959
+      "value": 313.18,
+      "delta": 1.812063003956713
     },
     "usdt_dominance": {
-      "value": 7.51,
-      "delta": 32.1319843763165
+      "value": 7.5,
+      "delta": 32.00507652435362
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,9 +56,9 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.83,
-    "btc_gold": -0.11,
-    "interpretation": "Macro Driven",
+    "btc_nasdaq": 0.73,
+    "btc_gold": 0.03,
+    "interpretation": "Moderately Correlated",
     "period_days": 30
   },
   "polymarket_top5": [
@@ -66,7 +66,7 @@
       "title": "GTA VI released before June 2026?",
       "outcome": "No 98%",
       "probability": 0.9805,
-      "volume": 10363155.724274982,
+      "volume": 10363247.644274982,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/gta-vi-released-before-june-2026"
@@ -75,7 +75,7 @@
       "title": "Will Jesus Christ return before GTA VI?",
       "outcome": "No 52%",
       "probability": 0.515,
-      "volume": 9941653.779401116,
+      "volume": 9941897.511085117,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-jesus-christ-return-before-gta-vi-665"
@@ -84,7 +84,7 @@
       "title": "Will bitcoin hit $1m before GTA VI?",
       "outcome": "No 51%",
       "probability": 0.5105,
-      "volume": 3518196.951904689,
+      "volume": 3518286.313535689,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-bitcoin-hit-1m-before-gta-vi-872"
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/new-playboi-carti-album-before-gta-vi-421"
     }
   ],
-  "last_updated": "2026-03-10T22:22:49.655562Z"
+  "last_updated": "2026-03-10T22:52:51.374365Z"
 }
