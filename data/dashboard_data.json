@@ -9,16 +9,16 @@
       "delta": -0.17657989766015308
     },
     "btc_price": {
-      "value": 70404,
-      "delta": -24.88557436865858
+      "value": 70344,
+      "delta": -24.94958870787056
     },
     "stablecoin_mcap": {
-      "value": 313.47,
-      "delta": 1.9047579281734763
+      "value": 313.56,
+      "delta": 1.9350762005957403
     },
     "usdt_dominance": {
-      "value": 7.43,
-      "delta": 30.870587457163662
+      "value": 7.44,
+      "delta": 30.91099811120549
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.72,
-    "btc_gold": -0.11,
+    "btc_nasdaq": 0.79,
+    "btc_gold": -0.12,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -65,8 +65,8 @@
     {
       "title": "GTA VI released before June 2026?",
       "outcome": "No 98%",
-      "probability": 0.9805,
-      "volume": 10501087.118686995,
+      "probability": 0.9815,
+      "volume": 10502757.194741994,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/gta-vi-released-before-june-2026"
@@ -75,7 +75,7 @@
       "title": "Will Jesus Christ return before GTA VI?",
       "outcome": "No 52%",
       "probability": 0.515,
-      "volume": 9956368.039576145,
+      "volume": 9958309.670837145,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-jesus-christ-return-before-gta-vi-665"
@@ -84,7 +84,7 @@
       "title": "Will bitcoin hit $1m before GTA VI?",
       "outcome": "No 51%",
       "probability": 0.5115,
-      "volume": 3524242.3638566905,
+      "volume": 3524424.53385669,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-bitcoin-hit-1m-before-gta-vi-872"
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/new-playboi-carti-album-before-gta-vi-421"
     }
   ],
-  "last_updated": "2026-03-11T14:30:37.725803Z"
+  "last_updated": "2026-03-11T15:29:56.105218Z"
 }
