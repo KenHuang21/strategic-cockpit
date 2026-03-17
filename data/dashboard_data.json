@@ -9,16 +9,16 @@
       "delta": 0.08619677078345335
     },
     "btc_price": {
-      "value": 74259,
-      "delta": -20.77265307428864
+      "value": 74353,
+      "delta": -20.672363942856535
     },
     "stablecoin_mcap": {
       "value": 315.38,
-      "delta": 2.5243215709986875
+      "delta": 2.5257465638516177
     },
     "usdt_dominance": {
-      "value": 7.03,
-      "delta": 23.830695552973737
+      "value": 7.02,
+      "delta": 23.594992702242934
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,17 +56,17 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.82,
-    "btc_gold": 0.07,
-    "interpretation": "Macro Driven",
+    "btc_nasdaq": 0.77,
+    "btc_gold": -0.12,
+    "interpretation": "Moderately Correlated",
     "period_days": 30
   },
   "polymarket_top5": [
     {
       "title": "GTA VI released before June 2026?",
       "outcome": "No 97%",
-      "probability": 0.971,
-      "volume": 12445198.294497006,
+      "probability": 0.97,
+      "volume": 12453393.154628003,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/gta-vi-released-before-june-2026"
@@ -75,16 +75,16 @@
       "title": "Will Jesus Christ return before GTA VI?",
       "outcome": "No 52%",
       "probability": 0.515,
-      "volume": 10064522.30173216,
+      "volume": 10064582.30173216,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-jesus-christ-return-before-gta-vi-665"
     },
     {
       "title": "Will bitcoin hit $1m before GTA VI?",
-      "outcome": "No 52%",
-      "probability": 0.515,
-      "volume": 3662324.2147056633,
+      "outcome": "No 51%",
+      "probability": 0.514,
+      "volume": 3662350.683143663,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-bitcoin-hit-1m-before-gta-vi-872"
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/new-playboi-carti-album-before-gta-vi-421"
     }
   ],
-  "last_updated": "2026-03-17T06:43:01.409389Z"
+  "last_updated": "2026-03-17T07:41:34.758906Z"
 }
