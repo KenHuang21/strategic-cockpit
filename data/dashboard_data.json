@@ -9,16 +9,16 @@
       "delta": 0.23068629134027266
     },
     "btc_price": {
-      "value": 68810,
-      "delta": -26.586221980390274
+      "value": 68663,
+      "delta": -26.743057111459635
     },
     "stablecoin_mcap": {
       "value": 314.74,
       "delta": 2.316671892761885
     },
     "usdt_dominance": {
-      "value": 7.53,
-      "delta": 32.638055636614595
+      "value": 7.54,
+      "delta": 32.703605495641995
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,9 +56,9 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.84,
-    "btc_gold": -0.05,
-    "interpretation": "Macro Driven",
+    "btc_nasdaq": 0.72,
+    "btc_gold": -0.13,
+    "interpretation": "Moderately Correlated",
     "period_days": 30
   },
   "polymarket_top5": [
@@ -66,7 +66,7 @@
       "title": "GTA VI released before June 2026?",
       "outcome": "No 97%",
       "probability": 0.9735,
-      "volume": 12784893.34082398,
+      "volume": 12784903.60774698,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/gta-vi-released-before-june-2026"
@@ -75,7 +75,7 @@
       "title": "Will Jesus Christ return before GTA VI?",
       "outcome": "No 52%",
       "probability": 0.515,
-      "volume": 10093935.96619212,
+      "volume": 10096487.57849712,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-jesus-christ-return-before-gta-vi-665"
@@ -83,7 +83,7 @@
     {
       "title": "Will bitcoin hit $1m before GTA VI?",
       "outcome": "No 51%",
-      "probability": 0.512,
+      "probability": 0.5115,
       "volume": 3710629.0987946796,
       "volume_24h": 0,
       "flipped": false,
@@ -102,11 +102,11 @@
       "title": "New Playboi Carti Album before GTA VI?",
       "outcome": "Yes 70%",
       "probability": 0.705,
-      "volume": 706597.9480379986,
+      "volume": 706626.9480379986,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/new-playboi-carti-album-before-gta-vi-421"
     }
   ],
-  "last_updated": "2026-03-22T13:31:35.167674Z"
+  "last_updated": "2026-03-22T14:04:03.286729Z"
 }
