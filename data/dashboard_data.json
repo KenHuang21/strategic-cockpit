@@ -9,16 +9,16 @@
       "delta": 0.23068629134027266
     },
     "btc_price": {
-      "value": 68596,
-      "delta": -26.81453979024635
+      "value": 68313,
+      "delta": -27.116474090196203
     },
     "stablecoin_mcap": {
-      "value": 314.86,
-      "delta": 2.3563798893185592
+      "value": 314.88,
+      "delta": 2.363215329026019
     },
     "usdt_dominance": {
-      "value": 7.56,
-      "delta": 33.067657988734474
+      "value": 7.58,
+      "delta": 33.45428662493731
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.76,
-    "btc_gold": -0.08,
+    "btc_nasdaq": 0.74,
+    "btc_gold": -0.06,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -66,7 +66,7 @@
       "title": "GTA VI released before June 2026?",
       "outcome": "No 97%",
       "probability": 0.9735,
-      "volume": 12786590.857243981,
+      "volume": 12788275.174012981,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/gta-vi-released-before-june-2026"
@@ -100,13 +100,13 @@
     },
     {
       "title": "New Playboi Carti Album before GTA VI?",
-      "outcome": "Yes 71%",
-      "probability": 0.71,
-      "volume": 706728.4413439977,
+      "outcome": "Yes 72%",
+      "probability": 0.715,
+      "volume": 706758.1413439977,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/new-playboi-carti-album-before-gta-vi-421"
     }
   ],
-  "last_updated": "2026-03-22T19:02:37.009795Z"
+  "last_updated": "2026-03-22T19:37:04.568686Z"
 }
