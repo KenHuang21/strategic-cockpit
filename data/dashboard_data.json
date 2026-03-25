@@ -9,16 +9,16 @@
       "delta": 0.23068629134027266
     },
     "btc_price": {
-      "value": 70706,
-      "delta": -24.563368861291597
+      "value": 70532,
+      "delta": -24.74901044500635
     },
     "stablecoin_mcap": {
       "value": 314.38,
       "delta": 2.199414927986823
     },
     "usdt_dominance": {
-      "value": 7.37,
-      "delta": 29.723861742804736
+      "value": 7.36,
+      "delta": 29.646223628589258
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -33,40 +33,40 @@
   "btc_etf_flows": {
     "flows": [
       {
-        "date": "2026-03-18",
+        "date": "2026-03-19",
         "flow": 150
       },
       {
-        "date": "2026-03-19",
+        "date": "2026-03-20",
         "flow": -50
       },
       {
-        "date": "2026-03-20",
+        "date": "2026-03-23",
         "flow": 300
       },
       {
-        "date": "2026-03-23",
+        "date": "2026-03-24",
         "flow": 100
       },
       {
-        "date": "2026-03-24",
+        "date": "2026-03-25",
         "flow": 200
       }
     ],
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.81,
-    "btc_gold": -0.09,
-    "interpretation": "Macro Driven",
+    "btc_nasdaq": 0.78,
+    "btc_gold": 0.13,
+    "interpretation": "Moderately Correlated",
     "period_days": 30
   },
   "polymarket_top5": [
     {
       "title": "GTA VI released before June 2026?",
       "outcome": "No 98%",
-      "probability": 0.9755,
-      "volume": 12833782.714510944,
+      "probability": 0.976,
+      "volume": 12833901.392760944,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/gta-vi-released-before-june-2026"
@@ -102,11 +102,11 @@
       "title": "New Playboi Carti Album before GTA VI?",
       "outcome": "Yes 64%",
       "probability": 0.635,
-      "volume": 707974.8599399991,
+      "volume": 708015.4174399993,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/new-playboi-carti-album-before-gta-vi-421"
     }
   ],
-  "last_updated": "2026-03-24T23:30:35.322471Z"
+  "last_updated": "2026-03-25T00:00:29.617539Z"
 }
