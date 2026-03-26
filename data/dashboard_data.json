@@ -9,16 +9,16 @@
       "delta": 0.24908818754875553
     },
     "btc_price": {
-      "value": 69137,
-      "delta": -26.23734383168496
+      "value": 69084,
+      "delta": -26.293889831322215
     },
     "stablecoin_mcap": {
-      "value": 314.12,
-      "delta": 2.1149160102880087
+      "value": 314.11,
+      "delta": 2.11261633095387
     },
     "usdt_dominance": {
-      "value": 7.53,
-      "delta": 32.499727333712805
+      "value": 7.55,
+      "delta": 32.865702933365505
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.67,
-    "btc_gold": 0.07,
+    "btc_nasdaq": 0.74,
+    "btc_gold": 0.08,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -65,8 +65,8 @@
     {
       "title": "GTA VI released before June 2026?",
       "outcome": "No 98%",
-      "probability": 0.981,
-      "volume": 12876358.623374974,
+      "probability": 0.9805,
+      "volume": 12877179.873374972,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/gta-vi-released-before-june-2026"
@@ -75,7 +75,7 @@
       "title": "Will Jesus Christ return before GTA VI?",
       "outcome": "No 52%",
       "probability": 0.515,
-      "volume": 10270043.560203098,
+      "volume": 10271491.297123095,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-jesus-christ-return-before-gta-vi-665"
@@ -83,8 +83,8 @@
     {
       "title": "Will bitcoin hit $1m before GTA VI?",
       "outcome": "No 52%",
-      "probability": 0.5155,
-      "volume": 3769189.509423682,
+      "probability": 0.516,
+      "volume": 3769291.221220682,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-bitcoin-hit-1m-before-gta-vi-872"
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/new-playboi-carti-album-before-gta-vi-421"
     }
   ],
-  "last_updated": "2026-03-26T20:50:17.031160Z"
+  "last_updated": "2026-03-26T21:26:36.398495Z"
 }
