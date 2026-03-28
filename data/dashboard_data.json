@@ -9,16 +9,16 @@
       "delta": 0.24908818754875553
     },
     "btc_price": {
-      "value": 66484,
-      "delta": -29.067844530508168
+      "value": 66357,
+      "delta": -29.203341548506867
     },
     "stablecoin_mcap": {
-      "value": 313.68,
-      "delta": 1.9730430938367471
+      "value": 313.72,
+      "delta": 1.9876755443346796
     },
     "usdt_dominance": {
-      "value": 7.74,
-      "delta": 36.342922809015
+      "value": 7.75,
+      "delta": 36.4859988062774
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.72,
-    "btc_gold": 0.09,
+    "btc_nasdaq": 0.73,
+    "btc_gold": 0.08,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -65,8 +65,8 @@
     {
       "title": "GTA VI released before June 2026?",
       "outcome": "No 98%",
-      "probability": 0.9795,
-      "volume": 12928963.390908996,
+      "probability": 0.9785,
+      "volume": 12929887.253620999,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/gta-vi-released-before-june-2026"
@@ -75,7 +75,7 @@
       "title": "Will Jesus Christ return before GTA VI?",
       "outcome": "No 52%",
       "probability": 0.515,
-      "volume": 10333856.716907071,
+      "volume": 10333956.53075207,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-jesus-christ-return-before-gta-vi-665"
@@ -84,7 +84,7 @@
       "title": "Will bitcoin hit $1m before GTA VI?",
       "outcome": "No 51%",
       "probability": 0.5105,
-      "volume": 3795787.288140686,
+      "volume": 3795814.9081406863,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-bitcoin-hit-1m-before-gta-vi-872"
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/new-playboi-carti-album-before-gta-vi-421"
     }
   ],
-  "last_updated": "2026-03-28T08:05:50.404783Z"
+  "last_updated": "2026-03-28T08:57:22.137831Z"
 }
