@@ -9,8 +9,8 @@
       "delta": 0.24908818754875553
     },
     "btc_price": {
-      "value": 66717,
-      "delta": -28.819255513234964
+      "value": 66690,
+      "delta": -28.848061965880355
     },
     "stablecoin_mcap": {
       "value": 314.48,
@@ -18,7 +18,7 @@
     },
     "usdt_dominance": {
       "value": 7.72,
-      "delta": 35.99737629241928
+      "delta": 35.97017758461811
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.67,
-    "btc_gold": -0.1,
+    "btc_nasdaq": 0.8,
+    "btc_gold": 0.04,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -65,7 +65,7 @@
     {
       "title": "GTA VI released before June 2026?",
       "outcome": "No 98%",
-      "probability": 0.9775,
+      "probability": 0.978,
       "volume": 12936634.567005996,
       "volume_24h": 0,
       "flipped": false,
@@ -75,7 +75,7 @@
       "title": "Will Jesus Christ return before GTA VI?",
       "outcome": "No 52%",
       "probability": 0.515,
-      "volume": 10341374.118060056,
+      "volume": 10341634.958103057,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-jesus-christ-return-before-gta-vi-665"
@@ -93,20 +93,20 @@
       "title": "Will China invades Taiwan before GTA VI?",
       "outcome": "Yes 52%",
       "probability": 0.515,
-      "volume": 1516861.519092042,
+      "volume": 1516880.749092042,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-china-invades-taiwan-before-gta-vi-716"
     },
     {
       "title": "New Playboi Carti Album before GTA VI?",
-      "outcome": "Yes 65%",
-      "probability": 0.65,
-      "volume": 710907.2949199958,
+      "outcome": "Yes 64%",
+      "probability": 0.645,
+      "volume": 710928.5049199958,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/new-playboi-carti-album-before-gta-vi-421"
     }
   ],
-  "last_updated": "2026-03-28T22:22:54.237259Z"
+  "last_updated": "2026-03-28T22:55:06.023071Z"
 }
