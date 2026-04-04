@@ -9,8 +9,8 @@
       "delta": 0.5229029819504829
     },
     "btc_price": {
-      "value": 67258,
-      "delta": -28.24205955467358
+      "value": 67345,
+      "delta": -28.149238762816204
     },
     "stablecoin_mcap": {
       "value": 315.55,
@@ -18,7 +18,7 @@
     },
     "usdt_dominance": {
       "value": 7.68,
-      "delta": 35.27854924705001
+      "delta": 35.13254755608807
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -57,7 +57,7 @@
   },
   "correlation_radar": {
     "btc_nasdaq": 0.78,
-    "btc_gold": 0.09,
+    "btc_gold": 0.14,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -75,7 +75,7 @@
       "title": "Will Jesus Christ return before GTA VI?",
       "outcome": "No 52%",
       "probability": 0.515,
-      "volume": 10627871.135159004,
+      "volume": 10627909.596696004,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-jesus-christ-return-before-gta-vi-665"
@@ -84,7 +84,7 @@
       "title": "Will bitcoin hit $1m before GTA VI?",
       "outcome": "No 51%",
       "probability": 0.514,
-      "volume": 3855962.866155576,
+      "volume": 3856011.216155576,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-bitcoin-hit-1m-before-gta-vi-872"
@@ -93,7 +93,7 @@
       "title": "Will China invades Taiwan before GTA VI?",
       "outcome": "No 50%",
       "probability": 0.505,
-      "volume": 1639763.0073500397,
+      "volume": 1640011.1175450399,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-china-invades-taiwan-before-gta-vi-716"
@@ -101,12 +101,12 @@
     {
       "title": "New Playboi Carti Album before GTA VI?",
       "outcome": "Yes 60%",
-      "probability": 0.605,
+      "probability": 0.595,
       "volume": 715730.227834996,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/new-playboi-carti-album-before-gta-vi-421"
     }
   ],
-  "last_updated": "2026-04-04T21:26:24.626902Z"
+  "last_updated": "2026-04-04T21:53:42.176057Z"
 }
