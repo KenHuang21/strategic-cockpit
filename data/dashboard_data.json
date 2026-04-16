@@ -1,24 +1,24 @@
 {
   "metrics": {
     "us_10y_yield": {
-      "value": 4.26,
-      "delta": 1.6706443914081
+      "value": 4.29,
+      "delta": 2.3866348448687265
     },
     "fed_net_liquidity": {
       "value": 6693.87,
       "delta": 0.8018980155467441
     },
     "btc_price": {
-      "value": 75206,
-      "delta": -19.762293420392833
+      "value": 75166,
+      "delta": -19.804969646534158
     },
     "stablecoin_mcap": {
-      "value": 318.76,
-      "delta": 3.6233260572692614
+      "value": 318.89,
+      "delta": 3.666638020793436
     },
     "usdt_dominance": {
       "value": 7.04,
-      "delta": 24.0080900333597
+      "delta": 23.888178035687226
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,9 +56,9 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.83,
-    "btc_gold": 0.09,
-    "interpretation": "Macro Driven",
+    "btc_nasdaq": 0.68,
+    "btc_gold": -0.03,
+    "interpretation": "Moderately Correlated",
     "period_days": 30
   },
   "polymarket_top5": [
@@ -66,7 +66,7 @@
       "title": "GTA VI released before June 2026?",
       "outcome": "No 99%",
       "probability": 0.9865,
-      "volume": 13599950.278412048,
+      "volume": 13600379.578412049,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/gta-vi-released-before-june-2026"
@@ -75,7 +75,7 @@
       "title": "Will Jesus Christ return before GTA VI?",
       "outcome": "No 52%",
       "probability": 0.515,
-      "volume": 11018121.89166099,
+      "volume": 11018186.24242899,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-jesus-christ-return-before-gta-vi-665"
@@ -101,12 +101,12 @@
     {
       "title": "New Playboi Carti Album before GTA VI?",
       "outcome": "Yes 54%",
-      "probability": 0.535,
-      "volume": 725320.1441129977,
+      "probability": 0.54,
+      "volume": 725353.7341129977,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/new-playboi-carti-album-before-gta-vi-421"
     }
   ],
-  "last_updated": "2026-04-16T19:43:05.732442Z"
+  "last_updated": "2026-04-16T20:32:16.182398Z"
 }
