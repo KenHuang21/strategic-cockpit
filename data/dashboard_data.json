@@ -9,16 +9,16 @@
       "delta": 0.9799687378588147
     },
     "btc_price": {
-      "value": 74911,
-      "delta": -20.07703058818509
+      "value": 75059,
+      "delta": -19.919128551462194
     },
     "stablecoin_mcap": {
       "value": 318.9,
       "delta": 3.6714062249425776
     },
     "usdt_dominance": {
-      "value": 7.06,
-      "delta": 24.235031501986256
+      "value": 7.05,
+      "delta": 24.081384881431227
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.77,
-    "btc_gold": -0.01,
+    "btc_nasdaq": 0.66,
+    "btc_gold": 0.1,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -66,7 +66,7 @@
       "title": "GTA VI released before June 2026?",
       "outcome": "No 99%",
       "probability": 0.9865,
-      "volume": 13600713.331565049,
+      "volume": 13600812.328488048,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/gta-vi-released-before-june-2026"
@@ -75,7 +75,7 @@
       "title": "Will Jesus Christ return before GTA VI?",
       "outcome": "No 52%",
       "probability": 0.515,
-      "volume": 11018667.036264988,
+      "volume": 11018672.036264988,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-jesus-christ-return-before-gta-vi-665"
@@ -84,7 +84,7 @@
       "title": "Will bitcoin hit $1m before GTA VI?",
       "outcome": "No 51%",
       "probability": 0.5105,
-      "volume": 3987826.706703567,
+      "volume": 3987846.178326567,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-bitcoin-hit-1m-before-gta-vi-872"
@@ -102,11 +102,11 @@
       "title": "New Playboi Carti Album before GTA VI?",
       "outcome": "Yes 54%",
       "probability": 0.535,
-      "volume": 725401.8717709975,
+      "volume": 725406.5013989975,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/new-playboi-carti-album-before-gta-vi-421"
     }
   ],
-  "last_updated": "2026-04-16T21:28:01.677059Z"
+  "last_updated": "2026-04-16T22:07:02.435357Z"
 }
