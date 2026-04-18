@@ -9,16 +9,16 @@
       "delta": 0.9799687378588147
     },
     "btc_price": {
-      "value": 75633,
-      "delta": -19.30672470633422
+      "value": 75837,
+      "delta": -19.089075953013477
     },
     "stablecoin_mcap": {
-      "value": 320.5,
-      "delta": 4.19130317694802
+      "value": 320.46,
+      "delta": 4.176134859435642
     },
     "usdt_dominance": {
-      "value": 7.08,
-      "delta": 24.658562775669633
+      "value": 7.07,
+      "delta": 24.422468310894384
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,9 +56,9 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.84,
-    "btc_gold": -0.1,
-    "interpretation": "Macro Driven",
+    "btc_nasdaq": 0.8,
+    "btc_gold": 0.12,
+    "interpretation": "Moderately Correlated",
     "period_days": 30
   },
   "polymarket_top5": [
@@ -66,7 +66,7 @@
       "title": "GTA VI released before June 2026?",
       "outcome": "No 99%",
       "probability": 0.9865,
-      "volume": 13638644.76898204,
+      "volume": 13638878.88401404,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/gta-vi-released-before-june-2026"
@@ -75,7 +75,7 @@
       "title": "Will Jesus Christ return before GTA VI?",
       "outcome": "No 52%",
       "probability": 0.515,
-      "volume": 11038443.07235497,
+      "volume": 11067346.841579972,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-jesus-christ-return-before-gta-vi-665"
@@ -84,7 +84,7 @@
       "title": "Will bitcoin hit $1m before GTA VI?",
       "outcome": "No 51%",
       "probability": 0.5055,
-      "volume": 3998550.4790125615,
+      "volume": 3998707.5090125613,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-bitcoin-hit-1m-before-gta-vi-872"
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/new-playboi-carti-album-before-gta-vi-421"
     }
   ],
-  "last_updated": "2026-04-18T20:05:18.293996Z"
+  "last_updated": "2026-04-18T20:52:46.594236Z"
 }
