@@ -9,16 +9,16 @@
       "delta": 0.9799687378588147
     },
     "btc_price": {
-      "value": 75616,
-      "delta": -19.324862102444282
+      "value": 76358,
+      "delta": -18.533218107522753
     },
     "stablecoin_mcap": {
-      "value": 318.68,
-      "delta": 3.5975756422864906
+      "value": 318.63,
+      "delta": 3.5834450458984466
     },
     "usdt_dominance": {
-      "value": 7.17,
-      "delta": 26.14544721185802
+      "value": 7.1,
+      "delta": 25.037677486562632
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -33,31 +33,31 @@
   "btc_etf_flows": {
     "flows": [
       {
-        "date": "2026-04-15",
+        "date": "2026-04-16",
         "flow": 150
       },
       {
-        "date": "2026-04-16",
+        "date": "2026-04-17",
         "flow": -50
       },
       {
-        "date": "2026-04-17",
+        "date": "2026-04-20",
         "flow": 300
       },
       {
-        "date": "2026-04-20",
+        "date": "2026-04-21",
         "flow": 100
       },
       {
-        "date": "2026-04-21",
+        "date": "2026-04-22",
         "flow": 200
       }
     ],
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.71,
-    "btc_gold": 0.01,
+    "btc_nasdaq": 0.67,
+    "btc_gold": 0.07,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -66,7 +66,7 @@
       "title": "GTA VI released before June 2026?",
       "outcome": "No 99%",
       "probability": 0.9885,
-      "volume": 13697588.052729031,
+      "volume": 13697834.472729031,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/gta-vi-released-before-june-2026"
@@ -75,25 +75,25 @@
       "title": "Will Jesus Christ return before GTA VI?",
       "outcome": "No 52%",
       "probability": 0.515,
-      "volume": 11113745.628537962,
+      "volume": 11113822.289305963,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-jesus-christ-return-before-gta-vi-665"
     },
     {
       "title": "Will bitcoin hit $1m before GTA VI?",
-      "outcome": "No 50%",
-      "probability": 0.505,
-      "volume": 4008876.5320645575,
+      "outcome": "No 51%",
+      "probability": 0.5055,
+      "volume": 4008967.0620645573,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-bitcoin-hit-1m-before-gta-vi-872"
     },
     {
       "title": "Will China invades Taiwan before GTA VI?",
-      "outcome": "Yes 51%",
-      "probability": 0.51,
-      "volume": 1795769.4506970602,
+      "outcome": "Yes 50%",
+      "probability": 0.505,
+      "volume": 1795815.4506970602,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-china-invades-taiwan-before-gta-vi-716"
@@ -101,12 +101,12 @@
     {
       "title": "New Playboi Carti Album before GTA VI?",
       "outcome": "Yes 54%",
-      "probability": 0.54,
+      "probability": 0.535,
       "volume": 728090.7840989669,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/new-playboi-carti-album-before-gta-vi-421"
     }
   ],
-  "last_updated": "2026-04-21T22:58:11.690221Z"
+  "last_updated": "2026-04-22T00:06:41.130058Z"
 }
