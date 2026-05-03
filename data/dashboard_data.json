@@ -9,16 +9,16 @@
       "delta": 0.8934406727082702
     },
     "btc_price": {
-      "value": 78696,
-      "delta": -16.038792689562463
+      "value": 78765,
+      "delta": -15.965176199468681
     },
     "stablecoin_mcap": {
       "value": 319.01,
       "delta": 3.7069444759966754
     },
     "usdt_dominance": {
-      "value": 7.03,
-      "delta": 23.699592816235242
+      "value": 7.02,
+      "delta": 23.607402936223806
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,17 +56,17 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.78,
-    "btc_gold": -0.02,
-    "interpretation": "Moderately Correlated",
+    "btc_nasdaq": 0.81,
+    "btc_gold": 0.01,
+    "interpretation": "Macro Driven",
     "period_days": 30
   },
   "polymarket_top5": [
     {
       "title": "GTA VI released before June 2026?",
       "outcome": "No 99%",
-      "probability": 0.989,
-      "volume": 13949974.209700037,
+      "probability": 0.9885,
+      "volume": 13950574.954000037,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/gta-vi-released-before-june-2026"
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/new-playboi-carti-album-before-gta-vi-421"
     }
   ],
-  "last_updated": "2026-05-03T19:17:16.766925Z"
+  "last_updated": "2026-05-03T20:04:45.362290Z"
 }
