@@ -5,20 +5,20 @@
       "delta": 4.773269689737453
     },
     "fed_net_liquidity": {
-      "value": 6699.95,
-      "delta": 0.8934406727082702
+      "value": 6200,
+      "delta": -6.635223819462639
     },
     "btc_price": {
-      "value": 81456,
-      "delta": -13.094133085811222
+      "value": 81678,
+      "delta": -12.857280030726884
     },
     "stablecoin_mcap": {
       "value": 320.21,
       "delta": 4.096409831169955
     },
     "usdt_dominance": {
-      "value": 6.83,
-      "delta": 20.32881840781201
+      "value": 6.82,
+      "delta": 20.11499790833102
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,17 +56,17 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.73,
-    "btc_gold": 0.08,
+    "btc_nasdaq": 0.77,
+    "btc_gold": 0.02,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
   "polymarket_top5": [
     {
       "title": "GTA VI released before June 2026?",
-      "outcome": "No 99%",
-      "probability": 0.9945,
-      "volume": 14011522.152237048,
+      "outcome": "No 100%",
+      "probability": 0.9955,
+      "volume": 14016899.886037048,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/gta-vi-released-before-june-2026"
@@ -75,7 +75,7 @@
       "title": "Will Jesus Christ return before GTA VI?",
       "outcome": "No 52%",
       "probability": 0.515,
-      "volume": 11205818.202524938,
+      "volume": 11205853.556604939,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-jesus-christ-return-before-gta-vi-665"
@@ -93,7 +93,7 @@
       "title": "Will China invades Taiwan before GTA VI?",
       "outcome": "Yes 52%",
       "probability": 0.515,
-      "volume": 1815180.8848730607,
+      "volume": 1815191.1948730608,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-china-invades-taiwan-before-gta-vi-716"
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/new-playboi-carti-album-before-gta-vi-421"
     }
   ],
-  "last_updated": "2026-05-05T19:10:51.193849Z"
+  "last_updated": "2026-05-05T20:16:53.260444Z"
 }
