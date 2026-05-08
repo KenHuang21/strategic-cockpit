@@ -9,16 +9,16 @@
       "delta": 1.037327839870377
     },
     "btc_price": {
-      "value": 80228,
-      "delta": -14.404293228349818
+      "value": 80247,
+      "delta": -14.384022020932688
     },
     "stablecoin_mcap": {
-      "value": 320.86,
-      "delta": 4.307449321097724
+      "value": 319.42,
+      "delta": 3.8399545202453216
     },
     "usdt_dominance": {
-      "value": 6.9,
-      "delta": 21.545166923296545
+      "value": 6.88,
+      "delta": 21.180394573526733
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,17 +56,17 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.75,
-    "btc_gold": -0.04,
-    "interpretation": "Moderately Correlated",
+    "btc_nasdaq": 0.82,
+    "btc_gold": -0.14,
+    "interpretation": "Macro Driven",
     "period_days": 30
   },
   "polymarket_top5": [
     {
       "title": "GTA VI released before June 2026?",
       "outcome": "No 99%",
-      "probability": 0.992,
-      "volume": 14048056.188319039,
+      "probability": 0.9925,
+      "volume": 14049250.21831904,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/gta-vi-released-before-june-2026"
@@ -75,7 +75,7 @@
       "title": "Will Jesus Christ return before GTA VI?",
       "outcome": "No 52%",
       "probability": 0.515,
-      "volume": 11231686.325075943,
+      "volume": 11232310.455075944,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-jesus-christ-return-before-gta-vi-665"
@@ -93,7 +93,7 @@
       "title": "Will China invades Taiwan before GTA VI?",
       "outcome": "Yes 50%",
       "probability": 0.505,
-      "volume": 1816423.8301670607,
+      "volume": 1816450.8301670607,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-china-invades-taiwan-before-gta-vi-716"
@@ -102,11 +102,11 @@
       "title": "New Playboi Carti Album before GTA VI?",
       "outcome": "Yes 57%",
       "probability": 0.575,
-      "volume": 732355.7427049477,
+      "volume": 732360.7427049477,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/new-playboi-carti-album-before-gta-vi-421"
     }
   ],
-  "last_updated": "2026-05-08T11:06:55.398367Z"
+  "last_updated": "2026-05-08T12:18:23.662358Z"
 }
