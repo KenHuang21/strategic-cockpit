@@ -9,16 +9,16 @@
       "delta": 1.037327839870377
     },
     "btc_price": {
-      "value": 81807,
-      "delta": -12.719649201421118
+      "value": 81729,
+      "delta": -12.802867842396697
     },
     "stablecoin_mcap": {
-      "value": 321.1,
-      "delta": 4.384813278393159
+      "value": 321.45,
+      "delta": 4.5007804895158126
     },
     "usdt_dominance": {
       "value": 6.75,
-      "delta": 18.8238214710257
+      "delta": 18.8228878234168
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,9 +56,9 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.69,
-    "btc_gold": -0.11,
-    "interpretation": "Moderately Correlated",
+    "btc_nasdaq": 0.81,
+    "btc_gold": -0.1,
+    "interpretation": "Macro Driven",
     "period_days": 30
   },
   "polymarket_top5": [
@@ -66,7 +66,7 @@
       "title": "GTA VI released before June 2026?",
       "outcome": "No 99%",
       "probability": 0.9935,
-      "volume": 14123592.050307024,
+      "volume": 14123741.415473025,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/gta-vi-released-before-june-2026"
@@ -75,7 +75,7 @@
       "title": "Will Jesus Christ return before GTA VI?",
       "outcome": "No 52%",
       "probability": 0.515,
-      "volume": 11336445.566990927,
+      "volume": 11336685.951598926,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-jesus-christ-return-before-gta-vi-665"
@@ -93,7 +93,7 @@
       "title": "Will China invades Taiwan before GTA VI?",
       "outcome": "Yes 50%",
       "probability": 0.505,
-      "volume": 1822831.1409500607,
+      "volume": 1822863.1409500607,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-china-invades-taiwan-before-gta-vi-716"
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/new-playboi-carti-album-before-gta-vi-421"
     }
   ],
-  "last_updated": "2026-05-11T22:49:19.022315Z"
+  "last_updated": "2026-05-11T23:53:07.851526Z"
 }
