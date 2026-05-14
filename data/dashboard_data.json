@@ -9,16 +9,16 @@
       "delta": 1.037327839870377
     },
     "btc_price": {
-      "value": 79800,
-      "delta": -14.860928848061967
+      "value": 79557,
+      "delta": -15.120186921870499
     },
     "stablecoin_mcap": {
-      "value": 319.78,
-      "delta": 3.95525832292098
+      "value": 320.45,
+      "delta": 4.172690747872506
     },
     "usdt_dominance": {
-      "value": 6.91,
-      "delta": 21.716833239340982
+      "value": 6.93,
+      "delta": 21.957307076164334
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.69,
-    "btc_gold": -0.09,
+    "btc_nasdaq": 0.74,
+    "btc_gold": -0.02,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -66,7 +66,7 @@
       "title": "GTA VI released before June 2026?",
       "outcome": "No 99%",
       "probability": 0.9945,
-      "volume": 14159597.433595046,
+      "volume": 14162208.778795047,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/gta-vi-released-before-june-2026"
@@ -75,7 +75,7 @@
       "title": "Will Jesus Christ return before GTA VI?",
       "outcome": "No 52%",
       "probability": 0.515,
-      "volume": 11358518.137297913,
+      "volume": 11358835.144982914,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-jesus-christ-return-before-gta-vi-665"
@@ -84,7 +84,7 @@
       "title": "Will bitcoin hit $1m before GTA VI?",
       "outcome": "No 51%",
       "probability": 0.5075,
-      "volume": 4113249.6659785355,
+      "volume": 4114432.1481745355,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-bitcoin-hit-1m-before-gta-vi-872"
@@ -93,7 +93,7 @@
       "title": "Will China invades Taiwan before GTA VI?",
       "outcome": "Yes 50%",
       "probability": 0.505,
-      "volume": 1823966.067024061,
+      "volume": 1824754.067024061,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-china-invades-taiwan-before-gta-vi-716"
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/new-playboi-carti-album-before-gta-vi-421"
     }
   ],
-  "last_updated": "2026-05-14T08:17:01.039881Z"
+  "last_updated": "2026-05-14T10:41:09.413249Z"
 }
