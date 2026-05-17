@@ -9,16 +9,16 @@
       "delta": 1.3234005258545214
     },
     "btc_price": {
-      "value": 78047,
-      "delta": -16.731214458705416
+      "value": 77778,
+      "delta": -17.01821207950581
     },
     "stablecoin_mcap": {
-      "value": 321.61,
-      "delta": 4.5524893200978305
+      "value": 321.62,
+      "delta": 4.554869376667
     },
     "usdt_dominance": {
-      "value": 7.07,
-      "delta": 24.482521932485735
+      "value": 7.09,
+      "delta": 24.816912962076948
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.74,
-    "btc_gold": -0.07,
+    "btc_nasdaq": 0.77,
+    "btc_gold": 0.04,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -66,7 +66,7 @@
       "title": "GTA VI released before June 2026?",
       "outcome": "No 100%",
       "probability": 0.9955,
-      "volume": 14367683.743162053,
+      "volume": 14367966.036912054,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/gta-vi-released-before-june-2026"
@@ -75,7 +75,7 @@
       "title": "Will Jesus Christ return before GTA VI?",
       "outcome": "No 52%",
       "probability": 0.515,
-      "volume": 11379842.378053905,
+      "volume": 11379975.411173904,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-jesus-christ-return-before-gta-vi-665"
@@ -83,8 +83,8 @@
     {
       "title": "Will bitcoin hit $1m before GTA VI?",
       "outcome": "No 51%",
-      "probability": 0.512,
-      "volume": 4164259.7506335415,
+      "probability": 0.5115,
+      "volume": 4164338.141761542,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-bitcoin-hit-1m-before-gta-vi-872"
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/new-playboi-carti-album-before-gta-vi-421"
     }
   ],
-  "last_updated": "2026-05-17T22:36:13.727321Z"
+  "last_updated": "2026-05-17T23:39:51.976806Z"
 }
