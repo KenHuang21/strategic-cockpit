@@ -9,16 +9,16 @@
       "delta": 1.0996412985534503
     },
     "btc_price": {
-      "value": 77219,
-      "delta": -17.61461233983079
+      "value": 77170,
+      "delta": -17.66689071685391
     },
     "stablecoin_mcap": {
-      "value": 321.74,
-      "delta": 4.592122448533451
+      "value": 322.04,
+      "delta": 4.689782396259472
     },
     "usdt_dominance": {
-      "value": 7.12,
-      "delta": 25.372107012722516
+      "value": 7.11,
+      "delta": 25.217775147670768
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.68,
-    "btc_gold": -0.07,
+    "btc_nasdaq": 0.8,
+    "btc_gold": -0.12,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -66,7 +66,7 @@
       "title": "GTA VI released before June 2026?",
       "outcome": "No 100%",
       "probability": 0.9975,
-      "volume": 14714308.414113037,
+      "volume": 14719682.69844604,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/gta-vi-released-before-june-2026"
@@ -75,7 +75,7 @@
       "title": "Will Jesus Christ return before GTA VI?",
       "outcome": "No 52%",
       "probability": 0.515,
-      "volume": 11441049.594942853,
+      "volume": 11443088.642862843,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-jesus-christ-return-before-gta-vi-665"
@@ -83,8 +83,8 @@
     {
       "title": "Will bitcoin hit $1m before GTA VI?",
       "outcome": "No 51%",
-      "probability": 0.5075,
-      "volume": 4282463.111179555,
+      "probability": 0.508,
+      "volume": 4282746.871536554,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-bitcoin-hit-1m-before-gta-vi-872-424"
@@ -93,7 +93,7 @@
       "title": "Will China invades Taiwan before GTA VI?",
       "outcome": "Yes 50%",
       "probability": 0.505,
-      "volume": 1838634.39120006,
+      "volume": 1838675.4012000607,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-china-invades-taiwan-before-gta-vi-716-644"
@@ -102,11 +102,11 @@
       "title": "New Rihanna Album before GTA VI?",
       "outcome": "Yes 52%",
       "probability": 0.52,
-      "volume": 737743.717548001,
+      "volume": 737777.894339001,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/new-rhianna-album-before-gta-vi-926"
     }
   ],
-  "last_updated": "2026-05-22T11:16:26.647751Z"
+  "last_updated": "2026-05-22T13:41:28.343553Z"
 }
