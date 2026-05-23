@@ -9,16 +9,16 @@
       "delta": 1.0996412985534503
     },
     "btc_price": {
-      "value": 75403,
-      "delta": -19.552113006646824
+      "value": 75375,
+      "delta": -19.58198636494575
     },
     "stablecoin_mcap": {
-      "value": 321.11,
-      "delta": 4.39008454447507
+      "value": 321.05,
+      "delta": 4.37074629228538
     },
     "usdt_dominance": {
       "value": 7.28,
-      "delta": 28.238527288451092
+      "delta": 28.176672342542258
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,9 +56,9 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.84,
-    "btc_gold": 0.06,
-    "interpretation": "Macro Driven",
+    "btc_nasdaq": 0.78,
+    "btc_gold": 0.03,
+    "interpretation": "Moderately Correlated",
     "period_days": 30
   },
   "polymarket_top5": [
@@ -66,7 +66,7 @@
       "title": "GTA VI released before June 2026?",
       "outcome": "No 100%",
       "probability": 0.9985,
-      "volume": 14789588.437279034,
+      "volume": 14789831.371279035,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/gta-vi-released-before-june-2026"
@@ -84,7 +84,7 @@
       "title": "Will bitcoin hit $1m before GTA VI?",
       "outcome": "No 51%",
       "probability": 0.5085,
-      "volume": 4288494.759443521,
+      "volume": 4288583.155807519,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-bitcoin-hit-1m-before-gta-vi-872-424"
@@ -93,7 +93,7 @@
       "title": "Will China invades Taiwan before GTA VI?",
       "outcome": "Yes 50%",
       "probability": 0.505,
-      "volume": 1839719.1400210608,
+      "volume": 1839763.1000210608,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-china-invades-taiwan-before-gta-vi-716-644"
@@ -101,12 +101,12 @@
     {
       "title": "New Rihanna Album before GTA VI?",
       "outcome": "Yes 56%",
-      "probability": 0.565,
-      "volume": 742999.7500050024,
+      "probability": 0.56,
+      "volume": 743009.2900050024,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/new-rhianna-album-before-gta-vi-926"
     }
   ],
-  "last_updated": "2026-05-23T16:39:19.931036Z"
+  "last_updated": "2026-05-23T17:42:50.620696Z"
 }
