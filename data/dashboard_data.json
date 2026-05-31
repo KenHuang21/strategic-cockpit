@@ -9,16 +9,16 @@
       "delta": 0.9601964876773542
     },
     "btc_price": {
-      "value": 73532,
-      "delta": -21.548293484407175
+      "value": 73607,
+      "delta": -21.468275560392193
     },
     "stablecoin_mcap": {
-      "value": 318.93,
-      "delta": 3.6809146788241556
+      "value": 318.94,
+      "delta": 3.6834945535695525
     },
     "usdt_dominance": {
-      "value": 7.33,
-      "delta": 29.057448898821463
+      "value": 7.31,
+      "delta": 28.726128705732094
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.79,
-    "btc_gold": 0.1,
+    "btc_nasdaq": 0.76,
+    "btc_gold": 0.01,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -65,7 +65,7 @@
     {
       "title": "GTA VI released before June 2026?",
       "outcome": "No 100%",
-      "probability": 0.999,
+      "probability": 0.9985,
       "volume": 15241172.541636003,
       "volume_24h": 0,
       "flipped": false,
@@ -75,7 +75,7 @@
       "title": "Will Jesus Christ return before GTA VI?",
       "outcome": "No 52%",
       "probability": 0.515,
-      "volume": 11503855.50371975,
+      "volume": 11510081.586864755,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-jesus-christ-return-before-gta-vi-665"
@@ -84,7 +84,7 @@
       "title": "Will bitcoin hit $1m before GTA VI?",
       "outcome": "No 51%",
       "probability": 0.5075,
-      "volume": 4442193.756907531,
+      "volume": 4442203.599425531,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-bitcoin-hit-1m-before-gta-vi-872-424"
@@ -102,11 +102,11 @@
       "title": "New Rihanna Album before GTA VI?",
       "outcome": "Yes 52%",
       "probability": 0.525,
-      "volume": 784209.522301999,
+      "volume": 784214.522301999,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/new-rhianna-album-before-gta-vi-926"
     }
   ],
-  "last_updated": "2026-05-31T20:03:17.976107Z"
+  "last_updated": "2026-05-31T21:14:22.568414Z"
 }
