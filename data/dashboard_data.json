@@ -1,24 +1,24 @@
 {
   "metrics": {
     "us_10y_yield": {
-      "value": 4.44,
-      "delta": 5.966587112171838
+      "value": 4.48,
+      "delta": 6.921241050119333
     },
     "fed_net_liquidity": {
-      "value": 6735.65,
-      "delta": 1.4309657833154215
+      "value": 6724.56,
+      "delta": 1.2640988341450108
     },
     "btc_price": {
-      "value": 61392,
-      "delta": -34.500528118298504
+      "value": 61479,
+      "delta": -34.40770732644112
     },
     "stablecoin_mcap": {
-      "value": 309.88,
-      "delta": 0.7378227148869051
+      "value": 309.91,
+      "delta": 0.7489110112938973
     },
     "usdt_dominance": {
-      "value": 8.33,
-      "delta": 46.61519153866177
+      "value": 8.32,
+      "delta": 46.51714555441057
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.72,
-    "btc_gold": -0.06,
+    "btc_nasdaq": 0.71,
+    "btc_gold": -0.01,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -66,7 +66,7 @@
       "title": "Will Jesus Christ return before GTA VI?",
       "outcome": "No 50%",
       "probability": 0.505,
-      "volume": 11747638.143521724,
+      "volume": 11748082.354499727,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-jesus-christ-return-before-gta-vi-665"
@@ -102,11 +102,11 @@
       "title": "New Playboi Carti Album before GTA VI?",
       "outcome": "Yes 52%",
       "probability": 0.515,
-      "volume": 747452.9414019466,
+      "volume": 747478.1814019466,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/new-playboi-carti-album-before-gta-vi-421"
     }
   ],
-  "last_updated": "2026-07-02T20:15:37.031210Z"
+  "last_updated": "2026-07-02T21:41:33.499016Z"
 }
