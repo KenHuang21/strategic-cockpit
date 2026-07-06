@@ -9,16 +9,16 @@
       "delta": 1.2640988341450108
     },
     "btc_price": {
-      "value": 63747,
-      "delta": -31.98796530422815
+      "value": 63030,
+      "delta": -32.75293665781135
     },
     "stablecoin_mcap": {
-      "value": 309.63,
-      "delta": 0.657823590820489
+      "value": 310.0,
+      "delta": 0.7769968738271105
     },
     "usdt_dominance": {
-      "value": 8.04,
-      "delta": 41.556549213748966
+      "value": 8.12,
+      "delta": 42.92660494068647
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -57,7 +57,7 @@
   },
   "correlation_radar": {
     "btc_nasdaq": 0.79,
-    "btc_gold": -0.06,
+    "btc_gold": 0.07,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -66,7 +66,7 @@
       "title": "Will Jesus Christ return before GTA VI?",
       "outcome": "No 50%",
       "probability": 0.505,
-      "volume": 11760042.939131731,
+      "volume": 11760082.939131731,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-jesus-christ-return-before-gta-vi-665"
@@ -75,7 +75,7 @@
       "title": "Will bitcoin hit $1m before GTA VI?",
       "outcome": "No 50%",
       "probability": 0.5035,
-      "volume": 4575105.970637536,
+      "volume": 4576230.444685541,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-bitcoin-hit-1m-before-gta-vi-872-424"
@@ -84,7 +84,7 @@
       "title": "Will China invades Taiwan before GTA VI?",
       "outcome": "Yes 50%",
       "probability": 0.505,
-      "volume": 1902240.260569067,
+      "volume": 1902350.260569067,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-china-invades-taiwan-before-gta-vi-716-644"
@@ -93,7 +93,7 @@
       "title": "New Rihanna Album before GTA VI?",
       "outcome": "Yes 52%",
       "probability": 0.515,
-      "volume": 848899.5578240157,
+      "volume": 848967.8039740159,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/new-rhianna-album-before-gta-vi-926"
@@ -102,11 +102,11 @@
       "title": "New Playboi Carti Album before GTA VI?",
       "outcome": "Yes 52%",
       "probability": 0.515,
-      "volume": 747576.9972429466,
+      "volume": 747614.7572429467,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/new-playboi-carti-album-before-gta-vi-421"
     }
   ],
-  "last_updated": "2026-07-06T01:22:12.379698Z"
+  "last_updated": "2026-07-06T05:50:19.905511Z"
 }
