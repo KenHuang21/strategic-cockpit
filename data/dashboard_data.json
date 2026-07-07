@@ -9,16 +9,16 @@
       "delta": 1.2640988341450108
     },
     "btc_price": {
-      "value": 63114,
-      "delta": -32.663316582914575
+      "value": 63278,
+      "delta": -32.488344055735155
     },
     "stablecoin_mcap": {
-      "value": 310.62,
-      "delta": 0.9770606023107432
+      "value": 310.61,
+      "delta": 0.97572079978171
     },
     "usdt_dominance": {
-      "value": 8.12,
-      "delta": 42.88894171289454
+      "value": 8.13,
+      "delta": 43.09887660633711
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,9 +56,9 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.81,
-    "btc_gold": 0.14,
-    "interpretation": "Macro Driven",
+    "btc_nasdaq": 0.69,
+    "btc_gold": 0.13,
+    "interpretation": "Moderately Correlated",
     "period_days": 30
   },
   "polymarket_top5": [
@@ -66,7 +66,7 @@
       "title": "Will Jesus Christ return before GTA VI?",
       "outcome": "No 50%",
       "probability": 0.505,
-      "volume": 11795456.404201731,
+      "volume": 11795476.012043731,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-jesus-christ-return-before-gta-vi-665"
@@ -75,7 +75,7 @@
       "title": "Will bitcoin hit $1m before GTA VI?",
       "outcome": "No 50%",
       "probability": 0.5035,
-      "volume": 4591413.8163345745,
+      "volume": 4591605.174228577,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-bitcoin-hit-1m-before-gta-vi-872-424"
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/new-playboi-carti-album-before-gta-vi-421"
     }
   ],
-  "last_updated": "2026-07-07T11:41:55.251990Z"
+  "last_updated": "2026-07-07T13:51:58.718630Z"
 }
