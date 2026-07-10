@@ -1,24 +1,24 @@
 {
   "metrics": {
     "us_10y_yield": {
-      "value": 4.56,
-      "delta": 8.8305489260143
+      "value": 4.54,
+      "delta": 8.353221957040564
     },
     "fed_net_liquidity": {
       "value": 6735.61,
       "delta": 1.4304236652601787
     },
     "btc_price": {
-      "value": 63750,
-      "delta": -31.98476458726755
+      "value": 63824,
+      "delta": -31.9058135689061
     },
     "stablecoin_mcap": {
-      "value": 310.38,
-      "delta": 0.8995008967660032
+      "value": 310.45,
+      "delta": 0.9217132775651284
     },
     "usdt_dominance": {
-      "value": 8.11,
-      "delta": 42.7446049433603
+      "value": 8.09,
+      "delta": 42.47054880662615
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -66,7 +66,7 @@
       "title": "Will Jesus Christ return before GTA VI?",
       "outcome": "No 50%",
       "probability": 0.505,
-      "volume": 11805009.040998727,
+      "volume": 11805211.819428727,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-jesus-christ-return-before-gta-vi-665"
@@ -84,15 +84,15 @@
       "title": "Will China invades Taiwan before GTA VI?",
       "outcome": "Yes 50%",
       "probability": 0.505,
-      "volume": 1903829.3462510672,
+      "volume": 1903851.3462510672,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-china-invades-taiwan-before-gta-vi-716-644"
     },
     {
       "title": "New Rihanna Album before GTA VI?",
-      "outcome": "Yes 51%",
-      "probability": 0.51,
+      "outcome": "Yes 50%",
+      "probability": 0.505,
       "volume": 854285.1354840153,
       "volume_24h": 0,
       "flipped": false,
@@ -102,11 +102,11 @@
       "title": "New Playboi Carti Album before GTA VI?",
       "outcome": "Yes 50%",
       "probability": 0.505,
-      "volume": 748135.6477979464,
+      "volume": 748195.6477979464,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/new-playboi-carti-album-before-gta-vi-421"
     }
   ],
-  "last_updated": "2026-07-10T19:01:16.817600Z"
+  "last_updated": "2026-07-10T20:41:13.910230Z"
 }
