@@ -9,16 +9,16 @@
       "delta": 1.4304236652601787
     },
     "btc_price": {
-      "value": 64474,
-      "delta": -31.212324894109617
+      "value": 64189,
+      "delta": -31.516393005366535
     },
     "stablecoin_mcap": {
-      "value": 308.89,
-      "delta": 0.414798746949514
+      "value": 309.04,
+      "delta": 0.46513768711099285
     },
     "usdt_dominance": {
-      "value": 8.01,
-      "delta": 41.004158254829186
+      "value": 8.05,
+      "delta": 41.6476505812817
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,9 +56,9 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.8,
+    "btc_nasdaq": 0.81,
     "btc_gold": 0.07,
-    "interpretation": "Moderately Correlated",
+    "interpretation": "Macro Driven",
     "period_days": 30
   },
   "polymarket_top5": [
@@ -66,7 +66,7 @@
       "title": "Will Jesus Christ return before GTA VI?",
       "outcome": "No 50%",
       "probability": 0.505,
-      "volume": 11824581.088506723,
+      "volume": 11824674.138506722,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-jesus-christ-return-before-gta-vi-665"
@@ -75,7 +75,7 @@
       "title": "Will bitcoin hit $1m before GTA VI?",
       "outcome": "No 50%",
       "probability": 0.5035,
-      "volume": 4666697.885434779,
+      "volume": 4666961.293868779,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-bitcoin-hit-1m-before-gta-vi-872-424"
@@ -93,7 +93,7 @@
       "title": "New Rihanna Album before GTA VI?",
       "outcome": "Yes 50%",
       "probability": 0.505,
-      "volume": 858698.4268150157,
+      "volume": 858709.3268150156,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/new-rhianna-album-before-gta-vi-926"
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/new-playboi-carti-album-before-gta-vi-421"
     }
   ],
-  "last_updated": "2026-07-16T16:13:13.704558Z"
+  "last_updated": "2026-07-16T17:40:12.387887Z"
 }
