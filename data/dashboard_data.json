@@ -9,16 +9,16 @@
       "delta": 1.5421451611445973
     },
     "btc_price": {
-      "value": 62773,
-      "delta": -33.02713141076934
+      "value": 63040,
+      "delta": -32.74226760127602
     },
     "stablecoin_mcap": {
-      "value": 309.13,
-      "delta": 0.4952005446382644
+      "value": 309.17,
+      "delta": 0.5072948044101401
     },
     "usdt_dominance": {
-      "value": 8.2,
-      "delta": 44.32602222574892
+      "value": 8.17,
+      "delta": 43.76644920842093
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,9 +56,9 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.84,
-    "btc_gold": -0.07,
-    "interpretation": "Macro Driven",
+    "btc_nasdaq": 0.71,
+    "btc_gold": 0.1,
+    "interpretation": "Moderately Correlated",
     "period_days": 30
   },
   "polymarket_top5": [
@@ -74,8 +74,8 @@
     {
       "title": "Will bitcoin hit $1m before GTA VI?",
       "outcome": "No 50%",
-      "probability": 0.5035,
-      "volume": 4671675.14398878,
+      "probability": 0.503,
+      "volume": 4682756.69640278,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-bitcoin-hit-1m-before-gta-vi-872-424"
@@ -93,7 +93,7 @@
       "title": "New Rihanna Album before GTA VI?",
       "outcome": "Yes 50%",
       "probability": 0.505,
-      "volume": 859058.7497540156,
+      "volume": 859062.6705370155,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/new-rhianna-album-before-gta-vi-926"
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/new-playboi-carti-album-before-gta-vi-421"
     }
   ],
-  "last_updated": "2026-07-17T08:26:36.935625Z"
+  "last_updated": "2026-07-17T10:17:02.631482Z"
 }
