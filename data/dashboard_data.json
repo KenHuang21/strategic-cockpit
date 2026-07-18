@@ -9,16 +9,16 @@
       "delta": 1.5421451611445973
     },
     "btc_price": {
-      "value": 63982,
-      "delta": -31.737242475647882
+      "value": 64160,
+      "delta": -31.547333269318994
     },
     "stablecoin_mcap": {
-      "value": 308.8,
-      "delta": 0.388314450517334
+      "value": 308.82,
+      "delta": 0.39481919808438976
     },
     "usdt_dominance": {
-      "value": 8.09,
-      "delta": 42.49579229556335
+      "value": 8.08,
+      "delta": 42.19520053844015
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,9 +56,9 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.68,
-    "btc_gold": -0.08,
-    "interpretation": "Moderately Correlated",
+    "btc_nasdaq": 0.82,
+    "btc_gold": -0.06,
+    "interpretation": "Macro Driven",
     "period_days": 30
   },
   "polymarket_top5": [
@@ -66,7 +66,7 @@
       "title": "Will Jesus Christ return before GTA VI?",
       "outcome": "No 50%",
       "probability": 0.505,
-      "volume": 11852914.24180972,
+      "volume": 11852924.24180972,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-jesus-christ-return-before-gta-vi-665"
@@ -93,7 +93,7 @@
       "title": "New Rihanna Album before GTA VI?",
       "outcome": "Yes 50%",
       "probability": 0.505,
-      "volume": 859501.096763015,
+      "volume": 859506.116763015,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/new-rhianna-album-before-gta-vi-926"
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/new-playboi-carti-album-before-gta-vi-421"
     }
   ],
-  "last_updated": "2026-07-18T11:51:53.374154Z"
+  "last_updated": "2026-07-18T13:01:59.484526Z"
 }
