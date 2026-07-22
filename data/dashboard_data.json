@@ -1,24 +1,24 @@
 {
   "metrics": {
     "us_10y_yield": {
-      "value": 4.6,
-      "delta": 9.785202863961795
+      "value": 4.63,
+      "delta": 10.501193317422421
     },
     "fed_net_liquidity": {
       "value": 6743.03,
       "delta": 1.5421451611445973
     },
     "btc_price": {
-      "value": 65866,
-      "delta": -29.727192224391597
+      "value": 65897,
+      "delta": -29.69411814913207
     },
     "stablecoin_mcap": {
-      "value": 309.92,
-      "delta": 0.7517383480750736
+      "value": 309.97,
+      "delta": 0.7666827959001169
     },
     "usdt_dominance": {
       "value": 7.9,
-      "delta": 39.1080593952075
+      "delta": 39.12213124084415
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.73,
-    "btc_gold": -0.12,
+    "btc_nasdaq": 0.66,
+    "btc_gold": 0.14,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -66,7 +66,7 @@
       "title": "Will Jesus Christ return before GTA VI?",
       "outcome": "No 50%",
       "probability": 0.505,
-      "volume": 11866170.532870732,
+      "volume": 11866172.493653731,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-jesus-christ-return-before-gta-vi-665"
@@ -91,9 +91,9 @@
     },
     {
       "title": "New Rihanna Album before GTA VI?",
-      "outcome": "Yes 67%",
-      "probability": 0.67,
-      "volume": 870085.3110690147,
+      "outcome": "Yes 66%",
+      "probability": 0.665,
+      "volume": 870357.9110690147,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/new-rhianna-album-before-gta-vi-926"
@@ -102,11 +102,11 @@
       "title": "New Playboi Carti Album before GTA VI?",
       "outcome": "Yes 50%",
       "probability": 0.505,
-      "volume": 749239.1997159454,
+      "volume": 749241.1997159454,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/new-playboi-carti-album-before-gta-vi-421"
     }
   ],
-  "last_updated": "2026-07-22T19:41:48.572020Z"
+  "last_updated": "2026-07-22T20:45:05.274472Z"
 }
