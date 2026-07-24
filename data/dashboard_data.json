@@ -9,16 +9,16 @@
       "delta": 1.6076510928196435
     },
     "btc_price": {
-      "value": 64111,
-      "delta": -31.59961164634211
+      "value": 64082,
+      "delta": -31.630551910294574
     },
     "stablecoin_mcap": {
-      "value": 309.69,
-      "delta": 0.6768397029509432
+      "value": 309.68,
+      "delta": 0.6734467228567789
     },
     "usdt_dominance": {
-      "value": 8.1,
-      "delta": 42.632436417472654
+      "value": 8.11,
+      "delta": 42.7732135060528
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,9 +56,9 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.73,
-    "btc_gold": 0.1,
-    "interpretation": "Moderately Correlated",
+    "btc_nasdaq": 0.82,
+    "btc_gold": -0.05,
+    "interpretation": "Macro Driven",
     "period_days": 30
   },
   "polymarket_top5": [
@@ -84,7 +84,7 @@
       "title": "Will China invades Taiwan before GTA VI?",
       "outcome": "Yes 50%",
       "probability": 0.505,
-      "volume": 1920050.4313190691,
+      "volume": 1920070.2713190692,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-china-invades-taiwan-before-gta-vi-716-644"
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/new-playboi-carti-album-before-gta-vi-421"
     }
   ],
-  "last_updated": "2026-07-24T20:45:24.336351Z"
+  "last_updated": "2026-07-24T21:59:12.123761Z"
 }
