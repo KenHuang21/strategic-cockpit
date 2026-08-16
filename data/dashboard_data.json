@@ -9,16 +9,16 @@
       "delta": 1.7970460589523274
     },
     "btc_price": {
-      "value": 63235,
-      "delta": -32.53422099883707
+      "value": 63176,
+      "delta": -32.59716843239552
     },
     "stablecoin_mcap": {
       "value": 307.37,
-      "delta": -0.07654609107411985
+      "delta": -0.07819141872913113
     },
     "usdt_dominance": {
-      "value": 8.1,
-      "delta": 42.62819145187256
+      "value": 8.11,
+      "delta": 42.71152155435101
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,9 +56,9 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.81,
-    "btc_gold": 0.12,
-    "interpretation": "Macro Driven",
+    "btc_nasdaq": 0.75,
+    "btc_gold": 0.03,
+    "interpretation": "Moderately Correlated",
     "period_days": 30
   },
   "polymarket_top5": [
@@ -66,7 +66,7 @@
       "title": "Will Oprah Winfrey win the 2028 Democratic presidential nomination?",
       "outcome": "No 100%",
       "probability": 0.9975,
-      "volume": 54283112.31566302,
+      "volume": 54283112.315663025,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-oprah-winfrey-win-the-2028-democratic-presidential-nomination"
@@ -93,7 +93,7 @@
       "title": "Will Andrew Yang win the 2028 Democratic presidential nomination?",
       "outcome": "No 100%",
       "probability": 0.9985,
-      "volume": 48638623.45054901,
+      "volume": 48638625.27154901,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-andrew-yang-win-the-2028-democratic-presidential-nomination"
@@ -102,11 +102,11 @@
       "title": "Will Hunter Biden win the 2028 Democratic presidential nomination?",
       "outcome": "No 99%",
       "probability": 0.9945,
-      "volume": 44167838.60578703,
+      "volume": 44167838.605787024,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-person-a-win-the-2028-democratic-presidential-nomination"
     }
   ],
-  "last_updated": "2026-08-16T16:48:23.497018Z"
+  "last_updated": "2026-08-16T17:14:00.478188Z"
 }
