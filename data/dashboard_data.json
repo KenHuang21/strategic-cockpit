@@ -9,16 +9,16 @@
       "delta": 1.7970460589523274
     },
     "btc_price": {
-      "value": 64259,
-      "delta": -31.441709609619224
+      "value": 64319,
+      "delta": -31.377695270407237
     },
     "stablecoin_mcap": {
-      "value": 307.44,
-      "delta": -0.05369912106361233
+      "value": 307.46,
+      "delta": -0.04991670066201981
     },
     "usdt_dominance": {
       "value": 8.01,
-      "delta": 41.09599907461797
+      "delta": 40.998835506222214
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.77,
-    "btc_gold": 0.05,
+    "btc_nasdaq": 0.78,
+    "btc_gold": -0.06,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/will-person-a-win-the-2028-democratic-presidential-nomination"
     }
   ],
-  "last_updated": "2026-08-19T04:07:52.318740Z"
+  "last_updated": "2026-08-19T04:49:43.969754Z"
 }
