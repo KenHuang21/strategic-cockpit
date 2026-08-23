@@ -9,16 +9,16 @@
       "delta": 1.582367309076558
     },
     "btc_price": {
-      "value": 77419,
-      "delta": -17.401231209124177
+      "value": 77354,
+      "delta": -17.470580076603824
     },
     "stablecoin_mcap": {
-      "value": 309.12,
-      "delta": 0.49131919904898697
+      "value": 309.02,
+      "delta": 0.45931550399513155
     },
     "usdt_dominance": {
-      "value": 7.0,
-      "delta": 23.19202290205126
+      "value": 7.02,
+      "delta": 23.523329121209713
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.65,
-    "btc_gold": -0.0,
+    "btc_nasdaq": 0.7,
+    "btc_gold": 0.1,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -66,7 +66,7 @@
       "title": "Will Oprah Winfrey win the 2028 Democratic presidential nomination?",
       "outcome": "No 100%",
       "probability": 0.9975,
-      "volume": 54312272.02549603,
+      "volume": 54312367.02549601,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-oprah-winfrey-win-the-2028-democratic-presidential-nomination"
@@ -75,7 +75,7 @@
       "title": "Will Bernie Sanders win the 2028 Democratic presidential nomination?",
       "outcome": "No 100%",
       "probability": 0.9955,
-      "volume": 52711020.88830601,
+      "volume": 52711024.82580601,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-bernie-sanders-win-the-2028-democratic-presidential-nomination-879"
@@ -84,7 +84,7 @@
       "title": "Will Chelsea Clinton win the 2028 Democratic presidential nomination?",
       "outcome": "No 100%",
       "probability": 0.9985,
-      "volume": 50250808.80027299,
+      "volume": 50250831.100273006,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-chelsea-clinton-win-the-2028-democratic-presidential-nomination"
@@ -93,7 +93,7 @@
       "title": "Will Andrew Yang win the 2028 Democratic presidential nomination?",
       "outcome": "No 100%",
       "probability": 0.9985,
-      "volume": 48667246.69354897,
+      "volume": 48667246.69354898,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-andrew-yang-win-the-2028-democratic-presidential-nomination"
@@ -102,11 +102,11 @@
       "title": "Will Hunter Biden win the 2028 Democratic presidential nomination?",
       "outcome": "No 100%",
       "probability": 0.9955,
-      "volume": 44205554.21131305,
+      "volume": 44205558.57281303,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-person-a-win-the-2028-democratic-presidential-nomination"
     }
   ],
-  "last_updated": "2026-08-23T16:59:59.350076Z"
+  "last_updated": "2026-08-23T17:26:02.322948Z"
 }
