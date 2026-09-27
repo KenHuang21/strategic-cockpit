@@ -9,16 +9,16 @@
       "delta": 1.612560272986556
     },
     "btc_price": {
-      "value": 84891,
-      "delta": -9.429312165925168
+      "value": 84524,
+      "delta": -9.8208665407718
     },
     "stablecoin_mcap": {
-      "value": 312.97,
-      "delta": 1.7426662930997088
+      "value": 312.99,
+      "delta": 1.7491745062892887
     },
     "usdt_dominance": {
-      "value": 6.34,
-      "delta": 11.597770005493919
+      "value": 6.38,
+      "delta": 12.273789041265612
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.73,
-    "btc_gold": -0.04,
+    "btc_nasdaq": 0.7,
+    "btc_gold": -0.02,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -75,7 +75,7 @@
       "title": "Will Bernie Sanders win the 2028 Democratic presidential nomination?",
       "outcome": "No 100%",
       "probability": 0.9955,
-      "volume": 52751887.63366001,
+      "volume": 52751954.56366002,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-bernie-sanders-win-the-2028-democratic-presidential-nomination-879"
@@ -84,7 +84,7 @@
       "title": "Will Chelsea Clinton win the 2028 Democratic presidential nomination?",
       "outcome": "No 99%",
       "probability": 0.9935,
-      "volume": 50604281.234035976,
+      "volume": 50604314.23403598,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-chelsea-clinton-win-the-2028-democratic-presidential-nomination"
@@ -93,7 +93,7 @@
       "title": "Will Andrew Yang win the 2028 Democratic presidential nomination?",
       "outcome": "No 100%",
       "probability": 0.9995,
-      "volume": 48828247.52060399,
+      "volume": 48828247.520603985,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-andrew-yang-win-the-2028-democratic-presidential-nomination"
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/will-person-a-win-the-2028-democratic-presidential-nomination"
     }
   ],
-  "last_updated": "2026-09-27T11:11:43.854480Z"
+  "last_updated": "2026-09-27T15:39:51.839088Z"
 }
