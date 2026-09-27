@@ -9,16 +9,16 @@
       "delta": 1.612560272986556
     },
     "btc_price": {
-      "value": 84780,
-      "delta": -9.547738693467336
+      "value": 84422,
+      "delta": -9.929690917432172
     },
     "stablecoin_mcap": {
-      "value": 313.09,
-      "delta": 1.7804920295869129
+      "value": 312.88,
+      "delta": 1.7139163770415484
     },
     "usdt_dominance": {
-      "value": 6.36,
-      "delta": 11.90033544639657
+      "value": 6.38,
+      "delta": 12.267926113401163
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.7,
-    "btc_gold": 0.12,
+    "btc_nasdaq": 0.68,
+    "btc_gold": -0.07,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -75,7 +75,7 @@
       "title": "Will Bernie Sanders win the 2028 Democratic presidential nomination?",
       "outcome": "No 100%",
       "probability": 0.9955,
-      "volume": 52751968.123660006,
+      "volume": 52752040.20366002,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-bernie-sanders-win-the-2028-democratic-presidential-nomination-879"
@@ -93,7 +93,7 @@
       "title": "Will Andrew Yang win the 2028 Democratic presidential nomination?",
       "outcome": "No 100%",
       "probability": 0.9995,
-      "volume": 48828247.52060397,
+      "volume": 48828247.520603985,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-andrew-yang-win-the-2028-democratic-presidential-nomination"
@@ -102,11 +102,11 @@
       "title": "Will Hunter Biden win the 2028 Democratic presidential nomination?",
       "outcome": "No 100%",
       "probability": 0.995,
-      "volume": 44502130.27421804,
+      "volume": 44502148.34021803,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-person-a-win-the-2028-democratic-presidential-nomination"
     }
   ],
-  "last_updated": "2026-09-27T19:16:02.428763Z"
+  "last_updated": "2026-09-27T22:25:06.383256Z"
 }
