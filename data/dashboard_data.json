@@ -9,16 +9,16 @@
       "delta": 1.5421903376491963
     },
     "btc_price": {
-      "value": 84960,
-      "delta": -9.355695675831386
+      "value": 84690,
+      "delta": -9.643760202285312
     },
     "stablecoin_mcap": {
       "value": 312.8,
-      "delta": 1.6880058493003205
+      "delta": 1.6880632483190383
     },
     "usdt_dominance": {
-      "value": 6.34,
-      "delta": 11.603184191813757
+      "value": 6.35,
+      "delta": 11.789958005501939
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.71,
-    "btc_gold": 0.0,
+    "btc_nasdaq": 0.8,
+    "btc_gold": -0.09,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -75,7 +75,7 @@
       "title": "Will Bernie Sanders win the 2028 Democratic presidential nomination?",
       "outcome": "No 99%",
       "probability": 0.9935,
-      "volume": 52819501.071642,
+      "volume": 52819517.15980801,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-bernie-sanders-win-the-2028-democratic-presidential-nomination-879"
@@ -84,7 +84,7 @@
       "title": "Will Chelsea Clinton win the 2028 Democratic presidential nomination?",
       "outcome": "No 99%",
       "probability": 0.993,
-      "volume": 50608235.821602,
+      "volume": 50608239.60337301,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-chelsea-clinton-win-the-2028-democratic-presidential-nomination"
@@ -93,7 +93,7 @@
       "title": "Will Andrew Yang win the 2028 Democratic presidential nomination?",
       "outcome": "No 100%",
       "probability": 0.9995,
-      "volume": 48909349.14060402,
+      "volume": 48909349.140604004,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-andrew-yang-win-the-2028-democratic-presidential-nomination"
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/will-person-a-win-the-2028-democratic-presidential-nomination"
     }
   ],
-  "last_updated": "2026-10-03T18:29:20.604948Z"
+  "last_updated": "2026-10-03T21:40:29.017585Z"
 }
