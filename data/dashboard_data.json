@@ -9,16 +9,16 @@
       "delta": 1.5421903376491963
     },
     "btc_price": {
-      "value": 84573,
-      "delta": -9.76858816374868
+      "value": 84828,
+      "delta": -9.49652722209775
     },
     "stablecoin_mcap": {
-      "value": 312.75,
-      "delta": 1.6711976711498848
+      "value": 312.78,
+      "delta": 1.6808535327336875
     },
     "usdt_dominance": {
-      "value": 6.42,
-      "delta": 13.009523528314073
+      "value": 6.35,
+      "delta": 11.878965028220138
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.78,
-    "btc_gold": -0.11,
+    "btc_nasdaq": 0.8,
+    "btc_gold": 0.08,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -75,7 +75,7 @@
       "title": "Will Bernie Sanders win the 2028 Democratic presidential nomination?",
       "outcome": "No 99%",
       "probability": 0.9935,
-      "volume": 52819201.23281,
+      "volume": 52819235.435141996,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-bernie-sanders-win-the-2028-democratic-presidential-nomination-879"
@@ -84,7 +84,7 @@
       "title": "Will Chelsea Clinton win the 2028 Democratic presidential nomination?",
       "outcome": "No 99%",
       "probability": 0.993,
-      "volume": 50608151.308078,
+      "volume": 50608223.74538401,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-chelsea-clinton-win-the-2028-democratic-presidential-nomination"
@@ -102,11 +102,11 @@
       "title": "Will Hunter Biden win the 2028 Democratic presidential nomination?",
       "outcome": "No 100%",
       "probability": 0.9975,
-      "volume": 44551509.91821804,
+      "volume": 44551509.91821803,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-person-a-win-the-2028-democratic-presidential-nomination"
     }
   ],
-  "last_updated": "2026-10-03T10:30:43.712679Z"
+  "last_updated": "2026-10-03T14:54:51.911162Z"
 }
