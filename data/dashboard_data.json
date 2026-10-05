@@ -9,16 +9,16 @@
       "delta": 1.5421903376491963
     },
     "btc_price": {
-      "value": 86498,
-      "delta": -7.7147947806975425
+      "value": 86206,
+      "delta": -8.026331231529197
     },
     "stablecoin_mcap": {
-      "value": 314.14,
-      "delta": 2.1225051051983916
+      "value": 314.01,
+      "delta": 2.079873441248975
     },
     "usdt_dominance": {
-      "value": 6.28,
-      "delta": 10.613095775175058
+      "value": 6.31,
+      "delta": 11.119490211419688
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.71,
-    "btc_gold": 0.14,
+    "btc_nasdaq": 0.73,
+    "btc_gold": 0.12,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -74,8 +74,8 @@
     {
       "title": "Will Bernie Sanders win the 2028 Democratic presidential nomination?",
       "outcome": "No 99%",
-      "probability": 0.992,
-      "volume": 52864191.737799995,
+      "probability": 0.993,
+      "volume": 52864213.45046605,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-bernie-sanders-win-the-2028-democratic-presidential-nomination-879"
@@ -83,8 +83,8 @@
     {
       "title": "Will Chelsea Clinton win the 2028 Democratic presidential nomination?",
       "outcome": "No 99%",
-      "probability": 0.9925,
-      "volume": 50714612.39005101,
+      "probability": 0.992,
+      "volume": 50714989.89322499,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-chelsea-clinton-win-the-2028-democratic-presidential-nomination"
@@ -101,12 +101,12 @@
     {
       "title": "Will Hunter Biden win the 2028 Democratic presidential nomination?",
       "outcome": "No 100%",
-      "probability": 0.996,
-      "volume": 44622458.965218015,
+      "probability": 0.9955,
+      "volume": 44622465.62121803,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-person-a-win-the-2028-democratic-presidential-nomination"
     }
   ],
-  "last_updated": "2026-10-05T01:05:33.244480Z"
+  "last_updated": "2026-10-05T07:00:54.096133Z"
 }
