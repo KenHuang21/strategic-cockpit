@@ -9,16 +9,16 @@
       "delta": 1.732052127662782
     },
     "btc_price": {
-      "value": 82523,
-      "delta": -11.955744753491448
+      "value": 81503,
+      "delta": -13.043988520095168
     },
     "stablecoin_mcap": {
-      "value": 305.97,
-      "delta": -0.5344277990534413
+      "value": 306.02,
+      "delta": -0.5177375686892746
     },
     "usdt_dominance": {
-      "value": 6.58,
-      "delta": 15.925564888831751
+      "value": 6.65,
+      "delta": 17.09579572614897
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.71,
-    "btc_gold": 0.04,
+    "btc_nasdaq": 0.74,
+    "btc_gold": -0.12,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -73,9 +73,9 @@
     },
     {
       "title": "Will Bernie Sanders win the 2028 Democratic presidential nomination?",
-      "outcome": "No 98%",
-      "probability": 0.9825,
-      "volume": 52908735.69577999,
+      "outcome": "No 99%",
+      "probability": 0.9865,
+      "volume": 52909442.58708502,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-bernie-sanders-win-the-2028-democratic-presidential-nomination-879"
@@ -84,7 +84,7 @@
       "title": "Will Chelsea Clinton win the 2028 Democratic presidential nomination?",
       "outcome": "No 99%",
       "probability": 0.988,
-      "volume": 50942917.86277804,
+      "volume": 50942931.46398401,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-chelsea-clinton-win-the-2028-democratic-presidential-nomination"
@@ -102,11 +102,11 @@
       "title": "Will Hunter Biden win the 2028 Democratic presidential nomination?",
       "outcome": "No 100%",
       "probability": 0.997,
-      "volume": 44686525.239200965,
+      "volume": 44687235.539201,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-person-a-win-the-2028-democratic-presidential-nomination"
     }
   ],
-  "last_updated": "2026-10-16T11:18:35.591580Z"
+  "last_updated": "2026-10-16T15:25:27.543862Z"
 }
