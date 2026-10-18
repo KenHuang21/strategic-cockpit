@@ -9,16 +9,16 @@
       "delta": 1.732052127662782
     },
     "btc_price": {
-      "value": 81238,
-      "delta": -13.326718518281428
+      "value": 81421,
+      "delta": -13.13147478368488
     },
     "stablecoin_mcap": {
-      "value": 306.18,
-      "delta": -0.4641865605348883
+      "value": 306.19,
+      "delta": -0.46242046616702426
     },
     "usdt_dominance": {
-      "value": 6.69,
-      "delta": 17.867245159290647
+      "value": 6.68,
+      "delta": 17.5324658734472
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.75,
-    "btc_gold": 0.09,
+    "btc_nasdaq": 0.8,
+    "btc_gold": -0.11,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -73,9 +73,9 @@
     },
     {
       "title": "Will Bernie Sanders win the 2028 Democratic presidential nomination?",
-      "outcome": "No 99%",
-      "probability": 0.9855,
-      "volume": 52913715.60626308,
+      "outcome": "No 98%",
+      "probability": 0.9845,
+      "volume": 52913723.068845995,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-bernie-sanders-win-the-2028-democratic-presidential-nomination-879"
@@ -84,7 +84,7 @@
       "title": "Will Chelsea Clinton win the 2028 Democratic presidential nomination?",
       "outcome": "No 99%",
       "probability": 0.99,
-      "volume": 50943303.34094901,
+      "volume": 50922832.80854899,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-chelsea-clinton-win-the-2028-democratic-presidential-nomination"
@@ -102,11 +102,11 @@
       "title": "Will Hunter Biden win the 2028 Democratic presidential nomination?",
       "outcome": "No 100%",
       "probability": 0.9975,
-      "volume": 44691974.80970104,
+      "volume": 44691596.593701005,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-person-a-win-the-2028-democratic-presidential-nomination"
     }
   ],
-  "last_updated": "2026-10-17T22:39:39.883324Z"
+  "last_updated": "2026-10-18T00:19:12.726071Z"
 }
