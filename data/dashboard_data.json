@@ -9,16 +9,16 @@
       "delta": 1.732052127662782
     },
     "btc_price": {
-      "value": 83081,
-      "delta": -11.360411398820002
+      "value": 83680,
+      "delta": -10.7213349123537
     },
     "stablecoin_mcap": {
-      "value": 304.21,
-      "delta": -1.1066427538933663
+      "value": 304.83,
+      "delta": -0.903170851863568
     },
     "usdt_dominance": {
-      "value": 6.55,
-      "delta": 15.254502923472266
+      "value": 6.47,
+      "delta": 13.854959336297334
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,9 +56,9 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.81,
-    "btc_gold": 0.14,
-    "interpretation": "Macro Driven",
+    "btc_nasdaq": 0.65,
+    "btc_gold": -0.14,
+    "interpretation": "Moderately Correlated",
     "period_days": 30
   },
   "polymarket_top5": [
@@ -75,7 +75,7 @@
       "title": "Will Bernie Sanders win the 2028 Democratic presidential nomination?",
       "outcome": "No 99%",
       "probability": 0.9865,
-      "volume": 52918597.481966995,
+      "volume": 52918664.18347201,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-bernie-sanders-win-the-2028-democratic-presidential-nomination-879"
@@ -83,8 +83,8 @@
     {
       "title": "Will Chelsea Clinton win the 2028 Democratic presidential nomination?",
       "outcome": "No 99%",
-      "probability": 0.989,
-      "volume": 50923624.99171399,
+      "probability": 0.9905,
+      "volume": 50923650.754227,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-chelsea-clinton-win-the-2028-democratic-presidential-nomination"
@@ -102,11 +102,11 @@
       "title": "Will Hunter Biden win the 2028 Democratic presidential nomination?",
       "outcome": "No 100%",
       "probability": 0.9985,
-      "volume": 44743036.790201,
+      "volume": 44743314.26720101,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-person-a-win-the-2028-democratic-presidential-nomination"
     }
   ],
-  "last_updated": "2026-10-21T07:34:59.320051Z"
+  "last_updated": "2026-10-21T13:13:57.413551Z"
 }
