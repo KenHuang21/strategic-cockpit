@@ -9,16 +9,16 @@
       "delta": 1.701407398706753
     },
     "btc_price": {
-      "value": 81708,
-      "delta": -12.82527286112089
+      "value": 81445,
+      "delta": -13.105869048000084
     },
     "stablecoin_mcap": {
-      "value": 304.91,
-      "delta": -0.8786894703165695
+      "value": 304.83,
+      "delta": -0.9045508179542466
     },
     "usdt_dominance": {
-      "value": 6.68,
-      "delta": 17.549396229778182
+      "value": 6.65,
+      "delta": 17.073042101554357
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -57,7 +57,7 @@
   },
   "correlation_radar": {
     "btc_nasdaq": 0.73,
-    "btc_gold": 0.08,
+    "btc_gold": 0.03,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -74,8 +74,8 @@
     {
       "title": "Will Bernie Sanders win the 2028 Democratic presidential nomination?",
       "outcome": "No 99%",
-      "probability": 0.987,
-      "volume": 52919817.516401,
+      "probability": 0.986,
+      "volume": 52920639.964209,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-bernie-sanders-win-the-2028-democratic-presidential-nomination-879"
@@ -84,7 +84,7 @@
       "title": "Will Chelsea Clinton win the 2028 Democratic presidential nomination?",
       "outcome": "No 99%",
       "probability": 0.991,
-      "volume": 50924366.11529599,
+      "volume": 50924368.7157,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-chelsea-clinton-win-the-2028-democratic-presidential-nomination"
@@ -102,11 +102,11 @@
       "title": "Will Hunter Biden win the 2028 Democratic presidential nomination?",
       "outcome": "No 100%",
       "probability": 0.998,
-      "volume": 44758331.72703501,
+      "volume": 44758365.033035,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-person-a-win-the-2028-democratic-presidential-nomination"
     }
   ],
-  "last_updated": "2026-10-23T10:20:28.537044Z"
+  "last_updated": "2026-10-23T15:18:50.152971Z"
 }
