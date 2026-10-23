@@ -9,16 +9,16 @@
       "delta": 1.701407398706753
     },
     "btc_price": {
-      "value": 81720,
-      "delta": -12.812469993278494
+      "value": 81708,
+      "delta": -12.82527286112089
     },
     "stablecoin_mcap": {
-      "value": 305.1,
-      "delta": -0.8172799156421957
+      "value": 304.91,
+      "delta": -0.8786894703165695
     },
     "usdt_dominance": {
-      "value": 6.62,
-      "delta": 16.47444909187758
+      "value": 6.68,
+      "delta": 17.549396229778182
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -57,7 +57,7 @@
   },
   "correlation_radar": {
     "btc_nasdaq": 0.73,
-    "btc_gold": -0.06,
+    "btc_gold": 0.08,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -74,8 +74,8 @@
     {
       "title": "Will Bernie Sanders win the 2028 Democratic presidential nomination?",
       "outcome": "No 99%",
-      "probability": 0.9865,
-      "volume": 52919692.348019004,
+      "probability": 0.987,
+      "volume": 52919817.516401,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-bernie-sanders-win-the-2028-democratic-presidential-nomination-879"
@@ -84,7 +84,7 @@
       "title": "Will Chelsea Clinton win the 2028 Democratic presidential nomination?",
       "outcome": "No 99%",
       "probability": 0.991,
-      "volume": 50924353.49837899,
+      "volume": 50924366.11529599,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-chelsea-clinton-win-the-2028-democratic-presidential-nomination"
@@ -102,11 +102,11 @@
       "title": "Will Hunter Biden win the 2028 Democratic presidential nomination?",
       "outcome": "No 100%",
       "probability": 0.998,
-      "volume": 44758181.078035004,
+      "volume": 44758331.72703501,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-person-a-win-the-2028-democratic-presidential-nomination"
     }
   ],
-  "last_updated": "2026-10-23T05:23:21.587399Z"
+  "last_updated": "2026-10-23T10:20:28.537044Z"
 }
