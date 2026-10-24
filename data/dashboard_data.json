@@ -9,16 +9,16 @@
       "delta": 1.701407398706753
     },
     "btc_price": {
-      "value": 80632,
-      "delta": -13.973263344322461
+      "value": 80742,
+      "delta": -13.855903722433824
     },
     "stablecoin_mcap": {
-      "value": 304.49,
-      "delta": -1.0150255058119673
+      "value": 304.3,
+      "delta": -1.075171146285217
     },
     "usdt_dominance": {
-      "value": 6.72,
-      "delta": 18.36209942077576
+      "value": 6.69,
+      "delta": 17.854434203847163
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -57,7 +57,7 @@
   },
   "correlation_radar": {
     "btc_nasdaq": 0.71,
-    "btc_gold": -0.12,
+    "btc_gold": 0.03,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -74,8 +74,8 @@
     {
       "title": "Will Bernie Sanders win the 2028 Democratic presidential nomination?",
       "outcome": "No 99%",
-      "probability": 0.9865,
-      "volume": 52920843.793271996,
+      "probability": 0.986,
+      "volume": 52921013.857479,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-bernie-sanders-win-the-2028-democratic-presidential-nomination-879"
@@ -83,8 +83,8 @@
     {
       "title": "Will Chelsea Clinton win the 2028 Democratic presidential nomination?",
       "outcome": "No 99%",
-      "probability": 0.991,
-      "volume": 50924496.350785,
+      "probability": 0.9885,
+      "volume": 50924714.277297,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-chelsea-clinton-win-the-2028-democratic-presidential-nomination"
@@ -102,11 +102,11 @@
       "title": "Will Hunter Biden win the 2028 Democratic presidential nomination?",
       "outcome": "No 100%",
       "probability": 0.9975,
-      "volume": 44772416.65420201,
+      "volume": 44772659.891202,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-person-a-win-the-2028-democratic-presidential-nomination"
     }
   ],
-  "last_updated": "2026-10-24T00:57:03.509715Z"
+  "last_updated": "2026-10-24T05:23:32.968558Z"
 }
