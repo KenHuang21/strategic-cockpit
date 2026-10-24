@@ -9,16 +9,16 @@
       "delta": 1.701407398706753
     },
     "btc_price": {
-      "value": 80438,
-      "delta": -14.180243041107875
+      "value": 80354,
+      "delta": -14.269863116004652
     },
     "stablecoin_mcap": {
-      "value": 304.17,
-      "delta": -1.1167084436319725
+      "value": 304.12,
+      "delta": -1.1330284368624879
     },
     "usdt_dominance": {
       "value": 6.74,
-      "delta": 18.685272362775798
+      "delta": 18.65335255072379
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -57,7 +57,7 @@
   },
   "correlation_radar": {
     "btc_nasdaq": 0.81,
-    "btc_gold": 0.08,
+    "btc_gold": -0.01,
     "interpretation": "Macro Driven",
     "period_days": 30
   },
@@ -75,7 +75,7 @@
       "title": "Will Bernie Sanders win the 2028 Democratic presidential nomination?",
       "outcome": "No 99%",
       "probability": 0.9865,
-      "volume": 52921414.522327006,
+      "volume": 52921591.802634,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-bernie-sanders-win-the-2028-democratic-presidential-nomination-879"
@@ -83,8 +83,8 @@
     {
       "title": "Will Chelsea Clinton win the 2028 Democratic presidential nomination?",
       "outcome": "No 99%",
-      "probability": 0.9905,
-      "volume": 50924840.509083994,
+      "probability": 0.991,
+      "volume": 50925061.76819699,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-chelsea-clinton-win-the-2028-democratic-presidential-nomination"
@@ -102,11 +102,11 @@
       "title": "Will Hunter Biden win the 2028 Democratic presidential nomination?",
       "outcome": "No 100%",
       "probability": 0.9975,
-      "volume": 44782894.445202,
+      "volume": 44783074.359702006,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-person-a-win-the-2028-democratic-presidential-nomination"
     }
   ],
-  "last_updated": "2026-10-24T19:17:06.271570Z"
+  "last_updated": "2026-10-24T21:43:06.391975Z"
 }
