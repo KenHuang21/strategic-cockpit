@@ -9,16 +9,16 @@
       "delta": 1.701407398706753
     },
     "btc_price": {
-      "value": 80126,
-      "delta": -14.513117605010189
+      "value": 80438,
+      "delta": -14.180243041107875
     },
     "stablecoin_mcap": {
-      "value": 304.19,
-      "delta": -1.1113874108962691
+      "value": 304.17,
+      "delta": -1.1167084436319725
     },
     "usdt_dominance": {
-      "value": 6.78,
-      "delta": 19.375192966247134
+      "value": 6.74,
+      "delta": 18.685272362775798
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,9 +56,9 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.71,
-    "btc_gold": -0.05,
-    "interpretation": "Moderately Correlated",
+    "btc_nasdaq": 0.81,
+    "btc_gold": 0.08,
+    "interpretation": "Macro Driven",
     "period_days": 30
   },
   "polymarket_top5": [
@@ -75,7 +75,7 @@
       "title": "Will Bernie Sanders win the 2028 Democratic presidential nomination?",
       "outcome": "No 99%",
       "probability": 0.9865,
-      "volume": 52921302.467097,
+      "volume": 52921414.522327006,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-bernie-sanders-win-the-2028-democratic-presidential-nomination-879"
@@ -102,11 +102,11 @@
       "title": "Will Hunter Biden win the 2028 Democratic presidential nomination?",
       "outcome": "No 100%",
       "probability": 0.9975,
-      "volume": 44782873.604702,
+      "volume": 44782894.445202,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-person-a-win-the-2028-democratic-presidential-nomination"
     }
   ],
-  "last_updated": "2026-10-24T16:58:06.310063Z"
+  "last_updated": "2026-10-24T19:17:06.271570Z"
 }
