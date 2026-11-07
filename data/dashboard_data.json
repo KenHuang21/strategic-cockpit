@@ -9,16 +9,16 @@
       "delta": 1.6192012191632792
     },
     "btc_price": {
-      "value": 75822,
-      "delta": -19.105079537816472
+      "value": 75677,
+      "delta": -19.259780857578765
     },
     "stablecoin_mcap": {
-      "value": 293.27,
-      "delta": -4.660190066968978
+      "value": 293.68,
+      "delta": -4.528979504430162
     },
     "usdt_dominance": {
-      "value": 6.89,
-      "delta": 21.284843512075735
+      "value": 6.91,
+      "delta": 21.58682864422336
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.77,
-    "btc_gold": -0.05,
+    "btc_nasdaq": 0.71,
+    "btc_gold": -0.15,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -84,7 +84,7 @@
       "title": "Will Chelsea Clinton win the 2028 Democratic presidential nomination?",
       "outcome": "No 100%",
       "probability": 0.9955,
-      "volume": 51102239.80586299,
+      "volume": 51102239.805863,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-chelsea-clinton-win-the-2028-democratic-presidential-nomination"
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/will-person-a-win-the-2028-democratic-presidential-nomination"
     }
   ],
-  "last_updated": "2026-11-07T18:18:35.472506Z"
+  "last_updated": "2026-11-07T22:09:01.431036Z"
 }
