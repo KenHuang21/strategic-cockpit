@@ -9,16 +9,16 @@
       "delta": 1.518412437392899
     },
     "btc_price": {
-      "value": 60652,
-      "delta": -35.290038301912965
+      "value": 61236,
+      "delta": -34.66696540024966
     },
     "stablecoin_mcap": {
-      "value": 283.81,
-      "delta": -7.738242052882089
+      "value": 283.71,
+      "delta": -7.769023477617526
     },
     "usdt_dominance": {
-      "value": 8.42,
-      "delta": 48.32715039973495
+      "value": 8.36,
+      "delta": 47.12092503667126
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -27,8 +27,8 @@
   },
   "global_risk_status": "Risk Off",
   "btc_funding_rate": {
-    "value": -1.08,
-    "source": "Binance"
+    "value": 0,
+    "source": "error"
   },
   "btc_etf_flows": {
     "flows": [
@@ -56,9 +56,9 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.84,
-    "btc_gold": -0.06,
-    "interpretation": "Macro Driven",
+    "btc_nasdaq": 0.79,
+    "btc_gold": -0.05,
+    "interpretation": "Moderately Correlated",
     "period_days": 30
   },
   "polymarket_top5": [
@@ -66,7 +66,7 @@
       "title": "Will Oprah Winfrey win the 2028 Democratic presidential nomination?",
       "outcome": "No 100%",
       "probability": 0.9985,
-      "volume": 54749055.03575801,
+      "volume": 54759055.035758,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-oprah-winfrey-win-the-2028-democratic-presidential-nomination"
@@ -74,8 +74,8 @@
     {
       "title": "Will Bernie Sanders win the 2028 Democratic presidential nomination?",
       "outcome": "No 100%",
-      "probability": 0.996,
-      "volume": 53063996.539742,
+      "probability": 0.9955,
+      "volume": 53063996.53974199,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-bernie-sanders-win-the-2028-democratic-presidential-nomination-879"
@@ -102,11 +102,11 @@
       "title": "Will Tim Walz win the 2028 Democratic presidential nomination?",
       "outcome": "No 100%",
       "probability": 0.9995,
-      "volume": 45185836.45015,
+      "volume": 45185836.45014999,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-tim-walz-win-the-2028-democratic-presidential-nomination-475"
     }
   ],
-  "last_updated": "2026-11-22T18:55:54.976474Z"
+  "last_updated": "2026-11-22T23:57:56.206313Z"
 }
