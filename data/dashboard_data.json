@@ -9,16 +9,16 @@
       "delta": 1.518412437392899
     },
     "btc_price": {
-      "value": 60177,
-      "delta": -35.79681848734116
+      "value": 59239,
+      "delta": -36.79757599035518
     },
     "stablecoin_mcap": {
-      "value": 283.39,
-      "delta": -7.8726582446802436
+      "value": 283.63,
+      "delta": -7.7960575118356
     },
     "usdt_dominance": {
-      "value": 8.35,
-      "delta": 46.991643997248595
+      "value": 8.48,
+      "delta": 49.28486397792594
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,9 +56,9 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.68,
-    "btc_gold": -0.03,
-    "interpretation": "Moderately Correlated",
+    "btc_nasdaq": 0.81,
+    "btc_gold": -0.15,
+    "interpretation": "Macro Driven",
     "period_days": 30
   },
   "polymarket_top5": [
@@ -83,8 +83,8 @@
     {
       "title": "Will Chelsea Clinton win the 2028 Democratic presidential nomination?",
       "outcome": "No 99%",
-      "probability": 0.994,
-      "volume": 51165331.874603994,
+      "probability": 0.9945,
+      "volume": 51165554.731747,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-chelsea-clinton-win-the-2028-democratic-presidential-nomination"
@@ -102,11 +102,11 @@
       "title": "Will Tim Walz win the 2028 Democratic presidential nomination?",
       "outcome": "No 100%",
       "probability": 0.9995,
-      "volume": 45169569.81515001,
+      "volume": 45169569.81515,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-tim-walz-win-the-2028-democratic-presidential-nomination-475"
     }
   ],
-  "last_updated": "2026-11-21T23:16:16.022841Z"
+  "last_updated": "2026-11-22T03:19:35.137556Z"
 }
