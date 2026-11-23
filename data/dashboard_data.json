@@ -9,16 +9,16 @@
       "delta": 1.518412437392899
     },
     "btc_price": {
-      "value": 61236,
-      "delta": -34.66696540024966
+      "value": 61636,
+      "delta": -34.240203138836435
     },
     "stablecoin_mcap": {
-      "value": 283.71,
-      "delta": -7.769023477617526
+      "value": 284.54,
+      "delta": -7.500569643559768
     },
     "usdt_dominance": {
-      "value": 8.36,
-      "delta": 47.12092503667126
+      "value": 8.32,
+      "delta": 46.48835841193715
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -33,31 +33,31 @@
   "btc_etf_flows": {
     "flows": [
       {
-        "date": "2026-11-16",
+        "date": "2026-11-17",
         "flow": 150
       },
       {
-        "date": "2026-11-17",
+        "date": "2026-11-18",
         "flow": -50
       },
       {
-        "date": "2026-11-18",
+        "date": "2026-11-19",
         "flow": 300
       },
       {
-        "date": "2026-11-19",
+        "date": "2026-11-20",
         "flow": 100
       },
       {
-        "date": "2026-11-20",
+        "date": "2026-11-23",
         "flow": 200
       }
     ],
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.79,
-    "btc_gold": -0.05,
+    "btc_nasdaq": 0.68,
+    "btc_gold": -0.03,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -66,7 +66,7 @@
       "title": "Will Oprah Winfrey win the 2028 Democratic presidential nomination?",
       "outcome": "No 100%",
       "probability": 0.9985,
-      "volume": 54759055.035758,
+      "volume": 54780055.03575801,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-oprah-winfrey-win-the-2028-democratic-presidential-nomination"
@@ -84,7 +84,7 @@
       "title": "Will Chelsea Clinton win the 2028 Democratic presidential nomination?",
       "outcome": "No 99%",
       "probability": 0.994,
-      "volume": 51165566.731746994,
+      "volume": 51165829.731746994,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-chelsea-clinton-win-the-2028-democratic-presidential-nomination"
@@ -102,11 +102,11 @@
       "title": "Will Tim Walz win the 2028 Democratic presidential nomination?",
       "outcome": "No 100%",
       "probability": 0.9995,
-      "volume": 45185836.45014999,
+      "volume": 45185836.450150006,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-tim-walz-win-the-2028-democratic-presidential-nomination-475"
     }
   ],
-  "last_updated": "2026-11-22T23:57:56.206313Z"
+  "last_updated": "2026-11-23T06:09:51.101932Z"
 }
