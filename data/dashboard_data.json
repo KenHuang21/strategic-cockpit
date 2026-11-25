@@ -9,16 +9,16 @@
       "delta": 1.518412437392899
     },
     "btc_price": {
-      "value": 58980,
-      "delta": -37.073904554620235
+      "value": 58402,
+      "delta": -37.69057602236234
     },
     "stablecoin_mcap": {
-      "value": 283.87,
-      "delta": -7.717122407265369
+      "value": 283.59,
+      "delta": -7.808260306366875
     },
     "usdt_dominance": {
-      "value": 8.47,
-      "delta": 49.19369143782214
+      "value": 8.53,
+      "delta": 50.24554952728327
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.67,
-    "btc_gold": 0.1,
+    "btc_nasdaq": 0.76,
+    "btc_gold": 0.09,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -75,7 +75,7 @@
       "title": "Will Bernie Sanders win the 2028 Democratic presidential nomination?",
       "outcome": "No 100%",
       "probability": 0.9965,
-      "volume": 53064800.746742,
+      "volume": 53064815.470741995,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-bernie-sanders-win-the-2028-democratic-presidential-nomination-879"
@@ -84,7 +84,7 @@
       "title": "Will Chelsea Clinton win the 2028 Democratic presidential nomination?",
       "outcome": "No 99%",
       "probability": 0.9935,
-      "volume": 51171563.119584,
+      "volume": 51171750.87078399,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-chelsea-clinton-win-the-2028-democratic-presidential-nomination"
@@ -93,7 +93,7 @@
       "title": "Will Andrew Yang win the 2028 Democratic presidential nomination?",
       "outcome": "No 100%",
       "probability": 0.9995,
-      "volume": 49485241.27289,
+      "volume": 49485241.27289001,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-andrew-yang-win-the-2028-democratic-presidential-nomination"
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/will-tim-walz-win-the-2028-democratic-presidential-nomination-475"
     }
   ],
-  "last_updated": "2026-11-25T05:40:39.580689Z"
+  "last_updated": "2026-11-25T16:03:50.073468Z"
 }
