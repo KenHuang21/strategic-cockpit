@@ -9,16 +9,16 @@
       "delta": 1.518412437392899
     },
     "btc_price": {
-      "value": 61625,
-      "delta": -34.2519391010253
+      "value": 59942,
+      "delta": -36.047541315921436
     },
     "stablecoin_mcap": {
-      "value": 283.57,
-      "delta": -7.813541508032376
+      "value": 283.68,
+      "delta": -7.78000487141029
     },
     "usdt_dominance": {
-      "value": 8.14,
-      "delta": 43.30530158022289
+      "value": 8.32,
+      "delta": 46.51152225415886
     },
     "rwa_tvl": {
       "value": 8.5,
@@ -56,8 +56,8 @@
     "net_5day": 0.7
   },
   "correlation_radar": {
-    "btc_nasdaq": 0.74,
-    "btc_gold": 0.1,
+    "btc_nasdaq": 0.8,
+    "btc_gold": -0.11,
     "interpretation": "Moderately Correlated",
     "period_days": 30
   },
@@ -66,7 +66,7 @@
       "title": "Will Oprah Winfrey win the 2028 Democratic presidential nomination?",
       "outcome": "No 100%",
       "probability": 0.9985,
-      "volume": 54803338.017758004,
+      "volume": 54803838.017758004,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-oprah-winfrey-win-the-2028-democratic-presidential-nomination"
@@ -75,7 +75,7 @@
       "title": "Will Bernie Sanders win the 2028 Democratic presidential nomination?",
       "outcome": "No 100%",
       "probability": 0.997,
-      "volume": 53076134.84224,
+      "volume": 53076134.842240006,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-bernie-sanders-win-the-2028-democratic-presidential-nomination-879"
@@ -84,7 +84,7 @@
       "title": "Will Chelsea Clinton win the 2028 Democratic presidential nomination?",
       "outcome": "No 99%",
       "probability": 0.9925,
-      "volume": 51207283.12717301,
+      "volume": 51207408.12717299,
       "volume_24h": 0,
       "flipped": false,
       "url": "https://polymarket.com/event/will-chelsea-clinton-win-the-2028-democratic-presidential-nomination"
@@ -108,5 +108,5 @@
       "url": "https://polymarket.com/event/will-tim-walz-win-the-2028-democratic-presidential-nomination-475"
     }
   ],
-  "last_updated": "2026-11-27T10:27:52.553822Z"
+  "last_updated": "2026-11-27T19:34:46.715313Z"
 }
